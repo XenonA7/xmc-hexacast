@@ -1,0 +1,123 @@
+[
+  {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/heat.json"
+  },
+  {
+    "type": "ENTER",
+    "index": [
+      "ANIMS",
+      "SUB"
+    ]
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEAT_BIG_HEXAGON",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 96,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEAT_BIG_HEXAGON_GUI",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 96,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEXA_CARD_HEAT",
+      "sheet": {
+        "src": "media/entity/effects/hexa-cards.png",
+        "offX": 0,
+        "offY": 64,
+        "width": 24,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "source-over",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEXA_CARD_HEAT_90",
+      "sheet": {
+        "src": "media/entity/effects/hexa-cards.png",
+        "offX": 0,
+        "offY": 64,
+        "width": 24,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "source-over",
+      "time": 0.4,
+      "frames": [
+        0
+      ],
+      "framesAngle": [
+        -90
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DUST_UP",
+      "sheet": {
+        "src": "media/entity/effects/dust.png",
+        "width": 24,
+        "height": 32,
+        "offY": 32
+      },
+      "pivot": {
+        "x": 10,
+        "y": 24
+      },
+      "time": 0.06,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  }
+]

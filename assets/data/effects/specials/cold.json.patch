@@ -1,0 +1,163 @@
+[
+  {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/cold.json"
+  },
+  {
+    "type": "ENTER",
+    "index": [
+      "ANIMS",
+      "SUB"
+    ]
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "COLD_BIG_HEXAGON",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 192,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "COLD_BIG_HEXAGON_GUI",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 192,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEXA_CARD_COLD",
+      "sheet": {
+        "src": "media/entity/effects/hexa-cards.png",
+        "offX": 0,
+        "offY": 128,
+        "width": 24,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "source-over",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CIRCLE_SMALL_COLD",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle.png",
+        "offX": 144,
+        "offY": 96,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.05,
+      "repeat": true,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CIRCLE_SMALL_COLD_GUI",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle.png",
+        "offX": 144,
+        "offY": 96,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.05,
+      "repeat": true,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "LASER_END",
+      "sheet": {
+        "src": "media/entity/effects/neutral.png",
+        "offX": 320,
+        "offY": 48,
+        "width": 32,
+        "height": 32
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.05,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SNOW_BURST_GUI",
+      "sheet": {
+        "src": "media/entity/effects/hit2.png",
+        "offX": 0,
+        "offY": 80,
+        "width": 32,
+        "height": 32
+      },
+      "guiSprites": true,
+      "time": 0.06,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  }
+]

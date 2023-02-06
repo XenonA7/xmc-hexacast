@@ -1,0 +1,1458 @@
+{
+  "DOCTYPE": "MULTI_DIR_ANIMATION",
+  "namedSheets": {
+    "walk": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 11,
+      "offX": 0,
+      "offY": 0,
+      "width": 32,
+      "height": 40
+    },
+    "combat": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 8,
+      "offX": 32,
+      "offY": 400,
+      "width": 32,
+      "height": 40
+    },
+    "aiming": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 12,
+      "offX": 96,
+      "offY": 200,
+      "width": 32,
+      "height": 40
+    },
+    "attack": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 6,
+      "offX": 352,
+      "offY": 0,
+      "width": 32,
+      "height": 40
+    },
+    "posesSit": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 3,
+      "offX": 0,
+      "offY": 400,
+      "width": 32,
+      "height": 40
+    },
+    "posesGround": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 3,
+      "offX": 0,
+      "offY": 360,
+      "width": 32,
+      "height": 40
+    },
+    "spin": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 3,
+      "offX": 0,
+      "offY": 280,
+      "width": 32,
+      "height": 40
+    },
+    "spinEyes": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 3,
+      "offX": 0,
+      "offY": 200,
+      "width": 32,
+      "height": 40
+    },
+    "eating": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 14,
+      "offX": 0,
+      "offY": 520,
+      "width": 32,
+      "height": 40
+    },
+    "level": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 14,
+      "offX": 0,
+      "offY": 560,
+      "width": 32,
+      "height": 40
+    },
+    "hovering": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 3,
+      "offX": 0,
+      "offY": 600,
+      "width": 32,
+      "height": 40
+    },
+    "crateChest": {
+      "src": "media/entity/npc/hexacast1.png",
+      "xCount": 11,
+      "offX": 96,
+      "offY": 600,
+      "width": 32,
+      "height": 40
+    }
+  },
+  "offset": {
+    "x": 0,
+    "y": -4,
+    "z": 0
+  },
+  "shapeType": "Y_FLAT",
+  "SUB": [
+    {
+      "sheet": "walk",
+      "dirs": "8",
+      "flipX": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "SUB": [
+        {
+          "tileOffsets": [
+            0,
+            11,
+            22,
+            33,
+            44,
+            33,
+            22,
+            11
+          ],
+          "SUB": [
+            {
+              "name": "idle",
+              "time": 1,
+              "repeat": false,
+              "frames": [
+                1
+              ]
+            },
+            {
+              "name": "preIdle",
+              "time": 0.1,
+              "repeat": false,
+              "frames": [
+                1
+              ]
+            },
+            {
+              "name": "walk",
+              "time": 0.133,
+              "repeat": true,
+              "frames": [
+                0,
+                1,
+                2,
+                1
+              ]
+            },
+            {
+              "name": "run",
+              "time": 0.086,
+              "repeat": true,
+              "frames": [
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+              ]
+            },
+            {
+              "name": "jump",
+              "time": 0.0666,
+              "repeat": true,
+              "frames": [
+                9
+              ]
+            },
+            {
+              "name": "fall",
+              "time": 0.0666,
+              "repeat": true,
+              "frames": [
+                10
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "combat",
+      "dirs": "6",
+      "flipX": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "tileOffsets": [
+        0,
+        8,
+        16,
+        16,
+        8,
+        0
+      ],
+      "SUB": [
+        {
+          "name": "damage",
+          "time": 0.05,
+          "repeat": true,
+          "frames": [
+            0,
+            0
+          ],
+          "framesGfxOffset": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "charge",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            1
+          ]
+        },
+        {
+          "name": "specialShoot",
+          "time": 0.066,
+          "repeat": false,
+          "frames": [
+            2
+          ]
+        },
+        {
+          "name": "specialLoop",
+          "time": 0.066,
+          "repeat": true,
+          "frames": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "name": "postShoot",
+          "time": 0.05,
+          "repeat": false,
+          "frames": [
+            6,
+            7
+          ]
+        },
+        {
+          "name": "postShootSlow",
+          "time": 0.075,
+          "repeat": false,
+          "frames": [
+            6,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "aiming",
+      "dirs": "8",
+      "flipX": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "SUB": [
+        {
+          "tileOffsets": [
+            0,
+            12,
+            24,
+            36,
+            48,
+            36,
+            24,
+            12
+          ],
+          "SUB": [
+            {
+              "name": "aim",
+              "time": 0.1,
+              "repeat": true,
+              "frames": [
+                0,
+                1,
+                2,
+                3
+              ]
+            },
+            {
+              "name": "aimMove",
+              "time": 0.1,
+              "repeat": true,
+              "frames": [
+                4,
+                5,
+                6,
+                7
+              ]
+            },
+            {
+              "name": "aimMoveRev",
+              "time": 0.1,
+              "repeat": true,
+              "frames": [
+                11,
+                10,
+                9,
+                8
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "attack",
+      "dirs": "6",
+      "flipX": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "tileOffsets": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "anchorOffsetX": [
+        10,
+        15,
+        10,
+        -9,
+        -14,
+        -12
+      ],
+      "anchorOffsetY": [
+        -22,
+        -13,
+        -2,
+        -4,
+        -9,
+        -21
+      ],
+      "anchorOffsetZ": [
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "SUB": [
+        {
+          "name": "spinClosedFull",
+          "time": 0.033,
+          "repeat": true,
+          "dirFrames": [
+            [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3
+            ],
+            [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4
+            ],
+            [
+              4,
+              3,
+              2,
+              1,
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "spinClosedShort",
+          "time": 0.066,
+          "repeat": false,
+          "dirFrames": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "name": "attackEnd",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            6
+          ]
+        },
+        {
+          "name": "attackEndLoop",
+          "time": 0.08,
+          "repeat": true,
+          "frames": [
+            12,
+            18,
+            24
+          ]
+        },
+        {
+          "flipX": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "tileOffsets": [
+            5,
+            4,
+            3,
+            2,
+            1,
+            0
+          ],
+          "SUB": [
+            {
+              "name": "spinClosedShortRev",
+              "time": 0.066,
+              "repeat": false,
+              "dirFrames": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  2,
+                  1
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "posesSit",
+      "dirs": "4",
+      "flipX": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "tileOffsets": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "SUB": [
+        {
+          "name": "sit",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "spin",
+      "dirs": "6",
+      "flipX": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "SUB": [
+        {
+          "name": "spinRepeat",
+          "time": 0.05,
+          "repeat": true,
+          "dirFrames": [
+            [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "name": "spinLong",
+          "time": 0.04,
+          "repeat": false,
+          "dirFrames": [
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "name": "spinShort",
+          "time": 0.05,
+          "repeat": false,
+          "dirFrames": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "sheet": "spin",
+          "dirs": "6",
+          "flipX": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "SUB": [
+            {
+              "name": "spinRepeatRev",
+              "time": 0.05,
+              "repeat": true,
+              "dirFrames": [
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ]
+              ]
+            },
+            {
+              "name": "spinLongRev",
+              "time": 0.05,
+              "repeat": false,
+              "dirFrames": [
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ]
+              ]
+            },
+            {
+              "name": "spinShortRev",
+              "time": 0.05,
+              "repeat": false,
+              "dirFrames": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "spinEyes",
+      "dirs": "6",
+      "flipX": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "SUB": [
+        {
+          "name": "spinEyesRepeat",
+          "time": 0.05,
+          "repeat": true,
+          "dirFrames": [
+            [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            [
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "name": "spinEyesLong",
+          "time": 0.04,
+          "repeat": false,
+          "dirFrames": [
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ],
+            [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              3,
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2
+            ],
+            [
+              2,
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              0,
+              5,
+              4,
+              3,
+              2,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "name": "spinEyesShort",
+          "time": 0.05,
+          "repeat": false,
+          "dirFrames": [
+            [
+              1,
+              0
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "sheet": "spinEyes",
+          "dirs": "6",
+          "flipX": [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "SUB": [
+            {
+              "name": "spinEyesRepeatRev",
+              "time": 0.05,
+              "repeat": true,
+              "dirFrames": [
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ]
+              ]
+            },
+            {
+              "name": "spinEyesLongRev",
+              "time": 0.05,
+              "repeat": false,
+              "dirFrames": [
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  2,
+                  1,
+                  0,
+                  5,
+                  4,
+                  3
+                ],
+                [
+                  3,
+                  2,
+                  1,
+                  0,
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3,
+                  2,
+                  1,
+                  0,
+                  5
+                ]
+              ]
+            },
+            {
+              "name": "spinEyesShortRev",
+              "time": 0.05,
+              "repeat": false,
+              "dirFrames": [
+                [
+                  0,
+                  5
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  4,
+                  3
+                ],
+                [
+                  5,
+                  4
+                ],
+                [
+                  0,
+                  5
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "posesGround",
+      "dirs": "1",
+      "flipX": [
+        0
+      ],
+      "tileOffsets": [
+        0
+      ],
+      "SUB": [
+        {
+          "name": "ground",
+          "time": 1,
+          "repeat": false,
+          "frames": [
+            0
+          ]
+        },
+        {
+          "name": "groundClosed",
+          "time": 1,
+          "repeat": false,
+          "frames": [
+            1
+          ]
+        },
+        {
+          "name": "sitSouthClosed",
+          "time": 1,
+          "repeat": false,
+          "frames": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "eating",
+      "dirs": "1",
+      "flipX": [
+        0
+      ],
+      "tileOffsets": [
+        0
+      ],
+      "SUB": [
+        {
+          "name": "itemFetch",
+          "time": 0.05,
+          "repeat": false,
+          "frames": [
+            0,
+            1
+          ]
+        },
+        {
+          "name": "itemHold",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            2
+          ]
+        },
+        {
+          "name": "itemEatFast",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            3,
+            4,
+            5,
+            6,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "name": "itemEatFastest",
+          "time": 0.05,
+          "repeat": false,
+          "frames": [
+            3,
+            4,
+            5,
+            6,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "name": "itemEatSlow",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            3,
+            4,
+            5,
+            6,
+            5,
+            6,
+            5,
+            6,
+            5,
+            6,
+            5,
+            6,
+            7,
+            7
+          ]
+        },
+        {
+          "name": "itemEffect",
+          "time": 0.05,
+          "repeat": false,
+          "frames": [
+            8,
+            9,
+            10,
+            11,
+            12,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "name": "itemEffectLoop",
+          "time": 0.05,
+          "repeat": true,
+          "frames": [
+            11,
+            12,
+            13
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "hovering",
+      "dirs": "8",
+      "flipX": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "tileOffsets": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        9,
+        6,
+        3
+      ],
+      "SUB": [
+        {
+          "name": "hover",
+          "time": 0.2,
+          "repeat": true,
+          "frames": [
+            0,
+            1,
+            2,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "extraCrateChest",
+      "dirs": "4",
+      "flipX": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "tileOffsets": [
+        0,
+        11,
+        22,
+        11
+      ],
+      "SUB": [
+        {
+          "name": "gripStand",
+          "time": 0.05,
+          "repeat": false,
+          "frames": [
+            0
+          ]
+        },
+        {
+          "name": "gripPush",
+          "time": 0.15,
+          "repeat": true,
+          "frames": [
+            1,
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "gripPull",
+          "time": 0.15,
+          "repeat": true,
+          "frames": [
+            4,
+            5,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "chestOpen",
+          "time": 0.08,
+          "repeat": false,
+          "frames": [
+            7,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "landOnGround",
+          "time": 0.07,
+          "repeat": false,
+          "frames": [
+            10
+          ]
+        }
+      ]
+    }
+
+
+  ]
+}

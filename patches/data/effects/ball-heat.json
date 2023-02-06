@@ -1,0 +1,80 @@
+{
+  "EFFECTS": {
+    "ballTrailHexaHeat": [
+      {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 3
+        },
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.15,
+        "anim": "HEXAGON_HEAT",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.016,
+        "type": "WAIT"
+      }
+    ],
+    "ballTrailHexaHeatSlow": [
+      {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 3
+        },
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.5,
+        "anim": "HEXAGON_HEAT",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.016,
+        "type": "WAIT"
+      }
+    ]
+  }
+}

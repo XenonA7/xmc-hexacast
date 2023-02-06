@@ -1,0 +1,95 @@
+[
+  {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/neutral.json"
+  },
+  {
+    "type": "ENTER",
+    "index": ["ANIMS", "SUB"]
+  },
+  {
+  	"type": "ADD_ARRAY_ELEMENT",
+  	"index": 0,
+  	"content": {
+  		"name": "NEUTRAL_BIG_HEXAGON",
+        "sheet": {
+          "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          0
+        ]
+  	}
+  },
+  {
+  	"type": "ADD_ARRAY_ELEMENT",
+  	"index": 0,
+  	"content": {
+  		"name": "NEUTRAL_BIG_HEXAGON_GUI",
+        "sheet": {
+          "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          0
+        ]
+  	}
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEXA_CARD_NEUTRAL",
+        "sheet": {
+          "src": "media/entity/effects/hexa-cards.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 24,
+          "height": 32
+        },
+        "guiSprites": false,
+        "renderMode": "source-over",
+        "time": 0.4,
+        "frames": [
+          0
+        ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "RHOMBUS_DOT",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png ",
+        "xCount": 5,
+        "offX": 16,
+        "offY": 24,
+        "width": 8,
+        "height": 8
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.1,
+      "flipX": true,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
+  }
+]

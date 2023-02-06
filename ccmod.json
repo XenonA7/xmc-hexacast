@@ -1,0 +1,18 @@
+{
+	"id": "xmc-hexacast",
+	"version": "0.0.1",
+	"title": {
+		"en_US": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]"
+	},
+	"description": {
+		"en_US": "Adds a playable hexacast to XMC \\c[1](Mod Incomplete!)\\c[0]"
+	},
+	"icons": {
+		"24": "icon.png"
+	},
+	"prestart": "prestart.js",
+	"dependencies": {
+		"extendable-severed-heads": "^1.0.0",
+		"xenons-triblader-mod": ">=0.3.1"
+	}
+}

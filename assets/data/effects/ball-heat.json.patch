@@ -1,0 +1,30 @@
+[
+  {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/ball-heat.json"
+  },
+  {
+    "type": "ENTER",
+    "index": ["ANIMS", "SUB"]
+  },
+  {
+  	"type": "ADD_ARRAY_ELEMENT",
+  	"index": 0,
+  	"content": {
+  		"name": "HEXAGON_HEAT",
+        "sheet": {
+          "src": "media/entity/effects/particles1.png",
+          "offX": 0,
+          "offY": 72,
+          "width": 16,
+          "height": 16
+        },
+        "renderMode": "lighter",
+        "time": 0.15,
+        "repeat": false,
+        "frames": [
+          1
+        ]
+  	}
+  }
+]
