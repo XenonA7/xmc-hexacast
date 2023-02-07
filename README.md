@@ -1,7 +1,7 @@
 # [XMC] Playable Hexacast
 ![hexacast-preview](https://user-images.githubusercontent.com/105614278/217141772-92383016-1b93-4b2f-9270-49d426d3026b.gif)
 
-A component mod of Xenon's Mod Collection for CrossCode. Download the full collection at (LINK PENDING), installing this mod individually is not recommended.
+A component mod of Xenon's Mod Collection for CrossCode. Download the full collection at (LINK PENDING), this mod will not work if installed individually.
 
 # **EARLY ACCESS VERSION**
 This Hexacast mod is incomplete. Future versions will likely change a lot and might not be save-compatible, you have been warned. Missing combat arts, animations, etc will be added in future updates until the mod is complete.
@@ -148,29 +148,12 @@ Versions older than v2.21.0 will give an error with this mod.
 5. Launch the game to verify it is installed. You will see the CCLoader version in the bottom-right of the screen.  
 ![image](https://user-images.githubusercontent.com/105614278/179911121-3f74421f-251a-462a-8172-aae6314d840f.png)
 
-## Install Mods
-1. Download and extract XTM and its dependencies, along with recommended mods if desired  
-(XTM Releases) https://github.com/XenonA7/xenons-triblader-mod/releases  
-(Required) extendable-severed-heads: https://github.com/CCDirectLink/extendable-severed-heads/releases  
-(Recommended) cc-combat-art-level-extender: https://github.com/CCDirectLink/cc-combat-art-level-extender/releases  
-(Recommended) cc-party-element-effects: https://github.com/XenonA7/cc-party-element-effects/releases  
-
-2. Place extracted mod folders inside **\CrossCode\assets\mods**  
-![image](https://user-images.githubusercontent.com/105614278/179912844-b0ac6c4e-4a03-4a97-a3fc-22eb7d1a4bce.png)  
-
-Note that if you click on any of these installed mods, there should be a file called **package.json** or **ccmod.json** directly inside those folders. If not, CCLoader won't be able to find the mods.
-
-3. Launch the game. Go into the options menu and there will be a new tab with a hammer icon for mods (CCLoader adds this). It should look like this:  
-![image](https://user-images.githubusercontent.com/105614278/179913184-8603fbe7-9cf6-4437-9ef7-e89b4930cb5c.png)  
-
-If your mods don't appear here, make sure you don't have "folders inside folders". The mod folders need **package.json** or **ccmod.json** directly inside in order to be recognized.
-
-If your mods appear in-game, you are good to go. Note that XTM is compatible with ArcaneLab and Autumn's Genesis and other mods. There is an old list of other Crosscode mods located here: https://c2dl.info/cc/mods
+## Install The Mod
+1. Go to (LINK PENDING) to download Xenon's Mod Collection as a package. Do not install the mods individually unless you are only looking to update one of the component mods individually.
 
 # How to Update to a New Version
-1. Delete your old folder entirely.  
+1. Delete your old folder entirely for whatever mod you are updating.
+* You can't just override the old version because if a new version removes old files or renames certain files then overriding will mess it up.
 ![image](https://user-images.githubusercontent.com/105614278/180620611-e05635f6-16c4-406f-9689-7bbbed2d4cd5.png)  
 
-2. Install the new version where the old one used to be  
-
-* You can't just override the old version because if a new version removes old files or renames certain files then overriding will mess it up.
+2. Install the new version where the old one used to be. Save files will remain compatible unless the mod changelog states otherwise.  
