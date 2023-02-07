@@ -13,7 +13,8 @@ https://discord.gg/CsfUk9vpFq
 Playable Hexacast character (WIP) and party member (WIP). C'Tron is not modified.
 
 ## **How to Play:**
-Not yet integrated with XMC mods. To play as a Hexacast, you need to use char-select by ac2pic (https://github.com/CCDirectLink/char-select). This mod adds a character-cange button to the in-game quickmenu.
+Not yet integrated with XMC mods. To play as a Hexacast, you need to use char-select by ac2pic (https://github.com/CCDirectLink/char-select). This mod adds a character-change button to the in-game quickmenu.  
+![image](https://user-images.githubusercontent.com/105614278/217144844-913c52a7-c1ee-4849-aae8-d656718f1a07.png)
 
 ## **Playable Characters:** 
 ![Hexacast1](https://user-images.githubusercontent.com/105614278/217142911-c29e7c93-dbde-405c-baa3-3b2f33d7faba.gif)
@@ -21,7 +22,6 @@ Not yet integrated with XMC mods. To play as a Hexacast, you need to use char-se
 
 
 ## **Combat Arts:** 
-
 ![neutral](https://user-images.githubusercontent.com/105614278/168505340-e0a770c7-7a3b-4f6d-a173-bd1886e1e4cd.png)
 - Neutral Melee Lv.1a
 - Neutral Melee Lv.1b	**Hexing Blast**
