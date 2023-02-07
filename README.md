@@ -153,7 +153,7 @@ Versions older than v2.21.0 will give an error with this mod.
 
 # How to Update to a New Version
 1. Delete your old folder entirely for whatever mod you are updating.
-* You can't just override the old version because if a new version removes old files or renames certain files then overriding will mess it up.
+* You can't just override the old version because if a new version removes old files or renames certain files then overriding will mess it up.  
 ![image](https://user-images.githubusercontent.com/105614278/180620611-e05635f6-16c4-406f-9689-7bbbed2d4cd5.png)  
 
 2. Install the new version where the old one used to be. Save files will remain compatible unless the mod changelog states otherwise.  
