@@ -9436,7 +9436,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.wave",
-            "name": "healCardTrail"
+            "name": "healCardAura"
           },
           "offset": {
             "x": 0,
@@ -16697,7 +16697,7 @@
       },
       "GUARD_SPECIAL1_A": {
         "name": {
-          "en_US": "Overclock"
+          "en_US": "Overclock \\c[1](placeholder)\\c[0]"
         },
         "description": {
           "en_US": "Experience time at a faster rate for a brief period. Slightly reduces ATK, FOC stats while active."
@@ -16875,7 +16875,7 @@
       },
       "DASH_SPECIAL2_A": {
         "name": {
-          "en_US": "Magnet Deck"
+          "en_US": "Magnet Deck \\c[1](placeholder)\\c[0]"
         },
         "description": {
           "en_US": "A more powerful dash attack which leaves behind multiple, stronger magnet cards."

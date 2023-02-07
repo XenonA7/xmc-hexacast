@@ -3096,16 +3096,7 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
-    "healCardTrail": [
-      {
-        "color": "#40e3ca",
-        "maxAlpha": 0.5,
-        "minAlpha": 0,
-        "blinkDuration": 0.1,
-        "blinkCount": -1,
-        "noLighter": true,
-        "type": "BLINK_COLOR"
-      },
+    "healCardAura": [
       {
         "size": "L",
         "fadeIn": 0,
@@ -3115,10 +3106,10 @@
         "type": "LIGHT"
       },
       {
-        "volume": 0.45,
+        "volume": 0.25,
         "global": false,
         "loop": true,
-        "speed": 0.7,
+        "speed": 0.8,
         "sound": "media/sound/battle/wave-spin.ogg",
         "type": "PLAY_SOUND"
       },
@@ -3358,32 +3349,53 @@
     ],
     "healCardRegenFly": [
       {
+        "time": 0.4,
+        "type": "WAIT"
+      },
+      {
         "type": "LOOP_START"
       },
       {
-        "duration": 1,
-        "numParticles": 6,
+        "volume": 0.45,
+        "global": false,
+        "loop": false,
+        "variance": 0.1,
+        "speed": 1.4,
+        "sound": "media/sound/battle/wave-swell.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "color": "#55FF77",
+        "alpha": 1,
+        "duration": 0.5,
+        "keepDuration": 0,
+        "noLighter": false,
+        "type": "FLASH_COLOR"
+      },
+      {
+        "duration": 0.25,
+        "numParticles": 3,
         "flyType": "FLY_ARC",
         "inverse": true,
         "offRadiusZScale": 1,
         "rotateMoveDir": "AT_TARGET",
         "pScale": {
           "init": {
-            "x": 0.25,
-            "y": 0.25
+            "x": 0.45,
+            "y": 0.45
           },
           "start": {
             "value": {
-              "x": 0.5,
-              "y": 0.5
+              "x": 0.8,
+              "y": 0.8
             },
             "time": 0.2,
             "spline": "EASE_IN"
           },
           "end": {
             "value": {
-              "x": 0.25,
-              "y": 0.25
+              "x": 0.45,
+              "y": 0.45
             },
             "time": 0.2,
             "spline": "EASE_OUT"
