@@ -1,3 +1,10 @@
+## 0.1.1 (02/20/2023)
+### New Content
+- Ether Singularity reworked to support casting on party members
+### Changes
+- Added additional particle effect to Ether Singulartiy
+- Removed redundant trail effect from Ether Singularity
+
 ## 0.1.0 (02/16/2023)
 ### New Content
 - (Unfinished) New combat art: Magnet Deck (Shock Dash Lv.2 A)

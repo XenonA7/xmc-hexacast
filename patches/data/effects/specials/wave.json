@@ -1,5 +1,66 @@
 {
   "EFFECTS": {
+    "singularityAura": [
+      {
+        "volume": 0.5,
+        "global": false,
+        "loop": true,
+        "speed": 1,
+        "sound": "media/sound/battle/wave-swell-2.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 12,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 50,
+        "particleRotate": true,
+        "moveDist": 16,
+        "keySpline": "LINEAR",
+        "moveRotate": 0.05,
+        "inverse": true,
+        "collision": false,
+        "pScale": {
+          "init": {
+            "x": 0,
+            "y": 0
+          },
+          "start": {
+            "value": {
+              "x": 0.2,
+              "y": 0.4
+            },
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 4
+            },
+            "time": 0.4,
+            "spline": "EASE_OUT"
+          }
+        },
+        "pRotate": {
+          "init": -0.02
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.5,
+        "cancelable": true,
+        "anim": "CIRCLE_SMALL_WAVE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.25,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
+    ],
     "singularityAuraTrail": [
       {
         "type": "LOOP_START"
