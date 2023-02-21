@@ -1658,8 +1658,8 @@
           "fixPos": false,
           "type": "SHOW_EFFECT",
           "effect": {
-            "sheet": "enemies.arid",
-            "name": "shredHealOrbFly"
+            "sheet": "combat.hexa-buff-orbs",
+            "name": "waveOrbFly"
           },
           "offset": {
             "x": 0,
@@ -8871,15 +8871,19 @@
           "type": "PUSH_PULL_FORCE"
         },
         {
+          "time": 0.7,
+          "type": "WAIT"
+        },
+        {
           "zoomType": "LIGHT",
           "fadeIn": 0.1,
-          "duration": -1,
-          "fadeOut": 0.1,
+          "duration": 0.5,
+          "fadeOut": 0.75,
           "name": "blur",
           "type": "SET_ZOOM_BLUR"
         },
         {
-          "time": 0.8,
+          "time": 0.1,
           "type": "WAIT"
         },
         {
@@ -9381,16 +9385,20 @@
               "type": "PUSH_PULL_FORCE"
             },
             {
-              "time": 0.32,
+              "time": 0.22,
               "type": "WAIT"
             },
             {
               "zoomType": "LIGHT",
               "fadeIn": 0.1,
-              "duration": -1,
-              "fadeOut": 0.1,
+              "duration": 0.5,
+              "fadeOut": 0.75,
               "name": "blur",
               "type": "SET_ZOOM_BLUR"
+            },
+            {
+              "time": 0.1,
+              "type": "WAIT"
             },
             {
               "duration": -1,
@@ -9956,8 +9964,8 @@
           "fixPos": false,
           "type": "SHOW_EFFECT",
           "effect": {
-            "sheet": "enemies.arid",
-            "name": "shredHealOrbFly"
+            "sheet": "combat.hexa-buff-orbs",
+            "name": "healOrbFly"
           },
           "offset": {
             "x": 0,

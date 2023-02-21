@@ -1,3 +1,12 @@
+0.1.2 (02/20/2023)
+### New Content
+- Ether Singularity new buff orb sprite when thrown to party members
+- Added new effect sheet hexa-buff-orbs.json
+- Added new spritesheet buff-orbs.png
+### Changes
+- Wave Detonation (when recall is active) removed zoom blur from chargeup
+- Wave Detonation (mine version) zoom blur settings tweaked
+
 ## 0.1.1 (02/20/2023)
 ### New Content
 - Ether Singularity reworked to support casting on party members
