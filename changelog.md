@@ -1,3 +1,15 @@
+0.2.0 (03/18/2023)
+### General
+- Lychee joins the project by making pixel art
+### New Content
+- Added hexacast1-sweeps.png and hexacast2-sweeps.png
+- New dash animation
+- New sweep animations
+- Added "Animation Test" level 1 heat melee art
+### Changes
+- Overclock (placeholder art) now sets timescale to 0.25% for viewing animations
+- Removed particle effects from Overclock
+
 0.1.2 (02/20/2023)
 ### New Content
 - Ether Singularity new buff orb sprite when thrown to party members

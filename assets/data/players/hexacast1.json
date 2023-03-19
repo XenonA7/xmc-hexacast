@@ -1152,71 +1152,8 @@
       "breakType": "COMBATANT",
       "action": [
         {
-          "duration": 6,
-          "target": "PROXY_OWNER",
-          "align": "CENTER",
-          "rotateFace": 0,
-          "flipLeftFace": false,
-          "wait": false,
-          "waitSkip": 0,
-          "actionDetached": false,
-          "fixPos": false,
-          "type": "SHOW_EFFECT",
-          "effect": {
-            "sheet": "specials.shock",
-            "name": "interogationAura"
-          },
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          }
-        },
-        {
-          "duration": 6,
-          "target": "PROXY_OWNER",
-          "align": "CENTER",
-          "rotateFace": 0,
-          "flipLeftFace": false,
-          "wait": false,
-          "waitSkip": 0,
-          "actionDetached": false,
-          "fixPos": false,
-          "type": "SHOW_EFFECT",
-          "effect": {
-            "sheet": "specials.shock",
-            "name": "waldoChargeLite"
-          },
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          }
-        },
-        {
-          "duration": 6,
-          "target": "PROXY_OWNER",
-          "align": "CENTER",
-          "rotateFace": 0,
-          "flipLeftFace": false,
-          "wait": false,
-          "waitSkip": 0,
-          "actionDetached": false,
-          "fixPos": false,
-          "type": "SHOW_EFFECT",
-          "effect": {
-            "sheet": "specials.shock",
-            "name": "overclockAura"
-          },
-          "offset": {
-            "x": 0,
-            "y": 0,
-            "z": 0
-          }
-        },
-        {
           "target": "OWNER",
-          "timeScale": 1.5,
+          "timeScale": 0.25,
           "logicTimeScale": 1,
           "moveXYScale": 1,
           "type": "ADD_TEMP_INFLUENCE"
@@ -1230,7 +1167,7 @@
           ]
         },
         {
-          "time": 6,
+          "time": 4,
           "type": "WAIT"
         },
         {
@@ -11007,7 +10944,7 @@
             "wait": false,
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
-            "anim": "spinLong"
+            "anim": "dash"
           },
           {
             "value": false,
@@ -11090,7 +11027,7 @@
             "wait": false,
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
-            "anim": "spinLong"
+            "anim": "dash"
           },
           {
             "value": false,
@@ -13967,6 +13904,218 @@
           },
           {
             "time": 0.10,
+            "type": "WAIT"
+          }
+        ]
+      },
+      "ATTACK_SPECIAL1_A": {
+        "name": {
+          "en_US": "\\c[3]Animation Test\\c[0]"
+        },
+        "description": {
+          "en_US": "Testing the sweep animations."
+        },
+        "dmgType": "MELEE",
+        "stunType": "",
+        "status": false,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "offsetX": 0,
+            "offsetY": 0,
+            "speed": "FASTEST",
+            "transition": "EASE_IN_OUT",
+            "wait": false,
+            "waitSkip": 0,
+            "zoom": 1.5,
+            "focusType": "SELF",
+            "type": "FOCUS_CAMERA"
+          },
+          {
+            "value": false,
+            "type": "SET_JUMPING"
+          },
+          {
+            "value": 3,
+            "type": "SET_ACCEL_SPEED"
+          },
+          {
+            "value": 150,
+            "type": "SET_SPEED"
+          },
+          {
+            "value": "MASSIVE",
+            "type": "SET_HIT_STABLE"
+          },
+          {
+            "followUp": "sweepEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweep"
+          },
+          {
+            "align": "BOTTOM",
+            "radius": 72,
+            "yScale": 0,
+            "zHeight": 24,
+            "centralAngle": 0.6,
+            "startAngle": -0.3,
+            "duration": 0.2,
+            "expandRadius": 0,
+            "alwaysFull": false,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "rectangular": false,
+            "repeat": false,
+            "uniformHitDir": false,
+            "fixPos": false,
+            "checkCollision": true,
+            "type": "CIRCLE_ATTACK",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "HEAT",
+              "damageFactor": 2,
+              "reverse": true,
+              "fly": "MEDIUM",
+              "guardable": "",
+              "skillBonus": "MELEE_DMG",
+              "limiter": ""
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.heat",
+              "name": "ca-sweep"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 16
+            }
+          },
+          {
+            "time": 0.05,
+            "stopBeforeEdge": false,
+            "type": "MOVE_FORWARD"
+          },
+          {
+            "time": 0.4,
+            "type": "WAIT"
+          },
+          {
+            "type": "PLAYER_ADJUST_MOVE_DIR"
+          },
+          {
+            "followUp": "sweepRevEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweepRev"
+          },
+          {
+            "align": "BOTTOM",
+            "radius": 72,
+            "yScale": 0,
+            "zHeight": 24,
+            "centralAngle": 0.6,
+            "startAngle": -0.3,
+            "duration": 0.2,
+            "expandRadius": 0,
+            "alwaysFull": false,
+            "clockwise": true,
+            "flipLeftFace": 0,
+            "rectangular": false,
+            "repeat": false,
+            "uniformHitDir": false,
+            "fixPos": false,
+            "checkCollision": true,
+            "type": "CIRCLE_ATTACK",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "HEAT",
+              "damageFactor": 2,
+              "reverse": false,
+              "fly": "MASSIVE+",
+              "guardable": "",
+              "skillBonus": "MELEE_DMG",
+              "limiter": ""
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.heat",
+              "name": "ca-sweepRev"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 16
+            }
+          },
+          {
+            "time": 0.05,
+            "stopBeforeEdge": false,
+            "type": "MOVE_FORWARD"
+          },
+          {
+            "time": 0.2,
+            "type": "WAIT"
+          },
+          {
+            "speed": "SLOWER",
+            "transition": "EASE_IN_OUT",
+            "wait": false,
+            "waitSkip": 0,
+            "type": "RESET_CAMERA"
+          },
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": 0,
+              "move": 0,
+              "reaim": 0
+            }
+          },
+          {
+            "time": 0.4,
             "type": "WAIT"
           }
         ]
