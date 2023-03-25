@@ -11061,7 +11061,7 @@
             "wait": false,
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
-            "anim": "aim"
+            "anim": "guard"
           },
           {
             "perfectGuard": false,
@@ -11076,7 +11076,7 @@
       "PERFECT_GUARD": [
         {
           "type": "SHOW_ANIMATION",
-          "anim": "aim"
+          "anim": "guard"
         },
         {
           "type": "SHOW_EFFECT",
@@ -12548,7 +12548,7 @@
           }
         ]
       },
-      "ATTACK_SPECIAL1_B": {
+      "ATTACK_SPECIAL1_A": {
         "name": {
           "en_US": "Hexing Blast"
         },
@@ -12708,6 +12708,181 @@
           },
           {
             "time": 0.2,
+            "type": "WAIT"
+          }
+        ]
+      },
+      "ATTACK_SPECIAL2_B": {
+        "name": {
+          "en_US": "Curse of Vanishing"
+        },
+        "description": {
+          "en_US": "Hit a single enemy to lower their defense by \\c[1]-20%\\c[0]. It will gradually recover over time."
+        },
+        "dmgType": "MELEE",
+        "stunType": "",
+        "status": true,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "charge": -1,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "followUp": "sweepRevEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweepRev"
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": true,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.hexacastXMC",
+              "name": "vanishingSweep"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "value": false,
+            "type": "SET_JUMPING"
+          },
+          {
+            "value": 400,
+            "type": "SET_SPEED"
+          },
+          {
+            "value": 3,
+            "type": "SET_ACCEL_SPEED"
+          },
+          {
+            "value": "IGNORE",
+            "type": "SET_COLL_TYPE"
+          },
+          {
+            "posType": "TARGET",
+            "align": "BOTTOM",
+            "type": "SET_HIT_PROXY",
+            "proxy": "throttleProxy",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "time": 0.15,
+            "cancelOnHit": true,
+            "withBranches": true,
+            "orthoDirFactor": 0,
+            "ignoreLastHit": false,
+            "collideSlip": false,
+            "type": "TACKLE",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "NEUTRAL",
+              "damageFactor": 1,
+              "fly": "MASSIVE+",
+              "reverse": true,
+              "stunSteps": [],
+              "status": 0,
+              "guardable": "",
+              "skillBonus": "MELEE_DMG"
+            },
+            "hit": [
+              {
+                "kind": "FIRST_HIT",
+                "type": "SET_TEMP_TARGET"
+              },
+              {
+                "type": "CLEAR_HIT_PROXY"
+              },
+              {
+                "value": 180,
+                "type": "SET_SPEED"
+              },
+              {
+                "time": 0.1,
+                "stopBeforeEdge": true,
+                "type": "MOVE_FORWARD"
+              },
+              {
+                "time": 0.1,
+                "type": "WAIT"
+              },
+              {
+                "duration": 0.7,
+                "target": "TARGET",
+                "align": "CENTER",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "target2": "SELF",
+                "target2Offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 480
+                },
+                "fixPos": true,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.shock",
+                  "name": "meleeBold"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "time": 0.2,
+                "type": "WAIT"
+              }
+            ],
+            "missed": []
+          },
+          {
+            "time": 0.6,
+            "type": "WAIT"
+          },
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": 0,
+              "move": 0,
+              "reaim": 0
+            }
+          },
+          {
+            "followUp": "idle",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preIdle"
+          },
+          {
+            "time": 0.05,
             "type": "WAIT"
           }
         ]

@@ -1,6 +1,20 @@
+0.2.1 (03/25/2023)
+### New Content
+- Implemented tweaked Lychee chest animation
+- Implemented tweaked Lychee push/pull animation
+- Added WIP Lychee eating animation
+- Added Lea placeholder guard animation
+- Added Lea placeholder brake animation
+- Added Lea placeholder preIdle animation
+
+### Changes
+- Hexing Blast changed from ATTACK_SPECIAL1_A to ATTACK_SPECIAL1_B
+- Reduced main hexacast1.png spritesheet size
+- Re-arranged hexacast1.png spritesheet
+
 0.2.0 (03/18/2023)
 ### General
-- Lychee joins the project by making pixel art
+- Lychee joins the project (pixel art)
 ### New Content
 - Added hexacast1-sweeps.png and hexacast2-sweeps.png
 - New dash animation

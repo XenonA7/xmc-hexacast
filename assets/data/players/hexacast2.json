@@ -11061,7 +11061,7 @@
             "wait": false,
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
-            "anim": "aim"
+            "anim": "guard"
           },
           {
             "perfectGuard": false,
@@ -11076,7 +11076,7 @@
       "PERFECT_GUARD": [
         {
           "type": "SHOW_ANIMATION",
-          "anim": "aim"
+          "anim": "guard"
         },
         {
           "type": "SHOW_EFFECT",

@@ -92,7 +92,15 @@
     "crateChest": {
       "src": "media/entity/npc/hexacast2.png",
       "xCount": 11,
-      "offX": 96,
+      "offX": 0,
+      "offY": 800,
+      "width": 32,
+      "height": 40
+    },
+    "additional": {
+      "src": "media/entity/npc/hexacast2.png",
+      "xCount": 15,
+      "offX": 0,
       "offY": 600,
       "width": 32,
       "height": 40
@@ -150,14 +158,6 @@
             {
               "name": "idle",
               "time": 1,
-              "repeat": false,
-              "frames": [
-                1
-              ]
-            },
-            {
-              "name": "preIdle",
-              "time": 0.1,
               "repeat": false,
               "frames": [
                 1
@@ -1464,6 +1464,154 @@
           "repeat": false,
           "frames": [
             10
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "crateChest",
+      "dirs": "4",
+      "flipX": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "tileOffsets": [
+        0,
+        11,
+        22,
+        11
+      ],
+      "SUB": [
+        {
+          "name": "gripStand",
+          "time": 0.05,
+          "repeat": false,
+          "frames": [
+            0
+          ]
+        },
+        {
+          "name": "gripPush",
+          "time": 0.15,
+          "repeat": true,
+          "frames": [
+            1,
+            2,
+            3,
+            2
+          ]
+        },
+        {
+          "name": "gripPull",
+          "time": 0.15,
+          "repeat": true,
+          "frames": [
+            4,
+            5,
+            6,
+            5
+          ]
+        },
+        {
+          "name": "chestOpen",
+          "time": 0.08,
+          "repeat": false,
+          "frames": [
+            7,
+            7,
+            8,
+            9
+          ]
+        },
+        {
+          "name": "landOnGround",
+          "time": 0.07,
+          "repeat": false,
+          "frames": [
+            10
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "additional",
+      "dirs": "8",
+      "flipX": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "SUB": [
+        {
+          "tileOffsets": [
+            0,
+            15,
+            30,
+            45,
+            60,
+            45,
+            30,
+            15
+          ],
+          "SUB": [
+            {
+              "name": "guard",
+              "time": 0.1,
+              "repeat": true,
+              "frames": [
+                0,
+                1,
+                2
+              ]
+            },
+            {
+              "name": "hover",
+              "time": 0.2,
+              "repeat": true,
+              "frames": [
+                3,
+                4,
+                5,
+                4
+              ]
+            },
+            {
+              "name": "brake",
+              "time": 0.07,
+              "repeat": false,
+              "frames": [
+                6,
+                7
+              ]
+            },
+            {
+              "name": "preIdle",
+              "time": 0.07,
+              "repeat": false,
+              "frames": [
+                8
+              ]
+            },
+            {
+              "name": "runGrumpy",
+              "time": 0.0666,
+              "repeat": true,
+              "frames": [
+                9,
+                10,
+                11,
+                12,
+                13,
+                14
+              ]
+            }
           ]
         }
       ]
