@@ -12602,7 +12602,7 @@
             "fixPos": false,
             "type": "SHOW_EFFECT",
             "effect": {
-              "sheet": "combat.hexacastXMC",
+              "sheet": "specials.neutral",
               "name": "godThrowNeutral"
             },
             "offset": {
@@ -12658,7 +12658,7 @@
             "fixPos": false,
             "type": "SHOW_EFFECT",
             "effect": {
-              "sheet": "combat.hexacastXMC",
+              "sheet": "specials.neutral",
               "name": "godThrowNeutralRev"
             },
             "offset": {

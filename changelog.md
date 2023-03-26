@@ -1,3 +1,9 @@
+0.3.1 (03/26/2023)
+### New Content
+- Dash animation finalized, heavily edited from Lychee
+### Changes
+- Moved effect godThrowNeutral and godThrowNeutralRev from hexacastXMC.json to neutral.json
+
 0.3.0 (03/26/2023)
 ### New Content
 - New combat art: Mundane Volley (Neutral Throw Lv.1B)
