@@ -1,3 +1,17 @@
+0.3.0 (03/26/2023)
+### New Content
+- New combat art: Mundane Volley (Neutral Throw Lv.1B)
+- New combat art: Curse of Vanishing (Neutral Melee Lv.2B)
+- Added GOD_HEXAGON effects to hexa-misc.png (96x96)
+- Added custom-action-buffs.js
+### Changes
+- Removed all instances of the "preIdle" animation from the player actions
+- Updated description for Magic Missile
+- Standard melee now lunges with an acceleration factor of 0.2 (momentum prior to attacking has a bigger effect)
+### Balance
+- Removed 0.07s delay at the start of standard melee attacks
+- Pending balance decision: Mundane Volley (Hexacast1 vs Hexacast2)
+
 0.2.1 (03/25/2023)
 ### New Content
 - Implemented tweaked Lychee chest animation
@@ -6,7 +20,7 @@
 - Added Lea placeholder guard animation
 - Added Lea placeholder brake animation
 - Added Lea placeholder preIdle animation
-
+- Started work on Curse of Vanishing
 ### Changes
 - Hexing Blast changed from ATTACK_SPECIAL1_A to ATTACK_SPECIAL1_B
 - Reduced main hexacast1.png spritesheet size

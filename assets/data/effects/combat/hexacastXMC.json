@@ -436,6 +436,106 @@
         "frames": [
           0
         ]
+      },
+      {
+        "name": "GOD_HEXAGON_NEUTRAL",
+        "pivot": {
+          "x": 48,
+          "y": 48
+        },
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          0
+        ]
+      },
+      {
+        "name": "GOD_HEXAGON_HEAT",
+        "pivot": {
+          "x": 48,
+          "y": 48
+        },
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          1
+        ]
+      },
+      {
+        "name": "GOD_HEXAGON_COLD",
+        "pivot": {
+          "x": 48,
+          "y": 48
+        },
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          2
+        ]
+      },
+      {
+        "name": "GOD_HEXAGON_SHOCK",
+        "pivot": {
+          "x": 48,
+          "y": 48
+        },
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          3
+        ]
+      },
+      {
+        "name": "GOD_HEXAGON_WAVE",
+        "pivot": {
+          "x": 48,
+          "y": 48
+        },
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 96,
+          "height": 96
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.4,
+        "frames": [
+          4
+        ]
       }
     ]
   },
@@ -6183,6 +6283,11 @@
     ],
     "vanishingSweep": [
       {
+        "alpha": 1,
+        "duration": 0,
+        "type": "CHANGE_ALPHA"
+      },
+      {
         "size": "XL",
         "fadeIn": 0,
         "fadeOut": 0.2,
@@ -6191,7 +6296,7 @@
         "type": "LIGHT"
       },
       {
-        "alpha": 0.3,
+        "alpha": 0.2,
         "duration": 0.05,
         "type": "CHANGE_ALPHA"
       },
@@ -6291,6 +6396,108 @@
       {
         "time": 0.4,
         "type": "WAIT"
+      }
+    ],
+    "godThrowNeutral": [
+      {
+        "volume": 0.4,
+        "global": false,
+        "loop": false,
+        "variance": 0.1,
+        "speed": 1.4,
+        "sound": "media/sound/boss/gods/wave-throw.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 1.1,
+        "global": false,
+        "loop": false,
+        "variance": 0.1,
+        "speed": 1.0,
+        "sound": "media/sound/boss/gynthar/cards-unfold.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "numParticles": 7,
+        "duration": 0.2,
+        "clockwise": false,
+        "centralAngle": 0.3,
+        "startDist": 24,
+        "useTargetAngle": true,
+        "moveDist": 16,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1
+        },
+        "pScale": {
+          "init": {
+            "x": 0.3,
+            "y": 0.3
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "GOD_HEXAGON_NEUTRAL",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "godThrowNeutralRev": [
+      {
+        "volume": 0.4,
+        "global": false,
+        "loop": false,
+        "variance": 0.1,
+        "speed": 1.2,
+        "sound": "media/sound/boss/gods/wave-throw.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 1.1,
+        "global": false,
+        "loop": false,
+        "variance": 0.1,
+        "speed": 1.0,
+        "sound": "media/sound/boss/gynthar/cards-unfold.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "numParticles": 7,
+        "duration": 0.2,
+        "clockwise": true,
+        "centralAngle": 0.3,
+        "startDist": 24,
+        "useTargetAngle": true,
+        "moveDist": 16,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1
+        },
+        "pScale": {
+          "init": {
+            "x": 0.3,
+            "y": 0.3
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "GOD_HEXAGON_NEUTRAL",
+        "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ]
   }

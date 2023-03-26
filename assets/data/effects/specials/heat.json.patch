@@ -119,5 +119,29 @@
         6
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "GOD_HEXAGON_HEAT",
+      "pivot": {
+        "x": 48,
+        "y": 48
+      },
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        1
+      ]
+    }
   }
 ]

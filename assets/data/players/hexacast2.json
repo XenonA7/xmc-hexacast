@@ -10885,6 +10885,170 @@
         "maxVel": 4000,
         "zGravityFactor": 0
       }
+    },
+    "mundaneCard": {
+      "effects": "ball",
+      "effectKeys": {
+        "trail": "mundaneCardTrail",
+        "wall": "neutralCardWallDeath",
+        "air": "neutralCardAirDeath"
+      },
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 1.4,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": true,
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/effects/hexa-cards.png",
+          "offX": 0,
+          "offY": 0,
+          "width": 24,
+          "height": 32
+        },
+        "guiSprites": false,
+        "renderMode": "source-over",
+        "time": 0.4,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "visualType": "MEDIUM",
+        "element": "NEUTRAL",
+        "damageFactor": 0.6,
+        "reverse": false,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "hints": []
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0,
+          "fadeOut": 0.8,
+          "pause": 5,
+          "fadeIn": 0,
+          "startWait": 0.6,
+          "fadeOutVary": 0
+        }
+      ]
+    },
+    "mundaneCardDeathFX": {
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "duration": 0,
+          "align": "FACE",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "ball",
+            "name": "neutralCardDeathFar"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.1,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "TARGET",
+      "group": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "config": {},
+      "type": "GENERIC"
+    },
+    "vanishingCurseProxy": {
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "entity": "TARGET",
+          "group": "vanishingFX",
+          "type": "CLEAR_EFFECTS"
+        },
+        {
+          "duration": 0,
+          "target": "TARGET",
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "group": "vanishingFX",
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.neutral",
+            "name": "vanishingCurseEffect"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "target": "TARGET",
+          "type": "ADD_ACTION_BUFF",
+          "stats": [
+            "ATTACK-MINUS-VANISHING"
+          ]
+        },
+        {
+          "time": 0.2,
+          "type": "WAIT"
+        },
+        {
+          "time": 0.6,
+          "type": "WAIT"
+        },
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "time": 6,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "TARGET",
+      "group": "vanishingCurseGroup",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "config": {},
+      "type": "GENERIC"
     }
   },
   "actions": {
@@ -11534,12 +11698,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -11565,6 +11723,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -11790,12 +11952,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -11821,6 +11977,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -12046,12 +12206,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -12077,6 +12231,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -12295,7 +12453,7 @@
           "en_US": "Magic Missile"
         },
         "description": {
-          "en_US": "Shoot a single enemy to hex them with a lingering explosion."
+          "en_US": "Shoot a single enemy to hex them with a lingering explosion. Nearby enemies take collateral damage."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -12391,6 +12549,147 @@
           },
           {
             "time": 0.2,
+            "type": "WAIT"
+          }
+        ]
+      },
+      "THROW_SPECIAL1_B": {
+        "name": {
+          "en_US": "Mundane Volley"
+        },
+        "description": {
+          "en_US": "Throw two volleys of unenchanted spellcards."
+        },
+        "dmgType": "RANGED",
+        "stunType": "",
+        "status": false,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "posType": "TARGET",
+            "align": "CENTER",
+            "type": "SET_HIT_PROXY",
+            "proxy": "mundaneCardDeathFX",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "followUp": "sweepEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweep"
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.hexacastXMC",
+              "name": "godThrowNeutral"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "align": "BOTTOM",
+            "centralAngle": 0.04,
+            "angleVary": 0.02,
+            "startDist": 20,
+            "startDistCollide": "CLOSER",
+            "random": false,
+            "count": 3,
+            "duration": 0.15,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "circularArea": false,
+            "uniformDir": 0,
+            "delay": 0,
+            "repeat": false,
+            "type": "SHOOT_PROXY_RANGE",
+            "proxy": "mundaneCard",
+            "offset": {
+              "z": 12
+            }
+          },
+          {
+            "time": 0.3,
+            "type": "WAIT"
+          },
+          {
+            "time": 0,
+            "type": "PLAYER_ADJUST_FACE"
+          },
+          {
+            "followUp": "sweepRevEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweepRev"
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.hexacastXMC",
+              "name": "godThrowNeutralRev"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "align": "BOTTOM",
+            "centralAngle": 0.05,
+            "angleVary": 0.04,
+            "startDist": 20,
+            "startDistCollide": "CLOSER",
+            "random": false,
+            "count": 5,
+            "duration": 0.15,
+            "clockwise": true,
+            "flipLeftFace": 0,
+            "circularArea": false,
+            "uniformDir": 0,
+            "delay": 0,
+            "repeat": false,
+            "type": "SHOOT_PROXY_RANGE",
+            "proxy": "mundaneCard",
+            "offset": {
+              "z": 12
+            }
+          },
+          {
+            "time": 0.72,
             "type": "WAIT"
           }
         ]
@@ -12548,7 +12847,7 @@
           }
         ]
       },
-      "ATTACK_SPECIAL1_B": {
+      "ATTACK_SPECIAL1_A": {
         "name": {
           "en_US": "Hexing Blast"
         },
@@ -12705,6 +13004,193 @@
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
             "anim": "postShootSlow"
+          },
+          {
+            "time": 0.2,
+            "type": "WAIT"
+          }
+        ]
+      },
+      "ATTACK_SPECIAL2_B": {
+        "name": {
+          "en_US": "Curse of Vanishing"
+        },
+        "description": {
+          "en_US": "Hit a single enemy to deal moderate damage and severely lower their attack stat by \\c[1]-50%\\c[0]. It will recover after a short time."
+        },
+        "dmgType": "MELEE",
+        "stunType": "",
+        "status": true,
+        "steps": [
+          
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "charge": -1,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "followUp": "sweepRevEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweepRev"
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": true,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "combat.hexacastXMC",
+              "name": "vanishingSweep"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "value": false,
+            "type": "SET_JUMPING"
+          },
+          {
+            "value": 400,
+            "type": "SET_SPEED"
+          },
+          {
+            "value": 3,
+            "type": "SET_ACCEL_SPEED"
+          },
+          {
+            "value": "IGNORE",
+            "type": "SET_COLL_TYPE"
+          },
+          {
+            "posType": "TARGET",
+            "align": "BOTTOM",
+            "type": "SET_HIT_PROXY",
+            "proxy": "vanishingCurseProxy",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "time": 0.15,
+            "cancelOnHit": true,
+            "withBranches": true,
+            "orthoDirFactor": 0,
+            "ignoreLastHit": false,
+            "collideSlip": false,
+            "type": "TACKLE",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "NEUTRAL",
+              "damageFactor": 7,
+              "fly": "HEAVY",
+              "reverse": true,
+              "stunSteps": [
+                {
+                  "type": "START_LOCK"
+                },
+                {
+                  "accel": 1,
+                  "offZ": 16,
+                  "maxTime": 0,
+                  "type": "Z_PULL"
+                }
+              ],
+              "status": 0,
+              "guardable": "",
+              "skillBonus": "MELEE_DMG"
+            },
+            "hit": [
+              {
+                "kind": "FIRST_HIT",
+                "type": "SET_TEMP_TARGET"
+              },
+              {
+                "type": "CLEAR_HIT_PROXY"
+              },
+              {
+                "value": 180,
+                "type": "SET_SPEED"
+              },
+              {
+                "time": 0.1,
+                "stopBeforeEdge": true,
+                "type": "MOVE_FORWARD"
+              },
+              {
+                "time": 0.1,
+                "type": "WAIT"
+              },
+              {
+                "time": 0.6,
+                "type": "WAIT"
+              },
+              {
+                "selectType": "TARGET",
+                "hitDir": "AWAY",
+                "align": "BOTTOM",
+                "hitCount": 1,
+                "hitDelay": 0,
+                "type": "DIRECT_HIT",
+                "attack": {
+                  "type": "LIGHT",
+                  "element": "NEUTRAL",
+                  "damageFactor": 1,
+                  "reverse": false,
+                  "status": 0,
+                  "guardable": "",
+                  "skillBonus": "MELEE_DMG",
+                  "limiter": "NO_DAMAGE",
+                  "stunSteps": [
+                    {
+                      "type": "END_LOCK"
+                    }
+                  ]
+                }
+              },
+              {
+                "name": "end",
+                "type": "GOTO_LABEL"
+              }
+            ],
+            "missed": []
+          },
+          {
+            "time": 0.6,
+            "type": "WAIT"
+          },
+          {
+            "name": "end",
+            "type": "LABEL"
+          },
+          {
+            "value": "VIRTUAL",
+            "type": "SET_COLL_TYPE"
+          },
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": 0,
+              "move": 0,
+              "reaim": 0
+            }
           },
           {
             "time": 0.2,
@@ -13152,12 +13638,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -13183,6 +13663,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -13408,12 +13892,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -13439,6 +13917,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -13664,12 +14146,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -13695,6 +14171,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -14891,12 +15371,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -14922,6 +15396,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -15147,12 +15625,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -15178,6 +15650,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -15403,12 +15879,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -15434,6 +15904,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -16860,12 +17334,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -16891,6 +17359,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -17116,12 +17588,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -17147,6 +17613,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -17372,12 +17842,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -17403,6 +17867,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -18745,12 +19213,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -18776,6 +19238,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -19001,12 +19467,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -19032,6 +19492,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,
@@ -19257,12 +19721,6 @@
             }
           },
           {
-            "wait": true,
-            "viaWalkConfig": false,
-            "type": "SHOW_ANIMATION",
-            "anim": "preIdle"
-          },
-          {
             "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
@@ -19288,6 +19746,10 @@
               "y": 0,
               "z": 0
             }
+          },
+          {
+            "value": 0.2,
+            "type": "SET_ACCEL_SPEED"
           },
           {
             "value": 350,

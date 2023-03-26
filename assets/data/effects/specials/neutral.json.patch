@@ -5,65 +5,68 @@
   },
   {
     "type": "ENTER",
-    "index": ["ANIMS", "SUB"]
+    "index": [
+      "ANIMS",
+      "SUB"
+    ]
   },
   {
-  	"type": "ADD_ARRAY_ELEMENT",
-  	"index": 0,
-  	"content": {
-  		"name": "NEUTRAL_BIG_HEXAGON",
-        "sheet": {
-          "src": "media/entity/effects/lighter-particle-big-hexagon.png",
-          "offX": 0,
-          "offY": 0,
-          "width": 96,
-          "height": 96
-        },
-        "renderMode": "lighter",
-        "time": 0.4,
-        "frames": [
-          0
-        ]
-  	}
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "NEUTRAL_BIG_HEXAGON",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
   },
   {
-  	"type": "ADD_ARRAY_ELEMENT",
-  	"index": 0,
-  	"content": {
-  		"name": "NEUTRAL_BIG_HEXAGON_GUI",
-        "sheet": {
-          "src": "media/entity/effects/lighter-particle-big-hexagon.png",
-          "offX": 0,
-          "offY": 0,
-          "width": 96,
-          "height": 96
-        },
-        "guiSprites": true,
-        "renderMode": "lighter",
-        "time": 0.4,
-        "frames": [
-          0
-        ]
-  	}
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "NEUTRAL_BIG_HEXAGON_GUI",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
   },
   {
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
       "name": "HEXA_CARD_NEUTRAL",
-        "sheet": {
-          "src": "media/entity/effects/hexa-cards.png",
-          "offX": 0,
-          "offY": 0,
-          "width": 24,
-          "height": 32
-        },
-        "guiSprites": false,
-        "renderMode": "source-over",
-        "time": 0.4,
-        "frames": [
-          0
-        ]
+      "sheet": {
+        "src": "media/entity/effects/hexa-cards.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 24,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "source-over",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
     }
   },
   {
@@ -89,6 +92,50 @@
         2,
         3,
         4
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "GOD_HEXAGON_NEUTRAL",
+      "pivot": {
+        "x": 48,
+        "y": 48
+      },
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CIRCLE_SMALL_NEUTRAL",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle.png",
+        "offX": 144,
+        "offY": 0,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
       ]
     }
   }
