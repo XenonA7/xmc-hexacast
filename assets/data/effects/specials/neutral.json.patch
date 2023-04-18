@@ -138,5 +138,194 @@
         0
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DEFAULT_SWEEP",
+      "sheet": {
+        "src": "media/entity/effects/sweep.png",
+        "width": 64,
+        "height": 48
+      },
+      "pivot": {
+        "x": 32,
+        "y": 34
+      },
+      "time": 0.03,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DEFAULT_SWEEP_REV",
+      "sheet": {
+        "src": "media/entity/effects/sweep.png",
+        "width": 64,
+        "height": 48
+      },
+      "pivot": {
+        "x": 32,
+        "y": 34
+      },
+      "flipX": 1,
+      "time": 0.03,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "TRIFORCE_NEUTRAL_GUI",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 0,
+        "offY": 177,
+        "width": 64,
+        "height": 54
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 1,
+      "flipX": false,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "GLOW_HEXAGON",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "width": 14,
+        "height": 14,
+        "offX": 112,
+        "offY": 96,
+        "xCount": null
+      },
+      "time": 0.5,
+      "repeat": false,
+      "guiSprites": false,
+      "frames": [
+        0
+      ],
+      "renderMode": "lighter"
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "GLOW_HEXAGON_GUI",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "width": 14,
+        "height": 14,
+        "offX": 112,
+        "offY": 96,
+        "xCount": null
+      },
+      "time": 0.5,
+      "repeat": false,
+      "guiSprites": true,
+      "frames": [
+        0
+      ],
+      "renderMode": "lighter"
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DARK_BALL",
+      "shapeType": "Z_FLAT",
+      "sheet": {
+        "src": "media/entity/effects/designer-magic.png",
+        "offX": 192,
+        "offY": 64,
+        "width": 64,
+        "height": 64
+      },
+      "guiSprites": false,
+      "renderMode": "source-over",
+      "wallY": 1,
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DARK_BALL_GUI",
+      "shapeType": "Z_FLAT",
+      "sheet": {
+        "src": "media/entity/effects/designer-magic.png",
+        "offX": 192,
+        "offY": 64,
+        "width": 64,
+        "height": 64
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "wallY": 1,
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DARK_PUFF",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "width": 8,
+        "height": 8,
+        "offY": 112,
+        "offX": 96
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.05,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    }
   }
 ]

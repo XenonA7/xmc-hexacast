@@ -1,3 +1,37 @@
+0.4.0 (04/17/2023)
+### New Content
+- New combat art: Withering Slash (Neutral Melee Lv.1B)
+- New combat art: Arcane Volley (Neutral Throw Lv.2B)
+- Finalized combat art: Magnet Deck (Shock Dash Lv.2A)
+- New "brake" and "preIdle" animations (transiton when you stop running)
+- Finalized eating animation from Lychee (slight edits)
+- New "guard" animation from Lychee (slight edits)
+### Changes
+- Magnet Card now uses unfinished "runGrumpy" animation
+- Reduced lunge speed on standard melee attack from 350 to 200
+- Made sprite edits to many frames of the dash animation
+- Made sprite edits to E, NE sweep/sweepRev animation
+- Freeze Rays startup animation changed from spin to dash
+- Cards from Mundane Volley linger on the ground for a shorter duration before fading
+- Player can no longer be pushed around during Static Discharge
+- Player can no longer be pushed around during Static Field
+- Animation "itemEffect" increased time between frames
+- Animation "guard" increased time between frames
+- Curse of Vanishing now has slight darkness effect
+- Curse of Vanishing added screen rumble on hit
+- Curse of Vanishing added dust particle effect
+- Proxy fireBallBig renamed to fireballBig
+- Added dust effect to Magnet Card and Magnet Deck
+### Fixes
+- Fixed minor aniamtion bug at the end of Fire Hand
+- Fixed frame data for animation "itemEffect"
+- Fixed frame data for "hover" placeholder animation
+- Corrected Curse of Vanishing stunType category
+### Balance
+- Curse of Vanishing now grants invincibility during the lunge (description updated to reflect this)
+- Hail Spears damage greatly increased
+- Wave Detionation (proximity mine version) damage reduced
+
 0.3.1 (03/26/2023)
 ### New Content
 - Dash animation finalized, heavily edited from Lychee

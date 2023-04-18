@@ -29,14 +29,14 @@ Note that the mod author did not publish any actual releases, you need to downlo
 
 ## **Combat Arts:** 
 ![neutral](https://user-images.githubusercontent.com/105614278/168505340-e0a770c7-7a3b-4f6d-a173-bd1886e1e4cd.png)
-- Neutral Melee Lv.1a
-- Neutral Melee Lv.1b	**Hexing Blast**
+- Neutral Melee Lv.1a	**Hexing Blast**
+- Neutral Melee Lv.1b	**Withering Slash**
 - Neutral Melee Lv.2a
 - Neutral Melee Lv.2b	**Curse of Vanishing**
 - Neutral Throw Lv.1a	**Magic Missile**
 - Neutral Throw Lv.1b	**Mundane Volley**
 - Neutral Throw Lv.2a
-- Neutral Throw Lv.2b
+- Neutral Throw Lv.2b	**Arcane Volley**
 - Neutral Dash Lv.1a
 - Neutral Dash Lv.1b
 - Neutral Dash Lv.2a
@@ -77,7 +77,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Cold Melee Lv.3b
 - Cold Throw Lv.1a	**Hail Line**
 - Cold Throw Lv.1b
-- Cold Throw Lv.2a
+- Cold Throw Lv.2a	**Hail Spears**
 - Cold Throw Lv.2b
 - Cold Throw Lv.3
 - Cold Dash Lv.1
@@ -104,7 +104,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Shock Throw Lv.3b
 - Shock Dash Lv.1a	**Magnet Card**
 - Shock Dash Lv.1b
-- Shock Dash Lv.2a
+- Shock Dash Lv.2a	**Magnet Deck**
 - Shock Dash Lv.2b
 - Shock Dash Lv.3a
 - Shock Dash Lv.3b
