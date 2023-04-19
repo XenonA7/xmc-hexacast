@@ -1,3 +1,18 @@
+0.4.1 (04/18/2023)
+### Changes
+- Lowered refresh rate for particle trail to improve Arcane Volley performance
+   - arcaneCardTrail
+   - arcaneCardTrailLite
+   - arcaneCardTrailLiteSilent
+- Improved alignment of sparkle effect on arcaneCardSeeker proxy
+### Fixes
+- Fixed a particle effect glitch if player gets interrupted during Arcane Volley
+- Added "cancelable": true to effect "magnetAttractHexagonsSmall" steps
+- Added "cancelable": true to effect "magnetCard2Lightning" steps
+- Added "cancelable": true to effect "magnetCard2Trail" steps that contain SHOCK_BALL_DOT2
+### Balance
+ - Nerfed contact damage of Magnet Deck cards when returning to player
+
 0.4.0 (04/17/2023)
 ### New Content
 - New combat art: Withering Slash (Neutral Melee Lv.1B)

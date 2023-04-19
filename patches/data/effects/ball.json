@@ -684,474 +684,8 @@
         "anim": "RHOMBUS_DOT",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "numParticles": 1,
-        "duration": 0,
-        "centralAngle": 1,
-        "startDist": 4,
-        "random": true,
-        "moveDist": 4,
-        "moveVariance": 8,
-        "keySpline": "EASE_OUT",
-        "inverse": false,
-        "collision": false,
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "end": {
-            "value": {
-              "x": 0.5,
-              "y": 0.5
-            },
-            "time": 0.2,
-            "spline": ""
-          }
-        },
-        "pAlpha": {
-          "init": 1,
-          "start": {
-            "value": 0.2,
-            "spline": ""
-          }
-        },
-        "particleDuration": 0.25,
-        "anim": "RHOMBUS_DOT",
-        "type": "OFFSET_PARTICLE_CIRCLE"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
-        "type": "WAIT"
-      },
+
+
 
       {
         "color": "white",
@@ -1186,81 +720,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-
-
-      {
-        "numParticles": 1,
-        "duration": 0,
-        "centralAngle": 1,
-        "startDist": 4,
-        "random": true,
-        "moveDist": 4,
-        "moveVariance": 8,
-        "keySpline": "EASE_OUT",
-        "inverse": false,
-        "collision": false,
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "end": {
-            "value": {
-              "x": 0.5,
-              "y": 0.5
-            },
-            "time": 0.2,
-            "spline": ""
-          }
-        },
-        "pAlpha": {
-          "init": 1,
-          "start": {
-            "value": 0.2,
-            "spline": ""
-          }
-        },
-        "particleDuration": 0.25,
-        "anim": "RHOMBUS_DOT",
-        "type": "OFFSET_PARTICLE_CIRCLE"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1296,7 +756,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1332,7 +792,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1368,7 +828,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1404,7 +864,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1440,79 +900,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
-        "type": "WAIT"
-      },
-      {
-        "numParticles": 1,
-        "duration": 0,
-        "centralAngle": 1,
-        "startDist": 4,
-        "random": true,
-        "moveDist": 4,
-        "moveVariance": 8,
-        "keySpline": "EASE_OUT",
-        "inverse": false,
-        "collision": false,
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "end": {
-            "value": {
-              "x": 0.5,
-              "y": 0.5
-            },
-            "time": 0.2,
-            "spline": ""
-          }
-        },
-        "pAlpha": {
-          "init": 1,
-          "start": {
-            "value": 0.2,
-            "spline": ""
-          }
-        },
-        "particleDuration": 0.25,
-        "anim": "RHOMBUS_DOT",
-        "type": "OFFSET_PARTICLE_CIRCLE"
-      },
-      {
-        "color": "white",
-        "colorAlpha": "#d9d9d9",
-        "noLighter": false,
-        "pAlpha": {
-          "init": 0.2,
-          "start": {
-            "value": 0,
-            "spline": ""
-          }
-        },
-        "pScale": {
-          "init": {
-            "x": 1,
-            "y": 1
-          },
-          "start": {
-            "value": {
-              "x": 0.7,
-              "y": 0.7
-            },
-            "spline": ""
-          }
-        },
-        "offset": {
-          "x": 0,
-          "y": -3,
-          "z": -3
-        },
-        "particleDuration": 0.15,
-        "type": "COPY_SPRITE"
-      },
-      {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1548,7 +936,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1584,7 +972,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1620,7 +1008,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1656,7 +1044,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1692,10 +1080,9 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
-
       {
         "color": "white",
         "colorAlpha": "#d9d9d9",
@@ -1729,7 +1116,187 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#d9d9d9",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.2,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#d9d9d9",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.2,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#d9d9d9",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.2,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#d9d9d9",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.2,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#d9d9d9",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.2,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
         "type": "WAIT"
       },
 
@@ -1842,7 +1409,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1878,7 +1445,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1914,7 +1481,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -1950,7 +1517,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -2053,7 +1620,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -2089,7 +1656,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -2125,7 +1692,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {
@@ -2161,7 +1728,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.010,
+        "time": 0.015,
         "type": "WAIT"
       },
       {

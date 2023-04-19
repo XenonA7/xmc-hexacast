@@ -6008,6 +6008,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.31,
+        "cancelable": true,
         "anim": "HEXA_SHOCK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
@@ -6053,6 +6054,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.31,
+        "cancelable": true,
         "anim": "HEXA_SHOCK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },

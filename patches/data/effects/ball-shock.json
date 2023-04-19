@@ -670,6 +670,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.45,
+        "cancelable": true,
         "anim": "SHOCK_BALL_DOT2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },

@@ -10570,8 +10570,8 @@
           },
           "offset": {
             "x": 0,
-            "y": 0,
-            "z": 4
+            "y": 8,
+            "z": 0
           }
         },
         {
@@ -10744,7 +10744,7 @@
           "attack": {
             "type": "HEAVY",
             "element": "SHOCK",
-            "damageFactor": 3.25,
+            "damageFactor": 2.0,
             "status": 0.65,
             "reverse": false,
             "guardable": "",
@@ -13535,7 +13535,7 @@
             "wait": false,
             "waitSkip": 0,
             "group": "aura",
-            "actionDetached": true,
+            "actionDetached": false,
             "fixPos": false,
             "type": "SHOW_EFFECT",
             "effect": {
