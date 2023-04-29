@@ -79,6 +79,81 @@
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
+      "name": "SPARK2",
+      "sheet": {
+        "src": "media/entity/effects/shock.png",
+        "xCount": 4,
+        "offX": 128,
+        "offY": 128,
+        "width": 32,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.033,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SPARK3",
+      "sheet": {
+        "src": "media/entity/effects/shock.png",
+        "xCount": 4,
+        "offX": 256,
+        "offY": 128,
+        "width": 32,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.033,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SPARK4",
+      "sheet": {
+        "src": "media/entity/effects/shock.png",
+        "xCount": 4,
+        "offX": 384,
+        "offY": 128,
+        "width": 32,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.033,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
       "name": "SHOCK_BALL_DOT2",
       "sheet": {
         "src": "media/entity/effects/particles1.png ",
@@ -94,6 +169,27 @@
       "flipX": true,
       "frames": [
         0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEXA_SHOCK",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png",
+        "offX": 0,
+        "offY": 72,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.2,
+      "repeat": false,
+      "frames": [
+        3
       ]
     }
   }

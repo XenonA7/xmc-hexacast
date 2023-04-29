@@ -1384,6 +1384,48 @@
         "particleDuration": 0.3,
         "anim": "GOD_HEXAGON_NEUTRAL",
         "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 8,
+        "duration": 0.2,
+        "clockwise": false,
+        "centralAngle": 0.3,
+        "startDist": 24,
+        "random": false,
+        "moveDist": 32,
+        "moveVariance": 16,
+        "keySpline": "EASE_OUT",
+        "inverse": false,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.75
+        },
+        "pScale": {
+          "init": {
+            "x": 0.7,
+            "y": 0.7
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": 0.2,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.4,
+        "particleDurVariance": 0.2,
+        "angleVary": 1,
+        "anim": "RHOMBUS_DOT",
+        "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
     "godThrowNeutralRev": [
@@ -1434,6 +1476,48 @@
         "moveWithTarget": 1,
         "particleDuration": 0.3,
         "anim": "GOD_HEXAGON_NEUTRAL",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 8,
+        "duration": 0.2,
+        "clockwise": true,
+        "centralAngle": 0.3,
+        "startDist": 24,
+        "random": false,
+        "moveDist": 32,
+        "moveVariance": 16,
+        "keySpline": "EASE_OUT",
+        "inverse": false,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.75
+        },
+        "pScale": {
+          "init": {
+            "x": 0.7,
+            "y": 0.7
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": 0.2,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.4,
+        "particleDurVariance": 0.2,
+        "angleVary": 1,
+        "anim": "RHOMBUS_DOT",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],

@@ -1,3 +1,28 @@
+0.5.0 (04/24/2023)
+### New Content
+- New combat art: Lingering Cold (Cold Throw Lv.1B)
+- New combat art: Amber Hex (Shock Throw Lv.2A)
+- Implemented Lychee's card shuffle animation (made it 1 pixel taller)
+- Implemented all remaining sweep/sweepRev animations
+- Added south floating animation
+- Added Hexacast easter egg NPC conversation to Bergen Village South
+- WIP combat art: Lingering Gale (Cold Throw Lv.2B)
+### Changes
+- Made edits to east guard animation
+- Hue-shifted GOD_HEXAGON_COLD to a darker blue color
+- Moved a PLAY_SOUND step from Hail Spears action into hailCard2 action
+- Added RHOMBUS_DOT particles to godThrowNeutral and godThrowNeutralRev effects
+- Added "stopBeforeEdge" property to Eternal Blizzard, Wave Recall, Wave Detonation, Fire Hand, Icicle Deck
+- Removed unused proxy group name from witheringSlashProxy and vanishingCurseProxy
+- Brighter and slower blink effect for shockCardSmallTrail effect
+### Fixes
+- Fixed an animation glitch at the end of the following combat arts:
+   - Magic Missile
+   - Throttle Hex
+   - Essence Steal
+   - Hail Line
+   - Hail Spears
+
 0.4.1 (04/18/2023)
 ### Changes
 - Lowered refresh rate for particle trail to improve Arcane Volley performance

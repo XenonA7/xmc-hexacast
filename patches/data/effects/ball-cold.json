@@ -375,6 +375,784 @@
         "anim": "ICE_SHARD6",
         "type": "DEBRIS_CIRCLE"
       }
+    ],
+    "lingeringColdCardTrail": [
+      {
+        "volume": 0.8,
+        "global": false,
+        "loop": false,
+        "speed": 0.7,
+        "variance": 0.1,
+        "sound": "media/sound/boss/gynthar/card-stuck.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 0.6,
+        "global": false,
+        "loop": false,
+        "speed": 0.9,
+        "variance": 0.1,
+        "sound": "media/sound/boss/turret/big-shot.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 1,
+        "global": false,
+        "loop": false,
+        "speed": 1.4,
+        "variance": 0.05,
+        "sound": "media/sound/battle/shiny-effect.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "color": "#00aaff",
+        "maxAlpha": 0.5,
+        "minAlpha": 0,
+        "blinkDuration": 0.1,
+        "blinkCount": -1,
+        "noLighter": true,
+        "type": "BLINK_COLOR"
+      },
+      {
+        "scaleX": 0.85,
+        "scaleY": 0.85,
+        "duration": 0,
+        "type": "CHANGE_SCALE"
+      },
+      {
+        "size": "L",
+        "fadeIn": 0,
+        "fadeOut": 0.1,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "global": false,
+        "loop": false,
+        "speed": 0.65,
+        "sounds": [
+          {
+            "sound": "media/sound/battle/airon/cold/close-combat-cold-sweep-1.ogg",
+            "volume": 0.3,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/cold/close-combat-cold-sweep-2.ogg",
+            "volume": 0.3,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/cold/close-combat-cold-sweep-3.ogg",
+            "volume": 0.3,
+            "variance": 0.1
+          }
+        ],
+        "type": "PLAY_RANDOM_SOUND"
+      },
+      {
+        "numParticles": 14,
+        "duration": 0.256,
+        "clockwise": true,
+        "centralAngle": 1,
+        "startAngle": 0,
+        "startDist": 12,
+        "moveDist": 4,
+        "particleRotate": true,
+        "offset": {
+          "x": 0,
+          "y": 14,
+          "z": 6
+        },
+        "rotOffset": {
+          "x": 0,
+          "y": -8,
+          "z": 0
+        },
+        "pAlpha": {
+          "init": 0.8
+        },
+        "pScale": {
+          "init": {
+            "x": 0.45,
+            "y": 0.45
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "moveDist": 0,
+        "keySpline": "EASE",
+        "collision": false,
+        "moveWithTarget": 1,
+        "particleDuration": 0.4,
+        "cancelable": false,
+        "anim": "SWEEP_COLD_INV",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+
+      {
+        "numParticles": 4,
+        "duration": 0.2,
+        "centralAngle": 1,
+        "startDist": 4,
+        "random": true,
+        "moveDist": 16,
+        "moveVariance": 8,
+        "keySpline": "EASE_OUT",
+        "inverse": false,
+        "collision": false,
+        "pScale": {
+          "init": {
+            "x": 0.95,
+            "y": 0.95
+          },
+          "end": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "time": 0.2,
+            "spline": "EASE_OUT"
+          }
+        },
+        "pAlpha": {
+          "init": 1,
+          "start": {
+            "value": 0.35,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.6,
+        "anim": "SNOWFLAKE1",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+
+
+
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.15,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.015,
+        "type": "WAIT"
+      },
+
+      {
+        "type": "LOOP_END"
+      }
     ]
   }
 }
