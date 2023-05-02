@@ -1,3 +1,19 @@
+0.6.0 (05/02/2023)
+### New Content
+- Added "dashRev" animation definition
+- Added "dashLong" and "dashLongRev" animation definitions
+- WIP combat art: Sleet Sentry (Cold Melee Lv.2A)
+### Changes
+- Added "WIP" to the name for Lingering Gale
+- Added proper card death effect for Icicle Deck
+- Amber Hex adjusted sound effect when shooting card
+- Amber Hex now has dust trail when character recoils after shooting
+- Amber Hex particles overhauled
+### Fixes
+- Fixed Arcane Volley spawning card death effects on initial piercing hits
+### Balance
+- Amber Hex now loses projectile velocity much faster
+
 0.5.0 (04/24/2023)
 ### New Content
 - New combat art: Lingering Cold (Cold Throw Lv.1B)

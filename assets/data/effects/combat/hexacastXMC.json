@@ -6758,6 +6758,102 @@
         "anim": "HEXA_DARK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
+    ],
+    "sentrySweepHexagons1": [
+      {
+        "numParticles": 7,
+        "duration": 0.25,
+        "centralAngle": 0.5,
+        "startAngle": -0.2,
+        "startDist": 20,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": true,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            },
+            "time": 0.15,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.1,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "sentrySweepHexagons2": [
+      {
+        "numParticles": 32,
+        "duration": 0.5,
+        "centralAngle": 2.5,
+        "startAngle": -0.25,
+        "startDist": 20,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.06,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.13,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
     ]
   }
 }

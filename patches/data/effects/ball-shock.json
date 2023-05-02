@@ -784,16 +784,16 @@
         "type": "PLAY_SOUND"
       },
       {
-        "volume": 0.6,
+        "volume": 0.9,
         "global": false,
         "loop": false,
-        "speed": 0.9,
+        "speed": 0.5,
         "variance": 0.1,
         "sound": "media/sound/boss/turret/big-shot.ogg",
         "type": "PLAY_SOUND"
       },
       {
-        "volume": 2,
+        "volume": 2.5,
         "global": false,
         "loop": false,
         "speed": 1.1,
@@ -1007,6 +1007,13 @@
       }
     ],
     "shockCardAmberLite": [
+      {
+        "fadeIn": 0.2,
+        "fadeOut": 0.4,
+        "duration": -1,
+        "intensity": 0.4,
+        "type": "DARKNESS"
+      },
       {
         "color": "#e099ff",
         "maxAlpha": 0.85,

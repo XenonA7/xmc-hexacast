@@ -681,6 +681,198 @@
         "anim": "SNOW_BURST",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
+    ],
+    "iceCardGroundDeath": [
+      {
+        "volume": 1,
+        "global": false,
+        "loop": false,
+        "sound": "media/sound/battle/enemies/mine/ground-ice-crystal-disintegrate.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "size": "L",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": 0.2,
+        "glow": true,
+        "type": "LIGHT"
+      },
+      {
+        "numParticles": 3,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 4,
+        "uniformRandom": 1,
+        "moveDist": 8,
+        "moveVariance": 4,
+        "keySpline": "EASE_OUT",
+        "inverse": false,
+        "collision": false,
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "anim": "SNOW_BURST",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "alpha": 0,
+        "duration": 0.2,
+        "type": "CHANGE_ALPHA"
+      },
+      {
+        "numParticles": 2,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 2,
+        "uniformRandom": 0.6,
+        "particleRotate": true,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minSpeed": 10,
+        "maxSpeed": 40,
+        "minZSpeed": 180,
+        "maxZSpeed": 220,
+        "zBounciness": 0.5,
+        "minZVel": 40,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.7,
+            "y": 0.7
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.5,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": -0.5,
+          "start": {
+            "value": 0,
+            "time": 1,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.8,
+        "anim": "ICE_SHARD3",
+        "type": "DEBRIS_CIRCLE"
+      },
+      {
+        "numParticles": 1,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 2,
+        "uniformRandom": 0.6,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minSpeed": 10,
+        "maxSpeed": 40,
+        "minZSpeed": 180,
+        "maxZSpeed": 220,
+        "zBounciness": 0.5,
+        "minZVel": 40,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.7,
+            "y": 0.7
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.5,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": -0.5,
+          "start": {
+            "value": 0,
+            "time": 1,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.8,
+        "anim": "ICE_SHARD6",
+        "type": "DEBRIS_CIRCLE"
+      },
+      {
+        "numParticles": 1,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 0,
+        "random": true,
+        "zBounciness": 0,
+        "zGravityFactor": 1.1,
+        "collision": true,
+        "angleVary": 1,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minSpeed": 20,
+        "maxSpeed": 30,
+        "minZSpeed": 100,
+        "maxZSpeed": 140,
+        "minZVel": 40,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.5
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.8,
+            "y": 0.8
+          }
+        },
+        "particleDuration": 2.0,
+        "type": "DEBRIS_CIRCLE",
+        "anim": "HEXA_CARD_COLD"
+      }
     ]
   }
 }
