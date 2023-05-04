@@ -3012,6 +3012,89 @@
         "sound": "media/sound/battle/airon/cold/close-combat-cold-sweep-1.ogg",
         "type": "PLAY_SOUND"
       }
+    ],
+    "sentryCardBase": [
+      {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 128,
+          "z": 128
+        },
+        "pAlpha": {
+          "init": 0.1,
+          "start": {
+            "value": 0.4,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0.2,
+          "start": {
+            "value": 0.5,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.1,
+            "y": 0.1
+          },
+          "start": {
+            "value": {
+              "x": 0.4,
+              "y": 0.4
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "particleDuration": 0.7,
+        "moveWithTarget": 1,
+        "cancelable": true,
+        "anim": "COLD_BIG_HEXAGON",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.7,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 128,
+          "z": 128
+        },
+        "pAlpha": {
+          "init": 0.4
+        },
+        "pRotate": {
+          "init": 0.5
+        },
+        "pScale": {
+          "init": {
+            "x": 0.4,
+            "y": 0.4
+          }
+        },
+        "particleDuration": 0.7,
+        "moveWithTarget": 1,
+        "cancelable": true,
+        "anim": "COLD_BIG_HEXAGON",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.7,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
     ]
   }
 }

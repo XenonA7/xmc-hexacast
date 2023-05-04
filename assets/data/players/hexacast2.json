@@ -11762,8 +11762,8 @@
         "trail": "lingeringColdCardTrail"
       },
       "speed": 250,
-      "maxBounce": 4,
-      "timer": 12,
+      "maxBounce": 12,
+      "timer": 10,
       "trail": true,
       "multiHit": true,
       "noLightGlow": true,

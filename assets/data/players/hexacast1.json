@@ -11762,8 +11762,8 @@
         "trail": "lingeringColdCardTrail"
       },
       "speed": 250,
-      "maxBounce": 4,
-      "timer": 12,
+      "maxBounce": 12,
+      "timer": 10,
       "trail": true,
       "multiHit": true,
       "noLightGlow": true,
@@ -13083,15 +13083,51 @@
           }
         ]
       },
-      "killEffect": {
-        "sheet": "specials.icicles",
-        "name": "iceCardGroundDeath"
-      },
       "copyOwnerAnims": false,
       "breakType": "COMBATANT",
       "action": [
         {
           "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "freezeRayCardAppear"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": -1,
+          "align": "BASE",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "group": "ground",
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "sentryCardBase"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         {
           "volume": 0.8,
@@ -13179,6 +13215,10 @@
           "type": "WAIT_UNTIL_ON_GROUND"
         },
         {
+          "group": "ground",
+          "type": "CLEAR_EFFECTS"
+        },
+        {
           "type": "STOP_XY"
         },
         {
@@ -13205,112 +13245,121 @@
           "wait": false,
           "viaWalkConfig": false,
           "type": "SHOW_ANIMATION",
-          "anim": "stuck"
+          "anim": "hidden"
         },
         {
-          "duration": -1,
+          "sticking": false,
+          "group": "wall",
+          "keepCount": 8,
+          "type": "REMOVE_PROXIES"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 1,
+          "angleVary": 0,
+          "startDist": 48,
+          "startDistCollide": "DROP",
+          "random": false,
+          "count": 6,
+          "duration": 0,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "circularArea": true,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "maxGroundDistance": 16,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "icicleSmall",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0,
           "align": "BOTTOM",
           "rotateFace": 0,
           "flipLeftFace": false,
           "wait": false,
           "waitSkip": 0,
-          "actionDetached": false,
-          "fixPos": false,
+          "actionDetached": true,
+          "ignoreSlowMo": true,
+          "fixPos": true,
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.cold",
-            "name": "groundIndicatorTiny"
+            "name": "coldExplodeBig"
           },
           "offset": {
-            "x": 1.5,
-            "y": 3,
+            "x": 0,
+            "y": 0,
             "z": 0
           }
         },
         {
-          "time": 12,
-          "cancelOnHit": true,
-          "orthoDirFactor": 0,
-          "withBranches": true,
-          "ignoreLastHit": false,
-          "type": "TACKLE",
+          "align": "CENTER",
+          "radius": 80,
+          "yScale": 0,
+          "zHeight": 0,
+          "centralAngle": 0,
+          "duration": 0.3,
+          "expandRadius": 0,
+          "alwaysFull": false,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "rectangular": false,
+          "repeat": false,
+          "uniformHitDir": false,
+          "fixPos": false,
+          "checkCollision": true,
+          "type": "CIRCLE_ATTACK",
           "attack": {
-            "type": "LIGHT",
+            "type": "HEAVY",
             "element": "COLD",
-            "damageFactor": 0,
+            "damageFactor": 1.5,
+            "fly": "MASSIVE",
             "reverse": false,
-            "hitInvincible": true,
-            "limiter": "NO_DAMAGE",
             "guardable": "",
-            "skillBonus": ""
+            "skillBonus": "RANGED_DMG",
+            "limiter": ""
           },
-          "hit": [
-            {
-              "clearKillEffect": "true",
-              "type": "MOD_GENERIC_PROXY"
-            },
-            {
-              "align": "BASE",
-              "centralAngle": 0,
-              "angleVary": 0,
-              "startDist": 0,
-              "startDistCollide": "CLOSER",
-              "random": false,
-              "duration": 0,
-              "clockwise": false,
-              "flipLeftFace": 0,
-              "circularArea": true,
-              "uniformDir": 0,
-              "delay": 0,
-              "repeat": false,
-              "count": 1,
-              "type": "SHOOT_PROXY_RANGE",
-              "proxy": "icePillarTiny",
-              "offset": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-              }
-            },
-            {
-              "time": 0.2,
-              "type": "WAIT"
-            },
-            {
-              "wait": false,
-              "viaWalkConfig": false,
-              "type": "SHOW_ANIMATION",
-              "anim": "hidden"
-            },
-            {
-              "duration": 0,
-              "align": "TOP",
-              "rotateFace": 0,
-              "flipLeftFace": false,
-              "wait": false,
-              "waitSkip": 0,
-              "actionDetached": true,
-              "fixPos": false,
-              "type": "SHOW_EFFECT",
-              "effect": {
-                "sheet": "specials.cold",
-                "name": "iceCardSmallDeath"
-              },
-              "offset": {
-                "x": 0,
-                "y": 0,
-                "z": 0
-              }
-            },
-            {
-              "name": "end",
-              "type": "GOTO_LABEL"
-            }
-          ]
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
         },
         {
-          "name": "end",
-          "type": "LABEL"
+          "align": "BASE",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDistCollide": "CLOSER",
+          "random": false,
+          "count": 1,
+          "duration": 0,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "circularArea": false,
+          "uniformDir": 1,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "sentryTurret",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.20,
+          "type": "WAIT"
+        },
+        {
+          "group": "trail",
+          "type": "CLEAR_EFFECTS"
         },
         {
           "time": 0.1,
@@ -13321,7 +13370,7 @@
       "hp": 0,
       "stickToSource": "NONE",
       "stickFaceAlign": false,
-      "group": "iceCardGroup",
+      "group": "",
       "startAnim": "",
       "size": {
         "x": 32,
@@ -13332,6 +13381,172 @@
       "behaviors": null,
       "config": {
         "collType": "IGNORE",
+        "shadow": 16
+      },
+      "type": "GENERIC"
+    },
+    "sentryTurret": {
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "killEffect": {
+        "sheet": "specials.icicles",
+        "name": "iceCardGroundDeath"
+      },
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "value": "IGNORE",
+          "type": "SET_COLL_TYPE"
+        },
+        {
+          "duration": -1,
+          "align": "BOTTOM",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.icicles",
+            "name": "sleetSentryTurret"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        },
+        {
+          "value": "FENCE",
+          "type": "SET_COLL_TYPE"
+        },
+        {
+          "changeType": "set",
+          "attribName": "loopCount",
+          "type": "SET_ATTRIB_NUMBER",
+          "value": 20
+        },
+        {
+          "name": "loop",
+          "type": "LABEL"
+        },
+        {
+          "time": 1,
+          "type": "PLAYER_ADJUST_FACE"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDist": 16,
+          "startDistCollide": "CLOSER",
+          "random": false,
+          "count": 1,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 8,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "hailBullet1",
+          "offset": {
+            "z": 6
+          }
+        },
+        {
+          "time": 0.1,
+          "type": "PLAYER_ADJUST_FACE"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDist": 16,
+          "startDistCollide": "CLOSER",
+          "random": false,
+          "count": 1,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 8,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "hailBullet1",
+          "offset": {
+            "z": 6
+          }
+        },
+        {
+          "time": 0.1,
+          "type": "PLAYER_ADJUST_FACE"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDist": 16,
+          "startDistCollide": "CLOSER",
+          "random": false,
+          "count": 1,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 8,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "hailBullet1",
+          "offset": {
+            "z": 6
+          }
+        },
+        {
+          "changeType": "sub",
+          "attribName": "loopCount",
+          "type": "SET_ATTRIB_NUMBER",
+          "value": 1
+        },
+        {
+          "withElse": false,
+          "type": "IF",
+          "condition": "entity.attrib.loopCount > 0",
+          "thenStep": [
+            {
+              "name": "loop",
+              "type": "GOTO_LABEL"
+            }
+          ]
+        }
+      ],
+      "invisible": false,
+      "hp": 5,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "iceCardGroup",
+      "startAnim": "",
+      "size": {
+        "x": 32,
+        "y": 32,
+        "z": 32
+      },
+      "timeBoni": null,
+      "behaviors": null,
+      "config": {
+        "collType": "FENCE",
+        "zGravityFactor": 1,
         "shadow": 16
       },
       "type": "GENERIC"

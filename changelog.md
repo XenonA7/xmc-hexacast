@@ -1,3 +1,13 @@
+0.7.0 (05/03/2023)
+### New Content
+- WIP combat art: Sleet Sentry (Cold Melee Lv.2A)
+   - Unfinished mini Lea turrets spawned from the attack, manually aimed
+   - No particle effects made for the turrets yet
+   - The turret idea will be scrapped in future versions
+### Changes
+- Lingering Cold max bounces increased from 4 to 12
+- Lingering Cold proxy life changed from 12 seconds to 10 seconds
+
 0.6.0 (05/02/2023)
 ### New Content
 - Added "dashRev" animation definition
