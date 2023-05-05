@@ -1,3 +1,37 @@
+0.8.0 (05/05/2023)
+### New Content
+- New combat art: Frigid Flurry (Cold Melee Lv.2A)
+- New combat art: Frozen Fortress (Cold Guard Lv.2A)
+- Added js\proxy-hp-access.js (created by Bakafish) to support proxy entity.hpFactor
+- Added poststart.js
+- Added simplify as mod dependency
+- Added new particle effect to Brittle Barrier proxies
+### Changes
+- Freeze Rays changed from GUARD_SPECIAL2_A to GUARD_SPECIAL2_B
+- Converted "Sleet Sentry" combat art into "Frigid Flurry":
+   - Deleted proxy sentryTurret
+   - Proxy sleetSentryTrigger renamed to frigidFlurryTrigger
+   - Proxy sleetSentry card renamed to frigidFlurryCard
+   - Effect sleetCardBase renamed to frigidFlurryCardBase
+   - Effect sentrySweep1 renamed to frigidFlurrySweep1
+   - Effect sentrySweepHexagons1 renamed to frigidFlurrySweepHexagons1
+   - Effect sentrySweep2 renamed to frigidFlurrySweep2
+   - Effect sentrySweepHexagons2 renamed to frigidFlurrySweepHexagons2
+   - Added card death effect to frigidFlurryCard
+- Frigid Flurry is now classified as stunType "INTERRUPT"
+- Frigid Flurry now has stun steps to lock/release enemies in the first two melee hits
+- Reduced intensity of blue screen flash in effect frigidFlurrySweep2
+- Proxy frigidFlurryCard travel time reduced (velocity, effects adjusted to compensate)
+- Removed redundant scale85 effect from proxy frigidFlurryCard
+- Moved PLAY_SOUND from Brittle Barrier action steps into effect brittleBarrierGlow
+### Fxies
+- Fixed frigidFlurryCard not able to shoot next to walls by changing hitbox to 16x16x16
+- Fixed proxy arcaneCardBullet spawning proxies on target entity upon wall death by creating proxy arcaneCardDeathFX
+- Removed wall/air death effectKeys from proxy arcaneCardBullet
+- Fixed Magnet Card and Magnet Deck able to hit enemies on higher cliffs (reduced CIRCLE_ATTACK zHeight to 16 from 24)
+### Balance
+- Freeze Rays now inflicts chill status
+
 0.7.0 (05/03/2023)
 ### New Content
 - WIP combat art: Sleet Sentry (Cold Melee Lv.2A)

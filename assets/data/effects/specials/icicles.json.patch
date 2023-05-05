@@ -5,7 +5,10 @@
   },
   {
     "type": "ENTER",
-    "index": ["ANIMS", "SUB"]
+    "index": [
+      "ANIMS",
+      "SUB"
+    ]
   },
   {
     "type": "ADD_ARRAY_ELEMENT",
@@ -21,6 +24,69 @@
       },
       "guiSprites": false,
       "renderMode": "source-over",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "BLUE_SPARKLE",
+      "sheet": {
+        "src": "media/entity/effects/triblader-mm.png",
+        "width": 8,
+        "height": 8,
+        "offX": 64,
+        "offY": 89
+      },
+      "time": 0.05,
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "frames": [
+        0,
+        1,
+        2,
+        1
+      ],
+      "repeat": true
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "COLD_BIG_HEXAGON",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 192,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "COLD_BIG_HEXAGON_GUI",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 192,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
       "time": 0.4,
       "frames": [
         0
