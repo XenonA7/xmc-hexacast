@@ -79,7 +79,7 @@
     "waveCardSmallTrail": [
       {
         "color": "#00ffae",
-        "maxAlpha": 0.5,
+        "maxAlpha": 0.2,
         "minAlpha": 0,
         "blinkDuration": 0.1,
         "blinkCount": -1,

@@ -1,3 +1,14 @@
+0.9.0 (05/06/2023)
+### New Content
+- New combat art: Thunder Jacket (Shock Guard Lv.2A)
+### Changes
+- Changed spark particle entity coverage factor from 0.7 to 1.0 in effect amberHexCharge
+- Reduced blink color alpha value for effect waveCardSmallTrail
+- Magnet Deck cards now use effect magnetCardImpactLite upon return to player (less particles)
+- Magnet Deck sparkle effect now centered more accurately on cards
+- Removed effect magnetAttractHexagonsSmall from Magnet Deck
+- Added SHOCK_BALL_DOT2 particles to effect magnetCard2Lightning
+
 0.8.0 (05/05/2023)
 ### New Content
 - New combat art: Frigid Flurry (Cold Melee Lv.2A)
