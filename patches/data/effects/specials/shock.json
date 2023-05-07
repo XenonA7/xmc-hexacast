@@ -4096,14 +4096,14 @@
         "fadeIn": 0.1,
         "fadeOut": 0.1,
         "duration": -1,
-        "glow": true,
+        "glow": false,
         "type": "LIGHT"
       },
       {
         "color": "#c599ff",
-        "maxAlpha": 0.1,
-        "minAlpha": 0.3,
-        "blinkDuration": 0.1,
+        "maxAlpha": 0.3,
+        "minAlpha": 0.5,
+        "blinkDuration": 0.2,
         "blinkCount": -1,
         "noLighter": false,
         "type": "BLINK_COLOR"

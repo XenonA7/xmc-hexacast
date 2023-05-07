@@ -1,3 +1,9 @@
+0.9.1 (05/06/2023)
+### Changes
+- Effect thunderJacketAura removed light glow property
+- Effect thunderJacketAura increased blink duration
+- Effect thunderJacketAura increased blink alpha
+
 0.9.0 (05/06/2023)
 ### New Content
 - New combat art: Thunder Jacket (Shock Guard Lv.2A)
