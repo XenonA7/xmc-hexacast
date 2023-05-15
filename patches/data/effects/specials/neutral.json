@@ -1631,7 +1631,7 @@
         },
         "moveWithTarget": 1,
         "cancelable": true,
-        "anim": "DEFAULT_SWEEP",
+        "anim": "DEFAULT_SWEEP_NEUTRAL",
         "type": "PLAY_ANIM"
       }
     ],
@@ -1674,7 +1674,7 @@
         },
         "moveWithTarget": 1,
         "cancelable": true,
-        "anim": "DEFAULT_SWEEP_REV",
+        "anim": "DEFAULT_SWEEP_NEUTRAL_REV",
         "type": "PLAY_ANIM"
       }
     ],

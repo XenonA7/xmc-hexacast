@@ -153,5 +153,146 @@
         3
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DEFAULT_SWEEP_SHOCK",
+      "sheet": {
+        "src": "media/entity/effects/sweep.png",
+        "width": 64,
+        "height": 48,
+        "offX": 0,
+        "offY": 288
+      },
+      "pivot": {
+        "x": 32,
+        "y": 34
+      },
+      "time": 0.03,
+      "repeat": false,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DEFAULT_SWEEP_SHOCK_REV",
+      "sheet": {
+        "src": "media/entity/effects/sweep.png",
+        "width": 64,
+        "height": 48,
+        "offX": 0,
+        "offY": 288
+      },
+      "pivot": {
+        "x": 32,
+        "y": 34
+      },
+      "flipX": 1,
+      "time": 0.03,
+      "repeat": false,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DARK_LIGHTNING_TALL",
+      "shapeType": "Y_FLAT",
+      "pivot": {
+        "x": 6,
+        "y": 200
+      },
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 288,
+        "offY": 96,
+        "width": 32,
+        "height": 200
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.038,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CYBER_BOLT_SHOCK",
+      "pivot": {
+        "x": 8,
+        "y": 40
+      },
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 80,
+        "offY": 128,
+        "width": 16,
+        "height": 40
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.1,
+      "repeat": false,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DARK_LIGHTNING_BOLD",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 0,
+        "offY": 240,
+        "width": 32,
+        "height": 72
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.066,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
   }
 ]

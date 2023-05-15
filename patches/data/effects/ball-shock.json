@@ -554,14 +554,6 @@
         "type": "CHANGE_SCALE"
       },
       {
-        "size": "L",
-        "fadeIn": 0,
-        "fadeOut": 0.1,
-        "duration": -1,
-        "glow": false,
-        "type": "LIGHT"
-      },
-      {
         "volume": 0.8,
         "global": false,
         "loop": false,
@@ -703,11 +695,11 @@
           "y": -3,
           "z": -3
         },
-        "particleDuration": 0.2,
+        "particleDuration": 0.15,
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.016,
+        "time": 0.025,
         "type": "WAIT"
       },
       {
@@ -739,11 +731,11 @@
           "y": -3,
           "z": -3
         },
-        "particleDuration": 0.2,
+        "particleDuration": 0.15,
         "type": "COPY_SPRITE"
       },
       {
-        "time": 0.016,
+        "time": 0.025,
         "type": "WAIT"
       },
       {
@@ -1084,6 +1076,99 @@
       },
       {
         "time": 0.025,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
+    ],
+    "lightningHexBulletTrail": [
+      {
+        "size": "L",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": true,
+        "type": "LIGHT"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "radius": 12,
+        "useTargetAngle": true,
+        "numParticles": 1,
+        "duration": 0,
+        "alongY": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.05,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0,
+            "y": 0
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.2,
+            "spline": "EASE_IN"
+          }
+        },
+        "particleDuration": 0.6,
+        "anim": "SHOCK_BALL_DOT2",
+        "type": "PLAY_ANIM_RANGE"
+      },
+      {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": -8,
+          "z": -8
+        },
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.05,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.4,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.1,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.5,
+        "anim": "CIRCLE_BALL_TRAIL_SHOCK",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.01,
         "type": "WAIT"
       },
       {

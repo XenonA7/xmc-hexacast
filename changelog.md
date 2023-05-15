@@ -1,3 +1,36 @@
+0.10.0 (05/15/2023)
+### New Content
+- New combat art: Throttle Hex (Shock Melee Lv.1B)
+- New combat art: Jolt Hex (Shock Throw Lv.1A)
+- New combat art: Lightning Hex (Shock Throw Lv.3A)
+### Changes
+- Throttle Hex throw art replaced with Throttle Hex melee art
+- Frigid Flurry changed from ATTACK_SPECIAL2_A to ATTACK_SPECIAL2_B
+- Edited last 2 frames of south sweep animation to make eye more visible
+- Effect thunderJacketExplode rotated hexagon particle by 90°
+- Frozen Fortress now has knockback resistance (weight -1)
+- Removed redundant light source from effect magnetCard2Trail
+- Reduced particle duration and spawn frequency in effect magnetCard2Trail to reduce lag
+- Reduced blink speed, particle duration, and particle spawn rate in effect arcaneCardTrail to reduce lag
+- Minor description edits to Eternal Blizzard and Static Field
+- Replaced effect magnetCardImpactLite with magnetCard2Impact for Magnet Deck
+- Renamed effect magnetCardImpact to magnetCard1Impact
+- Renamed particle DEFAULT_SWEEP to DEFAULT_SWEEP_NEUTRAL, and same for rev
+- Replaced proxy throttleCard with proxy joltHexCard
+- In effect staticFieldUserFX, the COPY_SPRITE now moves with target
+- Added a DARK_LIGHTNING_TALL particle to effect staticFieldEnd
+### Fixes
+- Fixed typo in Thunder Jacket description
+- Fixed "timeDisconnect" property of Static Field, Static Discharge
+- Removed all instances of "timeDisconnect" property from all generic proxies
+### Balance
+- Hail Spears reduced delay between spawning and shooting at targeted enemies
+- Heal card healing total increased from 20% to 25%
+- Throttle Hex time slow factor increased from 15% to 20%
+- Proxy thunderSmallWeak attack strength factor changed from MEDIUM to LIGHT
+- Static Discharge now inflicts jolt status
+- Static Field now inflicts jolt status
+
 0.9.1 (05/06/2023)
 ### Changes
 - Effect thunderJacketAura removed light glow property

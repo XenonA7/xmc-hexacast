@@ -1562,7 +1562,6 @@
       "stickToSource": "TARGET",
       "stickFaceAlign": false,
       "group": "etherSingularityGroup",
-      "timeDisconnect": true,
       "startAnim": "",
       "size": {
         "x": 16,
@@ -2035,7 +2034,6 @@
       "stickToSource": "NONE",
       "stickFaceAlign": false,
       "group": "",
-      "timeDisconnect": false,
       "startAnim": "",
       "size": {
         "x": 16,
@@ -3427,7 +3425,7 @@
       "type": "BALL",
       "maxBounds": 0
     },
-    "throttleCard": {
+    "joltHexCard": {
       "effects": "ball-shock",
       "effectKeys": {
         "trail": "shockCardSmallTrail",
@@ -3507,17 +3505,19 @@
         },
         {
           "duration": 0,
-          "align": "FACE",
+          "target": "TARGET",
+          "align": "CENTER",
           "rotateFace": 0,
           "flipLeftFace": false,
+          "group": "",
           "wait": false,
           "waitSkip": 0,
           "actionDetached": true,
           "fixPos": false,
           "type": "SHOW_EFFECT",
           "effect": {
-            "sheet": "ball-shock",
-            "name": "shockCardDeathFar"
+            "sheet": "specials.shock",
+            "name": "throttleCut"
           },
           "offset": {
             "x": 0,
@@ -3614,7 +3614,7 @@
         },
         {
           "target": "TARGET",
-          "timeScale": 0.85,
+          "timeScale": 0.80,
           "logicTimeScale": 1,
           "moveXYScale": 1,
           "type": "ADD_TEMP_INFLUENCE"
@@ -3883,7 +3883,7 @@
           "checkCollision": false,
           "type": "CIRCLE_ATTACK",
           "attack": {
-            "type": "MEDIUM",
+            "type": "LIGHT",
             "element": "SHOCK",
             "damageFactor": 0.8,
             "reverse": true,
@@ -4673,8 +4673,8 @@
               }
             },
             {
-              "time": 0.30,
-              "turn": 0.7,
+              "time": 0.15,
+              "turn": 1,
               "towardTarget": true,
               "notPastTarget": true,
               "type": "ROTATE_FACE"
@@ -8066,7 +8066,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "magnetCardImpact"
+            "name": "magnetCard1Impact"
           },
           "offset": {
             "x": 0,
@@ -8192,6 +8192,7 @@
             "visualType": "LIGHT",
             "element": "SHOCK",
             "damageFactor": 0.75,
+            "status": 0.45,
             "reverse": false,
             "stunSteps": [
               {
@@ -8314,7 +8315,7 @@
             "element": "SHOCK",
             "damageFactor": 1,
             "reverse": false,
-            "status": 0,
+            "status": 0.8,
             "guardable": "",
             "skillBonus": "MELEE_DMG",
             "stunSteps": [
@@ -8343,7 +8344,6 @@
       "stickToSource": "NONE",
       "stickFaceAlign": false,
       "group": "",
-      "timeDisconnect": true,
       "startAnim": "",
       "size": {
         "x": 8,
@@ -8448,6 +8448,7 @@
             "visualType": "LIGHT",
             "element": "SHOCK",
             "damageFactor": 0.75,
+            "status": 0.6,
             "reverse": false,
             "stunSteps": [
               {
@@ -8521,6 +8522,7 @@
             "type": "MASSIVE",
             "element": "SHOCK",
             "damageFactor": 3.2,
+            "status": 0.5,
             "fly": "MASSIVE+",
             "reverse": false,
             "stunSteps": [
@@ -8550,7 +8552,6 @@
       "stickToSource": "NONE",
       "stickFaceAlign": false,
       "group": "",
-      "timeDisconnect": true,
       "startAnim": "",
       "size": {
         "x": 8,
@@ -9841,7 +9842,7 @@
               "type": "STICKY_CIRCLE_AROUND"
             },
             {
-              "value": 0.0133,
+              "value": 0.0166,
               "target": "TARGET",
               "hideNumbers": false,
               "type": "REGEN_HP"
@@ -10872,7 +10873,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "magnetCardImpactLite"
+            "name": "magnetCard2Impact"
           },
           "offset": {
             "x": 0,
@@ -13036,7 +13037,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.shock",
-            "name": "magnetCardImpact"
+            "name": "magnetCard1Impact"
           },
           "offset": {
             "x": 0,
@@ -14669,6 +14670,1723 @@
       },
       "config": {},
       "type": "GENERIC"
+    },
+    "joltHexProxy": {
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "duration": 0,
+          "align": "FACE",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "ball-shock",
+            "name": "shockCardDeathFar"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "type": "SELECT_RANDOM",
+          "options": [
+            {
+              "0": " ",
+              "count": 2,
+              "weight": 1
+            }
+          ],
+          "0_0": [
+            {
+              "face": "WEST",
+              "rotate": false,
+              "rotateSpeed": 3,
+              "type": "SET_FACE"
+            }
+          ],
+          "0_1": [
+            {
+              "face": "EAST",
+              "rotate": false,
+              "rotateSpeed": 3,
+              "type": "SET_FACE"
+            }
+          ]
+        },
+        {
+          "align": "BOTTOM",
+          "radius": 24,
+          "yScale": 0,
+          "zHeight": 32,
+          "centralAngle": 1,
+          "duration": 0.1,
+          "expandRadius": 0,
+          "alwaysFull": true,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "rectangular": false,
+          "repeat": false,
+          "uniformHitDir": false,
+          "fixPos": false,
+          "checkCollision": true,
+          "type": "CIRCLE_ATTACK",
+          "attack": {
+            "type": "HEAVY",
+            "fly": "MASSIVE",
+            "element": "SHOCK",
+            "damageFactor": 4.15,
+            "critFactor": 0,
+            "status": 0.4,
+            "reverse": false,
+            "guardable": "",
+            "skillBonus": "RANGED_DMG",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 2,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": true,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "joltHexLightning"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "type": "WAIT",
+          "time": 0.7
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "TARGET",
+      "stickFaceAlign": false,
+      "group": "",
+      "startAnim": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 32
+      },
+      "config": {
+        "collType": "NONE",
+        "floatVariance": 0,
+        "flyHeight": 1
+      },
+      "type": "GENERIC"
+    },
+    "lightningHexCard": {
+      "animation": {
+        "shapeType": "Y_FLAT",
+        "SUB": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "sheet": {
+              "src": "media/entity/effects/hexa-cards.png",
+              "offX": 0,
+              "offY": 192,
+              "width": 24,
+              "height": 32
+            },
+            "SUB": [
+              {
+                "name": "default",
+                "faceRotate": true,
+                "time": 0.016,
+                "repeat": false,
+                "frames": [
+                  0
+                ]
+              },
+              {
+                "name": "spinning",
+                "time": 0.016,
+                "repeat": true,
+                "frames": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "framesAngle": [
+                  0,
+                  22.5,
+                  45,
+                  67.5,
+                  90,
+                  112.5,
+                  135,
+                  157.5
+                ]
+              },
+              {
+                "name": "stuck",
+                "time": 0.016,
+                "repeat": false,
+                "frames": [
+                  8
+                ]
+              },
+              {
+                "name": "hidden",
+                "time": 0.016,
+                "repeat": false,
+                "frames": [
+                  -1
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "duration": -1,
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexCardFX"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "value": 12,
+          "type": "SET_FLOAT_HEIGHT"
+        },
+        {
+          "wait": false,
+          "viaWalkConfig": false,
+          "type": "SHOW_ANIMATION",
+          "anim": "default"
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        },
+        {
+          "duration": -1,
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.hexacastXMC",
+            "name": "lightningHexChargeHexagons"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "align": "CENTER",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDist": 4,
+          "startDistCollide": "NONE",
+          "random": false,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": true,
+          "duration": 0.05,
+          "count": 1,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "lightningHexTracer",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 3,
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexChargeup"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "speed": "SLOW",
+          "type": "ADD_PLAYER_CAMERA_TARGET"
+        },
+        {
+          "factor": 0.5,
+          "time": 2.9,
+          "keepEntityStatic": false,
+          "inversAccelerate": true,
+          "type": "ADD_SLOW_MOTION"
+        },
+        {
+          "strength": "WALK_ESCAPE",
+          "pull": false,
+          "radius": 64,
+          "fadeRadius": 32,
+          "minRadius": 0,
+          "zHeight": 32,
+          "duration": 2.9,
+          "align": "BOTTOM",
+          "type": "PUSH_PULL_FORCE"
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        },
+        {
+          "time": 2.4,
+          "type": "PLAYER_ADJUST_FACE"
+        },
+        {
+          "type": "STOP_REPEATING_FORCE"
+        },
+        {
+          "value": true,
+          "type": "SET_FACE_FIX"
+        },
+        {
+          "time": 0.1,
+          "removeEntityStatic": false,
+          "type": "CLEAR_SLOW_MOTION"
+        },
+        {
+          "time": 0.1,
+          "type": "WAIT"
+        },
+        {
+          "speed": "SLOW",
+          "type": "REMOVE_PLAYER_CAMERA_TARGET"
+        },
+        {
+          "posType": "TARGET",
+          "align": "BOTTOM",
+          "type": "SET_HIT_PROXY",
+          "proxy": "lightningHexController",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "align": "CENTER",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDist": 16,
+          "startDistCollide": "CLOSER",
+          "random": false,
+          "count": 1,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 0,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "lightningHexTriggerBullet",
+          "offset": {
+            "z": -2
+          }
+        },
+        {
+          "type": "CLEAR_EFFECTS"
+        },
+        {
+          "duration": 0,
+          "align": "CENTER",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "rotOffset": {
+            "x": 0,
+            "y": -8
+          },
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexShoot"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.1,
+          "type": "WAIT"
+        },
+        {
+          "type": "CLEAR_HIT_PROXY"
+        },
+        {
+          "time": 0.1,
+          "type": "WAIT"
+        },
+        {
+          "duration": 2.5,
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexCardFX2"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 1,
+          "type": "WAIT"
+        },
+        {
+          "poiFilter": {
+            "group": "lightningHexControllerGroup",
+            "type": "PROXY"
+          },
+          "distance": 600,
+          "type": "SET_POI_TEMP_TARGET"
+        },
+        {
+          "withElse": true,
+          "type": "IF",
+          "condition": "entity.hasTmpTarget",
+          "thenStep": [
+            {
+              "value": true,
+              "immediately": true,
+              "type": "FACE_TO_TARGET"
+            },
+            {
+              "time": 1.5,
+              "type": "WAIT"
+            },
+            {
+              "duration": -1,
+              "align": "CENTER",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": false,
+              "fixPos": true,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "specials.shock",
+                "name": "lightningHexCardJump"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "duration": -1,
+              "align": "CENTER",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": false,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "specials.shock",
+                "name": "lightningHexCardJumpTrail"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "duration": -1,
+              "align": "BASE",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "group": "ground",
+              "actionDetached": false,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "specials.shock",
+                "name": "lightningHexCardJumpBase"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "value": false,
+              "immediately": true,
+              "type": "FACE_TO_TARGET"
+            },
+            {
+              "wait": false,
+              "viaWalkConfig": false,
+              "type": "SHOW_ANIMATION",
+              "anim": "spinning"
+            },
+            {
+              "value": 300,
+              "type": "SET_Z_VEL"
+            },
+            {
+              "value": 1,
+              "type": "SET_Z_GRAVITY_FACTOR"
+            },
+            {
+              "value": 1,
+              "type": "SET_AIR_FRICTION"
+            },
+            {
+              "value": 0,
+              "type": "SET_FLOAT_HEIGHT"
+            },
+            {
+              "stopType": "LANDED",
+              "stopBeforeTime": 0,
+              "distance": 0,
+              "rotateSpeed": 4,
+              "adjustSpeedMax": 1000,
+              "missileMode": 0,
+              "cancelIfBelowFall": true,
+              "type": "JUMP_TARGET_MOVEMENT"
+            },
+            {
+              "wait": false,
+              "viaWalkConfig": false,
+              "type": "SHOW_ANIMATION",
+              "anim": "stuck"
+            },
+            {
+              "group": "ground",
+              "type": "CLEAR_EFFECTS"
+            },
+            {
+              "duration": 1,
+              "align": "BOTTOM",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": true,
+              "target2": "SELF",
+              "target2Offset": {
+                "x": 0,
+                "y": 0,
+                "z": 480
+              },
+              "fixPos": true,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "specials.shock",
+                "name": "mjolnirHex"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "align": "BOTTOM",
+              "radius": 48,
+              "yScale": 0,
+              "zHeight": 16,
+              "centralAngle": 1,
+              "duration": 0.066,
+              "expandRadius": 0,
+              "alwaysFull": true,
+              "clockwise": false,
+              "flipLeftFace": 0,
+              "rectangular": false,
+              "repeat": true,
+              "uniformHitDir": false,
+              "fixPos": false,
+              "checkCollision": false,
+              "type": "CIRCLE_ATTACK",
+              "attack": {
+                "type": "MEDIUM",
+                "visualType": "LIGHT",
+                "element": "SHOCK",
+                "damageFactor": 0.25,
+                "reverse": false,
+                "stunSteps": [
+                  {
+                    "type": "BLOCK_XY"
+                  }
+                ],
+                "status": 0,
+                "guardable": "",
+                "skillBonus": "RANGED_DMG",
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "time": 1,
+              "type": "WAIT"
+            },
+            {
+              "type": "STOP_REPEATING_FORCE"
+            },
+            {
+              "type": "CLEAR_EFFECTS"
+            },
+            {
+              "wait": false,
+              "viaWalkConfig": false,
+              "type": "SHOW_ANIMATION",
+              "anim": "hidden"
+            },
+            {
+              "clearKillEffect": "true",
+              "type": "MOD_GENERIC_PROXY"
+            },
+            {
+              "duration": 0,
+              "align": "BOTTOM",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": true,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "ball-shock",
+                "name": "shockCardDeath"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 4
+              }
+            },
+            {
+              "align": "BOTTOM",
+              "radius": 48,
+              "yScale": 0,
+              "zHeight": 16,
+              "centralAngle": 1,
+              "duration": 0.1,
+              "expandRadius": 0,
+              "alwaysFull": true,
+              "clockwise": false,
+              "flipLeftFace": 0,
+              "rectangular": false,
+              "repeat": false,
+              "uniformHitDir": false,
+              "fixPos": false,
+              "checkCollision": false,
+              "type": "CIRCLE_ATTACK",
+              "attack": {
+                "type": "MASSIVE",
+                "element": "SHOCK",
+                "damageFactor": 2,
+                "fly": "MASSIVE++",
+                "reverse": false,
+                "stunSteps": [
+                  {
+                    "type": "END_LOCK"
+                  }
+                ],
+                "status": 0,
+                "guardable": "",
+                "skillBonus": "RANGED_DMG",
+                "limiter": "",
+                "hints": [
+                  "NO_PUZZLE"
+                ]
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            },
+            {
+              "time": 0.3,
+              "type": "WAIT"
+            }
+          ],
+          "elseStep": [
+            {
+              "type": "CLEAR_EFFECTS"
+            },
+            {
+              "clearKillEffect": "true",
+              "type": "MOD_GENERIC_PROXY"
+            },
+            {
+              "duration": 0,
+              "align": "BOTTOM",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": true,
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "ball-shock",
+                "name": "shockCardDeath"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 4
+              }
+            },
+            {
+              "duration": 0,
+              "align": "BOTTOM",
+              "rotateFace": 0,
+              "flipLeftFace": false,
+              "wait": false,
+              "waitSkip": 0,
+              "actionDetached": false,
+              "group": "pre",
+              "fixPos": false,
+              "type": "SHOW_EFFECT",
+              "effect": {
+                "sheet": "specials.shock",
+                "name": "thunderJacketPrimerDeath"
+              },
+              "offset": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+              }
+            }
+          ]
+        },
+        {
+          "time": 0.1,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "killEffect": {
+        "sheet": "ball-shock",
+        "name": "shockCardDeath"
+      },
+      "hp": 0,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "",
+      "startAnim": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "timeBoni": null,
+      "behaviors": null,
+      "config": {
+        "collType": "IGNORE",
+        "shadow": 16
+      },
+      "type": "GENERIC"
+    },
+    "lightningHexTracer": {
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 8
+      },
+      "effects": "",
+      "speed": 4000,
+      "maxBounce": 1,
+      "timer": 1,
+      "trail": false,
+      "multiHit": false,
+      "light": "NONE",
+      "noLightGlow": false,
+      "timeConnect": true,
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "gfxOffset": {
+          "x": 0,
+          "y": -4
+        },
+        "sheet": {
+          "src": "media/entity/effects/particles1.png",
+          "offX": 176,
+          "offY": 40,
+          "width": 8,
+          "height": 8
+        },
+        "guiSprites": true,
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": true,
+        "flipY": true,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "LIGHT",
+        "element": "SHOCK",
+        "damageFactor": 0,
+        "reverse": false,
+        "spFactor": 0,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": "NO_EFFECT"
+      },
+      "timeBoni": null,
+      "behaviors": []
+    },
+    "lightningHexTriggerBullet": {
+      "effects": "ball-shock",
+      "effectKeys": {
+        "trail": "lightningHexBulletTrail"
+      },
+      "speed": 1500,
+      "maxBounce": 1,
+      "timer": 1,
+      "trail": true,
+      "multiHit": false,
+      "noLightGlow": false,
+      "bounceProxy": "lightningHexBounce",
+      "type": "BALL",
+      "animation": {
+        "name": "default",
+        "gfxOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "sheet": {
+          "src": "media/entity/effects/lighter-particle.png",
+          "offX": 144,
+          "offY": 0,
+          "width": 16,
+          "height": 16
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": true,
+        "frames": [
+          0
+        ]
+      },
+      "attack": {
+        "type": "MASSIVE",
+        "element": "SHOCK",
+        "damageFactor": 1.2,
+        "reverse": false,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "hints": [
+          "CHARGED"
+        ]
+      },
+      "timeBoni": null,
+      "behaviors": [
+        {
+          "type": "SLOW_DOWN",
+          "speedFactor": 0,
+          "fadeOut": 0.8,
+          "pause": 5,
+          "fadeIn": 0,
+          "startWait": 0.6,
+          "fadeOutVary": 0
+        }
+      ]
+    },
+    "lightningHexBounce": {
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "volume": 0.85,
+          "global": false,
+          "loop": false,
+          "speed": 0.9,
+          "variance": 0.05,
+          "sound": "media/sound/battle/airon/cold/ball-hit-cold-light2.ogg",
+          "type": "PLAY_SOUND"
+        },
+        {
+          "duration": 0,
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "target2": "SELF",
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexBounce"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "align": "BOTTOM",
+          "radius": 32,
+          "yScale": 0,
+          "zHeight": 0,
+          "centralAngle": 0,
+          "duration": 0.1,
+          "expandRadius": 0,
+          "alwaysFull": true,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "rectangular": false,
+          "repeat": false,
+          "uniformHitDir": false,
+          "fixPos": false,
+          "checkCollision": true,
+          "type": "CIRCLE_ATTACK",
+          "attack": {
+            "type": "HEAVY",
+            "element": "SHOCK",
+            "damageFactor": 1,
+            "reverse": false,
+            "status": 1,
+            "guardable": "",
+            "skillBonus": "RANGED_DMG",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.5,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": true,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "group": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "config": {
+        "zGravityFactor": 0,
+        "collType": "NONE"
+      },
+      "type": "GENERIC"
+    },
+    "lightningHexController": {
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "type": "SELECT_RANDOM",
+          "options": [
+            {
+              "0": " ",
+              "count": 2,
+              "weight": 1
+            }
+          ],
+          "0_0": [
+            {
+              "face": "WEST",
+              "rotate": false,
+              "rotateSpeed": 3,
+              "type": "SET_FACE"
+            }
+          ],
+          "0_1": [
+            {
+              "face": "EAST",
+              "rotate": false,
+              "rotateSpeed": 3,
+              "type": "SET_FACE"
+            }
+          ]
+        },
+        {
+          "align": "BOTTOM",
+          "radius": 24,
+          "yScale": 0,
+          "zHeight": 32,
+          "centralAngle": 1,
+          "duration": 0.1,
+          "expandRadius": 0,
+          "alwaysFull": true,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "rectangular": false,
+          "repeat": false,
+          "uniformHitDir": false,
+          "fixPos": false,
+          "checkCollision": true,
+          "type": "CIRCLE_ATTACK",
+          "attack": {
+            "type": "HEAVY",
+            "fly": "MASSIVE",
+            "element": "SHOCK",
+            "damageFactor": 4.15,
+            "critFactor": 0,
+            "status": 0,
+            "reverse": false,
+            "guardable": "",
+            "skillBonus": "RANGED_DMG",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 2,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": true,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "joltHexLightningLite"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "offsetX": 0,
+          "offsetY": 0,
+          "speed": "FASTER",
+          "transition": "EASE_OUT",
+          "wait": false,
+          "waitSkip": 0,
+          "zoom": 2,
+          "focusType": "SELF",
+          "type": "FOCUS_CAMERA"
+        },
+        {
+          "duration": 0.7,
+          "align": "CENTER",
+          "target": "TARGET",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "thunderJacketAura"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0.7,
+          "target": "TARGET",
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "group": "",
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "slowMotion2"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "factor": 0.4,
+          "time": 0.1,
+          "keepEntityStatic": true,
+          "inversAccelerate": false,
+          "type": "ADD_SLOW_MOTION"
+        },
+        {
+          "volume": 1,
+          "global": false,
+          "loop": true,
+          "speed": 0.7,
+          "sound": "media/sound/battle/enemies/charge-loop.ogg",
+          "type": "PLAY_SOUND"
+        },
+        {
+          "volume": 1.2,
+          "global": false,
+          "loop": false,
+          "speed": 0.5,
+          "sound": "media/sound/battle/shiny-effect.ogg",
+          "type": "PLAY_SOUND"
+        },
+        {
+          "time": 0.6,
+          "type": "WAIT"
+        },
+        {
+          "speed": "SLOW",
+          "transition": "EASE_OUT",
+          "wait": false,
+          "waitSkip": 0,
+          "type": "RESET_CAMERA"
+        },
+        {
+          "type": "STOP_SOUNDS"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0.3,
+          "startAngle": 0,
+          "angleVary": 0,
+          "startDist": 16,
+          "startDistCollide": "NONE",
+          "random": true,
+          "duration": 0,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "circularArea": true,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "count": 1,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "lightningChain",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.25,
+          "type": "WAIT"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0.3,
+          "startAngle": 0.5,
+          "angleVary": 0,
+          "startDist": 16,
+          "startDistCollide": "NONE",
+          "random": true,
+          "duration": 0,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "circularArea": true,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "count": 1,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "lightningChain",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.25,
+          "type": "WAIT"
+        },
+        {
+          "time": 0.2,
+          "removeEntityStatic": false,
+          "type": "CLEAR_SLOW_MOTION"
+        },
+        {
+          "time": 8,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "TARGET",
+      "group": "lightningHexControllerGroup",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "config": {},
+      "type": "GENERIC"
+    },
+    "lightningChain": {
+      "animation": {
+        "name": "default",
+        "gfxOffset": {
+          "x": 0,
+          "y": 0
+        },
+        "sheet": {
+          "src": "media/entity/effects/lighter-particle.png",
+          "offX": 144,
+          "offY": 0,
+          "width": 16,
+          "height": 16
+        },
+        "renderMode": "lighter",
+        "time": 0.05,
+        "repeat": true,
+        "frames": [
+          0
+        ]
+      },
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "kind": "PROXY_SRC",
+          "type": "SET_TEMP_TARGET"
+        },
+        {
+          "attribName": "steps",
+          "changeType": "set",
+          "type": "SET_ATTRIB_NUMBER",
+          "value": 5
+        },
+        {
+          "duration": -1,
+          "align": "CENTER",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexMain"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "withElse": true,
+          "type": "COMBAT_IF",
+          "conditions": [
+            {
+              "max": 0.5,
+              "negated": false,
+              "type": "RANDOM"
+            }
+          ],
+          "thenStep": [
+            {
+              "target": "PROXY_SRC",
+              "distance": 164,
+              "duration": 0.4,
+              "ccw": false,
+              "rotateTime": 2.4,
+              "distAdjustSpeed": 500,
+              "zDistance": 0,
+              "waitTargetAlign": false,
+              "collision": false,
+              "type": "STICKY_CIRCLE_AROUND"
+            }
+          ],
+          "elseStep": [
+            {
+              "target": "PROXY_SRC",
+              "distance": 164,
+              "duration": 0.4,
+              "ccw": true,
+              "rotateTime": 2.4,
+              "distAdjustSpeed": 500,
+              "zDistance": 0,
+              "waitTargetAlign": false,
+              "collision": false,
+              "type": "STICKY_CIRCLE_AROUND"
+            }
+          ]
+        },
+        {
+          "value": 1,
+          "type": "SET_AIR_FRICTION"
+        },
+        {
+          "value": 10,
+          "type": "SET_ACCEL_SPEED"
+        },
+        {
+          "type": "SET_SPEED",
+          "value": 3000
+        },
+        {
+          "name": "move",
+          "type": "LABEL"
+        },
+        {
+          "attribName": "steps",
+          "changeType": "sub",
+          "type": "SET_ATTRIB_NUMBER",
+          "value": 1
+        },
+        {
+          "duration": 0,
+          "align": "CENTER",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "group": "trail",
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "homingChargeLily2Hex"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "type": "WAIT",
+          "time": 0.2
+        },
+        {
+          "align": "BOTTOM",
+          "type": "SHOOT_PROXY",
+          "proxy": "lightningChainTrail",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "sticking": false,
+          "group": "lightningTarget",
+          "type": "REMOVE_PROXIES"
+        },
+        {
+          "value": false,
+          "immediately": true,
+          "type": "FACE_TO_TARGET"
+        },
+        {
+          "min": 0,
+          "max": 0,
+          "maxTime": 0.10,
+          "forceTime": true,
+          "rotateSpeed": 0.5,
+          "collideCancel": 1,
+          "stopBeforeEdge": false,
+          "type": "MOVE_TO_DISTANCE"
+        },
+        {
+          "align": "BOTTOM",
+          "type": "SHOOT_PROXY",
+          "proxy": "lightningChainTarget",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "type": "STOP_XY"
+        },
+        {
+          "type": "WAIT",
+          "time": 0.05
+        },
+        {
+          "attribName": "shoot",
+          "changeType": "set",
+          "type": "SET_ATTRIB_NUMBER",
+          "value": 1
+        },
+        {
+          "type": "WAIT",
+          "time": 0.1
+        },
+        {
+          "withElse": false,
+          "type": "IF",
+          "condition": "entity.attrib.steps >= 2",
+          "thenStep": [
+            {
+              "type": "WAIT",
+              "time": 0.1
+            }
+          ]
+        },
+        {
+          "withElse": false,
+          "type": "IF",
+          "condition": "entity.attrib.steps >= 4",
+          "thenStep": [
+            {
+              "type": "WAIT",
+              "time": 0.2
+            }
+          ]
+        },
+        {
+          "withElse": false,
+          "type": "IF",
+          "condition": "entity.attrib.steps > 0",
+          "thenStep": [
+            {
+              "value": false,
+              "immediately": true,
+              "type": "FACE_TO_TARGET"
+            },
+            {
+              "name": "move",
+              "type": "GOTO_LABEL"
+            }
+          ]
+        },
+        {
+          "type": "WAIT",
+          "time": 0.4
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "",
+      "startAnim": "",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 8
+      },
+      "config": {
+        "collType": "NONE",
+        "accelSpeed": 5,
+        "airFriction": 1,
+        "maxVel": 550,
+        "zGravityFactor": 0,
+        "relativeVel": 1
+      },
+      "type": "GENERIC",
+      "timeBoni": null,
+      "behaviors": []
+    },
+    "lightningChainTrail": {
+      "copyOwnerAnims": false,
+      "breakType": "ACTION",
+      "action": [
+        {
+          "duration": -1,
+          "align": "CENTER",
+          "rotateFace": -1,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "target2": "PROXY_SRC",
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "dashLine"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "type": "WAIT_UNTIL",
+          "condition": "entity.srcAttrib.shoot"
+        },
+        {
+          "type": "CLEAR_EFFECTS"
+        },
+        {
+          "attribName": "shoot",
+          "changeType": "set",
+          "changeConnected": "PROXY_SOURCE",
+          "type": "SET_ATTRIB_NUMBER",
+          "value": 0
+        },
+        {
+          "kind": "PROXY_SRC_ACTION_PROXY",
+          "key": "lightningTarget",
+          "type": "SET_TEMP_TARGET"
+        },
+        {
+          "value": false,
+          "immediately": true,
+          "type": "FACE_TO_TARGET"
+        },
+        {
+          "duration": 0.4,
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "target2": "TARGET",
+          "fixPos": true,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexBeam"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0.4,
+          "target": "TARGET",
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": true,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.shock",
+            "name": "lightningHexEndpoint"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "type": "SET_SPEED",
+          "value": 2000
+        },
+        {
+          "value": 10,
+          "type": "SET_ACCEL_SPEED"
+        },
+        {
+          "time": 0.1,
+          "missReactTime": 0,
+          "cancelOnHit": false,
+          "collideCancel": 1,
+          "orthoDirFactor": 0,
+          "ignoreLastHit": false,
+          "collideSlip": false,
+          "type": "TACKLE",
+          "attack": {
+            "type": "HEAVY",
+            "element": "SHOCK",
+            "damageFactor": 2.0,
+            "reverse": false,
+            "guardable": "",
+            "skillBonus": "RANGED_DMG",
+            "limiter": "",
+            "hints": [
+              "NO_PUZZLE"
+            ]
+          }
+        },
+        {
+          "type": "STOP_XY"
+        },
+        {
+          "type": "WAIT",
+          "time": 0.4
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "",
+      "startAnim": "",
+      "size": {
+        "x": 48,
+        "y": 48,
+        "z": 32
+      },
+      "config": {
+        "collType": "TRIGGER",
+        "zGravityFactor": 0
+      },
+      "type": "GENERIC",
+      "timeBoni": null,
+      "behaviors": []
+    },
+    "lightningChainTarget": {
+      "copyOwnerAnims": false,
+      "breakType": "ACTION",
+      "action": [
+        {
+          "type": "WAIT",
+          "time": -1
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "lightningTarget",
+      "startAnim": "",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 8
+      },
+      "config": {
+        "collType": "NONE",
+        "zGravityFactor": 0
+      },
+      "type": "GENERIC",
+      "timeBoni": null,
+      "behaviors": []
     }
   },
   "actions": {
@@ -20411,7 +22129,7 @@
           }
         ]
       },
-      "ATTACK_SPECIAL2_A": {
+      "ATTACK_SPECIAL2_B": {
         "name": {
           "en_US": "Frigid Flurry"
         },
@@ -21339,6 +23057,10 @@
             "type": "SET_HIT_STABLE"
           },
           {
+            "value": -1,
+            "type": "SET_WEIGHT"
+          },
+          {
             "followUp": "sweepRevEnd",
             "wait": false,
             "viaWalkConfig": false,
@@ -21730,7 +23452,7 @@
           "en_US": "Eternal Blizzard"
         },
         "description": {
-          "en_US": "A hex that summons waves of swirling snowflakes which shoot at nearby enemies."
+          "en_US": "Summon powerful waves of swirling snowflakes which shoot at nearby enemies."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -23034,7 +24756,7 @@
         },
         "dmgType": "MELEE",
         "stunType": "LOCK",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -23137,16 +24859,201 @@
           }
         ]
       },
+      "ATTACK_SPECIAL1_B": {
+        "name": {
+          "en_US": "Throttle Hex"
+        },
+        "description": {
+          "en_US": "Hit an enemy with a hex that causes minor lightning strikes and slows the target's time flow by \\c[3]-20%\\c[0] for a short time. Only one Throttle Hex can be active at a time."
+        },
+        "dmgType": "MELEE",
+        "stunType": "Interrupt",
+        "status": false,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "charge": -1,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "followUp": "sweepRevEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweepRev"
+          },
+          {
+            "duration": -1,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "group": "trail",
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.shock",
+              "name": "meleeTrail"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "duration": 0.2,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "dust",
+              "name": "line"
+            },
+            "offset": {
+              "x": 0,
+              "y": 3,
+              "z": 6
+            }
+          },
+          {
+            "duration": 0,
+            "align": "CENTER",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.shock",
+              "name": "sweepSpheroRev"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "value": false,
+            "type": "SET_JUMPING"
+          },
+          {
+            "value": 400,
+            "type": "SET_SPEED"
+          },
+          {
+            "value": 3,
+            "type": "SET_ACCEL_SPEED"
+          },
+          {
+            "posType": "TARGET",
+            "align": "BOTTOM",
+            "type": "SET_HIT_PROXY",
+            "proxy": "throttleProxy",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "time": 0.15,
+            "cancelOnHit": true,
+            "withBranches": true,
+            "orthoDirFactor": 0,
+            "ignoreLastHit": false,
+            "collideSlip": false,
+            "type": "TACKLE",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "SHOCK",
+              "damageFactor": 2,
+              "fly": "MASSIVE+",
+              "reverse": false,
+              "stunSteps": [],
+              "status": 0,
+              "guardable": "",
+              "skillBonus": "MELEE_DMG"
+            },
+            "hit": [
+              {
+                "kind": "FIRST_HIT",
+                "type": "SET_TEMP_TARGET"
+              },
+              {
+                "type": "CLEAR_HIT_PROXY"
+              },
+              {
+                "time": 0.6,
+                "type": "WAIT"
+              },
+              {
+                "name": "end",
+                "type": "GOTO_LABEL"
+              }
+            ],
+            "missed": []
+          },
+          {
+            "time": 0.4,
+            "type": "WAIT"
+          },
+          {
+            "group": "trail",
+            "type": "CLEAR_EFFECTS"
+          },
+          {
+            "name": "end",
+            "type": "LABEL"
+          },
+          {
+            "time": 0.2,
+            "type": "WAIT"
+          },
+          {
+            "group": "trail",
+            "type": "CLEAR_EFFECTS"
+          },
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": 0,
+              "move": 0,
+              "reaim": 0
+            }
+          },
+          {
+            "time": 0.2,
+            "type": "WAIT"
+          }
+        ]
+      },
       "ATTACK_SPECIAL2_A": {
         "name": {
           "en_US": "Static Field"
         },
         "description": {
-          "en_US": "Stun and damage enemies in a larger area in front of you."
+          "en_US": "Stun and damage enemies in a large area in front of you."
         },
         "dmgType": "MELEE",
         "stunType": "LOCK",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -23272,14 +25179,14 @@
       },
       "THROW_SPECIAL1_A": {
         "name": {
-          "en_US": "Throttle Hex"
+          "en_US": "Jolt Hex"
         },
         "description": {
-          "en_US": "Hit an enemy with a hex that causes minor lightning strikes and slows the target's time flow by \\c[3]-15%\\c[0] for a short time. Only one Throttle Hex can be active at a time."
+          "en_US": "Hit an enemy with a powerful lightning bolt that has moderately high knockback."
         },
         "dmgType": "RANGED",
         "stunType": "",
-        "status": false,
+        "status": true,
         "steps": [
           {
             "type": "SET_PLAYER_ACTION_BLOCK",
@@ -23321,7 +25228,7 @@
             "posType": "TARGET",
             "align": "BOTTOM",
             "type": "SET_HIT_PROXY",
-            "proxy": "throttleProxy",
+            "proxy": "joltHexProxy",
             "offset": {
               "x": 0,
               "y": 0,
@@ -23344,7 +25251,7 @@
             "delay": 0,
             "repeat": false,
             "type": "SHOOT_PROXY_RANGE",
-            "proxy": "throttleCard",
+            "proxy": "joltHexCard",
             "offset": {
               "z": 12
             }
@@ -23592,6 +25499,149 @@
           }
         ]
       },
+      "THROW_SPECIAL3_A": {
+        "name": {
+          "en_US": "Lightning Hex"
+        },
+        "description": {
+          "en_US": "Before shooting the spell, it must be aimed manually as it charges. It will rotate along with your own aiming scope. Hits a single enemy with powerful lightning."
+        },
+        "dmgType": "MELEE",
+        "stunType": "INTERRUPT",
+        "status": false,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0.4,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "value": true,
+            "type": "SET_FACE_FIX"
+          },
+          {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "specialShoot",
+            "followUp": "specialLoop"
+          },
+          {
+            "volume": 0.8,
+            "global": false,
+            "loop": false,
+            "speed": 0.7,
+            "variance": 0.1,
+            "sound": "media/sound/boss/gynthar/card-stuck.ogg",
+            "type": "PLAY_SOUND"
+          },
+          {
+            "volume": 0.6,
+            "global": false,
+            "loop": false,
+            "speed": 0.9,
+            "variance": 0.1,
+            "sound": "media/sound/boss/turret/big-shot.ogg",
+            "type": "PLAY_SOUND"
+          },
+          {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": -1,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "effect": {
+              "sheet": "combat.hexacastXMC",
+              "name": "shootShock"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 12
+            },
+            "type": "SHOW_EFFECT"
+          },
+          {
+            "type": "WAIT",
+            "time": 0.01
+          },
+          {
+            "duration": 0.6,
+            "align": "BOTTOM",
+            "target": "PROXY_OWNER",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.shock",
+              "name": "staticFieldUserFX"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "align": "BOTTOM",
+            "centralAngle": 0,
+            "angleVary": 0,
+            "startDist": 16,
+            "startDistCollide": "CLOSER",
+            "random": false,
+            "count": 1,
+            "duration": 0,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "circularArea": false,
+            "uniformDir": 0,
+            "delay": 0,
+            "repeat": false,
+            "type": "SHOOT_PROXY_RANGE",
+            "proxy": "lightningHexCard",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 12
+            }
+          },
+          {
+            "value": 300,
+            "type": "SET_SPEED"
+          },
+          {
+            "time": 0.1,
+            "stopBeforeEdge": true,
+            "type": "MOVE_BACKWARD"
+          },
+          {
+            "time": 0.6,
+            "type": "WAIT"
+          },
+          {
+            "followUp": "idle",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "postShootSlow"
+          },
+          {
+            "time": 0.2,
+            "type": "WAIT"
+          }
+        ]
+      },
       "GUARD_SPECIAL1_A": {
         "name": {
           "en_US": "Overclock \\c[1](placeholder)\\c[0]"
@@ -23645,7 +25695,7 @@
           "en_US": "Thunder Jacket"
         },
         "description": {
-          "en_US": "Clock yourself in an explosive electric charge. It will detonate upon touching an enemy, dealing huge damage and knockback."
+          "en_US": "Cloak yourself in an explosive electric charge. It will detonate upon touching an enemy, dealing huge damage and knockback."
         },
         "dmgType": "MELEE",
         "stunType": "INTERRUPT",
@@ -26144,7 +28194,7 @@
           "en_US": "\\c[2]Heal Card\\c[0]"
         },
         "description": {
-          "en_US": "Deal a healing card which will replenish up to \\c[2]+20%\\c[0] of your HP over time. The card is fragile and will break with enemy attacks."
+          "en_US": "Deal a healing card which will replenish up to \\c[2]+25%\\c[0] of your HP over time. The card is fragile and will break with enemy attacks."
         },
         "dmgType": "NONE",
         "stunType": "",

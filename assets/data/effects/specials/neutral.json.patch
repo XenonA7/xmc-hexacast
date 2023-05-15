@@ -143,7 +143,7 @@
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
-      "name": "DEFAULT_SWEEP",
+      "name": "DEFAULT_SWEEP_NEUTRAL",
       "sheet": {
         "src": "media/entity/effects/sweep.png",
         "width": 64,
@@ -170,7 +170,7 @@
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
-      "name": "DEFAULT_SWEEP_REV",
+      "name": "DEFAULT_SWEEP_NEUTRAL_REV",
       "sheet": {
         "src": "media/entity/effects/sweep.png",
         "width": 64,
