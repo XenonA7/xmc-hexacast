@@ -1,3 +1,17 @@
+0.11.0 (05/16/2023)
+### New Content
+- New combat art: Shock Surge (Shock Dash Lv.1B)
+- Added placeholder code for combat art: Storm Stride (Shock Dash Lv.2B)
+###Changes
+- Recolored frame 2 of DARK_LIGHTNING_TALL
+- Adjusted timing for effect lightningHexMain and proxy lightningChain
+- Effect lightningHexCardJumpBase initial size increased
+### Fixes
+- Added DETATCH_TIME_PARENT to proxy lightningChain and lightningChainTrail
+### Balance
+- Throttle Hex nerfed back to the original -15% timeflow debuff (was -20%)
+- Proxy lightningHexBounce no longer inflicts jolt status
+
 0.10.0 (05/15/2023)
 ### New Content
 - New combat art: Throttle Hex (Shock Melee Lv.1B)
