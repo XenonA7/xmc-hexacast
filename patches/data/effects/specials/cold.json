@@ -2583,7 +2583,7 @@
     ],
     "frigidFlurrySweep1": [
       {
-        "size": "XXXXL",
+        "size": "XXL",
         "fadeIn": 0,
         "fadeOut": 0.3,
         "duration": -1,
@@ -2887,7 +2887,7 @@
         "type": "SCREEN_FLASH"
       },
       {
-        "size": "XXXXL",
+        "size": "XXL",
         "fadeIn": 0,
         "fadeOut": 0.3,
         "duration": -1,
@@ -3344,7 +3344,7 @@
     ],
     "fortressSweepRev": [
       {
-        "size": "XXXXL",
+        "size": "XXL",
         "fadeIn": 0,
         "fadeOut": 0.3,
         "duration": -1,
@@ -3481,7 +3481,7 @@
     ],
     "fortressSweep": [
       {
-        "size": "XXXXL",
+        "size": "XXL",
         "fadeIn": 0,
         "fadeOut": 0.3,
         "duration": -1,

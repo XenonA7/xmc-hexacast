@@ -7150,6 +7150,255 @@
       {
         "type": "LOOP_END"
       }
+    ],
+    "stormStrideHexagons": [
+      {
+        "numParticles": 30,
+        "duration": 0.4,
+        "centralAngle": 1.5,
+        "startAngle": -0.25,
+        "startDist": 38,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": true,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            },
+            "time": 0.025,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.15,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.175,
+        "anim": "HEXA_SHOCK_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "spiritBlastHexagons": [
+      {
+        "numParticles": 8,
+        "duration": 0.2,
+        "centralAngle": 0.5,
+        "startAngle": -0.2,
+        "startDist": 20,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": true,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.075,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            },
+            "time": 0.10,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.66,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.2,
+        "anim": "HEXA_WAVE_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "spiritBlastHexagonsRev": [
+      {
+        "numParticles": 8,
+        "duration": 0.2,
+        "centralAngle": 0.5,
+        "startAngle": -0.2,
+        "startDist": 20,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.075,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            },
+            "time": 0.10,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.66,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.2,
+        "anim": "HEXA_WAVE_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "spiritBlastFinalHexagons": [
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 10,
+        "duration": 0.4,
+        "centralAngle": 0.5,
+        "startAngle": 0.5,
+        "startDist": 26,
+        "useTargetAngle": false,
+        "moveDist": 0,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 0.85,
+              "y": 0.85
+            },
+            "time": 0.1,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.08,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.275,
+        "anim": "HEXA_WAVE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 10,
+        "duration": 0.4,
+        "centralAngle": 0.5,
+        "startAngle": 0,
+        "startDist": 26,
+        "useTargetAngle": false,
+        "moveDist": 0,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 0.85,
+              "y": 0.85
+            },
+            "time": 0.1,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.08,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.275,
+        "anim": "HEXA_WAVE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.4,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      },
+      {
+        "type": "STOP_SOUNDS"
+      }
     ]
   }
 }

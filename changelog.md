@@ -1,3 +1,15 @@
+0.12.0 (05/21/2023)
+### New Content
+- New combat art: Storm Stride (Shock Dash Lv.2B)
+- New combat art: Beam Blaster (Wave Throw Lv.1A)
+- New combat art: Spirit Blast (Wave Melee Lv.2A)
+###Changes
+- Added CYBER_BOLT_SHOCK particles to effect mjolnirHex
+- Reduced light source radius in effect frigidFlurrySweep1 and frigidFlurrySweep2
+- Reduced light source radius in effect fortressSweep and fortressSweepRev
+### Fixes
+- Fixed Shock Surge having "guardable": "NEVER"
+
 0.11.0 (05/16/2023)
 ### New Content
 - New combat art: Shock Surge (Shock Dash Lv.1B)
