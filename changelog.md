@@ -1,3 +1,9 @@
+0.12.1 (05/21/2023)
+###Changes
+- Spirit Blast now only combos if at least one enemy was hit
+- Increased FADE_COLOR fadeout duration in effect wavePunch2Hex
+- Adjusted sound effect audio for effect beamBlasterPre
+
 0.12.0 (05/21/2023)
 ### New Content
 - New combat art: Storm Stride (Shock Dash Lv.2B)
