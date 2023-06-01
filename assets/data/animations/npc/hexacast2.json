@@ -2202,6 +2202,22 @@
                 10,
                 11
               ]
+            },
+            {
+              "name": "sweepEndInstant",
+              "time": 0.04,
+              "repeat": false,
+              "frames": [
+                5
+              ]
+            },
+            {
+              "name": "sweepRevEndInstant",
+              "time": 0.04,
+              "repeat": false,
+              "frames": [
+                11
+              ]
             }
           ]
         }

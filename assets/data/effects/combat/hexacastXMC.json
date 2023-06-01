@@ -570,6 +570,52 @@
         "frames": [
           4
         ]
+      },
+      {
+        "name": "ARROW",
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 121,
+          "width": 11,
+          "height": 7
+        },
+        "guiSprites": true,
+        "renderMode": "source-over",
+        "time": 0.075,
+        "repeat": true,
+        "flipY": false,
+        "frames": [
+          0,
+          0
+        ],
+        "framesAlpha": [
+          1,
+          0.3
+        ]
+      },
+      {
+        "name": "ARROW_BLUE",
+        "sheet": {
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 107,
+          "offY": 121,
+          "width": 11,
+          "height": 7
+        },
+        "guiSprites": true,
+        "renderMode": "source-over",
+        "time": 0.075,
+        "repeat": true,
+        "flipY": false,
+        "frames": [
+          0,
+          0
+        ],
+        "framesAlpha": [
+          1,
+          0.3
+        ]
       }
     ]
   },
@@ -3365,6 +3411,14 @@
         "particleDuration": 0.5,
         "anim": "HEXA_NEUTRAL",
         "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "scale70": [
+      {
+        "scaleX": 0.80,
+        "scaleY": 0.80,
+        "duration": 0,
+        "type": "CHANGE_SCALE"
       }
     ],
     "scale85": [
@@ -7398,6 +7452,185 @@
       },
       {
         "type": "STOP_SOUNDS"
+      }
+    ],
+    "blizzardRushHexagons1": [
+      {
+        "color": "#6b9aff",
+        "alpha": 0.8,
+        "fadeIn": 0,
+        "fadeOut": 0.5,
+        "duration": 0.01,
+        "noLighter": true,
+        "type": "FADE_COLOR"
+      },
+      {
+        "numParticles": 7,
+        "duration": 0.25,
+        "centralAngle": 0.5,
+        "startAngle": -0.2,
+        "startDist": 32,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": true,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "start": {
+            "value": {
+              "x": 1.5,
+              "y": 1.5
+            },
+            "time": 0.1,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "time": 0.1,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "blizzardRushHexagons2": [
+      {
+        "numParticles": 36,
+        "duration": 0.5,
+        "centralAngle": 2.5,
+        "startAngle": -0.25,
+        "startDist": 32,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.5,
+              "y": 1.5
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.06,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.13,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "crosshair": [
+      {
+        "size": "XL",
+        "fadeIn": 0.2,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 6,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 24,
+        "particleRotate": true,
+        "moveDist": 0,
+        "keySpline": "LINEAR",
+        "moveRotate": 0.25,
+        "inverse": true,
+        "collision": false,
+        "moveWithTarget": 1,
+        "particleDuration": 0.5,
+        "cancelable": true,
+        "anim": "ARROW",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.5,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
+    ],
+    "crosshairBlue": [
+      {
+        "size": "XL",
+        "fadeIn": 0.2,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 6,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 24,
+        "particleRotate": true,
+        "moveDist": 0,
+        "keySpline": "LINEAR",
+        "moveRotate": 0.25,
+        "inverse": true,
+        "collision": false,
+        "moveWithTarget": 1,
+        "particleDuration": 0.5,
+        "cancelable": true,
+        "anim": "ARROW_BLUE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.5,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
       }
     ]
   }

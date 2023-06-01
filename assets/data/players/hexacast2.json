@@ -7455,7 +7455,7 @@
         "element": "HEAT",
         "damageFactor": 0.30,
         "reverse": false,
-        "status": 0.3,
+        "status": 0.5,
         "guardable": "",
         "skillBonus": "RANGED_DMG",
         "limiter": ""
@@ -7607,6 +7607,63 @@
       "group": "",
       "startAnim": "",
       "type": "GENERIC"
+    },
+    "fireballBigBasic": {
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 8
+      },
+      "effects": "ball-heat",
+      "speed": 550,
+      "maxBounce": 0,
+      "timer": 3,
+      "trail": false,
+      "multiHit": false,
+      "light": "L",
+      "noLightGlow": false,
+      "destroyProxy": "",
+      "type": "BALL",
+      "maxBounds": 0,
+      "animation": {
+        "name": "default",
+        "pivot": {
+          "x": 12,
+          "y": 12
+        },
+        "gfxOffset": {
+          "x": 0,
+          "y": 8
+        },
+        "sheet": {
+          "src": "media/entity/effects/heat.png",
+          "offX": 256,
+          "offY": 224,
+          "width": 24,
+          "height": 40
+        },
+        "time": 0.05,
+        "repeat": true,
+        "frames": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "attack": {
+        "type": "MEDIUM",
+        "visualType": "HEAVY",
+        "element": "HEAT",
+        "damageFactor": 0.55,
+        "status": 1,
+        "reverse": false,
+        "guardable": "",
+        "skillBonus": "RANGED_DMG",
+        "limiter": ""
+      },
+      "behaviors": [],
+      "timeBoni": null
     },
     "magnetCard1": {
       "copyOwnerAnims": false,
@@ -10698,6 +10755,26 @@
             "x": 0,
             "y": 0,
             "z": 4
+          }
+        },
+        {
+          "duration": -1,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "combat.hexacastXMC",
+            "name": "scale70"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
           }
         },
         {
@@ -16990,6 +17067,525 @@
       },
       "config": {},
       "type": "GENERIC"
+    },
+    "blizzardRushTrigger": {
+      "copyOwnerAnims": false,
+      "breakType": "ACTION",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "type": "CONNECT_PROXY_TO_TARGET"
+        },
+        {
+          "duration": -1,
+          "target": "TARGET",
+          "align": "CENTER",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "blizzardRushStun"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 5,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "TARGET",
+      "group": "blizzardRushTriggerGroup",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "config": {},
+      "type": "GENERIC"
+    },
+    "blizzardRushCardHome": {
+      "animation": {
+        "name": "default",
+        "sheet": {
+          "src": "media/entity/effects/cold.png",
+          "offX": 160,
+          "offY": 0,
+          "width": 32,
+          "height": 32
+        },
+        "time": 0.05,
+        "repeat": true,
+        "frames": [
+          0
+        ]
+      },
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "type": "DETACH_TIME_PARENT"
+        },
+        {
+          "poiFilter": {
+            "conditions": [
+              {
+                "sticking": true,
+                "group": "blizzardRushTriggerGroup",
+                "negated": false,
+                "type": "HAS_PROXY"
+              }
+            ],
+            "type": "ACTIVE_ENEMIES"
+          },
+          "distance": 256,
+          "type": "SET_POI_TEMP_TARGET"
+        },
+        {
+          "withElse": false,
+          "type": "IF",
+          "condition": "entity.hasTmpTarget",
+          "thenStep": [
+            {
+              "type": "CONNECT_PROXY_TO_TARGET"
+            },
+            {
+              "target": "TARGET",
+              "align": "CENTER",
+              "duration": -1,
+              "type": "STICK_TO_TARGET"
+            }
+          ]
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 1,
+          "angleVary": 0,
+          "startDist": -12,
+          "startDistCollide": "CLOSER",
+          "random": false,
+          "duration": 0,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "circularArea": true,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "posEntity": "PROXY_OWNER",
+          "count": 1,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "blizzardRushCard",
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 12
+          }
+        },
+        {
+          "time": 2,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": true,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "",
+      "startAnim": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "timeBoni": null,
+      "behaviors": null,
+      "config": {
+        "collType": "NONE",
+        "zGravityFactor": 0
+      },
+      "type": "GENERIC"
+    },
+    "blizzardRushCard": {
+      "animation": {
+        "shapeType": "Y_FLAT",
+        "SUB": [
+          {
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            },
+            "sheet": {
+              "src": "media/entity/effects/hexa-cards.png",
+              "offX": 0,
+              "offY": 128,
+              "width": 24,
+              "height": 32
+            },
+            "SUB": [
+              {
+                "name": "default",
+                "faceRotate": true,
+                "time": 0.016,
+                "repeat": false,
+                "frames": [
+                  0
+                ]
+              },
+              {
+                "name": "spinning",
+                "time": 0.016,
+                "repeat": true,
+                "frames": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "framesAngle": [
+                  0,
+                  22.5,
+                  45,
+                  67.5,
+                  90,
+                  112.5,
+                  135,
+                  157.5
+                ]
+              },
+              {
+                "name": "stuck",
+                "time": 0.016,
+                "repeat": false,
+                "frames": [
+                  8
+                ]
+              },
+              {
+                "name": "hidden",
+                "time": 0.016,
+                "repeat": false,
+                "frames": [
+                  -1
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "killEffect": {
+        "sheet": "specials.icicles",
+        "name": "iceCardGroundDeath"
+      },
+      "copyOwnerAnims": false,
+      "breakType": "COMBATANT",
+      "action": [
+        {
+          "withElse": false,
+          "type": "IF",
+          "condition": "!entity.hasTmpTarget",
+          "thenStep": [
+            {
+              "kind": "PROXY_SRC",
+              "type": "SET_TEMP_TARGET"
+            }
+          ]
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "frigidFlurryCardAppear"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": -1,
+          "align": "BASE",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "group": "ground",
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "frigidFlurryCardBase"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "volume": 0.8,
+          "global": false,
+          "loop": false,
+          "variance": 0.1,
+          "speed": 0.7,
+          "sound": "media/sound/boss/gynthar/card-stuck.ogg",
+          "type": "PLAY_SOUND"
+        },
+        {
+          "duration": -1,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": false,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "iceCardSmallAura"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "wait": false,
+          "viaWalkConfig": false,
+          "type": "SHOW_ANIMATION",
+          "anim": "spinning"
+        },
+        {
+          "value": true,
+          "immediately": true,
+          "type": "FACE_TO_TARGET"
+        },
+        {
+          "value": false,
+          "immediately": true,
+          "type": "FACE_TO_TARGET"
+        },
+        {
+          "value": 315,
+          "type": "SET_SPEED"
+        },
+        {
+          "value": 1,
+          "type": "SET_AIR_FRICTION"
+        },
+        {
+          "value": 5,
+          "type": "SET_ACCEL_SPEED"
+        },
+        {
+          "value": 210,
+          "type": "SET_Z_VEL"
+        },
+        {
+          "value": 1.25,
+          "type": "SET_Z_GRAVITY_FACTOR"
+        },
+        {
+          "stopType": "LANDED",
+          "stopBeforeTime": 0,
+          "distance": 0,
+          "rotateSpeed": 0.6,
+          "adjustSpeedMax": 600,
+          "missileMode": 0,
+          "cancelIfBelowFall": false,
+          "type": "JUMP_TARGET_MOVEMENT"
+        },
+        {
+          "group": "ground",
+          "type": "CLEAR_EFFECTS"
+        },
+        {
+          "type": "STOP_XY"
+        },
+        {
+          "value": 0,
+          "type": "SET_SPEED"
+        },
+        {
+          "value": 1,
+          "type": "SET_Z_GRAVITY_FACTOR"
+        },
+        {
+          "volume": 0.5,
+          "global": false,
+          "loop": false,
+          "speed": 0.7,
+          "sound": "media/sound/boss/gynthar/card-stuck.ogg",
+          "type": "PLAY_SOUND"
+        },
+        {
+          "size": 0,
+          "type": "SET_SHADOW"
+        },
+        {
+          "wait": false,
+          "viaWalkConfig": false,
+          "type": "SHOW_ANIMATION",
+          "anim": "hidden"
+        },
+        {
+          "clearKillEffect": "true",
+          "type": "MOD_GENERIC_PROXY"
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "fixPos": false,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "hailCard1Death"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "ignoreSlowMo": true,
+          "fixPos": true,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "coldExplodeBig"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "duration": 0,
+          "align": "BOTTOM",
+          "rotateFace": 0,
+          "flipLeftFace": false,
+          "wait": false,
+          "waitSkip": 0,
+          "actionDetached": true,
+          "ignoreSlowMo": true,
+          "fixPos": true,
+          "type": "SHOW_EFFECT",
+          "effect": {
+            "sheet": "specials.cold",
+            "name": "coldExplodeBigHexagon"
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "align": "CENTER",
+          "radius": 80,
+          "yScale": 0,
+          "zHeight": 0,
+          "centralAngle": 0,
+          "duration": 0.3,
+          "expandRadius": 0,
+          "alwaysFull": false,
+          "clockwise": false,
+          "flipLeftFace": 0,
+          "rectangular": false,
+          "repeat": false,
+          "uniformHitDir": false,
+          "fixPos": false,
+          "checkCollision": true,
+          "type": "CIRCLE_ATTACK",
+          "attack": {
+            "type": "HEAVY",
+            "element": "COLD",
+            "damageFactor": 1.8,
+            "fly": "MASSIVE",
+            "reverse": false,
+            "guardable": "",
+            "skillBonus": "RANGED_DMG",
+            "limiter": ""
+          },
+          "offset": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          }
+        },
+        {
+          "time": 0.20,
+          "type": "WAIT"
+        },
+        {
+          "group": "trail",
+          "type": "CLEAR_EFFECTS"
+        },
+        {
+          "time": 0.1,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "stickFaceAlign": false,
+      "group": "",
+      "startAnim": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "timeBoni": null,
+      "behaviors": null,
+      "config": {
+        "maxVel": 600,
+        "collType": "IGNORE",
+        "shadow": 16
+      },
+      "type": "GENERIC"
     }
   },
   "actions": {
@@ -21399,6 +21995,282 @@
             "type": "WAIT"
           }
         ]
+      },
+      "DASH_SPECIAL1_B": {
+        "name": {
+          "en_US": "Flame Tackle"
+        },
+        "description": {
+          "en_US": "Charge forward and hit an enemy with an explosive tackle, followed by a small burst of fireballs."
+        },
+        "dmgType": "MIXED",
+        "stunType": "INTERRUPT",
+        "status": true,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": -1,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "duration": 0.5,
+            "align": "CENTER",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "group": "dashTrail",
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.heat",
+              "name": "flameTackleDash"
+            }
+          },
+          {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "runGrumpy"
+          },
+          {
+            "value": "HEAVY",
+            "type": "SET_HIT_STABLE"
+          },
+          {
+            "value": false,
+            "type": "SET_JUMPING"
+          },
+          {
+            "value": 400,
+            "type": "SET_SPEED"
+          },
+          {
+            "value": 2,
+            "type": "SET_ACCEL_SPEED"
+          },
+          {
+            "duration": 0.5,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "dust",
+              "name": "line"
+            },
+            "offset": {
+              "x": 0,
+              "y": 3,
+              "z": 6
+            }
+          },
+          {
+            "dir": {
+              "actorAttrib": "dashDir"
+            },
+            "type": "SET_FACE_TO_DIR"
+          },
+          {
+            "time": 0.5,
+            "cancelOnHit": true,
+            "collideCancel": 1,
+            "withBranches": true,
+            "orthoDirFactor": 0,
+            "ignoreLastHit": false,
+            "collideSlip": false,
+            "type": "TACKLE",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "HEAT",
+              "damageFactor": 2.0,
+              "fly": "HEAVY",
+              "reverse": false,
+              "spFactor": 0,
+              "stunSteps": [],
+              "status": 1,
+              "guardable": "",
+              "skillBonus": "MELEE_DMG"
+            },
+            "hit": [
+              {
+                "kind": "FIRST_HIT",
+                "type": "SET_TEMP_TARGET"
+              },
+              {
+                "value": 0.45,
+                "type": "SET_INVINCIBLE"
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "target": "TARGET",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": true,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.heat",
+                  "name": "flameTackleExplode"
+                }
+              },
+              {
+                "wait": false,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "dash"
+              },
+              {
+                "value": "IGNORE",
+                "type": "SET_COLL_TYPE"
+              },
+              {
+                "value": true,
+                "type": "SET_FACE_FIX"
+              },
+              {
+                "value": 5,
+                "type": "SET_ACCEL_SPEED"
+              },
+              {
+                "value": 200,
+                "type": "SET_SPEED"
+              },
+              {
+                "value": 1,
+                "type": "SET_Z_GRAVITY_FACTOR"
+              },
+              {
+                "value": 125,
+                "type": "SET_Z_VEL"
+              },
+              {
+                "time": 0.3,
+                "stopBeforeEdge": false,
+                "type": "MOVE_BACKWARD"
+              },
+              {
+                "type": "WAIT_UNTIL_ON_GROUND"
+              },
+              {
+                "value": false,
+                "type": "SET_FACE_FIX"
+              },
+              {
+                "group": "dashTrail",
+                "type": "CLEAR_EFFECTS"
+              },
+              {
+                "projectileSpeed": 650,
+                "type": "SET_FACE_TARGET_PREDICT"
+              },
+              {
+                "followUp": "sweepRevEnd",
+                "wait": false,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "sweepRev"
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 8,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.heat",
+                  "name": "godThrowHeatRev"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "align": "BOTTOM",
+                "centralAngle": 0.07,
+                "angleVary": 0.05,
+                "startDist": 20,
+                "startDistCollide": "CLOSER",
+                "random": false,
+                "count": 7,
+                "duration": 0.15,
+                "clockwise": true,
+                "flipLeftFace": 0,
+                "circularArea": false,
+                "uniformDir": 0,
+                "delay": 0,
+                "repeat": false,
+                "type": "SHOOT_PROXY_RANGE",
+                "proxy": "fireballSmallStraight",
+                "offset": {
+                  "z": 12
+                }
+              },
+              {
+                "align": "BOTTOM",
+                "centralAngle": 0.05,
+                "angleVary": 0.03,
+                "startDist": 20,
+                "startDistCollide": "CLOSER",
+                "random": true,
+                "count": 2,
+                "duration": 0.15,
+                "clockwise": true,
+                "flipLeftFace": 0,
+                "circularArea": false,
+                "uniformDir": 0,
+                "delay": 0,
+                "repeat": false,
+                "type": "SHOOT_PROXY_RANGE",
+                "proxy": "fireballBigBasic",
+                "offset": {
+                  "z": 12
+                }
+              },
+              {
+                "time": 0.15,
+                "type": "WAIT"
+              },
+              {
+                "value": false,
+                "immediately": true,
+                "type": "FACE_TO_TARGET"
+              },
+              {
+                "type": "SET_PLAYER_ACTION_BLOCK",
+                "blockData": {
+                  "dash": 0,
+                  "action": -1,
+                  "move": -1,
+                  "reaim": -1
+                }
+              },
+              {
+                "time": 0.6,
+                "type": "WAIT"
+              }
+            ],
+            "missed": []
+          }
+        ]
       }
     },
     "COLD": {
@@ -22598,7 +23470,7 @@
           "en_US": "Deal out a cluster of lingering icicle spellcards that impale any enemy that comes in contact with them."
         },
         "dmgType": "MELEE",
-        "stunType": "INTERRUPT",
+        "stunType": "",
         "status": false,
         "steps": [
           {
@@ -23141,6 +24013,693 @@
             ]
           },
 
+          {
+            "type": "CLEAR_HIT_PROXY"
+          },
+          {
+            "time": 0.4,
+            "type": "WAIT"
+          }
+        ]
+      },
+      "ATTACK_SPECIAL3_B": {
+        "name": {
+          "en_US": "Blizzard Rush"
+        },
+        "description": {
+          "en_US": "Hit multiple enemies with a wide sweep and follow up with an explosive volley."
+        },
+        "dmgType": "MIXED",
+        "stunType": "LOCK",
+        "status": false,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
+          {
+            "value": "HEAVY",
+            "type": "SET_HIT_STABLE"
+          },
+          {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "dashRev"
+          },
+          {
+            "duration": 0.70,
+            "align": "CENTER",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.cold",
+              "name": "blizzardRushCharge"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "time": 0.70,
+            "type": "WAIT"
+          },
+          {
+            "value": "MASSIVE",
+            "type": "SET_HIT_STABLE"
+          },
+          {
+            "followUp": "sweepRevEnd",
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "sweepRev"
+          },
+          {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "effect": {
+              "sheet": "combat.hexacastXMC",
+              "name": "blizzardRushHexagons1"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 12
+            },
+            "type": "SHOW_EFFECT"
+          },
+          {
+            "duration": 0,
+            "align": "BOTTOM",
+            "rotateFace": 8,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.cold",
+              "name": "blizzardRushSweep1"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 16
+            }
+          },
+          {
+            "posType": "TARGET",
+            "align": "BOTTOM",
+            "type": "SET_HIT_PROXY",
+            "proxy": "blizzardRushTrigger",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "align": "BOTTOM",
+            "radius": 128,
+            "yScale": 0,
+            "zHeight": 24,
+            "centralAngle": 0.5,
+            "startAngle": -0.2,
+            "duration": 0.2,
+            "expandRadius": 0,
+            "alwaysFull": false,
+            "clockwise": true,
+            "flipLeftFace": 0,
+            "rectangular": false,
+            "repeat": false,
+            "uniformHitDir": false,
+            "fixPos": false,
+            "checkCollision": true,
+            "type": "CIRCLE_ATTACK",
+            "attack": {
+              "type": "MASSIVE",
+              "element": "COLD",
+              "damageFactor": 4,
+              "reverse": false,
+              "guardable": "",
+              "skillBonus": "MELEE_DMG",
+              "stunSteps": [
+                {
+                  "type": "START_LOCK"
+                }
+              ],
+              "limiter": ""
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "value": 650,
+            "type": "SET_SPEED"
+          },
+          {
+            "duration": 0.2,
+            "align": "BOTTOM",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "dust",
+              "name": "line"
+            },
+            "offset": {
+              "x": 0,
+              "y": 3,
+              "z": 6
+            }
+          },
+          {
+            "time": 0.05,
+            "stopBeforeEdge": true,
+            "type": "MOVE_FORWARD"
+          },
+          {
+            "time": 0.2,
+            "type": "WAIT"
+          },
+          {
+            "sticking": false,
+            "group": "wall",
+            "keepCount": 8,
+            "type": "REMOVE_PROXIES"
+          },
+          {
+            "align": "BOTTOM",
+            "centralAngle": 1,
+            "angleVary": 0,
+            "startDist": 48,
+            "startDistCollide": "DROP",
+            "random": false,
+            "count": 6,
+            "duration": 0,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "circularArea": true,
+            "uniformDir": 0,
+            "delay": 0,
+            "repeat": false,
+            "maxGroundDistance": 16,
+            "type": "SHOOT_PROXY_RANGE",
+            "proxy": "icicleSmall",
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "poiFilter": {
+              "group": "blizzardRushTriggerGroup",
+              "type": "PROXY"
+            },
+            "distance": 600,
+            "type": "SET_POI_TEMP_TARGET"
+          },
+          {
+            "withElse": false,
+            "type": "IF",
+            "condition": "entity.hasTmpTarget",
+            "thenStep": [
+              {
+                "type": "SET_PLAYER_ACTION_BLOCK",
+                "blockData": {
+                  "dash": -1,
+                  "action": -1,
+                  "move": -1,
+                  "reaim": -1
+                }
+              },
+              {
+                "factor": 0.6,
+                "time": 0.1,
+                "keepEntityStatic": false,
+                "inversAccelerate": true,
+                "type": "ADD_SLOW_MOTION"
+              },
+              {
+                "type": "CLEAR_TEMP_TARGET"
+              },
+              {
+                "type": "CLEAR_HIT_PROXY"
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 8,
+                "flipLeftFace": true,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "coldSubChargeHex"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "time": 0.3,
+                "type": "WAIT"
+              },
+              {
+                "followUp": "sweepEnd",
+                "wait": false,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "sweep"
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 8,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "godThrowCold"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "hexPulseCold"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "align": "BOTTOM",
+                "centralAngle": 0.2,
+                "startDist": 120,
+                "startDistCollide": "CLOSER",
+                "random": true,
+                "count": 1,
+                "duration": 0,
+                "clockwise": false,
+                "flipLeftFace": 0,
+                "circularArea": false,
+                "uniformDir": 0,
+                "delay": 0,
+                "repeat": false,
+                "type": "SHOOT_PROXY_RANGE",
+                "proxy": "blizzardRushCardHome",
+                "offset": {
+                  "z": 0
+                }
+              },
+              {
+                "time": 0.3,
+                "type": "WAIT"
+              },
+
+
+              {
+                "time": 0,
+                "type": "PLAYER_ADJUST_FACE"
+              },
+              {
+                "followUp": "sweepRevEnd",
+                "wait": false,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "sweepRev"
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 8,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "godThrowColdRev"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "hexPulseCold"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "align": "BOTTOM",
+                "centralAngle": 0.3,
+                "startDist": 120,
+                "startDistCollide": "CLOSER",
+                "random": true,
+                "count": 1,
+                "duration": 0,
+                "clockwise": true,
+                "flipLeftFace": 0,
+                "circularArea": false,
+                "uniformDir": 0,
+                "delay": 0,
+                "repeat": false,
+                "type": "SHOOT_PROXY_RANGE",
+                "proxy": "blizzardRushCardHome",
+                "offset": {
+                  "z": 0
+                }
+              },
+              {
+                "time": 0.3,
+                "type": "WAIT"
+              },
+
+              
+
+              {
+                "time": 0,
+                "type": "PLAYER_ADJUST_FACE"
+              },
+              {
+                "followUp": "sweepEnd",
+                "wait": false,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "sweep"
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 8,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "godThrowCold"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "hexPulseCold"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "align": "BOTTOM",
+                "centralAngle": 0.4,
+                "startDist": 180,
+                "startDistCollide": "CLOSER",
+                "random": true,
+                "count": 3,
+                "duration": 0.25,
+                "clockwise": false,
+                "flipLeftFace": 0,
+                "circularArea": false,
+                "uniformDir": 0,
+                "delay": 0,
+                "repeat": false,
+                "type": "SHOOT_PROXY_RANGE",
+                "proxy": "blizzardRushCardHome",
+                "offset": {
+                  "z": 0
+                }
+              },
+              {
+                "time": 0.6,
+                "type": "WAIT"
+              },
+              {
+                "sticking": false,
+                "group": "blizzardRushTriggerGroup",
+                "type": "REMOVE_PROXIES"
+              },
+              {
+                "time": 1,
+                "removeEntityStatic": false,
+                "type": "CLEAR_SLOW_MOTION"
+              },
+
+              {
+                "duration": 0,
+                "align": "BOTTOM",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": true,
+                "fixPos": true,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "coldExplode"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "duration": 0.5,
+                "align": "BOTTOM",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "blueColdTrail"
+                }
+              },
+              {
+                "duration": 0,
+                "align": "CENTER",
+                "rotateFace": 8,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "specials.cold",
+                  "name": "blizzardRushSweep2"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "duration": 0,
+                "align": "BOTTOM",
+                "rotateFace": 8,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "effect": {
+                  "sheet": "combat.hexacastXMC",
+                  "name": "blizzardRushHexagons2"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 12
+                },
+                "type": "SHOW_EFFECT"
+              },
+              {
+                "align": "BOTTOM",
+                "radius": 128,
+                "yScale": 0,
+                "zHeight": 24,
+                "centralAngle": 2.5,
+                "startAngle": -0.25,
+                "duration": 0.5,
+                "expandRadius": 0,
+                "alwaysFull": false,
+                "clockwise": false,
+                "flipLeftFace": 0,
+                "rectangular": false,
+                "repeat": false,
+                "uniformHitDir": false,
+                "fixPos": false,
+                "checkCollision": true,
+                "type": "CIRCLE_ATTACK",
+                "attack": {
+                  "type": "MASSIVE",
+                  "element": "COLD",
+                  "damageFactor": 4,
+                  "fly": "MASSIVE+",
+                  "reverse": false,
+                  "spFactor": 0,
+                  "stunSteps": [
+                    {
+                      "type": "END_LOCK"
+                    }
+                  ],
+                  "guardable": "",
+                  "skillBonus": "MELEE_DMG"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 0,
+                  "z": 0
+                }
+              },
+              {
+                "duration": 0.35,
+                "align": "BOTTOM",
+                "rotateFace": 0,
+                "flipLeftFace": false,
+                "wait": false,
+                "waitSkip": 0,
+                "actionDetached": false,
+                "fixPos": false,
+                "type": "SHOW_EFFECT",
+                "effect": {
+                  "sheet": "dust",
+                  "name": "line"
+                },
+                "offset": {
+                  "x": 0,
+                  "y": 3,
+                  "z": 6
+                }
+              },
+              {
+                "followUp": "sweepEnd",
+                "wait": false,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "dashLong"
+              },
+              {
+                "value": 375,
+                "type": "SET_SPEED"
+              },
+              {
+                "time": 0.35,
+                "stopBeforeEdge": true,
+                "type": "MOVE_FORWARD"
+              },
+              {
+                "time": 0.3,
+                "type": "WAIT"
+              }
+            ]
+          },
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": -1,
+              "move": -1,
+              "reaim": -1
+            }
+          },
           {
             "type": "CLEAR_HIT_PROXY"
           },
@@ -28915,6 +30474,15 @@
                 "type": "MOVE_BACKWARD"
               },
               {
+                "type": "SET_PLAYER_ACTION_BLOCK",
+                "blockData": {
+                  "dash": -1,
+                  "action": -1,
+                  "move": -1,
+                  "reaim": -1
+                }
+              },
+              {
                 "wait": false,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
@@ -28942,7 +30510,7 @@
                 }
               },
               {
-                "duration": 0.8,
+                "duration": 0.9,
                 "align": "BOTTOM",
                 "rotateFace": 8,
                 "flipLeftFace": true,
@@ -28986,7 +30554,7 @@
                   "type": "MASSIVE",
                   "visualType": "MEDIUM",
                   "element": "WAVE",
-                  "damageFactor": 1,
+                  "damageFactor": 0.85,
                   "reverse": false,
                   "spFactor": 0,
                   "stunSteps": [

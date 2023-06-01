@@ -1,5 +1,23 @@
+0.13.0 (06/01/2023)
+### New Content
+- New combat art: Flame Tackle (Heat Dash Lv.1B)
+- New combat art: Blizzard Rush (Cold Melee Lv.3B)
+- Added definitions for animations sweepEndInstant and sweepRevEndInstant
+### Changes
+- Spirit Blast can no longer be canceled during the final part of the attack
+- Made wave laser sprites brighter, more saturated
+- Greatly improved the visuals for laser endpoints in Beam Blaster
+- Deleted particles LASER_END and LASER_END_INV, Beam Blaster now uses CIRCLE_BIG_WAVE_LASER
+- Increased particle spread for effect beamBlasterThrowRev
+- Decreased sprite scale by -15% on proxy magnetCard2 once it plays "rotating" animation
+### Fixes
+- Icicle Deck stunType category fixed from "INTERRUPT" to ""
+### Balance
+- Spirit Blast damage slightly reduced
+- Proxy fireballSmallStraight status factor increased from 0.3 to 0.5
+
 0.12.1 (05/21/2023)
-###Changes
+### Changes
 - Spirit Blast now only combos if at least one enemy was hit
 - Increased FADE_COLOR fadeout duration in effect wavePunch2Hex
 - Adjusted sound effect audio for effect beamBlasterPre
@@ -9,7 +27,7 @@
 - New combat art: Storm Stride (Shock Dash Lv.2B)
 - New combat art: Beam Blaster (Wave Throw Lv.1A)
 - New combat art: Spirit Blast (Wave Melee Lv.2A)
-###Changes
+### Changes
 - Added CYBER_BOLT_SHOCK particles to effect mjolnirHex
 - Reduced light source radius in effect frigidFlurrySweep1 and frigidFlurrySweep2
 - Reduced light source radius in effect fortressSweep and fortressSweepRev
@@ -20,7 +38,7 @@
 ### New Content
 - New combat art: Shock Surge (Shock Dash Lv.1B)
 - Added placeholder code for combat art: Storm Stride (Shock Dash Lv.2B)
-###Changes
+### Changes
 - Recolored frame 2 of DARK_LIGHTNING_TALL
 - Adjusted timing for effect lightningHexMain and proxy lightningChain
 - Effect lightningHexCardJumpBase initial size increased

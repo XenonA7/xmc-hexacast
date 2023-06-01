@@ -3590,7 +3590,7 @@
         "numParticles": 8,
         "duration": 0,
         "clockwise": false,
-        "centralAngle": 0.3,
+        "centralAngle": 0.4,
         "startAngle": 0.35,
         "startDist": 8,
         "random": true,
@@ -3882,21 +3882,21 @@
         "keepAngleSync": true,
         "offset": {
           "x": 0,
-          "y": -8,
-          "z": -8
+          "y": 8,
+          "z": 8
         },
         "pAlpha": {
           "init": 1,
           "end": {
             "value": 0,
-            "time": 0.45,
+            "time": 0.1,
             "spline": ""
           }
         },
         "moveWithTarget": 1,
-        "particleDuration": 0.5,
-        "cancelable": true,
-        "anim": "LASER_END_INV",
+        "particleDuration": 0.45,
+        "cancelable": false,
+        "anim": "CIRCLE_BIG_WAVE",
         "type": "PLAY_ANIM"
       },
       {
@@ -3949,14 +3949,14 @@
           "init": 1,
           "end": {
             "value": 0,
-            "time": 0.45,
+            "time": 0.1,
             "spline": ""
           }
         },
         "moveWithTarget": 1,
-        "particleDuration": 0.5,
-        "cancelable": true,
-        "anim": "LASER_END",
+        "particleDuration": 0.45,
+        "cancelable": false,
+        "anim": "CIRCLE_BIG_WAVE",
         "type": "PLAY_ANIM"
       },
       {
