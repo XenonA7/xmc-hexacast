@@ -1,3 +1,10 @@
+0.14.0 (06/04/2023)
+### New Content
+- New combat art: Firebrand (Heat Guard Lv.1B)
+- Added Hexacast easter egg NPC conversation to "Solar Farm" map in Ba'kii Kum
+- Added Hexacast easter egg NPC conversation to "Tranquil Bamboo" map in Sapphire Ridge
+- Added effect thunderJacketAuraNPC with tweaked offset and sound volume/radius
+
 0.13.0 (06/01/2023)
 ### New Content
 - New combat art: Flame Tackle (Heat Dash Lv.1B)
