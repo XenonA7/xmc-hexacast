@@ -22788,7 +22788,7 @@
           "en_US": "Firebrand"
         },
         "description": {
-          "en_US": "Power up your next melee attack. Firebrand will charge to a more powerful stage if you wait before consuming it."
+          "en_US": "Power up your next melee attack. Charges to a more powerful stage if you wait before consuming it."
         },
         "dmgType": "MELEE",
         "stunType": "",

@@ -1176,7 +1176,7 @@
             "spline": "EASE_OUT_STRONG"
           }
         },
-        "moveWithTarget": 1,
+        "moveWithTarget": 0,
         "particleDuration": 0.3,
         "cancelable": true,
         "anim": "FLAME2",
@@ -1214,7 +1214,7 @@
             "spline": ""
           }
         },
-        "moveWithTarget": 1,
+        "moveWithTarget": 0,
         "particleDuration": 0.35,
         "particleDurVariance": 0.2,
         "cancelable": true,
@@ -1288,7 +1288,7 @@
             "spline": "EASE_OUT_STRONG"
           }
         },
-        "moveWithTarget": 1,
+        "moveWithTarget": 0,
         "particleDuration": 0.3,
         "cancelable": true,
         "anim": "FLAME2",
@@ -1326,7 +1326,7 @@
             "spline": ""
           }
         },
-        "moveWithTarget": 1,
+        "moveWithTarget": 0,
         "particleDuration": 0.35,
         "particleDurVariance": 0.2,
         "cancelable": true,
@@ -1810,7 +1810,7 @@
             "spline": "EASE_OUT_STRONG"
           }
         },
-        "moveWithTarget": 1,
+        "moveWithTarget": 0,
         "particleDuration": 0.3,
         "cancelable": true,
         "anim": "FLAME2",
@@ -1848,7 +1848,7 @@
             "spline": ""
           }
         },
-        "moveWithTarget": 1,
+        "moveWithTarget": 0,
         "particleDuration": 0.35,
         "particleDurVariance": 0.2,
         "cancelable": true,

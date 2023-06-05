@@ -1,3 +1,8 @@
+0.14.1 (06/04/2023)
+### Changes
+- Flame particles in firebrandAttack1 and firebrandAttack2 effects no longer move with target
+- Re-worded Firebrand description
+
 0.14.0 (06/04/2023)
 ### New Content
 - New combat art: Firebrand (Heat Guard Lv.1B)
