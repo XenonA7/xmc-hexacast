@@ -1,5 +1,34 @@
+0.15.0 (06/12/2023)
+### New Content
+- New combat art: Augmented Flames (Heat Guard Lv.2B)
+- New combat art: Stasis Rune (Shock Melee Lv.2B)
+- Added definition for animation shuffle2Fast
+### Balance
+- Wave Detonation (remote trigger version) no longer stuns enemies. Initial CIRCLE_ATTACK removed entirely.
+- Proxy fireballBig damage reduced greatly
+- Proxy heatExplosionSmall (part of fireballBig) damage reduced greatly
+### Changes
+- Added "placeholder" text to Fire Barrage, as this art will be replaced in a later update
+- Removed unused DARK_LIGHTNING_BOLD code and the sprites from hexa-misc.png
+- Recolored SHOCK_DOT1_INV to be brighter
+- Consolidated the following standard attacks into element-independent actions:
+   - ATTACK
+   - ATTACK_REV
+   - ATTACK_FINISHER
+   - THROW_NORMAL
+   - THROW_NORMAL_REV
+   - THROW_CHARGED
+   - THROW_CHARGED_REV
+- Re-worded Firebrand description
+- Card shuffling animations now have 2 dirs and flip left/right respectively
+- Effect thunderJacketAura now has a separate fadeColor (slightly more blue) on COPY_SPRITE particles
+### Fixes
+- Fixed particle SHOCK_DOT1_INV wrong spritesheep mapping
+- Fixed SHOCK_DOT1_INV particles not showing for Magnet Card art
+
 0.14.1 (06/04/2023)
 ### Changes
+- Shock Surge now also grants a neutralization shield during the dash
 - Flame particles in firebrandAttack1 and firebrandAttack2 effects no longer move with target
 - Re-worded Firebrand description
 

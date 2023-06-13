@@ -77,7 +77,7 @@
       "sheet": {
         "src": "media/entity/effects/hexa-misc.png ",
         "offX": 96,
-        "offY": 0,
+        "offY": 96,
         "width": 8,
         "height": 8
       },
@@ -273,32 +273,6 @@
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
-      "name": "DARK_LIGHTNING_BOLD",
-      "sheet": {
-        "src": "media/entity/effects/hexa-misc.png",
-        "offX": 0,
-        "offY": 240,
-        "width": 32,
-        "height": 72
-      },
-      "guiSprites": true,
-      "renderMode": "source-over",
-      "time": 0.066,
-      "repeat": false,
-      "frames": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    }
-  },
-  {
-    "type": "ADD_ARRAY_ELEMENT",
-    "index": 0,
-    "content": {
       "name": "SHOCK_SWEEP2_FAST",
       "pivot": {
         "x": 16,
@@ -325,6 +299,72 @@
         5,
         6,
         7
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STASIS_CHAIN_END_LONG",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 0,
+        "offY": 240,
+        "width": 9,
+        "height": 60
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.075,
+      "repeat": false,
+      "flipX": true,
+      "tileOffset": 0,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        -1
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STASIS_CHAIN_END_SHORT",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 0,
+        "offY": 304,
+        "width": 9,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.075,
+      "repeat": false,
+      "flipX": true,
+      "tileOffset": 0,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        -1
       ]
     }
   }

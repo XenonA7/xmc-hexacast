@@ -2225,11 +2225,13 @@
     },
     {
       "sheet": "shuffle",
-      "dirs": "1",
+      "dirs": "2",
       "flipX": [
-        0
+        0,
+        1
       ],
       "tileOffsets": [
+        0,
         0
       ],
       "SUB": [
@@ -2248,6 +2250,26 @@
         {
           "name": "shuffle2",
           "time": 0.1,
+          "repeat": true,
+          "frames": [
+            4,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        {
+          "name": "shuffle2Fast",
+          "time": 0.06,
           "repeat": true,
           "frames": [
             4,
