@@ -1,12 +1,36 @@
+0.16.0 (06/29/2023)
+### New Content
+- WIP unfinished combat art: Stasis Storm (Shock Melee Lv.3A)
+- New combat art: Toxic Mire (Wave Dash Lv.1A)
+- New combat art: Fire Barrage (Heat Dash Lv.2A)
+- New combat art: Ashen Hex (Heat Dash Lv.1B)
+- Placeholder combat art: Ace of Flames (Heat Throw Lv.2A)
+- New combat art: Creeping Cold (Cold Throw Lv.2B)
+- New combat art: Ashen Inferno (Heat Dash Lv.2B)
+- Added global cooldown to Stasis Rune
+- Added cooldown icon effect for Stasis Rune, although it does not render well
+### Changes
+- Temporarily recolored Hexacast1's sprites. This will be reverted in the next update.
+- Flame Tackle changed from Heat Dash Lv.1B to Heat Dash Lv.1A
+- Fire Barrage throw art replaced with Fire Barrage dash art
+- Renamed Overclock to "Animation Viewer" (this is still a placeholder)
+- Enhanced particle effect for coldExplodeBigHexagon
+- Proxy fireballBig now has LIGHT knockback
+- Deleted unfinished combat art Lingering Gale (Cold Throw Lb.2B)
+- Deleted effects lingeringGaleSweep and lingeringGaleMain
+- Deleted proxies lingeringGale and snowDust
+- Adjusted CIRCLE_ATTACK parameters for proxy frigidFlurryCard
+### Fixes
+- Fixed previous changelog order
+- Fixed the charging effect in Augmented Flames being action detached
+### Balance
+- Stasis Rune enemy defense buff increased from +90% to 150% (250% multiplier)
+
 0.15.0 (06/12/2023)
 ### New Content
 - New combat art: Augmented Flames (Heat Guard Lv.2B)
 - New combat art: Stasis Rune (Shock Melee Lv.2B)
 - Added definition for animation shuffle2Fast
-### Balance
-- Wave Detonation (remote trigger version) no longer stuns enemies. Initial CIRCLE_ATTACK removed entirely.
-- Proxy fireballBig damage reduced greatly
-- Proxy heatExplosionSmall (part of fireballBig) damage reduced greatly
 ### Changes
 - Added "placeholder" text to Fire Barrage, as this art will be replaced in a later update
 - Removed unused DARK_LIGHTNING_BOLD code and the sprites from hexa-misc.png
@@ -25,6 +49,10 @@
 ### Fixes
 - Fixed particle SHOCK_DOT1_INV wrong spritesheep mapping
 - Fixed SHOCK_DOT1_INV particles not showing for Magnet Card art
+### Balance
+- Wave Detonation (remote trigger version) no longer stuns enemies. Initial CIRCLE_ATTACK removed entirely.
+- Proxy fireballBig damage reduced greatly
+- Proxy heatExplosionSmall (part of fireballBig) damage reduced greatly
 
 0.14.1 (06/04/2023)
 ### Changes

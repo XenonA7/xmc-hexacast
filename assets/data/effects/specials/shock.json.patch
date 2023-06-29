@@ -367,5 +367,80 @@
         -1
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STASIS_LOCK",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 80,
+        "offY": 176,
+        "width": 9,
+        "height": 13
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 1,
+      "repeat": false,
+      "flipX": false,
+      "tileOffset": 0,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STASIS_TIMER",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 90,
+        "offY": 176,
+        "width": 3,
+        "height": 8
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 1,
+      "repeat": false,
+      "flipX": false,
+      "tileOffset": 0,
+      "frames": [
+        0
+      ],
+      "framesAngle": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STASIS_TIMER_DARK",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 90,
+        "offY": 176,
+        "width": 3,
+        "height": 8
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 1,
+      "repeat": false,
+      "flipX": false,
+      "tileOffset": 0,
+      "frames": [
+        1
+      ],
+      "framesAngle": [
+        0
+      ]
+    }
   }
 ]

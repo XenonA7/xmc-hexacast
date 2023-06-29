@@ -10,7 +10,7 @@ sc.STAT_CHANGE_SETTINGS["ATTACK-MINUS-VANISHING"] = {
 sc.STAT_CHANGE_SETTINGS["DEFENSE-PLUS-STASIS"] = {
   change: sc.STAT_CHANGE_TYPE.STATS,
   type: sc.STAT_PARAM_TYPE.DEFENSE,
-  value: 1.90,
+  value: 2.50,
   negative: false,
   icon: "stat-defense",
   grade: "stat-rank-up-1"

@@ -534,9 +534,6 @@
         "anim": "SNOWFLAKE1",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
-
-
-
       {
         "color": "white",
         "colorAlpha": "#00aaff",
