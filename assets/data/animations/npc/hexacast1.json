@@ -1250,9 +1250,11 @@
       "sheet": "posesGround",
       "dirs": "1",
       "flipX": [
-        0
+        0,
+        1
       ],
       "tileOffsets": [
+        0,
         0
       ],
       "SUB": [

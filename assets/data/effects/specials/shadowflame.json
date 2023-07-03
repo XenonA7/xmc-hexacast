@@ -133,6 +133,32 @@
         ]
       },
       {
+        "name": "DARK_FIRE_SMALL_GUI",
+        "shapeType": "Y_FLAT",
+        "sheet": {
+          "src": "media/entity/effects/shadowflame.png",
+          "offX": 0,
+          "offY": 64,
+          "width": 32,
+          "height": 40
+        },
+        "renderMode": "source-over",
+        "guiSprites": true,
+        "time": 0.033,
+        "repeat": true,
+        "frames": [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      {
         "name": "DARK_FIRE_SMALL_SLOW",
         "shapeType": "Y_FLAT",
         "sheet": {
@@ -3358,13 +3384,13 @@
         "collision": false,
         "pScale": {
           "init": {
-            "x": 1.1,
-            "y": 1.1
+            "x": 1.0,
+            "y": 1.0
           }
         },
         "moveWithTarget": true,
         "randFlip": true,
-        "anim": "DARK_FIRE_SMALL",
+        "anim": "DARK_FIRE_SMALL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {

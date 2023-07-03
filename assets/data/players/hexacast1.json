@@ -821,7 +821,7 @@
       "config": {},
       "type": "GENERIC"
     },
-    "mmCard1": {
+    "mmCard": {
       "effects": "ball",
       "effectKeys": {
         "trail": "neutralCardSmallTrail",
@@ -835,6 +835,11 @@
       "multiHit": false,
       "noLightGlow": false,
       "type": "BALL",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 12
+      },
       "animation": {
         "name": "default",
         "sheet": {
@@ -2952,7 +2957,7 @@
       },
       "timeBoni": null
     },
-    "healCard1": {
+    "essenceCard": {
       "effects": "ball-wave",
       "effectKeys": {
         "trail": "waveCardSmallTrail",
@@ -2966,6 +2971,11 @@
       "multiHit": false,
       "noLightGlow": false,
       "type": "BALL",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 12
+      },
       "animation": {
         "name": "default",
         "sheet": {
@@ -3439,6 +3449,11 @@
       "multiHit": false,
       "noLightGlow": false,
       "type": "BALL",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 12
+      },
       "animation": {
         "name": "default",
         "sheet": {
@@ -11264,6 +11279,11 @@
       "multiHit": false,
       "noLightGlow": true,
       "type": "BALL",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 12
+      },
       "animation": {
         "name": "default",
         "sheet": {
@@ -12041,6 +12061,11 @@
       "multiHit": false,
       "noLightGlow": false,
       "type": "BALL",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 12
+      },
       "destroyProxy": "arcaneCardDeathFX",
       "animation": {
         "name": "default",
@@ -12236,6 +12261,11 @@
       "multiHit": false,
       "noLightGlow": false,
       "type": "BALL",
+      "size": {
+        "x": 8,
+        "y": 8,
+        "z": 12
+      },
       "animation": {
         "name": "default",
         "sheet": {
@@ -26950,7 +26980,7 @@
             "delay": 0,
             "repeat": false,
             "type": "SHOOT_PROXY_RANGE",
-            "proxy": "mmCard1",
+            "proxy": "mmCard",
             "offset": {
               "z": 12
             }
@@ -36118,7 +36148,7 @@
             "delay": 0,
             "repeat": false,
             "type": "SHOOT_PROXY_RANGE",
-            "proxy": "healCard1",
+            "proxy": "essenceCard",
             "offset": {
               "z": 12
             }

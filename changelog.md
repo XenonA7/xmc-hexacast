@@ -1,3 +1,19 @@
+## 0.18.0 (07/03/2023)
+### New Content
+- New map: xtm/bonus/early-access-cutscene
+### Changes
+- The animations from the "posesGround" sheet are now 2-directional
+- Effect afflictionLines now uses new particle DARK_FIRE_SMALL_GUI
+- Renamed proxy healCard1 to essenceCard
+- Renamed proxy mmCard1 to mmCard
+- Added "size" property (8x8x12) to the following BALL proxies which previously had it undefined:
+   - mmCard
+   - essenceCard
+   - joltHexCard
+   - mundaneCard
+   - arcaneCardBullet
+   - amberCard1
+
 ## 0.17.0 (07/02/2023)
 ### New Content
 - New combat art: Shadowflame Sorcery (Heat Guard Lv.3A)
