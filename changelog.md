@@ -1,4 +1,51 @@
-0.16.0 (06/29/2023)
+## 0.17.0 (07/02/2023)
+### New Content
+- New combat art: Shadowflame Sorcery (Heat Guard Lv.3A)
+   - Casting again while active will immediately add a full duration to the existing buff's remaining time
+   - Affects the following actions while active:
+   - DASH
+   - PERFECT_GUARD
+   - ATTACK
+   - ATTACK_REV
+   - ATTACK_FINISHER
+   - THROW_NORMAL
+   - THROW_NORMAL_REV
+   - THROW_CHARGED
+   - THROW_CHARGED_REV
+   - HEAT: GUARD_SPECIAL1_A (Firebrand): Instant melee attack (tier 1 only) with recolored effects
+   - HEAT: GUARD_SPECIAL2_A (Augmented Flames): WIP, pending functionality in a later update
+- Added new animation floatEyesClosed
+- Added effect sheet specials.shadowflame.json
+- Added spritesheet shadowflame.png
+- Added corrected versions of all "HEXA" particles from combat.hexacastXMC to hexa-misc.png
+### Changes
+- Reverted Hexacast1 back to normal sprite color
+- Firebrand changed from Heat Guard Lv.1B to Heat Guard Lv.1A
+- Augmented Flames changed from Heat Guard Lv.2B to Heat Guard Lv.2A
+- Renamed HEXA_DARK particles in hexacastXMC.json to HEXA_BLACK
+- Made hexagon outline slightly larger for effects ashenHexExplode and ashenInfernoExplode
+- Alightly adjusted particle timing for effect ashenInfernoExplode
+- Tweaked sound effects for effect ashenInfernoVortex and made them louder
+- The following proxies no longer interact with puzzle elements and are changed to "checkCollision": "false" for their CIRCLE_ATTACK:
+   - frigidFlurryCard
+   - ashenInfernoCard
+   - creepingColdCard
+   - blizzardRushCard
+   - fireBarrageExplosion
+- Removed unused idle animation in the DASH action
+### Fixes
+- Fixed Ashen Inferno final explosion hitbox radius being too small
+- Fixed Stasis Rune cooldown bugging out if the player gets interrupted between hitting an enemy and landing on the ground
+   - The proxy stasisCooldown is now shot by the proxy stasisProxy instead of the player
+- Fixed a bug where stasisCooldown could be deleted by REMOVE_PROXIES.
+   - Note that breakType NEVER is not respected if the proxy is attached to a target. Now it is not attached.
+- Fixed invalid proxy breakType on heatExplosionSmall
+- Fixed changelog formatting
+### Balance
+- Ashen Inferno damage reduced
+- Ashen Inferno hit strength reduced from MEDIUM to LIGHT on the repeating vortex hitbox
+
+## 0.16.0 (06/29/2023)
 ### New Content
 - WIP unfinished combat art: Stasis Storm (Shock Melee Lv.3A)
 - New combat art: Toxic Mire (Wave Dash Lv.1A)
@@ -16,7 +63,7 @@
 - Renamed Overclock to "Animation Viewer" (this is still a placeholder)
 - Enhanced particle effect for coldExplodeBigHexagon
 - Proxy fireballBig now has LIGHT knockback
-- Deleted unfinished combat art Lingering Gale (Cold Throw Lb.2B)
+- Deleted unfinished combat art Lingering Gale (Cold Throw Lv.2B)
 - Deleted effects lingeringGaleSweep and lingeringGaleMain
 - Deleted proxies lingeringGale and snowDust
 - Adjusted CIRCLE_ATTACK parameters for proxy frigidFlurryCard
@@ -26,7 +73,7 @@
 ### Balance
 - Stasis Rune enemy defense buff increased from +90% to 150% (250% multiplier)
 
-0.15.0 (06/12/2023)
+## 0.15.0 (06/12/2023)
 ### New Content
 - New combat art: Augmented Flames (Heat Guard Lv.2B)
 - New combat art: Stasis Rune (Shock Melee Lv.2B)
@@ -54,20 +101,20 @@
 - Proxy fireballBig damage reduced greatly
 - Proxy heatExplosionSmall (part of fireballBig) damage reduced greatly
 
-0.14.1 (06/04/2023)
+## 0.14.1 (06/04/2023)
 ### Changes
 - Shock Surge now also grants a neutralization shield during the dash
 - Flame particles in firebrandAttack1 and firebrandAttack2 effects no longer move with target
 - Re-worded Firebrand description
 
-0.14.0 (06/04/2023)
+## 0.14.0 (06/04/2023)
 ### New Content
 - New combat art: Firebrand (Heat Guard Lv.1B)
 - Added Hexacast easter egg NPC conversation to "Solar Farm" map in Ba'kii Kum
 - Added Hexacast easter egg NPC conversation to "Tranquil Bamboo" map in Sapphire Ridge
 - Added effect thunderJacketAuraNPC with tweaked offset and sound volume/radius
 
-0.13.0 (06/01/2023)
+## 0.13.0 (06/01/2023)
 ### New Content
 - New combat art: Flame Tackle (Heat Dash Lv.1B)
 - New combat art: Blizzard Rush (Cold Melee Lv.3B)
@@ -85,13 +132,13 @@
 - Spirit Blast damage slightly reduced
 - Proxy fireballSmallStraight status factor increased from 0.3 to 0.5
 
-0.12.1 (05/21/2023)
+## 0.12.1 (05/21/2023)
 ### Changes
 - Spirit Blast now only combos if at least one enemy was hit
 - Increased FADE_COLOR fadeout duration in effect wavePunch2Hex
 - Adjusted sound effect audio for effect beamBlasterPre
 
-0.12.0 (05/21/2023)
+## 0.12.0 (05/21/2023)
 ### New Content
 - New combat art: Storm Stride (Shock Dash Lv.2B)
 - New combat art: Beam Blaster (Wave Throw Lv.1A)
@@ -103,7 +150,7 @@
 ### Fixes
 - Fixed Shock Surge having "guardable": "NEVER"
 
-0.11.0 (05/16/2023)
+## 0.11.0 (05/16/2023)
 ### New Content
 - New combat art: Shock Surge (Shock Dash Lv.1B)
 - Added placeholder code for combat art: Storm Stride (Shock Dash Lv.2B)
@@ -117,7 +164,7 @@
 - Throttle Hex nerfed back to the original -15% timeflow debuff (was -20%)
 - Proxy lightningHexBounce no longer inflicts jolt status
 
-0.10.0 (05/15/2023)
+## 0.10.0 (05/15/2023)
 ### New Content
 - New combat art: Throttle Hex (Shock Melee Lv.1B)
 - New combat art: Jolt Hex (Shock Throw Lv.1A)
@@ -150,13 +197,13 @@
 - Static Discharge now inflicts jolt status
 - Static Field now inflicts jolt status
 
-0.9.1 (05/06/2023)
+## 0.9.1 (05/06/2023)
 ### Changes
 - Effect thunderJacketAura removed light glow property
 - Effect thunderJacketAura increased blink duration
 - Effect thunderJacketAura increased blink alpha
 
-0.9.0 (05/06/2023)
+## 0.9.0 (05/06/2023)
 ### New Content
 - New combat art: Thunder Jacket (Shock Guard Lv.2A)
 ### Changes
@@ -167,7 +214,7 @@
 - Removed effect magnetAttractHexagonsSmall from Magnet Deck
 - Added SHOCK_BALL_DOT2 particles to effect magnetCard2Lightning
 
-0.8.0 (05/05/2023)
+## 0.8.0 (05/05/2023)
 ### New Content
 - New combat art: Frigid Flurry (Cold Melee Lv.2A)
 - New combat art: Frozen Fortress (Cold Guard Lv.2A)
@@ -201,7 +248,7 @@
 ### Balance
 - Freeze Rays now inflicts chill status
 
-0.7.0 (05/03/2023)
+## 0.7.0 (05/03/2023)
 ### New Content
 - WIP combat art: Sleet Sentry (Cold Melee Lv.2A)
    - Unfinished mini Lea turrets spawned from the attack, manually aimed
@@ -211,7 +258,7 @@
 - Lingering Cold max bounces increased from 4 to 12
 - Lingering Cold proxy life changed from 12 seconds to 10 seconds
 
-0.6.0 (05/02/2023)
+## 0.6.0 (05/02/2023)
 ### New Content
 - Added "dashRev" animation definition
 - Added "dashLong" and "dashLongRev" animation definitions
@@ -227,7 +274,7 @@
 ### Balance
 - Amber Hex now loses projectile velocity much faster
 
-0.5.0 (04/24/2023)
+## 0.5.0 (04/24/2023)
 ### New Content
 - New combat art: Lingering Cold (Cold Throw Lv.1B)
 - New combat art: Amber Hex (Shock Throw Lv.2A)
@@ -252,7 +299,7 @@
    - Hail Line
    - Hail Spears
 
-0.4.1 (04/18/2023)
+## 0.4.1 (04/18/2023)
 ### Changes
 - Lowered refresh rate for particle trail to improve Arcane Volley performance
    - arcaneCardTrail
@@ -267,7 +314,7 @@
 ### Balance
  - Nerfed contact damage of Magnet Deck cards when returning to player
 
-0.4.0 (04/17/2023)
+## 0.4.0 (04/17/2023)
 ### New Content
 - New combat art: Withering Slash (Neutral Melee Lv.1B)
 - New combat art: Arcane Volley (Neutral Throw Lv.2B)
@@ -301,13 +348,13 @@
 - Hail Spears damage greatly increased
 - Wave Detionation (proximity mine version) damage reduced
 
-0.3.1 (03/26/2023)
+## 0.3.1 (03/26/2023)
 ### New Content
 - Dash animation finalized, heavily edited from Lychee
 ### Changes
 - Moved effect godThrowNeutral and godThrowNeutralRev from hexacastXMC.json to neutral.json
 
-0.3.0 (03/26/2023)
+## 0.3.0 (03/26/2023)
 ### New Content
 - New combat art: Mundane Volley (Neutral Throw Lv.1B)
 - New combat art: Curse of Vanishing (Neutral Melee Lv.2B)
@@ -321,7 +368,7 @@
 - Removed 0.07s delay at the start of standard melee attacks
 - Pending balance decision: Mundane Volley (Hexacast1 vs Hexacast2)
 
-0.2.1 (03/25/2023)
+## 0.2.1 (03/25/2023)
 ### New Content
 - Implemented tweaked Lychee chest animation
 - Implemented tweaked Lychee push/pull animation
@@ -335,7 +382,7 @@
 - Reduced main hexacast1.png spritesheet size
 - Re-arranged hexacast1.png spritesheet
 
-0.2.0 (03/18/2023)
+## 0.2.0 (03/18/2023)
 ### General
 - Lychee joins the project (pixel art)
 ### New Content
@@ -347,7 +394,7 @@
 - Overclock (placeholder art) now sets timescale to 0.25% for viewing animations
 - Removed particle effects from Overclock
 
-0.1.2 (02/20/2023)
+## 0.1.2 (02/20/2023)
 ### New Content
 - Ether Singularity new buff orb sprite when thrown to party members
 - Added new effect sheet hexa-buff-orbs.json
@@ -396,4 +443,5 @@
 - Added "placeholder" to the names of Overclock and Magnet Deck
 
 ## 0.0.1 (02/06/2023)
-- Initial Release
+- Initial version
+- Started tracking version numbers

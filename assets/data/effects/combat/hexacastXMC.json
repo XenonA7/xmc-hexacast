@@ -24,10 +24,27 @@
         ]
       },
       {
-        "name": "HEXA_DARK",
+        "name": "HEXA_BLACK",
         "sheet": {
           "src": "media/entity/effects/hexa-misc.png",
           "offX": 128,
+          "offY": 96,
+          "width": 16,
+          "height": 16
+        },
+        "guiSprites": false,
+        "renderMode": "source-over",
+        "time": 0.2,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      {
+        "name": "HEXA_DARK",
+        "sheet": {
+          "src": "media/entity/effects/shadowflame.png",
+          "offX": 192,
           "offY": 96,
           "width": 16,
           "height": 16
@@ -43,9 +60,9 @@
       {
         "name": "HEXA_NEUTRAL",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -60,9 +77,9 @@
       {
         "name": "HEXA_HEAT",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -77,9 +94,9 @@
       {
         "name": "HEXA_COLD",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -94,9 +111,9 @@
       {
         "name": "HEXA_SHOCK",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -111,9 +128,9 @@
       {
         "name": "HEXA_WAVE",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -126,7 +143,7 @@
         ]
       },
       {
-        "name": "HEXA_DARK_GUI",
+        "name": "HEXA_BLACK_GUI",
         "sheet": {
           "src": "media/entity/effects/hexa-misc.png",
           "offX": 128,
@@ -143,11 +160,28 @@
         ]
       },
       {
+        "name": "HEXA_DARK_GUI",
+        "sheet": {
+          "src": "media/entity/effects/shadowflame.png",
+          "offX": 192,
+          "offY": 96,
+          "width": 16,
+          "height": 16
+        },
+        "guiSprites": true,
+        "renderMode": "source-over",
+        "time": 0.2,
+        "repeat": false,
+        "frames": [
+          0
+        ]
+      },
+      {
         "name": "HEXA_NEUTRAL_GUI",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -162,9 +196,9 @@
       {
         "name": "HEXA_HEAT_GUI",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -179,9 +213,9 @@
       {
         "name": "HEXA_COLD_GUI",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -196,9 +230,9 @@
       {
         "name": "HEXA_SHOCK_GUI",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -213,9 +247,9 @@
       {
         "name": "HEXA_WAVE_GUI",
         "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
+          "src": "media/entity/effects/hexa-misc.png",
+          "offX": 96,
+          "offY": 176,
           "width": 16,
           "height": 16
         },
@@ -6764,7 +6798,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.35,
-        "anim": "HEXA_DARK",
+        "anim": "HEXA_BLACK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -6809,7 +6843,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.35,
-        "anim": "HEXA_DARK",
+        "anim": "HEXA_BLACK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],

@@ -3810,8 +3810,8 @@
           },
           "start": {
             "value": {
-              "x": 2,
-              "y": 2
+              "x": 2.1,
+              "y": 2.1
             },
             "spline": "EASE_OUT"
           }
@@ -3929,8 +3929,8 @@
           },
           "start": {
             "value": {
-              "x": 2,
-              "y": 2
+              "x": 2.15,
+              "y": 2.15
             },
             "spline": "EASE_OUT"
           }
@@ -5078,12 +5078,20 @@
         "type": "SCREEN_FLASH"
       },
       {
-        "volume": 1.5,
+        "volume": 1.9,
         "global": false,
         "loop": false,
         "speed": 1,
         "variance": 0.1,
         "sound": "media/sound/battle/airon/fire-generic-attack-1.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 0.9,
+        "global": false,
+        "loop": false,
+        "speed": 0.6,
+        "sound": "media/sound/battle/enemies/discharge.ogg",
         "type": "PLAY_SOUND"
       },
       {
@@ -5113,22 +5121,22 @@
         "sounds": [
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-1.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-2.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-3.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-4.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           }
         ],
@@ -5288,22 +5296,22 @@
         "sounds": [
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-1.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-2.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-3.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-4.ogg",
-            "volume": 0.6,
+            "volume": 0.8,
             "variance": 0.1
           }
         ],
@@ -5821,8 +5829,8 @@
           },
           "start": {
             "value": {
-              "x": 2.25,
-              "y": 2.25
+              "x": 2.35,
+              "y": 2.35
             },
             "spline": "EASE_OUT"
           }
@@ -5921,33 +5929,6 @@
         "type": "WAIT"
       },
       {
-        "numParticles": 20,
-        "duration": 0,
-        "centralAngle": 1,
-        "startDist": 56,
-        "uniformRandom": 0.6,
-        "particleRotate": false,
-        "offset": {
-          "x": 0,
-          "y": 128,
-          "z": 128
-        },
-        "moveDist": 8,
-        "moveVariance": 4,
-        "keySpline": "EASE_OUT",
-        "inverse": false,
-        "collision": false,
-        "moveWithTarget": 1,
-        "angleVary": 1,
-        "particleDurVariance": 0.2,
-        "anim": "EXPLOSION_BIG_FAST",
-        "type": "OFFSET_PARTICLE_CIRCLE"
-      },
-      {
-        "time": 0.1,
-        "type": "WAIT"
-      },
-      {
         "useTargetAngle": false,
         "keepAngleSync": false,
         "pAlpha": {
@@ -5973,9 +5954,36 @@
             "spline": "EASE_OUT"
           }
         },
-        "particleDuration": 0.35,
+        "particleDuration": 0.4,
         "anim": "HEAT_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
+      },
+      {
+        "numParticles": 20,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 56,
+        "uniformRandom": 0.6,
+        "particleRotate": false,
+        "offset": {
+          "x": 0,
+          "y": 128,
+          "z": 128
+        },
+        "moveDist": 8,
+        "moveVariance": 4,
+        "keySpline": "EASE_OUT",
+        "inverse": false,
+        "collision": false,
+        "moveWithTarget": 1,
+        "angleVary": 1,
+        "particleDurVariance": 0.2,
+        "anim": "EXPLOSION_BIG_FAST",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.1,
+        "type": "WAIT"
       },
       {
         "numParticles": 20,
