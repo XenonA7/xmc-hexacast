@@ -21,6 +21,7 @@ Not yet integrated with XMC mods. To play as a Hexacast, you need to use char-se
 Note that the mod author did not publish any actual releases, you need to download the zip:
 ![image](https://user-images.githubusercontent.com/105614278/219522068-c268b0b9-206d-4736-a7e8-e426e40cecac.png)
 
+**Important**: When you download this, it the mod itself is the "src" folder. Put this into your **assets\mods** and rename it to "char-select".
 
 ## **Playable Characters:** 
 ![Hexacast1](https://user-images.githubusercontent.com/105614278/217142911-c29e7c93-dbde-405c-baa3-3b2f33d7faba.gif)
