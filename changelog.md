@@ -1,3 +1,13 @@
+## 0.18.1 (07/04/2023)
+### General
+- Public early access release!
+### New Content
+- Implemented runGrumpy animation for N and SE directions
+   - SE sprites created by Lychee
+### Fixes
+- Updated README.md
+- Fixed Triblader NPC position in the early access cutscene
+
 ## 0.18.0 (07/03/2023)
 ### New Content
 - New map: xtm/bonus/early-access-cutscene

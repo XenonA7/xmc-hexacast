@@ -53,76 +53,76 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Heat Melee Lv.2b
 - Heat Melee Lv.3a
 - Heat Melee Lv.3b
-- Heat Throw Lv.1
-- Heat Throw Lv.2
+- Heat Throw Lv.1	**Fire Hand**
+- Heat Throw Lv.2	**Ace of Flames**
 - Heat Throw Lv.3	N/A
-- Heat Dash Lv.1a	**Fire Hand**
-- Heat Dash Lv.1b	**Fire Barrage**
-- Heat Dash Lv.2a
-- Heat Dash Lv.2b
+- Heat Dash Lv.1a	**Flame Tackle**
+- Heat Dash Lv.1b	**Ashen Hex**
+- Heat Dash Lv.2a	**Fire Barrage**
+- Heat Dash Lv.2b	**Ashen Inferno**
 - Heat Dash Lv.3
 - Heat Guard Lv.1a
-- Heat Guard Lv.1b
+- Heat Guard Lv.1b	**Firebrand**
 - Heat Guard Lv.2a
-- Heat Guard Lv.2b
+- Heat Guard Lv.2b	**Augmented Flames**
 - Heat Guard Lv.3a 
-- Heat Guard Lv.3b
+- Heat Guard Lv.3b	**Shadowflame Sorcery**
 
 ![cold](https://user-images.githubusercontent.com/105614278/168505452-d0485b21-d090-482d-b493-d72090f12fa7.png)
 - Cold Melee Lv.1a	**Icicle Deck**
 - Cold Melee Lv.1b
-- Cold Melee Lv.2a
+- Cold Melee Lv.2a	**Frigid Flurry**
 - Cold Melee Lv.2b
 - Cold Melee Lv.3a
-- Cold Melee Lv.3b
+- Cold Melee Lv.3b	**Blizzard Rush**
 - Cold Throw Lv.1a	**Hail Line**
-- Cold Throw Lv.1b
+- Cold Throw Lv.1b	**Lingering Cold**
 - Cold Throw Lv.2a	**Hail Spears**
-- Cold Throw Lv.2b
+- Cold Throw Lv.2b	**Creeping Cold**
 - Cold Throw Lv.3
 - Cold Dash Lv.1
 - Cold Dash Lv.2
 - Cold Dash Lv.3	N/A
 - Cold Guard Lv.1a	**Brittle Barrier**
 - Cold Guard Lv.1b
-- Cold Guard Lv.2a	**Freeze Rays**
-- Cold Guard Lv.2b
+- Cold Guard Lv.2a	**Frozen Fortress**
+- Cold Guard Lv.2b	**Freeze Rays**
 - Cold Guard Lv.3a	**Eternal Blizzard**
 - Cold Guard Lv.3b
 
 ![shock](https://user-images.githubusercontent.com/105614278/168505459-99dbff01-3261-465e-a470-c381c7133198.png)
 - Shock Melee Lv.1a	**Static Discharge**
-- Shock Melee Lv.1b
+- Shock Melee Lv.1b	**Throttle Hex**
 - Shock Melee Lv.2a	**Static Field**
-- Shock Melee Lv.2b
+- Shock Melee Lv.2b	**Stasis Rune**
 - Shock Melee Lv.3
-- Shock Throw Lv.1a	**Throttle Hex**
+- Shock Throw Lv.1a	**Jolt Hex**
 - Shock Throw Lv.1b
-- Shock Throw Lv.2a
+- Shock Throw Lv.2a	**Amber Hex**
 - Shock Throw Lv.2b
-- Shock Throw Lv.3a
+- Shock Throw Lv.3a	**Lightning Hex**
 - Shock Throw Lv.3b
 - Shock Dash Lv.1a	**Magnet Card**
-- Shock Dash Lv.1b
+- Shock Dash Lv.1b	**Shock Surge**
 - Shock Dash Lv.2a	**Magnet Deck**
-- Shock Dash Lv.2b
+- Shock Dash Lv.2b	**Storm Stride**
 - Shock Dash Lv.3a
 - Shock Dash Lv.3b
 - Shock Guard Lv.1
-- Shock Guard Lv.2
+- Shock Guard Lv.2	**Thunder Jacket**
 - Shock Guard Lv.3	N/A
 
 ![wave](https://user-images.githubusercontent.com/105614278/168505468-e7f002ac-f5e0-4633-b444-a19dcde8418c.png)
 - Wave Melee Lv.1	**Ki Thrust**
-- Wave Melee Lv.2
+- Wave Melee Lv.2	**Spirit Blast**
 - Wave Melee Lv.3	N/A
-- Wave Throw Lv.1a
-- Wave Throw Lv.1b
+- Wave Throw Lv.1a	**Beam Blaster**
+- Wave Throw Lv.1b	**Essence Steal**
 - Wave Throw Lv.2a
 - Wave Throw Lv.2b
 - Wave Throw Lv.3a
 - Wave Throw Lv.3b
-- Wave Dash Lv.1a
+- Wave Dash Lv.1a	**Toxic Mire**
 - Wave Dash Lv.1b
 - Wave Dash Lv.2a
 - Wave Dash Lv.2b
