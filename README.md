@@ -8,6 +8,11 @@ This mod needs to be installed individually during early access.
 # **EARLY ACCESS VERSION**
 This Hexacast mod is incomplete. Future versions will likely change a lot and might not be save-compatible, you have been warned. Missing combat arts, animations, etc will be added in future updates until the mod is complete.
 
+### **Required Mods**
+1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
+2. logic-steps https://github.com/lexisother/logic-steps
+3. xenons-triblader-mod https://github.com/XenonA7/xenons-triblader-mod
+
 ### **Discord Server**
 https://discord.gg/CsfUk9vpFq
 
@@ -139,7 +144,8 @@ Note that the mod author did not publish any actual releases, you need to downlo
 # Install Instructions
 1. Back up your save files **\AppData\Local\CrossCode**
 2. Install CCLoader and the Playable Triblader Mod: https://github.com/XenonA7/xenons-triblader-mod/releases
-3. Download the Hexacast mod and add it to your **assets\mods** folder: https://github.com/XenonA7/xmc-hexacast/releases
+3. Install Logic Steps mod: https://github.com/lexisother/logic-steps/releases
+4. Download the Hexacast mod and add it to your **assets\mods** folder: https://github.com/XenonA7/xmc-hexacast/releases
 
 
 # How to Update to a New Version
