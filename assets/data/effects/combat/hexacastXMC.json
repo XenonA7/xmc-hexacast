@@ -1170,14 +1170,14 @@
       {
         "size": "L",
         "fadeIn": 0,
-        "fadeOut": 0.2,
+        "fadeOut": 0.35,
         "duration": 0.1,
         "glow": true,
         "type": "LIGHT"
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -1215,7 +1215,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -1243,7 +1243,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1269,7 +1269,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1295,7 +1295,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1376,7 +1376,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -1414,7 +1414,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_HEAT_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -1442,7 +1442,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1468,7 +1468,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1494,7 +1494,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1575,7 +1575,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -1613,7 +1613,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_COLD_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -1641,7 +1641,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1667,7 +1667,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1693,7 +1693,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1774,7 +1774,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -1812,7 +1812,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_SHOCK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -1840,7 +1840,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1866,7 +1866,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1892,7 +1892,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -1973,7 +1973,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -2011,7 +2011,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2039,7 +2039,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2065,7 +2065,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2091,7 +2091,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2172,7 +2172,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -2211,7 +2211,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2239,7 +2239,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2265,7 +2265,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2291,7 +2291,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2372,7 +2372,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -2411,7 +2411,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_HEAT_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2439,7 +2439,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2465,7 +2465,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2491,7 +2491,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2572,7 +2572,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -2611,7 +2611,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_COLD_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2639,7 +2639,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2665,7 +2665,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2691,7 +2691,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2772,7 +2772,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -2811,7 +2811,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_SHOCK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2839,7 +2839,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2865,7 +2865,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2891,7 +2891,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2972,7 +2972,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -3011,7 +3011,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -3039,7 +3039,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -3065,7 +3065,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -3091,7 +3091,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {

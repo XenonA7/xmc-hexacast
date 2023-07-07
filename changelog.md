@@ -1,3 +1,38 @@
+## 0.18.2 (07/06/2023)
+### IMPORTANT
+- Now requires CCLoader2 version 2.22.1 or higher!
+- New dependency mod: Logic Steps by Alyxia
+   - https://github.com/lexisother/logic-steps/releases
+   - Install instructions have been updated
+- Simplify requirement version increased to 2.12.1 (part of CCLoader2)
+### New Content
+- Added Lychee runGrumpy animations for S direction
+- Added demonstration of Logic Steps functionality to XTM dev room (via patch)
+- Added teleporter to early access cutscene to XTM dev room (via patch)
+- Added a return teleporter to the early access cutscene map
+### Changes
+- ashenInfernoCard changed visualType on repeating CIRCLE_ATTACK from MEDIUM to HEAVY
+- All standard melee effects and their rev variants slowed down to match the slower melee attack
+- Effect meleeDarkRev from specials.shadowflame.json slowed down to match new melee speed
+- Effect firebrandAttackDark slowed down to match new melee speed
+- Effect firebrandAttack1 slowed down to match new melee speed
+- Effect firebrandAttack2 slowed down to match new melee speed
+- firebrandProxy timing adjusted for slower melee
+- Animation at the end of standard melee attack changed to postShootSlow
+### Fixes
+- Fixed proxy darkFireGround spawning over gaps (added maxGroundDistance 16)
+- Fixed proxy darkFireGroundBarrier spawning over gaps (added maxGroundDistance 16)
+- Fixed effect darkFireWall not moving with target
+### Balance
+- Nerfed the standard melee attack
+   - Standard melee attack is now slower
+   - Standard melee attack damage reduced significantly
+   - Standard melee attack SP gain factor changed to be more in line with other classes
+   - Firebrand (Shadowflame version) standard melee hitboxes received the same nerf
+- Standard melee attack first three hits increased from LIGHT strength to MEDIUM strength with LIGHT fly and visualType
+- Firebrand (Shadowflame version) standard melee hits increased from LIGHT strength to MEDIUM strength with LIGHT fly and visualType
+- Magic Missile explosion attack strength reduced from MASSIVE to HEAVY
+
 ## 0.18.1 (07/04/2023)
 ### General
 - Public early access release!

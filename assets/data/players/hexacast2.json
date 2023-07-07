@@ -1117,7 +1117,7 @@
           "checkCollision": false,
           "type": "CIRCLE_ATTACK",
           "attack": {
-            "type": "MASSIVE",
+            "type": "HEAVY",
             "element": "NEUTRAL",
             "damageFactor": 4.5,
             "reverse": false,
@@ -17422,7 +17422,7 @@
               }
             },
             {
-              "time": 0.1,
+              "time": 0.13,
               "type": "WAIT"
             },
             {
@@ -17460,7 +17460,7 @@
               }
             },
             {
-              "time": 0.1,
+              "time": 0.13,
               "type": "WAIT"
             },
             {
@@ -17498,7 +17498,7 @@
               }
             },
             {
-              "time": 0.1,
+              "time": 0.13,
               "type": "WAIT"
             },
             {
@@ -17664,7 +17664,7 @@
               }
             },
             {
-              "time": 0.1,
+              "time": 0.13,
               "type": "WAIT"
             },
             {
@@ -17702,7 +17702,7 @@
               }
             },
             {
-              "time": 0.1,
+              "time": 0.13,
               "type": "WAIT"
             },
             {
@@ -17740,7 +17740,7 @@
               }
             },
             {
-              "time": 0.1,
+              "time": 0.13,
               "type": "WAIT"
             },
             {
@@ -20755,7 +20755,7 @@
           "type": "CIRCLE_ATTACK",
           "attack": {
             "type": "LIGHT",
-            "visualType": "MEDIUM",
+            "visualType": "HEAVY",
             "element": "HEAT",
             "fly": "LIGHT",
             "damageFactor": 0.30,
@@ -21900,10 +21900,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -21917,7 +21919,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -21938,10 +21940,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -21955,7 +21959,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -21976,10 +21980,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -21993,7 +21999,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22016,9 +22022,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "NEUTRAL",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -22074,10 +22080,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22091,7 +22099,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22112,10 +22120,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22129,7 +22139,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22150,10 +22160,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22167,7 +22179,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22190,9 +22202,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "HEAT",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -22248,10 +22260,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22265,7 +22279,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22286,10 +22300,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22303,7 +22319,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22324,10 +22340,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22341,7 +22359,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22364,9 +22382,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "COLD",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -22422,10 +22440,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22439,7 +22459,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22460,10 +22480,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22477,7 +22499,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22498,10 +22520,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22515,7 +22539,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22538,9 +22562,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "SHOCK",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -22596,10 +22620,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22613,7 +22639,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22634,10 +22660,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22651,7 +22679,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22672,10 +22700,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22689,7 +22719,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -22712,9 +22742,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "WAVE",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -22741,18 +22771,18 @@
                 }
               },
               {
-                "time": 0.1,
+                "time": 0.2,
                 "type": "WAIT"
               },
               {
-                "wait": false,
+                "followUp": "idle",
+                "wait": true,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
-                "anim": "postShoot"
+                "anim": "postShootSlow"
               },
               {
-                "time": 0.10,
-                "type": "WAIT"
+                "type": "CLEAR_ANIMATION"
               }
             ]
           }
@@ -22974,10 +23004,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -22991,7 +23023,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23012,10 +23044,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23029,7 +23063,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23050,10 +23084,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23067,7 +23103,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23090,9 +23126,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "NEUTRAL",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -23148,10 +23184,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23165,7 +23203,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23186,10 +23224,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23203,7 +23243,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23224,10 +23264,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23241,7 +23283,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23264,9 +23306,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "HEAT",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -23322,10 +23364,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23339,7 +23383,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23360,10 +23404,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23377,7 +23423,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23398,10 +23444,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23415,7 +23463,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23438,9 +23486,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "COLD",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -23496,10 +23544,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23513,7 +23563,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23534,10 +23584,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23551,7 +23603,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23572,10 +23624,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23589,7 +23643,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23612,9 +23666,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "SHOCK",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -23670,10 +23724,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23687,7 +23743,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23708,10 +23764,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23725,7 +23783,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23746,10 +23804,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -23763,7 +23823,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -23786,9 +23846,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "WAVE",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -23815,18 +23875,18 @@
                 }
               },
               {
-                "time": 0.1,
+                "time": 0.2,
                 "type": "WAIT"
               },
               {
-                "wait": false,
+                "followUp": "idle",
+                "wait": true,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
-                "anim": "postShoot"
+                "anim": "postShootSlow"
               },
               {
-                "time": 0.10,
-                "type": "WAIT"
+                "type": "CLEAR_ANIMATION"
               }
             ]
           }
@@ -24088,10 +24148,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24105,7 +24167,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24126,10 +24188,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24143,7 +24207,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24164,10 +24228,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "NEUTRAL",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24181,7 +24247,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24204,9 +24270,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "NEUTRAL",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -24262,10 +24328,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24279,7 +24347,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24300,10 +24368,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24317,7 +24387,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24338,10 +24408,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "HEAT",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24355,7 +24427,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24378,9 +24450,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "HEAT",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -24436,10 +24508,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24453,7 +24527,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24474,10 +24548,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24491,7 +24567,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24512,10 +24588,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "COLD",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24529,7 +24607,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24552,9 +24630,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "COLD",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -24610,10 +24688,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24627,7 +24707,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24648,10 +24728,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24665,7 +24747,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24686,10 +24768,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "SHOCK",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24703,7 +24787,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24726,9 +24810,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "SHOCK",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -24784,10 +24868,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24801,7 +24887,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24822,10 +24908,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24839,7 +24927,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24860,10 +24948,12 @@
                     "checkCollision": true,
                     "type": "CIRCLE_ATTACK",
                     "attack": {
-                      "type": "LIGHT",
+                      "type": "MEDIUM",
                       "element": "WAVE",
-                      "damageFactor": 1,
-                      "spFactor": 0.5,
+                      "fly": "LIGHT",
+                      "visualType": "LIGHT",
+                      "damageFactor": 0.45,
+                      "spFactor": 0.6,
                       "reverse": true,
                       "stunSteps": [],
                       "guardable": "",
@@ -24877,7 +24967,7 @@
                     }
                   },
                   {
-                    "time": 0.1,
+                    "time": 0.13,
                     "type": "WAIT"
                   },
                   {
@@ -24900,9 +24990,9 @@
                     "attack": {
                       "type": "HEAVY",
                       "element": "WAVE",
-                      "damageFactor": 1.5,
+                      "damageFactor": 1.15,
                       "fly": "MASSIVE",
-                      "spFactor": 0.8,
+                      "spFactor": 0.6,
                       "guardable": "",
                       "skillBonus": ""
                     },
@@ -24929,18 +25019,18 @@
                 }
               },
               {
-                "time": 0.1,
+                "time": 0.2,
                 "type": "WAIT"
               },
               {
-                "wait": false,
+                "followUp": "idle",
+                "wait": true,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
-                "anim": "postShoot"
+                "anim": "postShootSlow"
               },
               {
-                "time": 0.10,
-                "type": "WAIT"
+                "type": "CLEAR_ANIMATION"
               }
             ]
           }
@@ -26653,6 +26743,7 @@
                 "delay": 0,
                 "repeat": true,
                 "count": 1,
+                "maxGroundDistance": 16,
                 "type": "SHOOT_PROXY_RANGE",
                 "proxy": "darkFireGround",
                 "offset": {
@@ -26874,6 +26965,7 @@
               "delay": 0,
               "repeat": false,
               "count": 8,
+              "maxGroundDistance": 16,
               "type": "SHOOT_PROXY_RANGE",
               "proxy": "darkFireGroundBarrier",
               "offset": {
@@ -29755,9 +29847,11 @@
                 "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
-                  "type": "LIGHT",
+                  "type": "MEDIUM",
                   "element": "HEAT",
-                  "damageFactor": 1,
+                  "fly": "LIGHT",
+                  "visualType": "LIGHT",
+                  "damageFactor": 0.45,
                   "reverse": true,
                   "stunSteps": [],
                   "guardable": "",
@@ -29771,7 +29865,7 @@
                 }
               },
               {
-                "time": 0.1,
+                "time": 0.13,
                 "type": "WAIT"
               },
               {
@@ -29826,9 +29920,11 @@
                 "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
-                  "type": "LIGHT",
+                  "type": "MEDIUM",
                   "element": "HEAT",
-                  "damageFactor": 1,
+                  "fly": "LIGHT",
+                  "visualType": "LIGHT",
+                  "damageFactor": 0.45,
                   "reverse": true,
                   "stunSteps": [],
                   "guardable": "",
@@ -29842,7 +29938,7 @@
                 }
               },
               {
-                "time": 0.1,
+                "time": 0.13,
                 "type": "WAIT"
               },
               {
@@ -29897,9 +29993,11 @@
                 "checkCollision": true,
                 "type": "CIRCLE_ATTACK",
                 "attack": {
-                  "type": "LIGHT",
+                  "type": "MEDIUM",
                   "element": "HEAT",
-                  "damageFactor": 1,
+                  "fly": "LIGHT",
+                  "visualType": "LIGHT",
+                  "damageFactor": 0.45,
                   "reverse": true,
                   "stunSteps": [],
                   "guardable": "",
@@ -29913,7 +30011,7 @@
                 }
               },
               {
-                "time": 0.1,
+                "time": 0.13,
                 "type": "WAIT"
               },
               {
@@ -29970,7 +30068,7 @@
                 "attack": {
                   "type": "HEAVY",
                   "element": "HEAT",
-                  "damageFactor": 1.5,
+                  "damageFactor": 1.15,
                   "fly": "MASSIVE",
                   "guardable": "",
                   "skillBonus": ""

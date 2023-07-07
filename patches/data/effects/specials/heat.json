@@ -1179,7 +1179,7 @@
       },
       {
         "numParticles": 8,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.5,
         "startDist": 32,
         "useTargetAngle": true,
@@ -1209,14 +1209,14 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "FLAME2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
         "numParticles": 12,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.5,
         "startDist": 32,
         "useTargetAngle": true,
@@ -1247,14 +1247,14 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.35,
+        "particleDuration": 0.4,
         "particleDurVariance": 0.2,
         "cancelable": true,
         "anim": "FLAME2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "time": 0.3,
+        "time": 0.39,
         "type": "WAIT"
       },
       {
@@ -1813,7 +1813,7 @@
       },
       {
         "numParticles": 8,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.5,
         "startDist": 48,
         "useTargetAngle": true,
@@ -1843,14 +1843,14 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "FLAME2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
         "numParticles": 12,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.5,
         "startDist": 48,
         "useTargetAngle": true,
@@ -1881,14 +1881,14 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.35,
+        "particleDuration": 0.4,
         "particleDurVariance": 0.2,
         "cancelable": true,
         "anim": "FLAME2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "time": 0.3,
+        "time": 0.39,
         "type": "WAIT"
       },
       {

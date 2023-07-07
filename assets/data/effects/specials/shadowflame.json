@@ -1949,6 +1949,7 @@
           }
         },
         "randFlip": true,
+        "moveWithTarget": 1,
         "particleDuration": -1,
         "anim": "DARK_FIRE",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2076,7 +2077,7 @@
       },
       {
         "numParticles": 14,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.6,
         "startDist": 24,
         "useTargetAngle": false,
@@ -2115,7 +2116,7 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "HEXA_DARK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
@@ -2143,7 +2144,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2169,7 +2170,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2195,7 +2196,7 @@
         "type": "PLAY_RANDOM_SOUND"
       },
       {
-        "time": 0.1,
+        "time": 0.13,
         "type": "WAIT"
       },
       {
@@ -2285,7 +2286,7 @@
       },
       {
         "numParticles": 8,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.5,
         "startDist": 32,
         "useTargetAngle": true,
@@ -2315,14 +2316,14 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.3,
+        "particleDuration": 0.35,
         "cancelable": true,
         "anim": "DARK_FLAME2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
         "numParticles": 12,
-        "duration": 0.2,
+        "duration": 0.29,
         "centralAngle": 0.5,
         "startDist": 32,
         "useTargetAngle": true,
@@ -2353,14 +2354,14 @@
           }
         },
         "moveWithTarget": 0,
-        "particleDuration": 0.35,
+        "particleDuration": 0.4,
         "particleDurVariance": 0.2,
         "cancelable": true,
         "anim": "DARK_FLAME2",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "time": 0.3,
+        "time": 0.39,
         "type": "WAIT"
       },
       {

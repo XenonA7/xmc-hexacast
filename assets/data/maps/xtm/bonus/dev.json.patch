@@ -1,0 +1,1305 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "TeleportField",
+      "x": 931,
+      "y": 374,
+      "level": 1,
+      "settings": {
+        "mapId": 129,
+        "gfxType": "AR",
+        "dir": "SOUTH",
+        "map": "xtm.bonus.early-access-cutscene",
+        "marker": "entrance",
+        "name": "hexacast-ea-cutscene",
+        "teleportLabel": {
+          "en_US": "To: Hexacast Early Access Cutscene"
+        },
+        "longTelCond": "false",
+        "blockEventCondition": "",
+        "spawnCondition": "!tmp.blockExit"
+      }
+    }
+  },
+  {
+    "type": "IF",
+    "cond": "!activeMods.find(e => e.name === 'autumns-genesis')",
+    "thenSteps": [
+      {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+          "type": "NPC",
+          "x": 317,
+          "y": 455,
+          "level": 1,
+          "settings": {
+            "mapId": 125,
+            "npcStates": [
+              {
+                "reactType": "FIXED_POS",
+                "face": "EAST",
+                "action": [],
+                "hidden": false,
+                "condition": "",
+                "config": "normal",
+                "event": [
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hold still. I need to check something with you."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SHOCKED"
+                    },
+                    "message": {
+                      "en_US": "..!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "..."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "SET_MSG_EXPRESSION",
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DISGUSTED"
+                    }
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Ok, it looks like you don't have the \\c[3]Autumn's Genesis\\c[0] mod installed."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "If you do ever get it installed, come back and talk to me."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "We've been working on ways to check for mods without making them an install dependency."
+                    },
+                    "type": "SHOW_MSG"
+                  }
+                ]
+              }
+            ],
+            "characterName": "advisors.female-tall-blond",
+            "name": "AG-Test"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "IF",
+    "cond": "activeMods.find(e => e.name === 'autumns-genesis')",
+    "thenSteps": [
+      {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+          "type": "NPC",
+          "x": 317,
+          "y": 455,
+          "level": 1,
+          "settings": {
+            "mapId": 125,
+            "npcStates": [
+              {
+                "reactType": "FIXED_POS",
+                "face": "EAST",
+                "action": [],
+                "hidden": false,
+                "condition": "",
+                "config": "normal",
+                "event": [
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hi there! I see you have \\c[3]Autumn's Genesis\\c[0] installed!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "NOD"
+                    },
+                    "message": {
+                      "en_US": "[nods]",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Let's see if this works!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "CLEAR_MSG",
+                    "side": "ALL"
+                  },
+                  {
+                    "type": "START_PRIVATE_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hello, this is XTM calling AG, do you copy?",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "...",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.coquelicot",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.coquelicot",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hello there!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "It works! More importantly, we can load your portrait without crashing the game.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.coquelicot",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Oh dear, that sounds quite dangerous!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Not to worry! We can thank \\c[3]Alyxia\\c[0] for making this work.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "This is popssible due to new \\c[3]Logic Patch Steps\\c[0].",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Now mods will be able to detect if others are installed and include bonus crossover content with assets from other mods.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Previously, this would have required the other mods to be install dependencies. This opens up a lot of possibilities!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "END_PRIVATE_MSG"
+                  },
+                  {
+                    "entity1": {
+                      "player": true
+                    },
+                    "entity2": {
+                      "global": true,
+                      "name": "AG-Test"
+                    },
+                    "zoom": 1.5,
+                    "type": "SET_CAMERA_BETWEEN",
+                    "speed": "SLOWER",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "waitSkip": 0
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Well then Lea, before you go back to attempting the \\c[3]Master Trials\\c[0] in \\c[3]EX Mode\\c[0], here is a little something for your travels.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SURPRISED_TOWARD"
+                    },
+                    "message": {
+                      "en_US": "..?",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-tall-blond",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Enjoy!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "CLEAR_MSG",
+                    "side": "ALL"
+                  },
+                  {
+                    "entity": {
+                      "player": true
+                    },
+                    "action": [
+                      {
+                        "type": "SET_FACE",
+                        "face": "EAST",
+                        "rotate": true,
+                        "rotateSpeed": 3
+                      }
+                    ],
+                    "type": "DO_ACTION",
+                    "wait": true
+                  },
+                  {
+                    "bgm": "strikeTruer",
+                    "volume": 1,
+                    "mode": "FAST",
+                    "type": "PUSH_BGM"
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.2
+                  },
+                  {
+                    "type": "CHANGE_VAR_BOOL",
+                    "varName": "tmp.blockExit",
+                    "changeType": "set",
+                    "value": true
+                  },
+                  {
+                    "pos": {
+                      "x": 482,
+                      "y": 381
+                    },
+                    "speed": "FASTEST",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "type": "SET_CAMERA_POS",
+                    "waitSkip": 0,
+                    "zoom": 1
+                  },
+                  {
+                    "position": {
+                      "x": 482,
+                      "y": 381,
+                      "lvl": "1"
+                    },
+                    "targetPlayer": true,
+                    "type": "SPAWN_ENEMY",
+                    "enemyInfo": {
+                      "group": "g1",
+                      "varIncrease": "tmp.defeatedAG",
+                      "party": "",
+                      "face": "SOUTH",
+                      "startEffect": {
+                        "sheet": "scene.designer",
+                        "name": "spawnShredder"
+                      },
+                      "targetOnSpawn": true,
+                      "type": "autumn-dng.hedgehog-ruins",
+                      "level": {
+                        "varName": "player.level"
+                      },
+                      "attribs": {}
+                    }
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.15
+                  },
+                  {
+                    "pos": {
+                      "x": 535,
+                      "y": 497
+                    },
+                    "speed": "FASTEST",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "type": "SET_CAMERA_POS",
+                    "waitSkip": 0,
+                    "zoom": 1
+                  },
+                  {
+                    "position": {
+                      "x": 535,
+                      "y": 497,
+                      "lvl": "1"
+                    },
+                    "targetPlayer": true,
+                    "type": "SPAWN_ENEMY",
+                    "enemyInfo": {
+                      "group": "g1",
+                      "varIncrease": "tmp.defeatedAG",
+                      "party": "",
+                      "face": "SOUTH",
+                      "startEffect": {
+                        "sheet": "scene.designer",
+                        "name": "spawnShredder"
+                      },
+                      "targetOnSpawn": true,
+                      "type": "autumn-dng.hedgehog-ruins",
+                      "level": {
+                        "varName": "player.level"
+                      },
+                      "attribs": {}
+                    }
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.15
+                  },
+                  {
+                    "pos": {
+                      "x": 579,
+                      "y": 307
+                    },
+                    "speed": "FASTEST",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "type": "SET_CAMERA_POS",
+                    "waitSkip": 0,
+                    "zoom": 1
+                  },
+                  {
+                    "position": {
+                      "x": 579,
+                      "y": 307,
+                      "lvl": "1"
+                    },
+                    "targetPlayer": true,
+                    "type": "SPAWN_ENEMY",
+                    "enemyInfo": {
+                      "group": "g1",
+                      "varIncrease": "tmp.defeatedAG",
+                      "party": "",
+                      "face": "SOUTH",
+                      "startEffect": {
+                        "sheet": "scene.designer",
+                        "name": "spawnShredder"
+                      },
+                      "targetOnSpawn": true,
+                      "type": "autumn-dng.hedgehog-ruins",
+                      "level": {
+                        "varName": "player.level"
+                      },
+                      "attribs": {}
+                    }
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.15
+                  },
+                  {
+                    "type": "RESET_CAMERA",
+                    "wait": false,
+                    "transition": "EASE_IN_OUT",
+                    "speed": "NORMAL",
+                    "waitSkip": 0
+                  },
+                  {
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SHOCKED"
+                    },
+                    "message": {
+                      "en_US": "..!"
+                    }
+                  }
+                ]
+              }
+            ],
+            "characterName": "advisors.female-tall-blond",
+            "name": "AG-Test"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "IF",
+    "cond": "!activeMods.find(e => e.name === 'arcane-labs')",
+    "thenSteps": [
+      {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+          "type": "NPC",
+          "x": 357,
+          "y": 420,
+          "level": 1,
+          "settings": {
+            "mapId": 126,
+            "npcStates": [
+              {
+                "reactType": "FIXED_POS",
+                "face": "SOUTH",
+                "action": [],
+                "hidden": false,
+                "condition": "",
+                "config": "normal",
+                "event": [
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "It looks like you don't have the \\c[3]Arcane Lab\\c[0] mod installed.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SURPRISED_TOWARD"
+                    },
+                    "message": {
+                      "en_US": "..?",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Let me know if you do ever end up giving it a try.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "We're currently trying to test whether mods can be detected without making them install dependencies.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  }
+                ]
+              }
+            ],
+            "characterName": "advisors.female-small-black",
+            "name": "AL-Test"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "IF",
+    "cond": "activeMods.find(e => e.name === 'arcane-labs')",
+    "thenSteps": [
+      {
+        "type": "ADD_ARRAY_ELEMENT",
+        "content": {
+          "type": "NPC",
+          "x": 357,
+          "y": 420,
+          "level": 1,
+          "settings": {
+            "mapId": 126,
+            "npcStates": [
+              {
+                "reactType": "FIXED_POS",
+                "face": "SOUTH",
+                "action": [],
+                "hidden": false,
+                "condition": "",
+                "config": "normal",
+                "event": [
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Oh, hey! You have the \\c[3]Arcane Lab\\c[0] mod installed!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "NOD_HAPPY"
+                    },
+                    "message": {
+                      "en_US": "[nods]",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Well, let's prove it!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "CLEAR_MSG",
+                    "side": "ALL"
+                  },
+                  {
+                    "type": "START_PRIVATE_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "PROUD"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hey everyone! We can now interact without install dependencies!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.susie",
+                      "expression": "SMILE"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.susie",
+                      "expression": "SMILE"
+                    },
+                    "message": {
+                      "en_US": "Nice!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.shooty",
+                      "expression": "SMILE"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.shooty",
+                      "expression": "SMILE"
+                    },
+                    "message": {
+                      "en_US": "Neat!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.eisus",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.eisus",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "...",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.nevi",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.nevi",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "So what happens now?",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "REMOVE_MSG_PERSON",
+                    "person": "guildac.susie"
+                  },
+                  {
+                    "type": "REMOVE_MSG_PERSON",
+                    "person": "guildac.shooty"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Well, the game hasn't crashed trying to load your portraits, right? This means mods will be able to add bonus crossover content from other mods without explicitly making them install dependencies!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "SET_MSG_EXPRESSION",
+                    "person": {
+                      "person": "guildac.nevi",
+                      "expression": "SMILE"
+                    }
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Think of it as bonus content that will automatically unlock if a mod detects the presence of another one.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "guildac.nevi",
+                      "expression": "HAPPY"
+                    },
+                    "message": {
+                      "en_US": "That's pretty awesome!",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "We all have \\c[3]Alyxia\\c[0] to thank for this feature. It's part of \\c[3]Logic Steps\\c[0].",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "END_PRIVATE_MSG"
+                  },
+                  {
+                    "entity1": {
+                      "player": true
+                    },
+                    "entity2": {
+                      "global": true,
+                      "name": "AL-Test"
+                    },
+                    "zoom": 1.5,
+                    "type": "SET_CAMERA_BETWEEN",
+                    "speed": "SLOWER",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "waitSkip": 0
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "LEFT"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.female-small-black",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Well, there is only one thing left to do now.",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SURPRISED_TOWARD"
+                    },
+                    "message": {
+                      "en_US": "..?",
+                      "de_DE": "",
+                      "ja_JP": "",
+                      "ko_KR": "",
+                      "zh_CN": "",
+                      "zh_TW": ""
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "type": "CLEAR_MSG",
+                    "side": "ALL"
+                  },
+                  {
+                    "entity": {
+                      "player": true
+                    },
+                    "action": [
+                      {
+                        "type": "SET_FACE",
+                        "face": "EAST",
+                        "rotate": true,
+                        "rotateSpeed": 3
+                      }
+                    ],
+                    "type": "DO_ACTION",
+                    "wait": true
+                  },
+                  {
+                    "bgm": "susie-loop",
+                    "volume": 1,
+                    "mode": "FAST",
+                    "type": "PUSH_BGM"
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.2
+                  },
+                  {
+                    "type": "CHANGE_VAR_BOOL",
+                    "varName": "tmp.blockExit",
+                    "changeType": "set",
+                    "value": true
+                  },
+                  {
+                    "pos": {
+                      "x": 482,
+                      "y": 381
+                    },
+                    "speed": "FASTEST",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "type": "SET_CAMERA_POS",
+                    "waitSkip": 0,
+                    "zoom": 1
+                  },
+                  {
+                    "position": {
+                      "x": 482,
+                      "y": 381,
+                      "lvl": "1"
+                    },
+                    "targetPlayer": true,
+                    "type": "SPAWN_ENEMY",
+                    "enemyInfo": {
+                      "group": "g1",
+                      "varIncrease": "tmp.defeatedAL",
+                      "party": "",
+                      "face": "SOUTH",
+                      "startEffect": {
+                        "sheet": "scene.designer",
+                        "name": "spawnShredder"
+                      },
+                      "targetOnSpawn": true,
+                      "type": "hermes.vector",
+                      "level": {
+                        "varName": "player.level"
+                      },
+                      "attribs": {}
+                    }
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.15
+                  },
+                  {
+                    "pos": {
+                      "x": 535,
+                      "y": 497
+                    },
+                    "speed": "FASTEST",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "type": "SET_CAMERA_POS",
+                    "waitSkip": 0,
+                    "zoom": 1
+                  },
+                  {
+                    "position": {
+                      "x": 535,
+                      "y": 497,
+                      "lvl": "1"
+                    },
+                    "targetPlayer": true,
+                    "type": "SPAWN_ENEMY",
+                    "enemyInfo": {
+                      "group": "g1",
+                      "varIncrease": "tmp.defeatedAL",
+                      "party": "",
+                      "face": "SOUTH",
+                      "startEffect": {
+                        "sheet": "scene.designer",
+                        "name": "spawnShredder"
+                      },
+                      "targetOnSpawn": true,
+                      "type": "hermes.vector",
+                      "level": {
+                        "varName": "player.level"
+                      },
+                      "attribs": {}
+                    }
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.15
+                  },
+                  {
+                    "pos": {
+                      "x": 579,
+                      "y": 307
+                    },
+                    "speed": "FASTEST",
+                    "wait": true,
+                    "transition": "EASE_IN_OUT",
+                    "type": "SET_CAMERA_POS",
+                    "waitSkip": 0,
+                    "zoom": 1
+                  },
+                  {
+                    "position": {
+                      "x": 579,
+                      "y": 307,
+                      "lvl": "1"
+                    },
+                    "targetPlayer": true,
+                    "type": "SPAWN_ENEMY",
+                    "enemyInfo": {
+                      "group": "g1",
+                      "varIncrease": "tmp.defeatedAL",
+                      "party": "",
+                      "face": "SOUTH",
+                      "startEffect": {
+                        "sheet": "scene.designer",
+                        "name": "spawnShredder"
+                      },
+                      "targetOnSpawn": true,
+                      "type": "transport.transport-drone",
+                      "level": {
+                        "varName": "player.level"
+                      },
+                      "attribs": {}
+                    }
+                  },
+                  {
+                    "type": "WAIT",
+                    "time": 0.15
+                  },
+                  {
+                    "type": "RESET_CAMERA",
+                    "wait": false,
+                    "transition": "EASE_IN_OUT",
+                    "speed": "NORMAL",
+                    "waitSkip": 0
+                  },
+                  {
+                    "type": "SHOW_SIDE_MSG",
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SHOCKED"
+                    },
+                    "message": {
+                      "en_US": "Why?!"
+                    }
+                  }
+                ]
+              }
+            ],
+            "characterName": "advisors.female-small-black",
+            "name": "AL-Test"
+          }
+        }
+      }
+    ]
+  },
+  {
+    "type": "EXIT"
+  }
+]
