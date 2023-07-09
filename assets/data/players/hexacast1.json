@@ -5072,6 +5072,13 @@
           "type": "DETACH_TIME_PARENT"
         },
         {
+          "target": "OWNER",
+          "timeScale": 1,
+          "logicTimeScale": 1,
+          "moveXYScale": 0.925,
+          "type": "ADD_TEMP_INFLUENCE"
+        },
+        {
           "align": "BOTTOM",
           "posType": "PROXY_OWNER",
           "type": "SHOOT_PROXY",
@@ -5167,7 +5174,7 @@
           "shield": {
             "type": "DIRECTIONAL",
             "settings": {
-              "baseFactor": 0.7,
+              "baseFactor": 0.80,
               "strength": "BLOCK_ALL",
               "hitResist": "MASSIVE",
               "stableOverride": "MASSIVE",
@@ -7398,6 +7405,111 @@
       },
       "type": "GENERIC"
     },
+    "hexingBlastController": {
+      "copyOwnerAnims": false,
+      "breakType": "ACTION",
+      "action": [
+        {
+          "volume": 0.7,
+          "global": false,
+          "loop": false,
+          "speed": 1.2,
+          "sound": "media/sound/battle/special/special-boom.ogg",
+          "type": "PLAY_SOUND"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0.5,
+          "startAngle": -0.25,
+          "angleVary": 0,
+          "startDist": 24,
+          "startDistCollide": "NONE",
+          "random": false,
+          "count": 2,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 0,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "hexingBlastSmall",
+          "offset": {
+            "z": 0
+          }
+        },
+        {
+          "time": 0.066,
+          "type": "WAIT"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0.5,
+          "startAngle": -0.5,
+          "angleVary": 0,
+          "startDist": 24,
+          "startDistCollide": "NONE",
+          "random": false,
+          "count": 2,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 0,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "hexingBlastSmall",
+          "offset": {
+            "z": 0
+          }
+        },
+        {
+          "time": 0.166,
+          "type": "WAIT"
+        },
+        {
+          "align": "BOTTOM",
+          "centralAngle": 0,
+          "angleVary": 0,
+          "startDist": 0,
+          "startDistCollide": "NONE",
+          "random": false,
+          "count": 1,
+          "duration": 0,
+          "clockwise": true,
+          "flipLeftFace": 0,
+          "circularArea": false,
+          "uniformDir": 0,
+          "delay": 0,
+          "repeat": false,
+          "type": "SHOOT_PROXY_RANGE",
+          "proxy": "hexingBlastBig",
+          "offset": {
+            "z": 0
+          }
+        },
+        {
+          "time": 0.4,
+          "type": "WAIT"
+        }
+      ],
+      "invisible": false,
+      "hp": 0,
+      "stickToSource": "NONE",
+      "group": "",
+      "size": {
+        "x": 16,
+        "y": 16,
+        "z": 16
+      },
+      "config": {
+        "collType": "NONE",
+        "zGravityFactor": 0
+      },
+      "type": "GENERIC"
+    },
     "hexingBlastSmall": {
       "copyOwnerAnims": false,
       "breakType": "COMBATANT",
@@ -7467,7 +7579,7 @@
             "type": "HEAVY",
             "element": "NEUTRAL",
             "fly": "LIGHT",
-            "damageFactor": 1.75,
+            "damageFactor": 1.25,
             "reverse": false,
             "stunSteps": [],
             "hints": [
@@ -7571,7 +7683,7 @@
             "type": "HEAVY",
             "element": "NEUTRAL",
             "fly": "HEAVY",
-            "damageFactor": 3.2,
+            "damageFactor": 1.85,
             "reverse": false,
             "stunSteps": [],
             "hints": [
@@ -11559,7 +11671,7 @@
           "changeType": "set",
           "proxyOwner": false,
           "type": "SET_ATTRIB_NUMBER",
-          "value": 10
+          "value": 12
         },
         {
           "name": "startDagger",
@@ -25557,7 +25669,7 @@
             "type": "PLAYER_ADJUST_FACE"
           },
           {
-            "wait": false,
+            "wait": true,
             "viaWalkConfig": false,
             "anim": "postShoot",
             "type": "SHOW_ANIMATION"
@@ -26085,7 +26197,7 @@
             "type": "PLAYER_ADJUST_FACE"
           },
           {
-            "wait": false,
+            "wait": true,
             "viaWalkConfig": false,
             "anim": "postShoot",
             "type": "SHOW_ANIMATION"
@@ -27642,12 +27754,156 @@
           }
         ]
       },
+      "GUARD_SPECIAL1_A": {
+        "name": {
+          "en_US": "Shine"
+        },
+        "description": {
+          "en_US": "Instantly knock back enemies with an attack that also has a brief perfect guard window. Can be immediately dash-canceled."
+        },
+        "dmgType": "MELEE",
+        "stunType": "INTERRUPT",
+        "status": false,
+        "steps": [
+          {
+            "type": "SET_PLAYER_ACTION_BLOCK",
+            "blockData": {
+              "dash": 0,
+              "action": 0.6,
+              "move": 0.8,
+              "reaim": 0.8
+            }
+          },
+          {
+            "face": "SOUTH_EAST",
+            "rotate": false,
+            "type": "SET_FACE"
+          },
+          {
+            "value": "MASSIVE",
+            "type": "SET_HIT_STABLE"
+          },
+          {
+            "value": -1,
+            "type": "SET_WEIGHT"
+          },
+          {
+            "name": "shineShield",
+            "actionDetached": false,
+            "perfectGuardTime": 0.5,
+            "shield": {
+              "type": "DIRECTIONAL",
+              "settings": {
+                "neutralize": false,
+                "hitResist": "MASSIVE",
+                "stableOverride": "MASSIVE",
+                "strength": "BLOCK_ALL",
+                "duration": 0.5,
+                "range": 1,
+                "back": false
+              }
+            },
+            "type": "ADD_SHIELD"
+          },
+          {
+            "wait": false,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "guard"
+          },
+          {
+            "duration": 1,
+            "align": "CENTER",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.neutral",
+              "name": "shineFX"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "duration": 1,
+            "align": "CENTER",
+            "rotateFace": 0,
+            "flipLeftFace": false,
+            "wait": false,
+            "waitSkip": 0,
+            "actionDetached": false,
+            "fixPos": false,
+            "type": "SHOW_EFFECT",
+            "effect": {
+              "sheet": "specials.neutral",
+              "name": "shineShake"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "align": "BOTTOM",
+            "radius": 24,
+            "yScale": 0,
+            "zHeight": 16,
+            "centralAngle": 1,
+            "duration": 0.1,
+            "expandRadius": 0,
+            "alwaysFull": true,
+            "clockwise": false,
+            "flipLeftFace": 0,
+            "rectangular": false,
+            "repeat": false,
+            "uniformHitDir": false,
+            "fixPos": false,
+            "checkCollision": true,
+            "type": "CIRCLE_ATTACK",
+            "attack": {
+              "type": "MASSIVE",
+              "visualType": "MASSIVE",
+              "element": "NEUTRAL",
+              "fly": "MASSIVE",
+              "damageFactor": 3.75,
+              "critFactor": 0,
+              "reverse": false,
+              "stunSteps": [],
+              "guardable": "",
+              "skillBonus": "MELEE_DMG"
+            },
+            "offset": {
+              "x": 0,
+              "y": 0,
+              "z": 0
+            }
+          },
+          {
+            "time": 1,
+            "type": "WAIT"
+          },
+          {
+            "wait": true,
+            "viaWalkConfig": false,
+            "anim": "postShoot",
+            "type": "SHOW_ANIMATION"
+          }
+        ]
+      },
       "GUARD_SPECIAL1_B": {
         "name": {
           "en_US": "Hex Barrier"
         },
         "description": {
-          "en_US": "Creates a shield that resists \\c[3]30%\\c[0] of all damage and provides knockback resistance for a brief time."
+          "en_US": "Creates a shield that resists \\c[3]20%\\c[0] of all damage and provides knockback resistance for a brief time. Inflicts a \\c[1]-7.5%\\c[0] movement speed penalty while active."
         },
         "dmgType": "NONE",
         "stunType": "",
@@ -27716,100 +27972,20 @@
             }
           },
           {
-            "duration": 0,
-            "align": "FACE",
-            "rotateFace": 6,
-            "flipLeftFace": true,
-            "wait": false,
-            "waitSkip": 0,
-            "actionDetached": false,
-            "fixPos": false,
-            "type": "SHOW_EFFECT",
-            "effect": {
-              "sheet": "specials.neutral",
-              "name": "hexaShootNeutral"
-            },
-            "offset": {
-              "x": 0,
-              "y": 0,
-              "z": 0
-            }
-          },
-          {
-            "followUp": "attackEndLoop",
             "wait": false,
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
-            "anim": "attackEnd"
+            "anim": "specialShoot",
+            "followUp": "specialLoop"
           },
           {
-            "value": 350,
+            "value": 150,
             "type": "SET_SPEED"
           },
           {
-            "time": 0.05,
+            "time": 0.1,
             "stopBeforeEdge": true,
-            "type": "MOVE_FORWARD"
-          },
-          {
-            "volume": 0.7,
-            "global": false,
-            "loop": false,
-            "speed": 1.2,
-            "sound": "media/sound/battle/special/special-boom.ogg",
-            "type": "PLAY_SOUND"
-          },
-          {
-            "align": "BOTTOM",
-            "centralAngle": 0.5,
-            "startAngle": -0.25,
-            "angleVary": 0,
-            "startDist": 36,
-            "startDistCollide": "NONE",
-            "random": false,
-            "count": 2,
-            "duration": 0,
-            "clockwise": true,
-            "flipLeftFace": 0,
-            "circularArea": false,
-            "uniformDir": 0,
-            "delay": 0,
-            "repeat": false,
-            "type": "SHOOT_PROXY_RANGE",
-            "proxy": "hexingBlastSmall",
-            "offset": {
-              "z": 0
-            }
-          },
-          {
-            "time": 0.066,
-            "type": "WAIT"
-          },
-          {
-            "align": "BOTTOM",
-            "centralAngle": 0.3,
-            "startAngle": -0.15,
-            "angleVary": 0,
-            "startDist": 32,
-            "startDistCollide": "NONE",
-            "random": false,
-            "count": 2,
-            "duration": 0,
-            "clockwise": true,
-            "flipLeftFace": 0,
-            "circularArea": false,
-            "uniformDir": 0,
-            "delay": 0,
-            "repeat": false,
-            "type": "SHOOT_PROXY_RANGE",
-            "proxy": "hexingBlastSmall",
-            "offset": {
-              "z": 0
-            }
-          },
-          {
-            "time": 0.066,
-            "type": "WAIT"
+            "type": "MOVE_BACKWARD"
           },
           {
             "align": "BOTTOM",
@@ -27827,13 +28003,13 @@
             "delay": 0,
             "repeat": false,
             "type": "SHOOT_PROXY_RANGE",
-            "proxy": "hexingBlastBig",
+            "proxy": "hexingBlastController",
             "offset": {
               "z": 0
             }
           },
           {
-            "time": 0.4,
+            "time": 0.6,
             "type": "WAIT"
           },
           {

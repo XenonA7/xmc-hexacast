@@ -327,5 +327,72 @@
         4
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SHINE_PRE",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 96,
+        "offY": 256,
+        "width": 48,
+        "height": 57
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.016,
+      "repeat": true,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SHINE_MAIN",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 96,
+        "offY": 192,
+        "width": 59,
+        "height": 62
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.033,
+      "repeat": true,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SHINE_SPARKLE",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "xCount": 1,
+        "offX": 192,
+        "offY": 128,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.1,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        1
+      ]
+    }
   }
 ]

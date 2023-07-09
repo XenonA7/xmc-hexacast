@@ -1,3 +1,20 @@
+## 0.19.0 (07/09/2023)
+### New Content
+- New combat art: Shine (Neutral Guard Lv.1A)
+- Added DLC dependency in ccmod.json
+- Alyxia implementaiton of WAIT_UNTIL_GUARDED_NO_FACE, currently having issues
+### Changes
+- Hexing Blast reworked; uses new proxy hexingBlastController
+- Extended the canvas for hexa-misc.png
+### Fixes
+- Fixed some dependency declaration syntax
+- Fixed postShoot animation not showing for THROW_NORMAL or THROW_NROMAL_REV
+### Balance
+- Hex Barrier shield strength reduced from 30% to 20%
+- Hex Barrier now comes with a 10% movement speed penalty
+- Proxy hexingBlastSmall and hexingBlastBig damage reduced
+- Withering Slash now deals damage for 12 ticks instead of 10
+
 ## 0.18.2 (07/06/2023)
 ### IMPORTANT
 - Now requires CCLoader2 version 2.22.1 or higher!

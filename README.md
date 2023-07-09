@@ -47,7 +47,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Neutral Dash Lv.1b
 - Neutral Dash Lv.2a
 - Neutral Dash Lv.2b
-- Neutral Guard Lv.1a
+- Neutral Guard Lv.1a	**Shine**
 - Neutral Guard Lv.1b	**Hex Barrier**
 - Neutral Guard Lv.2a
 - Neutral Guard Lv.2b
