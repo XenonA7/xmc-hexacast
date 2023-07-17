@@ -1,3 +1,35 @@
+## 0.20.0 (07/16/2023)
+### General
+- Litter mod now updated to 1.5: https://github.com/XenonA7/xmc-hexacast-litter/releases
+### New Content
+- New combat art: Ace of Flames (Heat Throw Lv.2A)
+- New combat art: Ice Blitz (Cold Melee Lv.1A)
+- New combat art: Searing Touch (Heat Melee Lv.1A)
+- New combat art: Scorching Swirl (Heat Melee Lv.2A)
+- Added animation "dashFast"
+- Added non-homing versions of all charged VRPs
+- Hexacast1 now shoots non-homing chargd VRPs, Hexacast2 shoots homing charged VRPs
+### Changes
+- Icicle Deck changed from Cold Melee Lv.1A to Cold Guard Lv.1B
+- Deleted "Animation Test" heat melee placeholder
+- Ace of Flames placeholder removed and reworked
+- Changed avatar/name for existing pentafist NPC in hexacast encounters
+- Effect ashenHexExplode scaled down in all aspects by 0.75
+- Slightly sped up the loop speed for effect shineFX
+- Proxy shadowflameAffliction changed to breaktype COMBATANT
+- Improved effect ashenInfernoSweep
+- Moved dark fire particles into loop for effect shadowflame.afflictionLines
+- Reduced startup delay on proxy shadowflameAffliction
+- Effeect ashenHexCardAppear reduced sound effect volume
+### Fixes
+- Stasis cooldown meter effect can no longer be cleared by CLEAR_EFFECTS (actionDetached = true)
+- Fixed moveWithTarget property for effect shadowflame.afflictionLines
+### Balance
+- Ashen Hex explosion radius reduced by 25%
+- Ashen Hex explosion knockback increased
+- Reduced activation delay on proxy icePillarTiny (part of Icicle Deck)
+- Increased duration of shadowflameAffliction (results in damage increase)
+
 ## 0.19.0 (07/09/2023)
 ### New Content
 - New combat art: Shine (Neutral Guard Lv.1A)

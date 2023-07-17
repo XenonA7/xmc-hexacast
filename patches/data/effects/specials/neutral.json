@@ -2791,7 +2791,7 @@
         "type": "PLAY_ANIM"
       },
       {
-        "time": 0.066,
+        "time": 0.060,
         "type": "WAIT"
       },
       {
@@ -2817,7 +2817,7 @@
         "type": "PLAY_ANIM"
       },
       {
-        "time": 0.066,
+        "time": 0.060,
         "type": "WAIT"
       },
       {
@@ -2843,7 +2843,7 @@
         "type": "PLAY_ANIM"
       },
       {
-        "time": 0.066,
+        "time": 0.060,
         "type": "WAIT"
       },
       {

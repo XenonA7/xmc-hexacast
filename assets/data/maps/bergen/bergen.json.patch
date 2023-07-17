@@ -105,7 +105,10 @@
       "level": 3,
       "settings": {
         "name": "cards2",
-        "characterName": "cross-worlds.pentafist-male-dark",
+        "characterName": "cross-worlds.pentafist-female-blue",
+        "displayName": {
+          "en_US": "Alyxia"
+        },
         "mapId": 604,
         "npcStates": [
           {

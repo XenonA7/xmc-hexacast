@@ -53,9 +53,9 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Neutral Guard Lv.2b
 
 ![heat](https://user-images.githubusercontent.com/105614278/168505403-98d388f9-8d53-4d25-8bd2-956ef6a33e4c.png)
-- Heat Melee Lv.1a
+- Heat Melee Lv.1a	**Searing Touch**
 - Heat Melee Lv.1b
-- Heat Melee Lv.2a
+- Heat Melee Lv.2a	**Scorching Swirl**
 - Heat Melee Lv.2b
 - Heat Melee Lv.3a
 - Heat Melee Lv.3b
@@ -75,7 +75,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Heat Guard Lv.3b	**Shadowflame Sorcery**
 
 ![cold](https://user-images.githubusercontent.com/105614278/168505452-d0485b21-d090-482d-b493-d72090f12fa7.png)
-- Cold Melee Lv.1a	**Icicle Deck**
+- Cold Melee Lv.1a	**Ice Blitz**
 - Cold Melee Lv.1b
 - Cold Melee Lv.2a	**Frigid Flurry**
 - Cold Melee Lv.2b
@@ -90,7 +90,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Cold Dash Lv.2
 - Cold Dash Lv.3	N/A
 - Cold Guard Lv.1a	**Brittle Barrier**
-- Cold Guard Lv.1b
+- Cold Guard Lv.1b	**Icicle Deck**
 - Cold Guard Lv.2a	**Frozen Fortress**
 - Cold Guard Lv.2b	**Freeze Rays**
 - Cold Guard Lv.3a	**Eternal Blizzard**

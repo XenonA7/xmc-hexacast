@@ -56,7 +56,10 @@
           }
         ],
         "name": "hex2",
-        "characterName": "cross-worlds.pentafist-male-dark"
+        "characterName": "cross-worlds.pentafist-female-blue",
+        "displayName": {
+          "en_US": "Alyxia"
+        }
       }
     }
   },
