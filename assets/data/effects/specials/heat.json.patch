@@ -238,5 +238,26 @@
         11
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "TORCH_FLAME",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 232,
+        "offY": 96,
+        "width": 8,
+        "height": 8
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "repeat": false,
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
   }
 ]

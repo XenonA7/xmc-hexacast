@@ -5405,7 +5405,7 @@
         "type": "LIGHT"
       },
       {
-        "color": "#3089fc",
+        "color": "#77b1fc",
         "alpha": 0.5,
         "fadeIn": 0.05,
         "fadeOut": 0.4,
@@ -5553,7 +5553,7 @@
           }
         },
         "particleDuration": 0.4,
-        "anim": "SNOW_BURST",
+        "anim": "SNOW_BURST_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5585,7 +5585,7 @@
           }
         },
         "particleDuration": 0.4,
-        "anim": "SNOW_BURST",
+        "anim": "SNOW_BURST_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5617,7 +5617,7 @@
           }
         },
         "particleDuration": 0.4,
-        "anim": "SNOW_BURST",
+        "anim": "SNOW_BURST_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ]

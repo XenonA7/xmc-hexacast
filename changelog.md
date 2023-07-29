@@ -1,3 +1,31 @@
+0.21.0 (07/29/2023)
+### General
+- Litter mod now updated to 1.6: https://github.com/XenonA7/xmc-hexacast-litter/releases
+### New Content
+- New combat art: Blaster Sentry (Wave Throw Lv.2A)
+- New placeholder art: Acceleration Mine (Neutral Dash Lv.1A)
+- New combat art: Ampere Cloak (Shock Guard Lv.1A)
+- New combat art: Meteor Flare (Heat Melee Lv.1B)
+- Added new sprites for E combat run animation (modified from Lychee draft)
+- Added character changing sign to Rookie Harbor info hub building
+- Added character changing sign to Rhombus Arena lobby
+- Added character changing sign to XTM dev room
+### Changes
+- Changed "Animation Viewer" shock guard art to GUARD_SPECIAL1_B in the files to deactivate it
+- Ice Blitz 3rd hit no longer triggers unless one of the previous hits lands
+- Tweaked sound effect volume for effect scorchingSwirlSweepLoop
+- Increased size of FLAME2 particles in effect aceOfFlamesCharge and added a pAlpha fade in
+- Renamed proxy waveLaserCard to beamBlasterCard
+- Renamed proxy waveLaser to beamBlasterLaser
+- Re-worded description for Eternal Blizzard
+- Effect iceBlitzExplode now uses new particle SNOW_BURST_GUI
+- Reduced sound effect volume from effect fireBarrageTackleExplode
+- Renamed proxy overclockProxy to animationViewerProxy
+- Made the FADE_COLOR brighter in effect iceBlitzExplode
+- Added FLAME2 particles to effect scorchingSwirlBombCharge
+### Balance
+- Fire Hand target acquisition distance greatly increased
+
 ## 0.20.0 (07/16/2023)
 ### General
 - Litter mod now updated to 1.5: https://github.com/XenonA7/xmc-hexacast-litter/releases

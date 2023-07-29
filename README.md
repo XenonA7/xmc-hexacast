@@ -54,7 +54,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 
 ![heat](https://user-images.githubusercontent.com/105614278/168505403-98d388f9-8d53-4d25-8bd2-956ef6a33e4c.png)
 - Heat Melee Lv.1a	**Searing Touch**
-- Heat Melee Lv.1b
+- Heat Melee Lv.1b	**Meteor Flare**
 - Heat Melee Lv.2a	**Scorching Swirl**
 - Heat Melee Lv.2b
 - Heat Melee Lv.3a
@@ -114,7 +114,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Shock Dash Lv.2b	**Storm Stride**
 - Shock Dash Lv.3a
 - Shock Dash Lv.3b
-- Shock Guard Lv.1
+- Shock Guard Lv.1	**Ampere Cloak**
 - Shock Guard Lv.2	**Thunder Jacket**
 - Shock Guard Lv.3	N/A
 
@@ -124,7 +124,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Wave Melee Lv.3	N/A
 - Wave Throw Lv.1a	**Beam Blaster**
 - Wave Throw Lv.1b	**Essence Steal**
-- Wave Throw Lv.2a
+- Wave Throw Lv.2a	**Blaster Sentry**
 - Wave Throw Lv.2b
 - Wave Throw Lv.3a
 - Wave Throw Lv.3b

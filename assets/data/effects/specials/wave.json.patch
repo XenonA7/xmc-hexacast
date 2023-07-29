@@ -264,5 +264,31 @@
         12
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "BLASTER_TRAIL",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "xCount": 4,
+        "offX": 480,
+        "offY": 0,
+        "width": 32,
+        "height": 128
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.065,
+      "flipX": false,
+      "frames": [
+        0,
+        0,
+        1,
+        2,
+        3
+      ]
+    }
   }
 ]

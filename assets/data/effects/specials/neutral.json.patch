@@ -394,5 +394,28 @@
         1
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DUNGEON_ARROW",
+      "sheet": {
+        "src": "media/entity/objects/dungeon-ar.png",
+        "xCount": 1,
+        "offX": 64,
+        "offY": 0,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "faceRotate": true,
+      "time": 0.1,
+      "repeat": false,
+      "frames": [
+        0
+      ]
+    }
   }
 ]

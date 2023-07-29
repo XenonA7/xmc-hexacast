@@ -1,0 +1,174 @@
+[
+  {
+    "type": "ENTER",
+    "index": "entities"
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "Prop",
+      "x": 1227,
+      "y": 459,
+      "level": 0,
+      "settings": {
+        "name": "xtmSignBase",
+        "mapId": 267,
+        "propType": {
+          "sheet": "rhombus-interior",
+          "name": "groundProjector"
+        },
+        "propAnim": "",
+        "condAnims": []
+      }
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "Prop",
+      "x": 1227,
+      "y": 467,
+      "level": {
+        "level": 0,
+        "offset": 12
+      },
+      "settings": {
+        "mapId": 268,
+        "propType": {
+          "sheet": "trading-autumn",
+          "name": "signClass"
+        },
+        "propAnim": "hexacast",
+        "permaEffect": {
+          "sheet": "drops",
+          "name": "blink"
+        },
+        "interact": {
+          "icon": "INFO",
+          "hoverText": {
+            "en_US": "\\c[5]<XTM>\\c[0] Character Change"
+          },
+          "event": [
+            {
+              "side": "RIGHT",
+              "order": 0,
+              "clearSide": false,
+              "type": "ADD_MSG_PERSON",
+              "person": {
+                "person": "main.lea",
+                "expression": "DEFAULT"
+              }
+            },
+            {
+              "0": [
+                {
+                  "name": "Lea",
+                  "type": "SWITCH_PLAYER_CONFIG"
+                },
+                {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 1
+                },
+                {
+                  "text": {
+                    "en_US": "Character:\\. \\c[3]Lea\\c[0]\n\\!Class:\\. \\c[1]Spheromancer\\c[0]\n\\!Special attributes:\\. None"
+                  },
+                  "center": true,
+                  "autoContinue": false,
+                  "type": "SHOW_BOARD_MSG"
+                },
+                {
+                  "type": "CLEAR_MSG",
+                  "side": "ALL"
+                }
+              ],
+              "1": [
+                {
+                  "name": "Hexacast1",
+                  "type": "SWITCH_PLAYER_CONFIG"
+                },
+                {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 50
+                },
+                {
+                  "text": {
+                    "en_US": "Character:\\. \\c[3]Hexacast1\\c[0]\n\\!Class:\\. \\c[2]Hexacast\\c[0]\n\\!Special attributes:\\. \\c[3]Straight\\c[0] charged VRPs"
+                  },
+                  "center": true,
+                  "autoContinue": false,
+                  "type": "SHOW_BOARD_MSG"
+                },
+                {
+                  "type": "CLEAR_MSG",
+                  "side": "ALL"
+                }
+              ],
+              "2": [
+                {
+                  "name": "Hexacast2",
+                  "type": "SWITCH_PLAYER_CONFIG"
+                },
+                {
+                  "changeType": "set",
+                  "type": "CHANGE_VAR_NUMBER",
+                  "varName": "plot.xtm.character",
+                  "value": 51
+                },
+                {
+                  "text": {
+                    "en_US": "Character:\\. \\c[3]Hexacast2\\c[0]\n\\!Class:\\. \\c[2]Hexacast\\c[0]\n\\!Special attributes:\\. \\c[3]Homing\\c[0] charged VRPs"
+                  },
+                  "center": true,
+                  "autoContinue": false,
+                  "type": "SHOW_BOARD_MSG"
+                },
+                {
+                  "type": "CLEAR_MSG",
+                  "side": "ALL"
+                }
+              ],
+              "3": [],
+              "type": "SHOW_CHOICE",
+              "person": {
+                "person": "main.lea",
+                "expression": "DEFAULT"
+              },
+              "options": [
+                {
+                  "0": " ",
+                  "label": {
+                    "en_US": "Lea"
+                  },
+                  "activeCondition": "true"
+                },
+                {
+                  "0": " ",
+                  "label": {
+                    "en_US": "Hexacast1"
+                  },
+                  "activeCondition": "true"
+                },
+                {
+                  "0": " ",
+                  "label": {
+                    "en_US": "Hexacast2"
+                  },
+                  "activeCondition": "true"
+                }
+              ]
+            }
+          ]
+        },
+        "name": "xtmSign"
+      }
+    }
+  },
+  {
+    "type": "EXIT"
+  }
+]
