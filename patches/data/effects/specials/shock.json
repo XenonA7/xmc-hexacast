@@ -11610,6 +11610,168 @@
       {
         "type": "STOP_SOUNDS"
       }
+    ],
+    "stasisAuraNPC": [
+      {
+        "time": 0.1,
+        "type": "WAIT"
+      },
+      {
+        "size": "XXL",
+        "fadeIn": 0,
+        "fadeOut": 0.1,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "color": "#f663f7",
+        "maxAlpha": 0.5,
+        "minAlpha": 0.2,
+        "blinkDuration": 0.7,
+        "blinkCount": -1,
+        "noLighter": false,
+        "type": "BLINK_COLOR"
+      },
+      {
+        "color": "#f663f7",
+        "offset": {
+          "x": 0,
+          "y": -2,
+          "z": -2
+        },
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.9,
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 1.15,
+              "y": 1.15
+            },
+            "time": 0.15,
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": -1,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 3,
+        "duration": 0.5,
+        "circular": false,
+        "xScale": 0.8,
+        "yScale": 0.8,
+        "moveZDist": 3,
+        "keySpline": "EASE_OUT",
+        "pScale": {
+          "init": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": -0.05,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.3,
+        "angleVary": 1,
+        "anim": "SPARK4",
+        "type": "PLAY_ANIMS_OVER_ENTITY"
+      },
+      {
+        "numParticles": 4,
+        "duration": 0.5,
+        "circular": false,
+        "xScale": 0.8,
+        "yScale": 0.8,
+        "moveZDist": 3,
+        "keySpline": "EASE_OUT",
+        "pScale": {
+          "init": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": 0.05,
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.3,
+        "angleVary": 1,
+        "anim": "SPARK2",
+        "type": "PLAY_ANIMS_OVER_ENTITY"
+      },
+      {
+        "volume": 0.3,
+        "radius": 256,
+        "global": false,
+        "loop": false,
+        "speed": 1.2,
+        "variance": 0,
+        "sound": "media/sound/battle/stasis-timer.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "size": "XL",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": 0.01,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "color": "#f663f7",
+        "alpha": 1,
+        "fadeIn": 0.05,
+        "fadeOut": 0.2,
+        "duration": 0.01,
+        "noLighter": false,
+        "type": "FADE_COLOR"
+      },
+      {
+        "time": 0.5,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
     ]
   }
 }

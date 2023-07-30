@@ -1,3 +1,10 @@
+## 0.21.3 (07/30/2023)
+### New Content
+- Added Hexacast NPC encounter to So'najiz temple entrance
+- Added effect "stasisAuraNPC"
+### Fixes
+- Fixed typo in Basin Keep NPC conversation
+
 ## 0.21.2 (07/30/2023)
 ### Fixes
 - Fixed SET_FACE actions not using rotation in Basin Keep NPC conversation
