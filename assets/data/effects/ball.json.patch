@@ -124,5 +124,100 @@
         3
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SMALL_BUBBLE",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png",
+        "offX": 168,
+        "offY": 40,
+        "width": 8,
+        "height": 8
+      },
+      "time": 0.2,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STEAM2",
+      "sheet": {
+        "src": "media/entity/effects/bomb-explo.png",
+        "offX": 96,
+        "offY": 32,
+        "width": 32,
+        "height": 32
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.05,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STAR",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png",
+        "offX": 144,
+        "offY": 96,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "repeat": false,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "STAR_FILLED",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png",
+        "offX": 144,
+        "offY": 96,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "repeat": false,
+      "frames": [
+        1
+      ]
+    }
   }
 ]

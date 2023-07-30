@@ -24045,7 +24045,7 @@
           "volume": 0.8,
           "global": false,
           "loop": false,
-          "speed": 0.9,
+          "speed": 0.8,
           "variance": 0.05,
           "type": "PLAY_SOUND",
           "sound": "media/sound/battle/mc-hit.ogg"

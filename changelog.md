@@ -1,4 +1,8 @@
-0.21.0 (07/29/2023)
+## 0.21.1 (07/30/2023)
+### New Content
+- Added new interactive Hexacast encounter to Basin Keep center
+
+## 0.21.0 (07/29/2023)
 ### General
 - Litter mod now updated to 1.6: https://github.com/XenonA7/xmc-hexacast-litter/releases
 ### New Content
