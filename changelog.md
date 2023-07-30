@@ -1,3 +1,8 @@
+## 0.21.2 (07/30/2023)
+### Fixes
+- Fixed SET_FACE actions not using rotation in Basin Keep NPC conversation
+- Fixed player being left without collision when fast forwarding Basin Keep NPC conversation
+
 ## 0.21.1 (07/30/2023)
 ### New Content
 - Added new interactive Hexacast encounter to Basin Keep center

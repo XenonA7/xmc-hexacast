@@ -347,7 +347,7 @@
                 "action": [
                   {
                     "face": "WEST",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   },
@@ -437,7 +437,7 @@
                 "action": [
                   {
                     "face": "SOUTH_WEST",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   },
@@ -638,7 +638,7 @@
                 "action": [
                   {
                     "face": "SOUTH",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   }
@@ -746,7 +746,7 @@
                 "action": [
                   {
                     "face": "WEST",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   },
@@ -796,7 +796,7 @@
                 "action": [
                   {
                     "face": "WEST",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   },
@@ -831,7 +831,7 @@
                 "action": [
                   {
                     "face": "WEST",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   },
@@ -885,7 +885,7 @@
                 "action": [
                   {
                     "face": "NORTH",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   }
@@ -903,7 +903,7 @@
                 "action": [
                   {
                     "face": "SOUTH",
-                    "rotate": false,
+                    "rotate": true,
                     "rotateSpeed": 3,
                     "type": "SET_FACE"
                   }
@@ -1011,7 +1011,7 @@
                     "action": [
                       {
                         "face": "NORTH",
-                        "rotate": false,
+                        "rotate": true,
                         "rotateSpeed": 3,
                         "type": "SET_FACE"
                       }
@@ -1149,7 +1149,7 @@
                     "action": [
                       {
                         "face": "NORTH",
-                        "rotate": false,
+                        "rotate": true,
                         "rotateSpeed": 3,
                         "type": "SET_FACE"
                       }
@@ -1186,6 +1186,24 @@
                     }
                   }
                 ]
+              },
+              {
+                "entity": {
+                  "player": true
+                },
+                "action": [
+                  {
+                    "type": "SET_SLIP_THROUGH",
+                    "value": false
+                  }
+                ],
+                "type": "DO_ACTION",
+                "wait": true,
+                "keepState": true
+              },
+              {
+                "time": 0.1,
+                "type": "WAIT"
               }
             ]
           },
