@@ -4479,6 +4479,33 @@
       },
       {
         "numParticles": 4,
+        "duration": 0.256,
+        "centralAngle": 1,
+        "random": true,
+        "startDist": 10,
+        "particleRotate": true,
+        "moveDist": 20,
+        "moveVariance": 15,
+        "keySpline": "EASE_OUT_STRONG",
+        "moveRotate": 0,
+        "inverse": false,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.15,
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "particleDurVariance": 0.1,
+        "anim": "HEAT_DOT2",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 4,
         "duration": 0.2,
         "centralAngle": 1,
         "startDist": 8,
@@ -7122,26 +7149,26 @@
       {
         "global": false,
         "loop": false,
-        "speed": 0.65,
+        "speed": 0.75,
         "sounds": [
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-1.ogg",
-            "volume": 0.7,
+            "volume": 1.7,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-2.ogg",
-            "volume": 0.7,
+            "volume": 1.7,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-3.ogg",
-            "volume": 0.7,
+            "volume": 1.7,
             "variance": 0.1
           },
           {
             "sound": "media/sound/battle/airon/close-combat-heat-sweep-4.ogg",
-            "volume": 0.7,
+            "volume": 1.7,
             "variance": 0.1
           }
         ],
@@ -7364,12 +7391,32 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "volume": 0.7,
         "global": false,
         "loop": false,
-        "variance": 0.075,
-        "sound": "media/sound/battle/airon/close-combat-heat-sweep-massive.ogg",
-        "type": "PLAY_SOUND"
+        "speed": 0.85,
+        "sounds": [
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-1.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-2.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-3.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-4.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          }
+        ],
+        "type": "PLAY_RANDOM_SOUND"
       },
       {
         "volume": 0.7,
@@ -7384,12 +7431,32 @@
         "type": "WAIT"
       },
       {
-        "volume": 0.7,
         "global": false,
         "loop": false,
-        "variance": 0.075,
-        "sound": "media/sound/battle/airon/close-combat-heat-sweep-massive.ogg",
-        "type": "PLAY_SOUND"
+        "speed": 0.85,
+        "sounds": [
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-1.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-2.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-3.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          },
+          {
+            "sound": "media/sound/battle/airon/close-combat-heat-sweep-4.ogg",
+            "volume": 0.8,
+            "variance": 0.1
+          }
+        ],
+        "type": "PLAY_RANDOM_SOUND"
       },
       {
         "volume": 0.7,

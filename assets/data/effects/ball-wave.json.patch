@@ -5,27 +5,30 @@
   },
   {
     "type": "ENTER",
-    "index": ["ANIMS", "SUB"]
+    "index": [
+      "ANIMS",
+      "SUB"
+    ]
   },
   {
-  	"type": "ADD_ARRAY_ELEMENT",
-  	"index": 0,
-  	"content": {
-  		"name": "HEXAGON_WAVE",
-        "sheet": {
-          "src": "media/entity/effects/particles1.png",
-          "offX": 0,
-          "offY": 72,
-          "width": 16,
-          "height": 16
-        },
-        "renderMode": "lighter",
-        "time": 0.15,
-        "repeat": false,
-        "frames": [
-          4
-        ]
-  	}
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "HEXAGON_WAVE",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png",
+        "offX": 0,
+        "offY": 72,
+        "width": 16,
+        "height": 16
+      },
+      "renderMode": "lighter",
+      "time": 0.15,
+      "repeat": false,
+      "frames": [
+        4
+      ]
+    }
   },
   {
     "type": "ADD_ARRAY_ELEMENT",
@@ -66,6 +69,45 @@
         1
       ],
       "repeat": true
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CIRCLE_SMALL_WAVE",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle.png",
+        "offX": 144,
+        "offY": 192,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "WAVE_BIG_HEXAGON",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle-big-hexagon.png",
+        "offX": 384,
+        "offY": 0,
+        "width": 96,
+        "height": 96
+      },
+      "renderMode": "lighter",
+      "time": 0.4,
+      "frames": [
+        0
+      ]
     }
   }
 ]

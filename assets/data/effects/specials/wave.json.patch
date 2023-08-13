@@ -290,5 +290,57 @@
         3
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "WAVE_EXPLODE_LOOP",
+      "sheet": {
+        "src": "media/entity/effects/hexa-wave.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 48,
+        "height": 48
+      },
+      "guiSprites": false,
+      "renderMode": "lighter",
+      "time": 0.0375,
+      "flipX": false,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "WAVE_SPARKLE",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 192,
+        "offY": 176,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.08,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        1,
+        0
+      ]
+    }
   }
 ]

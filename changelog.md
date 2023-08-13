@@ -1,3 +1,30 @@
+## 0.22.0 (08/12/2023)
+### New Content
+- New combat art: Giga Drain (Wave Throw Lv.2B)
+- Reworked combat art: Ampere Cloak (Shock Guard Lv.1A)
+- Added definition for "dashSlow" animation
+### Changes
+- Ampere Cloak reworked: Contact damage removed, replaced with damaging orbiting proxies
+- Reduced backwards travel distance before the last hit of Spirit Blast
+- Reduced forwards travel distance during the first two hits of Ice Blitz
+- Improved sound effects for effect scorchingSwirlSweep1
+- Added additional particles to effect aceOfFlamesSpinning
+- Adjusted sound effect for effect wavePullHex
+- Renamed proxy ampereCloakAura to ampereCloakProxy
+- Proxy thunderJacketPrimer contact damage changed to visualType MEDIUM
+- Toned down effect ampereCloakAuraFX
+- Proxy essenceStealProxy now shows effects centered on itself, not its target
+- Renamed proxy magicMissileWavePre to essenceStealPre
+### Fixes
+- Fixed proxy thunderJacketPrimer not having a shadow
+- Corrected particle alignment for effect waveCardSmallTrail
+### Balance
+- Wave Recall now inflicts 5% self-damage
+- Meteor Flare damage reduced
+- Lightning Hex no longer slows the player when it causes slow motion while charging
+- Lightning Hex slow motion is now near-instant instead of gradual while charging
+- Lightning Hex slow motion is more powerful while charging
+
 ## 0.21.3 (07/30/2023)
 ### New Content
 - Added Hexacast NPC encounter to So'najiz temple entrance

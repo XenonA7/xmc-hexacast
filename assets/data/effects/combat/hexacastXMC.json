@@ -3581,7 +3581,7 @@
         "type": "LOOP_END"
       }
     ],
-    "magicMissileWavePre": [
+    "essenceStealPre": [
       {
         "volume": 0.9,
         "global": false,
@@ -8555,6 +8555,188 @@
       },
       {
         "type": "LOOP_END"
+      }
+    ],
+    "shootWaveGiga": [
+      {
+        "numParticles": 5,
+        "duration": 0.25,
+        "centralAngle": 0.25,
+        "startAngle": 0,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.05,
+              "y": 1.05
+            },
+            "time": 0.15,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.15,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "HEXA_WAVE_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 5,
+        "duration": 0.25,
+        "centralAngle": -0.25,
+        "startAngle": 0,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.05,
+              "y": 1.05
+            },
+            "time": 0.15,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.15,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "HEXA_WAVE_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "gigaDrainPre": [
+      {
+        "size": "XXL",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": 0.2,
+        "glow": true,
+        "type": "LIGHT"
+      },
+      {
+        "volume": 0.9,
+        "global": false,
+        "loop": false,
+        "speed": 0.7,
+        "sound": "media/sound/puzzle/wave-teleport-down.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "numParticles": 6,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 16,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.5,
+              "y": 1.5
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "HEXA_WAVE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 12,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.5,
+              "y": 1.5
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "HEXA_WAVE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ]
   }
