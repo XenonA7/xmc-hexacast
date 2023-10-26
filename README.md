@@ -10,7 +10,7 @@ This Hexacast mod is incomplete. Future versions will likely change a lot and mi
 
 ### **Required Mods**
 1. extendable-severed-heads https://github.com/CCDirectLink/extendable-severed-heads
-2. logic-steps https://github.com/lexisother/logic-steps
+2. cc-alybox https://github.com/lexisother/cc-alybox
 3. xenons-triblader-mod https://github.com/XenonA7/xenons-triblader-mod
 
 ### **Discord Server**
@@ -37,7 +37,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 ![neutral](https://user-images.githubusercontent.com/105614278/168505340-e0a770c7-7a3b-4f6d-a173-bd1886e1e4cd.png)
 - Neutral Melee Lv.1a	**Hexing Blast**
 - Neutral Melee Lv.1b	**Withering Slash**
-- Neutral Melee Lv.2a
+- Neutral Melee Lv.2a	**Vortex Blast**
 - Neutral Melee Lv.2b	**Curse of Vanishing**
 - Neutral Throw Lv.1a	**Magic Missile**
 - Neutral Throw Lv.1b	**Mundane Volley**
@@ -56,7 +56,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Heat Melee Lv.1a	**Searing Touch**
 - Heat Melee Lv.1b	**Meteor Flare**
 - Heat Melee Lv.2a	**Scorching Swirl**
-- Heat Melee Lv.2b
+- Heat Melee Lv.2b	**Meteor Storm**
 - Heat Melee Lv.3a
 - Heat Melee Lv.3b
 - Heat Throw Lv.1	**Fire Hand**
@@ -144,7 +144,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 # Install Instructions
 1. Back up your save files **\AppData\Local\CrossCode**
 2. Install CCLoader and the Playable Triblader Mod: https://github.com/XenonA7/xenons-triblader-mod/releases
-3. Install Logic Steps mod: https://github.com/lexisother/logic-steps/releases
+3. Install AlyBox mod: https://github.com/lexisother/cc-alybox/releases
 4. Download the Hexacast mod and add it to your **assets\mods** folder: https://github.com/XenonA7/xmc-hexacast/releases
 
 

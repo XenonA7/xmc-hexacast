@@ -1465,6 +1465,826 @@
     ]
   },
   {
+    "type": "ADD_ARRAY_ELEMENT",
+    "content": {
+      "type": "NPC",
+      "x": 540,
+      "y": 184,
+      "level": 1,
+      "settings": {
+        "size": {
+          "x": 16,
+          "y": 16
+        },
+        "mapId": 130,
+        "npcStates": [
+          {
+            "reactType": "FIXED_POS",
+            "face": "SOUTH",
+            "action": [],
+            "hidden": false,
+            "condition": "",
+            "config": "normal",
+            "event": [
+              {
+                "person": {
+                  "person": "advisors.man-small-black-afro",
+                  "expression": "DEFAULT"
+                },
+                "type": "ADD_MSG_PERSON",
+                "side": "LEFT"
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Lea'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Greetings, Lea!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "PROUD"
+                    },
+                    "message": {
+                      "en_US": "Hi!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Unlike most NPCs, I know it's really you. Ever think about playing as another class?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "SURPRISED_TOWARD"
+                    },
+                    "message": {
+                      "en_US": "..?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+//              {
+//                "type": "IF",
+//                "withElse": false,
+//                "condition": "player.entity.name == 'triblader-lea'",
+//                "thenStep": [
+//                  {
+//                    "person": {
+//                      "person": "main.lea",
+//                      "expression": "DEFAULT"
+//                    },
+//                    "type": "ADD_MSG_PERSON",
+//                    "side": "RIGHT"
+//                  },
+//                  {
+//                    "person": {
+//                      "person": "advisors.man-small-black-afro",
+//                      "expression": "DEFAULT"
+//                    },
+//                    "message": {
+//                      "en_US": "Hello, Lea!"
+//                    },
+//                    "type": "SHOW_MSG"
+//                  },
+//                  {
+//                    "person": {
+//                      "person": "main.lea",
+//                      "expression": "PROUD"
+//                    },
+//                    "message": {
+//                      "en_US": "Hi!"
+//                    },
+//                    "type": "SHOW_MSG"
+//                  },
+//                  {
+//                    "person": {
+//                      "person": "advisors.man-small-black-afro",
+//                      "expression": "DEFAULT"
+//                    },
+//                    "message": {
+//                      "en_US": "Enjoying playing as a \\c[3]Triblader\\c[0]?"
+//                    },
+//                    "type": "SHOW_MSG"
+//                  },
+//                  {
+//                    "person": {
+//                      "person": "main.lea",
+//                      "expression": "NOD"
+//                    },
+//                    "message": {
+//                      "en_US": "[nods]"
+//                    },
+//                    "type": "SHOW_MSG"
+//                  },
+//                  {
+//                    "person": {
+//                      "person": "advisors.man-small-black-afro",
+//                      "expression": "DEFAULT"
+//                    },
+//                    "message": {
+//                      "en_US": "Feel free to try out some of the other avatars too."
+//                    },
+//                    "type": "SHOW_MSG"
+//                  },
+//                  {
+//                    "name": "END",
+//                    "type": "GOTO_LABEL"
+//                  }
+//                ]
+//              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'triblader2'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "triblader.triblader2",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hey there, do you happen to know a player named \\c[3]Lea\\c[0]?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader2",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Yes! We sometimes party up together."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Can you let her know that I want to talk to her?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader2",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Odd request from an NPC, but sure I guess."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'triblader3'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "triblader.triblader3",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hi, have you seen \\c[3]Lea\\c[0]?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader3",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Uh, I have no idea who that is."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Short, blue hair, and doesn't talk much. Ring any bells?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader3",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "I don't know anybody like that, sorry."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'triblader4'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "triblader.triblader4",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "I'm looking for a player named \\c[3]Lea\\c[0]. Have you seen her?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader4",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "No, sorry. I don't know anybody like that."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Well if you do, tell her to come talk to me."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader4",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Sure dude, whatever."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'triblader5'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "triblader.triblader5",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Have you seen a Spheromancer named \\c[3]Lea\\c[0] around here?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader5",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Can you be more specific? That is not exactly a memorable name."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Short avatar, horns, blue hair, and doesn't speak much."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "triblader.triblader5",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Honestly I don't recall seeing anybody like that. Sorry."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Hexacast1'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "hexacast.hexacast1",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hey, do you happen to know \\c[3]Lea\\c[0]?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "hexacast.hexacast1",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Lea? I think I might have crossed paths with her a few times."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "If you see her again, tell her to come talk to me please."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "hexacast.hexacast1",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Uh, sure. I can do that."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Hexacast2'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "hexacast.hexacast2",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "I'm trying to find a player named \\c[3]Lea\\c[0]. Do you know her?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "hexacast.hexacast2",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Why? What did she do?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Oh, nothing serious. I just want to talk to her."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "hexacast.hexacast2",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "If I ever meet someone named \\c[3]Lea\\c[0], I will let her know."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Apollo'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "antagonists.fancyguy",
+                      "expression": "POINTING"
+                    },
+                    "message": {
+                      "en_US": "Preposterous!\\. Everyone has heard of the great \\c[3]Apollo\\c[0]!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Glasses'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.glasses",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.glasses",
+                      "expression": "EMBARRASSED"
+                    },
+                    "message": {
+                      "en_US": "I'm one of Lea's friends! At least you've heard of her!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Emilie'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.emilie",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.emilie",
+                      "expression": "EMBARRASSED"
+                    },
+                    "message": {
+                      "en_US": "Did they really program all the NPCs to recognize Lea?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Joern'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "antagonists.sidekick",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "antagonists.sidekick",
+                      "expression": "SMILE"
+                    },
+                    "message": {
+                      "en_US": "And I don't know who you are supposed to be either, little man."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Luke'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.luke",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.luke",
+                      "expression": "SERIOUS"
+                    },
+                    "message": {
+                      "en_US": "I'd probably be concerned if you did. How do you know Lea?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Schneider'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.schneider",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.schneider",
+                      "expression": "SKEPTICAL"
+                    },
+                    "message": {
+                      "en_US": "What's that supposed to mean? I'm not good enough for you?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'Shizuka'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.shizuka",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.shizuka",
+                      "expression": "INNOCENT"
+                    },
+                    "message": {
+                      "en_US": "NPCs can refer to players by name? That must be new."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.shizuka",
+                      "expression": "TOWARD"
+                    },
+                    "message": {
+                      "en_US": "I wonder why Lea is on that list?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
+              {
+                "person": {
+                  "person": "advisors.man-small-black-afro",
+                  "expression": "DEFAULT"
+                },
+                "message": {
+                  "en_US": "Hmm, you are not Lea or an XMC character. I have no idea who you are."
+                },
+                "type": "SHOW_MSG"
+              },
+              {
+                "name": "END",
+                "type": "LABEL"
+              },
+              {
+                "type": "CLEAR_MSG",
+                "side": "ALL"
+              }
+            ]
+          }
+        ],
+        "characterName": "advisors.man-small-black-afro"
+      }
+    }
+  },
+  {
     "type": "EXIT"
   }
 ]

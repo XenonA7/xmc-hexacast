@@ -1,3 +1,49 @@
+## 0.23.0 (10/25/2023)
+### IMPORTANT
+- Logic Steps is now depreciated, please delete it from your install
+- Logic Steps has been replaced by CC-AlyBox
+- New dependency mod: AlyBox by Alyxia
+   - https://github.com/lexisother/cc-alybox/releases
+   - Install instructions have been updated
+### New Content
+- New combat art: Vortex Blast (Neutral Melee Lv.2A)
+- New combat art: Meteor Storm (Heat Melee Lv.2B)
+- New revised sprites for chest opening animations
+- Added an NPC in the XTM dev room that demonstrates AlyBox character detection functionality
+### Changes
+- Using Stasis Rune while the cooldown is active now refunds 2 SP
+- Renamed "mc-hit.ogg" to "mc-exp.ogg"
+- Removed the fake glow effect (transparent pixels on sprite) for GOD_HEXAGON particles
+- Added additional sound effect to effect meteorExplodeSmall
+- Slightly increased particle duration for effect meteorDebrisOnly
+- Slight pAlpha adjustments for hexagon particle in meteorExplodeSmall
+- Renamed proxy hexingBlastBig to hexingBlastMed
+- Reworked the particles in effect gigaDrainFly
+- Increased particle size in effect gigaDrainHeal
+- Increased sprite color contrast for WAVE_SPARKLE particles
+- Increased FLAME2 particle size in effect meteorFlareCardAppear
+- Renamed proxy stasisStorm to stasisStormController
+- Removed light glow from effect stasisPlayerTrail
+- Increased minimum radius of Ashen Inferno PULL force from 16 to 48
+- Adjusted the looping section of effect shineFX to pulse slightly faster
+- Re-worded the description for Shine
+### Fixes
+- Fixed "Wet Work" quests for all Hexacast characters by adding "STANDARD" hint property to charged proxies
+- The following arts now have unique effect group names to prevent CLEAR_EFFECTS conflicts:
+   - Magnet Card
+   - Magnet Deck
+   - Acceleration Mine
+   - Ashen Hex
+   - Throttle Hex
+   - Stasis Rune
+### Balance
+- Greatly increased strength of PULL force inside of Creeping Cold's projectile
+- Increased strength of initial PULL force during Ashen Inferno's chargeup
+- Added a PULL force during Ashen Inferno's fire vortex
+- Augmented Flames duration increased from 8 seconds to 10 seconds
+- Scorching Swirl total damage reduced, now in line with Calamity Trigger
+
+
 ## 0.22.0 (08/12/2023)
 ### New Content
 - New combat art: Giga Drain (Wave Throw Lv.2B)

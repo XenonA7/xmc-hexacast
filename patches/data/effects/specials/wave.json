@@ -6290,6 +6290,83 @@
         "pLight": "M",
         "phaseDurations": [],
         "type": "SHOOT_HOMING_PARTICLE"
+      },
+      {
+        "duration": 0.2,
+        "numParticles": 3,
+        "flyType": "FLY_ARC",
+        "inverse": true,
+        "offRadiusZScale": 1,
+        "rotateMoveDir": "NONE",
+        "particleDuration": 0.4,
+        "anim": "CIRCLE_SMALL_WAVE",
+        "offsetRadius": 24,
+        "offsetAngle": 1,
+        "target1Vary": 4,
+        "target2Vary": 4,
+        "pScale": {
+          "init": {
+            "x": 0,
+            "y": 0
+          },
+          "start": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "time": 0.05,
+            "spline": ""
+          },
+          "end": {
+            "value": {
+              "x": 0,
+              "y": 0
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          }
+        },
+        "phaseDurations": [],
+        "type": "SHOOT_HOMING_PARTICLE"
+      },
+      {
+        "duration": 0.2,
+        "numParticles": 4,
+        "flyType": "FLY_ARC",
+        "inverse": true,
+        "offRadiusZScale": 1,
+        "rotateMoveDir": "NONE",
+        "particleDuration": 0.4,
+        "anim": "GREEN_GLOW",
+        "offsetRadius": 26,
+        "offsetAngle": 1,
+        "target1Vary": 4,
+        "target2Vary": 4,
+        "pScale": {
+          "init": {
+            "x": 0.9,
+            "y": 0.9
+          },
+          "start": {
+            "value": {
+              "x": 1.3,
+              "y": 1.3
+            },
+            "time": 0.05,
+            "spline": ""
+          },
+          "end": {
+            "value": {
+              "x": 0.9,
+              "y": 0.9
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          }
+        },
+        "angleVary": 1,
+        "phaseDurations": [],
+        "type": "SHOOT_HOMING_PARTICLE"
       }
     ],
     "gigaDrainHeal": [
@@ -6342,8 +6419,8 @@
         },
         "pScale": {
           "init": {
-            "x": 0.65,
-            "y": 0.65
+            "x": 0.75,
+            "y": 0.75
           },
           "end": {
             "value": {
@@ -6355,7 +6432,7 @@
           }
         },
         "angleVary": 0,
-        "moveWithTarget": 0,
+        "moveWithTarget": 0.2,
         "particleDuration": 0.6,
         "anim": "WAVE_SPARKLE",
         "type": "PLAY_ANIMS_OVER_ENTITY"
