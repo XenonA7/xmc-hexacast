@@ -223,6 +223,14 @@
     ],
     "slowDebuff": [
       {
+        "size": "XL",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
         "type": "LOOP_START"
       },
       {
@@ -1158,7 +1166,7 @@
         "type": "RUMBLE"
       },
       {
-        "size": "XXL",
+        "size": "XXXL",
         "fadeIn": 0.1,
         "fadeOut": 0.1,
         "duration": -1,
@@ -1474,7 +1482,7 @@
         "fadeIn": 0.1,
         "fadeOut": 0.1,
         "duration": -1,
-        "glow": true,
+        "glow": false,
         "type": "LIGHT"
       },
       {
@@ -2914,6 +2922,14 @@
       }
     ],
     "amberLunge": [
+      {
+        "size": "XL",
+        "fadeIn": 0,
+        "fadeOut": 0,
+        "duration": 0.1,
+        "glow": false,
+        "type": "LIGHT"
+      },
       {
         "rumbleType": "RANDOM",
         "power": "WEAK",
@@ -4952,7 +4968,7 @@
         "type": "SCREEN_FLASH"
       },
       {
-        "size": "XL",
+        "size": "XXL",
         "fadeIn": 0.1,
         "fadeOut": 0.3,
         "duration": 0.2,
@@ -6523,6 +6539,14 @@
     ],
     "lightningHexBeam": [
       {
+        "size": "XXXL",
+        "fadeIn": 0.1,
+        "fadeOut": 0.1,
+        "duration": -1,
+        "glow": true,
+        "type": "LIGHT"
+      },
+      {
         "type": "LOOP_START"
       },
       {
@@ -7278,9 +7302,9 @@
         "type": "RUMBLE"
       },
       {
-        "size": "XXXL",
+        "size": "XXXXL",
         "fadeIn": 0.1,
-        "fadeOut": 0.1,
+        "fadeOut": 0.3,
         "duration": -1,
         "glow": true,
         "type": "LIGHT"
@@ -10779,7 +10803,7 @@
           }
         },
         "moveWithTarget": 1,
-        "particleDuration": 16,
+        "particleDuration": 26,
         "cancelable": true,
         "anim": "STASIS_LOCK",
         "type": "PLAY_ANIM"
@@ -10811,14 +10835,14 @@
           }
         },
         "moveWithTarget": 1,
-        "particleDuration": 16,
+        "particleDuration": 26,
         "cancelable": true,
         "anim": "STASIS_TIMER_DARK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
         "numParticles": 28,
-        "duration": 16,
+        "duration": 26,
         "centralAngle": 1,
         "startAngle": 0,
         "startDist": 11,
@@ -10843,7 +10867,7 @@
           }
         },
         "moveWithTarget": 1,
-        "particleDuration": 16,
+        "particleDuration": 26,
         "cancelable": true,
         "anim": "STASIS_TIMER",
         "type": "OFFSET_PARTICLE_CIRCLE"

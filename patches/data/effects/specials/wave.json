@@ -10,6 +10,14 @@
         "type": "PLAY_SOUND"
       },
       {
+        "size": "XXXL",
+        "fadeIn": 0,
+        "fadeOut": 0.4,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
         "type": "LOOP_START"
       },
       {
@@ -235,6 +243,14 @@
       }
     ],
     "soulTrail": [
+      {
+        "size": "XXXL",
+        "fadeIn": 0.1,
+        "fadeOut": 0.4,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
       {
         "volume": 0.8,
         "global": false,
@@ -822,6 +838,14 @@
       }
     ],
     "essenceLines": [
+      {
+        "size": "XL",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
       {
         "type": "LOOP_START"
       },
@@ -1718,6 +1742,14 @@
       }
     ],
     "wavePunchHexa": [
+      {
+        "size": "XXL",
+        "fadeIn": 0,
+        "fadeOut": 0.4,
+        "duration": 0.5,
+        "glow": false,
+        "type": "LIGHT"
+      },
       {
         "volume": 1,
         "global": false,
@@ -4595,6 +4627,14 @@
         "duration": 0.10,
         "noLighter": false,
         "type": "FADE_COLOR"
+      },
+      {
+        "size": "XXXL",
+        "fadeIn": 0,
+        "fadeOut": 0.4,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
       },
       {
         "type": "LOOP_START"

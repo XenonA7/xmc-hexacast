@@ -2946,7 +2946,7 @@
         "type": "RUMBLE"
       },
       {
-        "color": "#1c0c3e",
+        "color": "#0f0621",
         "fadeIn": 0,
         "fadeOut": 0.5,
         "duration": 0,
@@ -3061,7 +3061,7 @@
     ],
     "finisherSweep": [
       {
-        "size": "XXL",
+        "size": "XXXL",
         "fadeIn": 0,
         "fadeOut": 0.3,
         "duration": -1,

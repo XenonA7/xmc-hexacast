@@ -58,7 +58,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Heat Melee Lv.2a	**Scorching Swirl**
 - Heat Melee Lv.2b	**Meteor Storm**
 - Heat Melee Lv.3a
-- Heat Melee Lv.3b
+- Heat Melee Lv.3b	**Calamity Beacon**
 - Heat Throw Lv.1	**Fire Hand**
 - Heat Throw Lv.2	**Ace of Flames**
 - Heat Throw Lv.3	N/A

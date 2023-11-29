@@ -4030,13 +4030,13 @@
         },
         "moveWithTarget": 1,
         "cancelable": true,
-        "particleDuration": 0.9,
+        "particleDuration": 0.45,
         "anim": "NEUTRAL_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
-        "numParticles": 32,
-        "duration": 0.8,
+        "numParticles": 16,
+        "duration": 0.4,
         "centralAngle": 1,
         "startDist": 16,
         "random": true,
@@ -4073,8 +4073,8 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "numParticles": 16,
-        "duration": 0.8,
+        "numParticles": 8,
+        "duration": 0.4,
         "centralAngle": 1,
         "random": true,
         "startDist": 24,
@@ -4110,8 +4110,8 @@
     ],
     "vortexBlastChargeDust": [
       {
-        "numParticles": 14,
-        "duration": 1,
+        "numParticles": 7,
+        "duration": 0.5,
         "centralAngle": 1,
         "startAngle": 0,
         "startDist": 32,
@@ -4134,8 +4134,8 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "numParticles": 14,
-        "duration": 1,
+        "numParticles": 7,
+        "duration": 0.5,
         "centralAngle": 1,
         "startAngle": 0.5,
         "startDist": 32,

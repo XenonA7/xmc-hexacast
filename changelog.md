@@ -1,3 +1,68 @@
+## 0.24.0 (11/28/2023)
+### New Content
+- New combat art: Calamity Beacon (Heat Melee Lv.3A)
+- Added south sprite for animation landOnGround
+### Changes
+- Did a pass of all combat arts to check/fix light sources
+- Disabled Stasis Storm (unfinished art) for now
+- Re-worded description for Giga Drain
+- Ace of Flames no longer uses undefined effect "hexaShootHeat"
+- Increased proxy beamBlasterLaser speed on return trip from 3500 to 6000
+- Renamed all CIRCLE_SMALL_HEAT particles to CIRCLE_SMALL_HEAT_GUI
+- Removed light glow property from effect staticFieldUserFX
+- Reduced color intensity of screen flash in shadowflame effect "finisherBurst"
+- Increased light radius of the following effects:
+   - All standard/rev melee effects
+   - eternalBlizzardAuraMain
+   - eternalBlizzardAuraProxy
+   - ashenInfernoExplode
+   - firebrandAttack2
+   - joltHexLightning
+   - mjolnirHex
+   - staticFieldMain
+   - finisherSweep (shadowflame)
+### Fixes
+- Fixed Beam Blaster being able to shoot through walls
+- Fixed Blaster Sentry being able to shoot through walls
+- Fixed missing light source for the following effects:
+   - freezeRayImpact
+   - hugeSnowflakeDashEndLight
+   - magicMissilePre
+   - aceOfFlamesShoot
+   - amberLunge
+   - lightningHexBeam
+   - slowDebuff
+   - wavePunchHexa
+   - wavePunch2Hex
+   - essenceLines
+   - singularityAura
+   - soulTrail
+### Balance
+- Vortex Blast reduced charge time by half
+- Meteor Flare slightly reduced meteor spawn delay after beacon appears
+- Meteor Storm slightly reduced meteor spawn delay after beacon appears
+- Beam Blaster reduced delay between aiming and shooting
+- Blaster Sentry reduced delay between shots
+- Blaster Sentry now capped at 2 instances at a time
+- Blaster Sentry slight damage reduction
+- Freeze Rays increased orbit radius
+- Jolt Hex slight damage reduction
+- Hail Spears slight damage reduction
+- Ether Singularity damage increased
+- Stasis Rune cooldown increased from 16 seconds to 26 seconds
+- Shadowflame Sorcery adjustments:
+   - Total duration reduced from 15 seconds to 12.5 seconds
+   - Lingering dash fire (darkFireGround) damage factor increased from 0.25 to 0.75
+   - Guard fire wall (darkFireGroundBarrier) damage factor increased from 0.25 to 0.50
+   - Melee attack reduced time between swings
+   - Melee attack damage factor reduced from 1.5 to 1.35
+   - Melee finisher damage factor reduced from 1.6 to 1.45
+   - Melee finisher lingering fire (shadowflameAffliction) damage factor increased from 0.08 to 0.085
+   - Uncharged throwing attack (shadowflameBullet) damage factor increased from 0.068 to 0.075
+   - Charged throwing attack (shadowflameCharged) direct damage factor increased from 1.4 to 1.75
+   - Charged throwing attack (shadowflameCharged) increased timer before self-destruct from 0.6 to 0.85
+   - Charged throwing attack explosion (shadowflameChargedExplosion) damage factor increased from 0.225 to 0.230
+
 ## 0.23.0 (10/25/2023)
 ### IMPORTANT
 - Logic Steps is now depreciated, please delete it from your install

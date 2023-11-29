@@ -1203,6 +1203,14 @@
     ],
     "freezeRayImpact": [
       {
+        "size": "XXL",
+        "fadeIn": 0.1,
+        "fadeOut": 0.3,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
         "rumbleType": "RANDOM",
         "power": "WEAK",
         "speed": "FAST",
@@ -1880,6 +1888,80 @@
         "moveWithTarget": 1,
         "anim": "COLD_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
+      }
+    ],
+    "hugeSnowflakeDashEndLight": [
+      {
+        "size": "XL",
+        "fadeIn": 0,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "pAlpha": {
+          "init": 1
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": -50,
+            "time": 20,
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": -1,
+        "anim": "HUGE_SNOWFLAKE",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "pAlpha": {
+          "init": 1,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            },
+            "spline": "EASE_OUT"
+          }
+        },
+        "pRotate": {
+          "init": 0,
+          "start": {
+            "value": -0.1,
+            "spline": ""
+          }
+        },
+        "angleVary": 0.2,
+        "particleDuration": 0.2,
+        "anim": "HUGE_SNOWFLAKE_L",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.016,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
       }
     ],
     "snowflakeHexSpawn": [
