@@ -180,6 +180,14 @@
           ],
           "SUB": [
             {
+              "name": "blank",
+              "time": 1,
+              "repeat": false,
+              "frames": [
+                -1
+              ]
+            },
+            {
               "name": "idle",
               "time": 1,
               "repeat": false,
@@ -2363,6 +2371,46 @@
             {
               "name": "sweepRevEnd",
               "time": 0.04,
+              "repeat": false,
+              "frames": [
+                8,
+                9,
+                10,
+                11
+              ]
+            },
+            {
+              "name": "sweepFast",
+              "time": 0.015,
+              "repeat": false,
+              "frames": [
+                0,
+                1
+              ]
+            },
+            {
+              "name": "sweepRevFast",
+              "time": 0.015,
+              "repeat": false,
+              "frames": [
+                6,
+                7
+              ]
+            },
+            {
+              "name": "sweepEndFast",
+              "time": 0.02,
+              "repeat": false,
+              "frames": [
+                2,
+                3,
+                4,
+                5
+              ]
+            },
+            {
+              "name": "sweepRevEndFast",
+              "time": 0.02,
               "repeat": false,
               "frames": [
                 8,

@@ -5479,20 +5479,20 @@
     ],
     "iceBlitzExplode": [
       {
-        "size": "XXL",
+        "size": "XXXL",
         "fadeIn": 0,
-        "fadeOut": 0.1,
-        "duration": 0.2,
+        "fadeOut": 0.3,
+        "duration": 0.3,
         "glow": false,
         "type": "LIGHT"
       },
       {
-        "color": "#77b1fc",
+        "color": "#0027d6",
         "alpha": 0.5,
         "fadeIn": 0.05,
         "fadeOut": 0.4,
         "duration": 0.1,
-        "noLighter": true,
+        "noLighter": false,
         "type": "FADE_COLOR"
       },
       {

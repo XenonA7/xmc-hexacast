@@ -306,6 +306,39 @@
     "type": "ADD_ARRAY_ELEMENT",
     "index": 0,
     "content": {
+      "name": "SHOCK_SWEEP2_FASTER",
+      "pivot": {
+        "x": 16,
+        "y": 28
+      },
+      "sheet": {
+        "src": "media/entity/effects/shock.png",
+        "offX": 0,
+        "offY": 0,
+        "width": 64,
+        "height": 56
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.010,
+      "repeat": false,
+      "flipX": true,
+      "tileOffset": 0,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
       "name": "STASIS_CHAIN_END_LONG",
       "sheet": {
         "src": "media/entity/effects/hexa-misc.png",
@@ -440,6 +473,113 @@
       ],
       "framesAngle": [
         0
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DUST_UP",
+      "sheet": {
+        "src": "media/entity/effects/dust.png",
+        "width": 24,
+        "height": 32,
+        "offY": 32
+      },
+      "pivot": {
+        "x": 10,
+        "y": 24
+      },
+      "time": 0.06,
+      "repeat": false,
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "DUST_UP_BIG",
+      "sheet": {
+        "src": "media/entity/effects/dust.png",
+        "width": 32,
+        "height": 48,
+        "offY": 64
+      },
+      "pivot": {
+        "x": 8,
+        "y": 40
+      },
+      "time": 0.07,
+      "repeat": false,
+      "frames": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CROSSHAIR",
+      "sheet": {
+        "src": "media/entity/effects/particles1.png ",
+        "offX": 208,
+        "offY": 32,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.033,
+      "repeat": true,
+      "frames": [
+        0,
+        0
+      ],
+      "framesAlpha": [
+        1,
+        0.5
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CIRCLE_SOURCE_SHOCK_GUI",
+      "sheet": {
+        "src": "media/entity/effects/lighter-particle.png",
+        "offX": 0,
+        "offY": 144,
+        "width": 48,
+        "height": 48
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.05,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        1
       ]
     }
   }

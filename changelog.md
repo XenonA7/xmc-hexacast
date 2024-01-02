@@ -1,3 +1,44 @@
+## 0.25.0 (01/01/2023)
+### General
+- Litter mod now updated to 1.7: https://github.com/XenonA7/xmc-hexacast-litter/releases
+### New Content
+- Added alternate function to Augmented Flames if used while Shadowflame Sorcery is active
+- New combat art: Polarity Spark (Shock Throw Lv.1B)
+- New combat art: Spark Stream (Shock Throw Lv.2B)
+- New combat art: Zir'vitar Strike (Shock Dash Lv.3B)
+- Created NE/NW sprites for animation runGrumpy
+- Defined new "blank" character animation
+- Defined animations sweepFast, sweepRevFast, sweepEndFast, sweepRevEndFast
+### Changes
+- Re-worded the description for Shine
+- Re-worded the description for Hexing Blast
+- Re-worded the description for Throttle Hex
+- Added zoom blur effect to final hit of Lightning Hex
+- Increased light radius and duration of effect iceBlitzExplode
+- Adjusted FADE_COLOR of effect iceBlitzExplode
+- Added light source to effect staticFieldEnd
+- Added a pLight property to particles in effect darkFireLine
+- Defined "M" light source for all default uncharged proxies
+- Defined "L" light source for all default charged proxies
+- Disabled light glow property for all default charged and unchraged proxies
+- Added pLight property to all default charged proxy trail particles
+- Added killEffect functionality to proxy magnetCard1 and magnetCard2
+- All "DeathFX" proxies changed to breakType NEVER
+- Separated initial dash effect clearing for Fire Barrage
+### Fixes
+- Fixed standard melee able to be extended by swapping elements during attack
+- Fixed missing light source from effect stormStrideSweep
+- Fixed effect alignment for magnetCard1Impact
+- Fixed effect alignment for magnetCard2Impact
+- Fire Barrage shooting effects now properly assigned a group
+### Balance
+- Shine perfect guard window extended for full move duration (0.5 seconds increased to 1.0 seconds)
+- Hail Spears card contact damage greatly reduced (TACKLE damageFactor reduced from 2.0 to 0.5)
+- Hail Spears bullet damage factor reduced from 1.35 to 1.25
+- Ice Blitz damage increased
+- Magnet Deck status inflict increased
+- Amber Hex status inflict increased
+
 ## 0.24.0 (11/28/2023)
 ### New Content
 - New combat art: Calamity Beacon (Heat Melee Lv.3A)

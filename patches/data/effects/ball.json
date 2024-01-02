@@ -29,6 +29,7 @@
             "spline": ""
           }
         },
+        "pLight": "M",
         "particleDuration": 0.15,
         "anim": "HEXAGON_NEUTRAL",
         "type": "PLAY_ANIM"
@@ -67,6 +68,7 @@
             "spline": ""
           }
         },
+        "pLight": "M",
         "particleDuration": 0.5,
         "anim": "HEXAGON_NEUTRAL",
         "type": "PLAY_ANIM"

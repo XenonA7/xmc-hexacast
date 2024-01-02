@@ -103,9 +103,9 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Shock Melee Lv.2b	**Stasis Rune**
 - Shock Melee Lv.3
 - Shock Throw Lv.1a	**Jolt Hex**
-- Shock Throw Lv.1b
+- Shock Throw Lv.1b	**Polarity Spark**
 - Shock Throw Lv.2a	**Amber Hex**
-- Shock Throw Lv.2b
+- Shock Throw Lv.2b	**Spark Stream**
 - Shock Throw Lv.3a	**Lightning Hex**
 - Shock Throw Lv.3b
 - Shock Dash Lv.1a	**Magnet Card**
@@ -113,7 +113,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Shock Dash Lv.2a	**Magnet Deck**
 - Shock Dash Lv.2b	**Storm Stride**
 - Shock Dash Lv.3a
-- Shock Dash Lv.3b
+- Shock Dash Lv.3b	**Zir'vitar Strike**
 - Shock Guard Lv.1	**Ampere Cloak**
 - Shock Guard Lv.2	**Thunder Jacket**
 - Shock Guard Lv.3	N/A
