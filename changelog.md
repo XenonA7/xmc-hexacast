@@ -1,4 +1,8 @@
-## 0.25.0 (01/01/2023)
+## 0.25.1 (01/01/2024)
+### Fixes
+- Fixed date on changelog
+
+## 0.25.0 (01/01/2024)
 ### General
 - Litter mod now updated to 1.7: https://github.com/XenonA7/xmc-hexacast-litter/releases
 ### New Content
