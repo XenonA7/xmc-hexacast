@@ -41,7 +41,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Neutral Melee Lv.2b	**Curse of Vanishing**
 - Neutral Throw Lv.1a	**Magic Missile**
 - Neutral Throw Lv.1b	**Mundane Volley**
-- Neutral Throw Lv.2a
+- Neutral Throw Lv.2a	**Hive Missile**
 - Neutral Throw Lv.2b	**Arcane Volley**
 - Neutral Dash Lv.1a
 - Neutral Dash Lv.1b

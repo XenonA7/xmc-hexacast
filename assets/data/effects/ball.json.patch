@@ -219,5 +219,30 @@
         1
       ]
     }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "SHINE_SPARKLE",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "xCount": 1,
+        "offX": 192,
+        "offY": 128,
+        "width": 16,
+        "height": 16
+      },
+      "guiSprites": true,
+      "renderMode": "source-over",
+      "time": 0.1,
+      "repeat": true,
+      "frames": [
+        0,
+        1,
+        2,
+        1
+      ]
+    }
   }
 ]

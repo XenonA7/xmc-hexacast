@@ -13353,7 +13353,7 @@
         "volume": 0.8,
         "global": false,
         "loop": true,
-        "speed": 0.35,
+        "speed": 0.45,
         "sound": "media/sound/boss/turret/long-charge.ogg",
         "type": "PLAY_SOUND"
       },
@@ -13361,7 +13361,7 @@
         "volume": 0.6,
         "global": false,
         "loop": true,
-        "speed": 0.5,
+        "speed": 0.65,
         "sound": "media/sound/battle/enemies/charge-2s.ogg",
         "type": "PLAY_SOUND"
       },
@@ -13369,7 +13369,7 @@
         "volume": 0.85,
         "global": false,
         "loop": false,
-        "speed": 0.6,
+        "speed": 0.70,
         "sound": "media/sound/scenes/swoosh-rise-long.ogg",
         "type": "PLAY_SOUND"
       },
@@ -15630,7 +15630,7 @@
         "type": "PLAY_ANIM"
       },
       {
-        "numParticles": 16,
+        "numParticles": 10,
         "useTargetAngle": true,
         "duration": 0,
         "centralAngle": 1,
@@ -15779,11 +15779,11 @@
         "type": "PLAY_SOUND"
       },
       {
-        "numParticles": 7,
+        "numParticles": 6,
         "duration": 0.1,
         "clockwise": false,
         "centralAngle": 0.3,
-        "startDist": 24,
+        "startDist": 20,
         "useTargetAngle": true,
         "moveDist": 16,
         "keySpline": "EASE_IN_OUT",
@@ -15810,13 +15810,13 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "numParticles": 6,
+        "numParticles": 5,
         "duration": 0.1,
         "clockwise": false,
         "centralAngle": 0.3,
         "startDist": 24,
         "random": false,
-        "moveDist": 32,
+        "moveDist": 24,
         "moveVariance": 16,
         "particleRotate": true,
         "keySpline": "EASE_OUT",
@@ -15881,11 +15881,11 @@
         "type": "PLAY_SOUND"
       },
       {
-        "numParticles": 7,
+        "numParticles": 6,
         "duration": 0.1,
         "clockwise": true,
         "centralAngle": 0.3,
-        "startDist": 24,
+        "startDist": 20,
         "useTargetAngle": true,
         "moveDist": 16,
         "keySpline": "EASE_IN_OUT",
@@ -15912,13 +15912,13 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "numParticles": 6,
+        "numParticles": 5,
         "duration": 0.1,
         "clockwise": true,
         "centralAngle": 0.3,
         "startDist": 24,
         "random": false,
-        "moveDist": 32,
+        "moveDist": 24,
         "moveVariance": 16,
         "particleRotate": true,
         "keySpline": "EASE_OUT",

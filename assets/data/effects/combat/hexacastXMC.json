@@ -9587,9 +9587,9 @@
         "type": "LOOP_START"
       },
       {
-        "numParticles": 12,
-        "duration": 0.4,
-        "centralAngle": 0.7,
+        "numParticles": 8,
+        "duration": 0.3,
+        "centralAngle": 0.45,
         "startAngle": 0.5,
         "startDist": 26,
         "useTargetAngle": false,
@@ -9632,9 +9632,9 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "numParticles": 12,
-        "duration": 0.4,
-        "centralAngle": 0.7,
+        "numParticles": 8,
+        "duration": 0.3,
+        "centralAngle": 0.45,
         "startAngle": 0,
         "startDist": 26,
         "useTargetAngle": false,
@@ -9677,7 +9677,7 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
-        "time": 0.4,
+        "time": 0.3,
         "type": "WAIT"
       },
       {
@@ -9685,6 +9685,262 @@
       },
       {
         "type": "STOP_SOUNDS"
+      }
+    ],
+    "hiveMissileShootHexagons": [
+      {
+        "numParticles": 5,
+        "duration": 0.2,
+        "centralAngle": 0.25,
+        "startAngle": 0,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.05,
+              "y": 1.05
+            },
+            "time": 0.12,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.12,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "HEXA_NEUTRAL_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 5,
+        "duration": 0.2,
+        "centralAngle": -0.25,
+        "startAngle": 0,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.05,
+              "y": 1.05
+            },
+            "time": 0.12,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.12,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "HEXA_NEUTRAL_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "hailSpearsShootHexagons": [
+      {
+        "numParticles": 5,
+        "duration": 0.25,
+        "centralAngle": 0.25,
+        "startAngle": 0,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.05,
+              "y": 1.05
+            },
+            "time": 0.15,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.15,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 5,
+        "duration": 0.25,
+        "centralAngle": -0.25,
+        "startAngle": 0,
+        "startDist": 28,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 1.05,
+              "y": 1.05
+            },
+            "time": 0.15,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.15,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.3,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
+    ],
+    "beeTrail": [
+      {
+        "size": "M",
+        "fadeIn": 0.1,
+        "fadeOut": 0.1,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "volume": 0.5,
+        "global": false,
+        "loop": true,
+        "sound": "media/sound/battle/enemies/bee-buzz.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "color": "#00ffff",
+        "maxAlpha": 0.2,
+        "minAlpha": 0,
+        "blinkDuration": 0.133,
+        "blinkCount": -1,
+        "noLighter": false,
+        "type": "BLINK_COLOR"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "useTargetAngle": true,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 3
+        },
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.5,
+            "y": 0.5
+          },
+          "start": {
+            "value": {
+              "x": 0.2,
+              "y": 0.2
+            },
+            "spline": ""
+          }
+        },
+        "particleDuration": 0.15,
+        "anim": "HEXA_NEUTRAL",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.03,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
       }
     ]
   }

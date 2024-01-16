@@ -1,3 +1,30 @@
+## 0.26.0 (01/15/2024)
+### New Content
+- New combat art: Hive Missile (Neutral Throw Lv.2A)
+- Colored NPC portraits for Hexacast1 and Hexacast2
+### Changes
+- Changed Hexacast2 eye color
+- Modified PERFECT_GUARD action to include heal decay initialization
+- Added dash dust effects to relevant movements in Spark Stream
+- Added additional hexagon particles when Hail Spears is thrown
+- Reduced particle count on effects godThrowShockFastest and godThrowShockFastestRev
+- Reduced particle count on effect sparkStreamImpact
+### Fixes
+- Fixed particle spacing/timing for effect sparkStreamHexagons
+- Fixed player healing effect not showing on final tick of Heal Card
+- Fixed incorrect zHeight on Static Field and Static Discharge allowing player to hit enemies at higher elevation levels
+### Balance
+- Spark Stream now grants MEDIUM hit stability after first two volleys
+- Spark Stream now grants HEAVY hit stability during final volley
+- Vortex Blast now grants HEAVY hit stability during the explosion
+- Zir'vitar Strike no longer stuns enemies from the initial dash
+- Zir'vitar Strike charge time reduced by 0.8 seconds (significant)
+- Zir'vitar Strike slow motion is now stronger and kicks in with less delay after the initial dash
+- Heal card now has diminishing returns (resets on map entry)
+   - Begins at 15 heal ticks, each repeated use has a 25% chance to reduce this total
+   - Cannot go below 5 heal ticks
+   - This applies to Heal Card used on yourself or your allies
+
 ## 0.25.1 (01/01/2024)
 ### Fixes
 - Fixed date on changelog
