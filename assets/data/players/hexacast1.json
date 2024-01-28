@@ -48,10 +48,6 @@
       "jump": "jump",
       "fall": "fall",
       "damage": "damage"
-    },
-    "interogate": {
-      "idle": "interogate",
-      "damage": "interogateDmg"
     }
   },
   "autoequip": [
@@ -10800,8 +10796,8 @@
           "proxyOwner": false,
           "type": "SET_ATTRIB_NUMBER",
           "value": {
-              "varName": "entity.ownerAttrib.healCount"
-            }
+            "varName": "entity.ownerAttrib.healCount"
+          }
         },
         {
           "withElse": false,
@@ -29415,7 +29411,7 @@
           }
         },
         {
-          "duration": 4,
+          "duration":3.2,
           "align": "CENTER",
           "rotateFace": 0,
           "flipLeftFace": false,

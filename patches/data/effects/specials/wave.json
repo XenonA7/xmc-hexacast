@@ -6477,6 +6477,191 @@
         "anim": "WAVE_SPARKLE",
         "type": "PLAY_ANIMS_OVER_ENTITY"
       }
+    ],
+    "lilyWaveTornadoBackground": [
+      {
+        "rumbleType": "RANDOM",
+        "power": "STRONGER",
+        "speed": "FASTER",
+        "duration": 0.3,
+        "fade": true,
+        "type": "RUMBLE"
+      },
+      {
+        "color": "#002216",
+        "fadeIn": 0,
+        "fadeOut": 0.5,
+        "duration": -1,
+        "type": "SCREEN_FLASH"
+      },
+      {
+        "size": "XXL",
+        "fadeIn": 0.3,
+        "fadeOut": 0.5,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "volume": 0.8,
+        "global": true,
+        "loop": true,
+        "speed": 0.6,
+        "sound": "media/sound/battle/enemies/charge-loop.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": -32,
+          "z": -32
+        },
+        "pAlpha": {
+          "init": 0.6,
+          "start": {
+            "value": 0,
+            "spline": "LINEAR"
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.2,
+            "y": 0.2
+          },
+          "start": {
+            "value": {
+              "x": 5,
+              "y": 5
+            },
+            "spline": ""
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.4,
+        "cancelable": true,
+        "anim": "SHOCKWAVE_B_WAVE_BACK",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "volume": 1,
+        "global": false,
+        "loop": false,
+        "speed": 0.8,
+        "sound": "media/sound/battle/enemies/discharge.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 24,
+        "duration": 2,
+        "centralAngle": 1,
+        "startDist": 16,
+        "random": true,
+        "particleRotate": true,
+        "moveDist": 160,
+        "moveVariance": 32,
+        "keySpline": "EASE_OUT_STRONG",
+        "moveRotate": -0.3,
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": 0.3
+        },
+        "particleDuration": 1,
+        "anim": "WAVE_DOT2",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 24,
+        "duration": 2,
+        "centralAngle": 1,
+        "startAngle": 0.5,
+        "startDist": 0,
+        "uniformRandom": 0.2,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "moveDist": 16,
+        "keySpline": "EASE_OUT",
+        "normalMoveDist": 160,
+        "collision": false,
+        "pAlpha": {
+          "init": 0,
+          "start": {
+            "value": 0.5,
+            "time": 0.1,
+            "spline": ""
+          },
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.8,
+            "y": 0.8
+          },
+          "start": {
+            "value": {
+              "x": 1.5,
+              "y": 1.5
+            },
+            "spline": "LINEAR"
+          }
+        },
+        "particleDuration": 0.6,
+        "anim": "SHOCKWAVE_B_WAVE_BACK",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 2,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      },
+      {
+        "volume": 0.6,
+        "global": false,
+        "loop": false,
+        "speed": 0.5,
+        "sound": "media/sound/scenes/sweep.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 1,
+        "global": false,
+        "loop": false,
+        "speed": 1.2,
+        "sound": "media/sound/scenes/swoosh-fall-short.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "type": "STOP_SOUNDS"
+      },
+      {
+        "type": "CLEAR_LIGHT"
+      },
+      {
+        "type": "CLEAR_DARKNESS"
+      },
+      {
+        "type": "CLEAR_SCREEN_FLASH"
+      }
     ]
   }
 }

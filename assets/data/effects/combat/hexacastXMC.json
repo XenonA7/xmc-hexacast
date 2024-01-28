@@ -9942,6 +9942,26 @@
       {
         "type": "LOOP_END"
       }
+    ],
+    "lightXL": [
+      {
+        "size": "XL",
+        "fadeIn": 0.1,
+        "fadeOut": 0.2,
+        "duration": -1,
+        "glow": false,
+        "type": "LIGHT"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "time": 0.30,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
     ]
   }
 }

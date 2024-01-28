@@ -1,3 +1,14 @@
+## 0.27.0 (01/28/2024)
+### New Content
+- New map: "Ultimate PVP" added to XTM dev room
+   - Requires Qine, LJM, and AL mods to enter
+   - Different dialogue support for Lea versus XTM characters
+- Added file custom-bgm.js to define new vanilla BGM configuration
+- Added \assets\data\effects\map\rh-quest-hub.json.patch
+- Added modified effect lilyWaveTornadoBackground
+### Fixes
+- Fixed zirvitarCharge2 effect duration to align with previous update adjustments to Zir'vitar Strike
+
 ## 0.26.0 (01/15/2024)
 ### New Content
 - New combat art: Hive Missile (Neutral Throw Lv.2A)
@@ -9,6 +20,7 @@
 - Added additional hexagon particles when Hail Spears is thrown
 - Reduced particle count on effects godThrowShockFastest and godThrowShockFastestRev
 - Reduced particle count on effect sparkStreamImpact
+- Removed unused legacy walkAnims
 ### Fixes
 - Fixed particle spacing/timing for effect sparkStreamHexagons
 - Fixed player healing effect not showing on final tick of Heal Card
