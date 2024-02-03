@@ -1,6 +1,6 @@
 {
 	"id": "xmc-hexacast",
-	"version": "0.27.0",
+	"version": "0.27.1",
 	"title": {
 		"en_US": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]"
 	},
@@ -13,7 +13,7 @@
 	"prestart": "prestart.js",
 	"poststart": "poststart.js",
 	"dependencies": {
-		"extendable-severed-heads": ">=1.0.0",
+		"extendable-severed-heads": ">=1.1.0",
 		"cc-alybox": ">=1.0.0",
 		"xenons-triblader-mod": ">=0.8.0",
 		"Simplify": ">=2.12.1",

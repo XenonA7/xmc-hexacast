@@ -7,14 +7,16 @@
     "type": "ADD_ARRAY_ELEMENT",
     "content": {
       "id": "hexacast.hexacast1",
-      "img": "media/gui/severed-heads/hexacast1.png"
+      "img": "media/gui/severed-heads/hexacast1.png",
+      "name": "hexacast1"
     }
   },
   {
     "type": "ADD_ARRAY_ELEMENT",
     "content": {
       "id": "hexacast.hexacast2",
-      "img": "media/gui/severed-heads/hexacast2.png"
+      "img": "media/gui/severed-heads/hexacast2.png",
+      "name": "hexacast2"
     }
   }
 ]

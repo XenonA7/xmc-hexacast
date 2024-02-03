@@ -1,3 +1,11 @@
+## 0.27.1 (02/03/2024)
+### General
+- Now requires extendable-severed-heads version 1.1.0: https://github.com/CCDirectLink/extendable-severed-heads/releases
+### Changes
+- Reformatted headIdx.json.patch for extendable-severed-heads 1.1.0
+
+
+
 ## 0.27.0 (01/28/2024)
 ### New Content
 - New map: "Ultimate PVP" added to XTM dev room
