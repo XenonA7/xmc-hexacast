@@ -1,10 +1,17 @@
+## 0.27.2 (02/12/2024)
+### Changes
+- Note that Ultimate PVP modernization is still a work in progress, there might be bugs with event logic
+- Ultimate PVP: now only supports Qine unofficial update 0.3.0 or higher
+- Ultimate PVP: enemy entities renamed to XTM standard
+- Ultimate PVP: added death logic, although only active with XTM 1.0.0 or higher
+- Ultimate PVP: disabled player EXP gain during duel
+
+
 ## 0.27.1 (02/03/2024)
 ### General
 - Now requires extendable-severed-heads version 1.1.0: https://github.com/CCDirectLink/extendable-severed-heads/releases
 ### Changes
 - Reformatted headIdx.json.patch for extendable-severed-heads 1.1.0
-
-
 
 ## 0.27.0 (01/28/2024)
 ### New Content
