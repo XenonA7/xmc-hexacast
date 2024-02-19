@@ -10,6 +10,9 @@
 	"icons": {
 		"24": "icon.png"
 	},
+	"repository": "https://github.com/XenonA7/xmc-hexacast",
+	"tags": ["character"],
+	"authors": ["xenon", "lexisother"],
 	"prestart": "prestart.js",
 	"poststart": "poststart.js",
 	"dependencies": {
