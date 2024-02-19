@@ -11,7 +11,7 @@
 		"24": "icon.png"
 	},
 	"repository": "https://github.com/XenonA7/xmc-hexacast",
-	"tags": ["character"],
+	"tags": ["player character", "party member", "pvp duel"],
 	"authors": ["xenon", "lexisother"],
 	"prestart": "prestart.js",
 	"poststart": "poststart.js",
