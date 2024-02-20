@@ -1,3 +1,20 @@
+## 0.27.3 (02/19/2024)
+### Changes
+- Updated to new ccmod.json format
+### Fixes
+- Fixed an issue with Meteor Flare sometimes despawning for some users
+- Fixed Heal Card and Ether Singularity sometimes despawning when cast on allies
+- Standardized WAIT times at the end of proxy actions from 0.01 to 0.05.
+  * meteorSmallController1
+  * zirvitarDummy2
+  * etherSingularityBuffParty
+  * etherSingularityBuffOwner
+  * healCardBuffParty
+  * healCardBuffOwner
+  * amberCard2
+  * thunderJacketAura
+  * ampereBall
+
 ## 0.27.2 (02/12/2024)
 ### Changes
 - Note that Ultimate PVP modernization is still a work in progress, there might be bugs with event logic

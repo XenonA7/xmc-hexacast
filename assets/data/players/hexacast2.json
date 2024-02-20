@@ -1909,7 +1909,7 @@
           "proxy": "etherSingularityAura"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -1966,7 +1966,7 @@
           "proxy": "etherSingularityAura"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -11085,7 +11085,7 @@
           "proxy": "healCardBuff"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -11142,7 +11142,7 @@
           "proxy": "healCardBuff"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -13616,7 +13616,7 @@
           "anim": "hidden"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -15160,7 +15160,7 @@
           "type": "CLEAR_EFFECTS"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -24371,7 +24371,7 @@
           "type": "CLEAR_EFFECTS"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -24466,7 +24466,7 @@
           }
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
@@ -29725,7 +29725,7 @@
           "type": "SET_Z_VEL"
         },
         {
-          "time": 0.01,
+          "time": 0.05,
           "type": "WAIT"
         }
       ],
