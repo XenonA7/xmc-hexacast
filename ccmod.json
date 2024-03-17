@@ -1,6 +1,6 @@
 {
 	"id": "xmc-hexacast",
-	"version": "0.27.3",
+	"version": "0.28.0",
 	"title": {
 		"en_US": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]"
 	},
@@ -11,14 +11,14 @@
 		"24": "icon.png"
 	},
 	"repository": "https://github.com/XenonA7/xmc-hexacast",
-	"tags": ["player character", "party member"],
-	"authors": ["XenonA7", "Lychee"],
+	"tags": ["player character", "party member", "combat arts"],
+	"authors": ["XenonA7", "HeartLychee"],
 	"prestart": "prestart.js",
 	"poststart": "poststart.js",
 	"dependencies": {
 		"extendable-severed-heads": ">=1.1.0",
 		"cc-alybox": ">=1.0.0",
-		"xenons-triblader-mod": ">=0.8.0",
+		"xenons-triblader-mod": ">=1.0.0",
 		"Simplify": ">=2.12.1",
 		"post-game": ">=1.4.0"
 	}

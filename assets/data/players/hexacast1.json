@@ -5582,6 +5582,10 @@
           "type": "DETACH_TIME_PARENT"
         },
         {
+          "kind": "PROXY_OWNER",
+          "type": "SET_TEMP_TARGET"
+        },
+        {
           "name": "hexBarrierShield",
           "actionDetached": false,
           "perfectGuardTime": 0,
@@ -5631,12 +5635,16 @@
           "type": "LABEL"
         },
         {
-          "type": "RESET_GUARDED_HITS"
+          "type": "RESET_GUARD_COMBO"
         },
         {
+          "conditions": [
+            {
+              "type": "TARGET_HAS_BLOCKED_HITS"
+            }
+          ],
           "maxTime": 10,
-          "meleeOnly": false,
-          "type": "WAIT_UNTIL_GUARDED"
+          "type": "WAIT_UNTIL_COMBAT_TRUE"
         },
         {
           "duration": 0,
@@ -30800,6 +30808,10 @@
                 }
               },
               {
+                "value": "HEAVY",
+                "type": "SET_HIT_STABLE"
+              },
+              {
                 "followUp": "sweepEnd",
                 "wait": false,
                 "viaWalkConfig": false,
@@ -31926,6 +31938,10 @@
                   "move": 0.3,
                   "reaim": 0.4
                 }
+              },
+              {
+                "value": "HEAVY",
+                "type": "SET_HIT_STABLE"
               },
               {
                 "followUp": "sweepRevEnd",
@@ -33055,6 +33071,10 @@
                   "move": 0.8,
                   "reaim": 0.9
                 }
+              },
+              {
+                "value": "HEAVY",
+                "type": "SET_HIT_STABLE"
               },
               {
                 "followUp": "sweepEnd",
@@ -34224,6 +34244,10 @@
             "condition": "entity.attrib.shadowflameActive",
             "thenStep": [
               {
+                "value": "HEAVY",
+                "type": "SET_HIT_STABLE"
+              },
+              {
                 "wait": false,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
@@ -34751,6 +34775,10 @@
             "type": "IF",
             "condition": "entity.attrib.shadowflameActive",
             "thenStep": [
+              {
+                "value": "HEAVY",
+                "type": "SET_HIT_STABLE"
+              },
               {
                 "wait": false,
                 "viaWalkConfig": false,

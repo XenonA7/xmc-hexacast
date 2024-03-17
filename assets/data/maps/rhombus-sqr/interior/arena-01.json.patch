@@ -56,7 +56,19 @@
               "type": "ADD_MSG_PERSON",
               "person": {
                 "person": "main.lea",
-                "expression": "DEFAULT"
+                "expression": "BLANK"
+              }
+            },
+            {
+              "type": "SHOW_BOARD_MSG",
+              "side": "RIGHT",
+              "text": {
+                "en_US": "Select a character.",
+                "de_DE": "",
+                "ja_JP": "",
+                "ko_KR": "",
+                "zh_CN": "",
+                "zh_TW": ""
               }
             },
             {
@@ -66,10 +78,11 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
-                  "changeType": "set",
-                  "type": "CHANGE_VAR_NUMBER",
-                  "varName": "plot.xtm.character",
-                  "value": 1
+                  "type": "CLEAR_BOARD_MSG"
+                },
+                {
+                  "time": 0.15,
+                  "type": "WAIT"
                 },
                 {
                   "text": {
@@ -90,10 +103,11 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
-                  "changeType": "set",
-                  "type": "CHANGE_VAR_NUMBER",
-                  "varName": "plot.xtm.character",
-                  "value": 50
+                  "type": "CLEAR_BOARD_MSG"
+                },
+                {
+                  "time": 0.15,
+                  "type": "WAIT"
                 },
                 {
                   "text": {
@@ -114,10 +128,11 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
-                  "changeType": "set",
-                  "type": "CHANGE_VAR_NUMBER",
-                  "varName": "plot.xtm.character",
-                  "value": 51
+                  "type": "CLEAR_BOARD_MSG"
+                },
+                {
+                  "time": 0.15,
+                  "type": "WAIT"
                 },
                 {
                   "text": {
@@ -136,7 +151,7 @@
               "type": "SHOW_CHOICE",
               "person": {
                 "person": "main.lea",
-                "expression": "DEFAULT"
+                "expression": "BLANK"
               },
               "options": [
                 {

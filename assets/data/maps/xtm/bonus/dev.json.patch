@@ -80,7 +80,19 @@
               "type": "ADD_MSG_PERSON",
               "person": {
                 "person": "main.lea",
-                "expression": "DEFAULT"
+                "expression": "BLANK"
+              }
+            },
+            {
+              "type": "SHOW_BOARD_MSG",
+              "side": "RIGHT",
+              "text": {
+                "en_US": "Select a character.",
+                "de_DE": "",
+                "ja_JP": "",
+                "ko_KR": "",
+                "zh_CN": "",
+                "zh_TW": ""
               }
             },
             {
@@ -90,10 +102,11 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
-                  "changeType": "set",
-                  "type": "CHANGE_VAR_NUMBER",
-                  "varName": "plot.xtm.character",
-                  "value": 1
+                  "type": "CLEAR_BOARD_MSG"
+                },
+                {
+                  "time": 0.15,
+                  "type": "WAIT"
                 },
                 {
                   "text": {
@@ -114,10 +127,11 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
-                  "changeType": "set",
-                  "type": "CHANGE_VAR_NUMBER",
-                  "varName": "plot.xtm.character",
-                  "value": 50
+                  "type": "CLEAR_BOARD_MSG"
+                },
+                {
+                  "time": 0.15,
+                  "type": "WAIT"
                 },
                 {
                   "text": {
@@ -138,10 +152,11 @@
                   "type": "SWITCH_PLAYER_CONFIG"
                 },
                 {
-                  "changeType": "set",
-                  "type": "CHANGE_VAR_NUMBER",
-                  "varName": "plot.xtm.character",
-                  "value": 51
+                  "type": "CLEAR_BOARD_MSG"
+                },
+                {
+                  "time": 0.15,
+                  "type": "WAIT"
                 },
                 {
                   "text": {
@@ -160,7 +175,7 @@
               "type": "SHOW_CHOICE",
               "person": {
                 "person": "main.lea",
-                "expression": "DEFAULT"
+                "expression": "BLANK"
               },
               "options": [
                 {
@@ -1553,75 +1568,75 @@
                   }
                 ]
               },
-//              {
-//                "type": "IF",
-//                "withElse": false,
-//                "condition": "player.entity.name == 'triblader-lea'",
-//                "thenStep": [
-//                  {
-//                    "person": {
-//                      "person": "main.lea",
-//                      "expression": "DEFAULT"
-//                    },
-//                    "type": "ADD_MSG_PERSON",
-//                    "side": "RIGHT"
-//                  },
-//                  {
-//                    "person": {
-//                      "person": "advisors.man-small-black-afro",
-//                      "expression": "DEFAULT"
-//                    },
-//                    "message": {
-//                      "en_US": "Hello, Lea!"
-//                    },
-//                    "type": "SHOW_MSG"
-//                  },
-//                  {
-//                    "person": {
-//                      "person": "main.lea",
-//                      "expression": "PROUD"
-//                    },
-//                    "message": {
-//                      "en_US": "Hi!"
-//                    },
-//                    "type": "SHOW_MSG"
-//                  },
-//                  {
-//                    "person": {
-//                      "person": "advisors.man-small-black-afro",
-//                      "expression": "DEFAULT"
-//                    },
-//                    "message": {
-//                      "en_US": "Enjoying playing as a \\c[3]Triblader\\c[0]?"
-//                    },
-//                    "type": "SHOW_MSG"
-//                  },
-//                  {
-//                    "person": {
-//                      "person": "main.lea",
-//                      "expression": "NOD"
-//                    },
-//                    "message": {
-//                      "en_US": "[nods]"
-//                    },
-//                    "type": "SHOW_MSG"
-//                  },
-//                  {
-//                    "person": {
-//                      "person": "advisors.man-small-black-afro",
-//                      "expression": "DEFAULT"
-//                    },
-//                    "message": {
-//                      "en_US": "Feel free to try out some of the other avatars too."
-//                    },
-//                    "type": "SHOW_MSG"
-//                  },
-//                  {
-//                    "name": "END",
-//                    "type": "GOTO_LABEL"
-//                  }
-//                ]
-//              },
+              {
+                "type": "IF",
+                "withElse": false,
+                "condition": "player.entity.name == 'triblader-lea'",
+                "thenStep": [
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "DEFAULT"
+                    },
+                    "type": "ADD_MSG_PERSON",
+                    "side": "RIGHT"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Hello, Lea!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "PROUD"
+                    },
+                    "message": {
+                      "en_US": "Hi!"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Enjoying playing as a \\c[3]Triblader\\c[0]?"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "main.lea",
+                      "expression": "NOD"
+                    },
+                    "message": {
+                      "en_US": "[nods]"
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "person": {
+                      "person": "advisors.man-small-black-afro",
+                      "expression": "DEFAULT"
+                    },
+                    "message": {
+                      "en_US": "Feel free to try out some of the other avatars too."
+                    },
+                    "type": "SHOW_MSG"
+                  },
+                  {
+                    "name": "END",
+                    "type": "GOTO_LABEL"
+                  }
+                ]
+              },
               {
                 "type": "IF",
                 "withElse": false,

@@ -16,6 +16,11 @@ This Hexacast mod is incomplete. Future versions will likely change a lot and mi
 ### **Discord Server**
 https://discord.gg/CsfUk9vpFq
 
+### **Special Thanks:**
+- **HeartLychee:** Huge help with sprites and animations
+- **Alyxia:** JS support
+- **Bakafish**: Author of Autumn's Genesis, provided code to support proxy HP conditions
+
 ## **Main Features:**
 Playable Hexacast character (WIP) and party member (WIP). C'Tron is not modified.
 

@@ -1,3 +1,32 @@
+## 0.28.0 (03/16/2024)
+### General
+- Now requires XTM version 1.0.0 or later
+### New Content
+- Added copy of basement.json map to override XTM with Hexacast character options available (mod intro map)
+  * Despite being functional, this will not be implemented until mods are re-organized into XMC later
+- Added new NPC encounter in autumn.guild.left, different depending on Arcane Lab being installed
+- Added new combat conditions TARGET_HAS_BLOCKED_DAMAGE and TARGET_HAS_BLOCKED_HITS in new file custom-combat-conditions.js
+- Added new action step RESET_GUARD_COMBO
+### Changes
+- Modified ccmod.json tags
+- Updated HeartLychee credits preferences
+- Removed uses of RESET_GUARDED_HITS, which is from unified-steps
+- Uncommented triblader-lea dialogue from AlyBox NPC in XTM dev room
+- Deleted backup map copy: ultimate-pvp - Copy.json
+- Updated character selection signs to remove portrait
+- Removed all "plot.xtm.character" from character change signs
+- Removed commented broken code from custom-action-steps.js
+### Fixes
+- Hex Barrier: Fixed player facing the mouce cursor while active
+- Hex Barrier: Fixed looping hexBarrierBlocker effect for some users
+- Ultimate PVP: Fixed logic bug when selecting 3 rounds
+- Ultimate PVP: Fixed final round events not working when using default 5 rounds
+- Ultimate PVP: Fixed missing ENV_PARTICLE logic from pvpBrake
+- Ultimate PVP: Fixes to pvpEnd logic
+- Ultimate PVP: Joern2 now uses "spinRepeat" animation during intro (requirement for new versions of LJM)
+### Balance
+- Shadowflame Sorcery: normal throws and all melee attacks now provide HEAVY hit stability
+
 ## 0.27.3 (02/19/2024)
 ### Changes
 - Updated to new ccmod.json format
