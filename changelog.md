@@ -1,3 +1,13 @@
+## 0.28.1 (03/17/2024)
+### New Content
+- Added new NPC encounter in path-04 of Azure Archipelago (Rough Lagoon)
+- Added Hexacast animations from **HeartLychee**:
+  * exhale
+  * fanPre
+  * fanLoop
+### Changes
+ - Removed redundant floatEyesClosed sprites from hexacast2.png
+
 ## 0.28.0 (03/16/2024)
 ### General
 - Now requires XTM version 1.0.0 or later
@@ -17,7 +27,7 @@
 - Removed all "plot.xtm.character" from character change signs
 - Removed commented broken code from custom-action-steps.js
 ### Fixes
-- Hex Barrier: Fixed player facing the mouce cursor while active
+- Hex Barrier: Fixed player facing the mouse cursor while active
 - Hex Barrier: Fixed looping hexBarrierBlocker effect for some users
 - Ultimate PVP: Fixed logic bug when selecting 3 rounds
 - Ultimate PVP: Fixed final round events not working when using default 5 rounds

@@ -144,6 +144,14 @@
       "offY": 480,
       "width": 32,
       "height": 40
+    },
+    "fanning": {
+      "src": "media/entity/npc/hexacast2.png",
+      "xCount": 14,
+      "offX": 0,
+      "offY": 960,
+      "width": 32,
+      "height": 40
     }
   },
   "offset": {
@@ -2524,6 +2532,56 @@
             1,
             2,
             1
+          ]
+        }
+      ]
+    },
+    {
+      "sheet": "fanning",
+      "dirs": "2",
+      "flipX": [
+        0,
+        1
+      ],
+      "tileOffsets": [
+        0,
+        0
+      ],
+      "SUB": [
+        {
+          "name": "exhale",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        {
+          "name": "fanPre",
+          "time": 0.1,
+          "repeat": false,
+          "frames": [
+            8,
+            9
+          ]
+        },
+        {
+          "name": "fanLoop",
+          "time": 0.2,
+          "repeat": true,
+          "frames": [
+            10,
+            11,
+            12,
+            13
           ]
         }
       ]
