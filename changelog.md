@@ -1,3 +1,30 @@
+## 0.29.0 (03/24/2024)
+### New Content
+- New combat art: Crystal Carnage (Cold Throw Lv.3A)
+- Added KeyPanel code patch by **Lubkuluk**
+- Added files for WIP concepts, might delete later:
+  * \assets\data\animations\enemies\spellcard-neutral.json
+  * \assets\data\enemies\shield-generator.json
+  * \assets\data\players\hexacast1_oldCrystalCarnage.json
+### Changes
+- Spark Stream: Reworked to use GENERIC proxies instead of BALL proxies
+- Spark Stream: Less excessive player movement during combat art
+- Deleted proxy sparkStreamCardDeathFX
+- Removed inherent tranparency from icicles in hexa-misc.png
+- Ultimate PVP: Joern2 intro animation updated
+- Pulsing hexagon particle in effect hailCard2Hexagons now cancelable
+- Pulsing hexagon particle in effect gigaDrainCardTrail now cancelable
+- Added light source to effect creepingColdShoot
+- Changed FADE_COLOR color value for effect creepingColdShoot
+- Deleted file "shoot-proxy-player-fix - 1st try.js"
+### Fixes
+- Fixed Hexacast unable use key panels in dungeons
+- Set proxies hailSeeker1 and hailSeeker2 to be invisible by default to fix rare case of frame 1 being visible
+- Fixed duplicate skillBonus definition in Frozen Fortress code
+- Disabled animation repeat for charged VRPs
+### Balance
+- Hex Barrier: shield hit stability downgraded from MASSIVE to HEAVY (significant nerf)
+
 ## 0.28.1 (03/17/2024)
 ### New Content
 - Added new NPC encounter in path-04 of Azure Archipelago (Rough Lagoon)

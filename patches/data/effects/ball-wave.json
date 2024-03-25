@@ -648,6 +648,7 @@
             "spline": ""
           }
         },
+        "cancelable": true,
         "particleDuration": 0.2,
         "moveWithTarget": 1,
         "anim": "WAVE_BIG_HEXAGON",
@@ -713,6 +714,7 @@
             "spline": ""
           }
         },
+        "cancelable": true,
         "particleDuration": 0.2,
         "moveWithTarget": 1,
         "anim": "WAVE_BIG_HEXAGON",

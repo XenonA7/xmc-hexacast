@@ -4177,6 +4177,7 @@
             "spline": ""
           }
         },
+        "cancelable": true,
         "particleDuration": 0.2,
         "moveWithTarget": 1,
         "anim": "COLD_BIG_HEXAGON",
@@ -4214,6 +4215,7 @@
             "spline": ""
           }
         },
+        "cancelable": true,
         "particleDuration": 0.2,
         "moveWithTarget": 1,
         "anim": "COLD_BIG_HEXAGON",
@@ -9957,6 +9959,114 @@
       },
       {
         "time": 0.30,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      }
+    ],
+    "crystalCarnageGlaiveHexagons": [
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 28,
+        "duration": 0.3,
+        "centralAngle": 1,
+        "startAngle": 0,
+        "startDist": 32,
+        "useTargetAngle": false,
+        "moveDist": 0,
+        "inverse": true,
+        "clockwise": true,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 0.8,
+              "y": 0.8
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.05,
+            "spline": "EASE_IN"
+          }
+        },
+        "cancelable": true,
+        "moveWithTarget": 0,
+        "particleDuration": 0.17,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "numParticles": 28,
+        "duration": 0.3,
+        "centralAngle": 1,
+        "startAngle": 0.5,
+        "startDist": 32,
+        "useTargetAngle": false,
+        "moveDist": 0,
+        "inverse": true,
+        "clockwise": false,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 0.8,
+              "y": 0.8
+            },
+            "time": 0.05,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.05,
+            "spline": "EASE_IN"
+          }
+        },
+        "cancelable": true,
+        "moveWithTarget": 0,
+        "particleDuration": 0.17,
+        "anim": "HEXA_COLD_GUI",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.3,
         "type": "WAIT"
       },
       {

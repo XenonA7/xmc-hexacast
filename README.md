@@ -20,6 +20,7 @@ https://discord.gg/CsfUk9vpFq
 - **HeartLychee:** Huge help with sprites and animations
 - **Alyxia:** JS support
 - **Bakafish**: Author of Autumn's Genesis, provided code to support proxy HP conditions
+- **Lubkuluk**: JS support, patch for Hexacast key panel functionality
 
 ## **Main Features:**
 Playable Hexacast character (WIP) and party member (WIP). C'Tron is not modified.
@@ -90,7 +91,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Cold Throw Lv.1b	**Lingering Cold**
 - Cold Throw Lv.2a	**Hail Spears**
 - Cold Throw Lv.2b	**Creeping Cold**
-- Cold Throw Lv.3
+- Cold Throw Lv.3	**Crystal Carnage**
 - Cold Dash Lv.1
 - Cold Dash Lv.2
 - Cold Dash Lv.3	N/A
