@@ -132,7 +132,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Wave Throw Lv.1b	**Essence Steal**
 - Wave Throw Lv.2a	**Blaster Sentry**
 - Wave Throw Lv.2b	**Giga Drain**
-- Wave Throw Lv.3a
+- Wave Throw Lv.3a	**Ray of G'oni**
 - Wave Throw Lv.3b
 - Wave Dash Lv.1a	**Toxic Mire**
 - Wave Dash Lv.1b

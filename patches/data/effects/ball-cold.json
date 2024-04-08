@@ -1288,6 +1288,78 @@
         "type": "COPY_SPRITE"
       },
       {
+        "time": 0.03,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.08,
+        "type": "COPY_SPRITE"
+      },
+      {
+        "time": 0.03,
+        "type": "WAIT"
+      },
+      {
+        "color": "white",
+        "colorAlpha": "#00aaff",
+        "noLighter": false,
+        "pAlpha": {
+          "init": 0.4,
+          "start": {
+            "value": 0,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.7,
+              "y": 0.7
+            },
+            "spline": ""
+          }
+        },
+        "offset": {
+          "x": 0,
+          "y": -3,
+          "z": -3
+        },
+        "particleDuration": 0.08,
+        "type": "COPY_SPRITE"
+      },
+      {
         "numParticles": 1,
         "duration": 0.1,
         "centralAngle": 1,

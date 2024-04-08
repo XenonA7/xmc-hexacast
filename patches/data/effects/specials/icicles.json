@@ -1689,8 +1689,8 @@
           }
         },
         "angleVary": 1,
-        "particleDuration": 1.0,
-        "particleDurVariance": 0.2,
+        "particleDuration": 1.2,
+        "particleDurVariance": 0.3,
         "anim": "ICE_SHARD6",
         "type": "DEBRIS_CIRCLE"
       },
@@ -1744,8 +1744,8 @@
           }
         },
         "angleVary": 1,
-        "particleDuration": 1.0,
-        "particleDurVariance": 0.2,
+        "particleDuration": 1.2,
+        "particleDurVariance": 0.3,
         "anim": "ICE_SHARD3",
         "type": "DEBRIS_CIRCLE"
       },
@@ -1792,7 +1792,7 @@
           "y": 0,
           "z": 0
         },
-        "moveDist": 32,
+        "moveDist": 48,
         "moveVariance": 24,
         "keySpline": "EASE_OUT_STRONG",
         "inverse": false,

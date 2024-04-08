@@ -1,3 +1,32 @@
+## 0.30.0 (04/08/2024)
+### New Content
+- New combat art: Ray of G'oni (Wave Throw Lv.3A)
+### Changes
+- Reduced snowflake particle count on effect hailBullet3Aura to reduce lag for Crystal Carnage
+- Increased moveDist of CIRCLE_SMALL_COLD particles in effect crystalCarnageGlaive
+- Increased particle duration of ice debris particles in effect crystalCarnageGlaive
+- Increased size of WAVE_SPARKLE particles in effect gigaDrainHeal
+- Added missing effect shootCharge when throwing dungeon key proxies
+- Added standard startDist value when throwing dungeon key proxies
+- Added ground indicator effect to Calamity Beacon's spellcard while it is being thrown
+- Reduced particle duration for effect sentryShoot
+- Added a minor hexagon particle effect to Blaster Sentry
+- Ultimate PVP: Default enemy level decreased by 5
+- Ultimate PVP: Changed LJM BGM options to UTY
+- Ultimate PVP: Adjusted Joern2 animation timing
+### Fixes
+- Fixed player not disappearing when using Ethereal Stance while Shadowflame Sorcery is active
+- Blaster Sentry now always shoots in the same direction as the targeting indicator
+- Fixed Blaster Sentry death effect timing
+- Removed stray DETATCH_TIME_PARENT from Ampere Cloak steps
+### Balance
+- Ethereal Stance: removed hit stability during startup lag
+- Ice Blitz damage increased
+- Meteor Storm chargeup time reduced by 0.1 seconds
+- Blaster Sentry automatic rate of fire greatly reduced
+- Blaster Sentry shot chargeup time reduced from 0.35 seconds to 0.3 seconds
+- Blaster Sentry damage and status inflict increased
+
 ## 0.29.0 (03/24/2024)
 ### New Content
 - New combat art: Crystal Carnage (Cold Throw Lv.3A)
