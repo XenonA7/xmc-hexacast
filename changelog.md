@@ -1,3 +1,7 @@
+## 0.31.1 (05/05/2024)
+### Fixes
+- Added support for "arcane-lab" and "arcane-labs" mod IDs across new/old AL versions
+
 ## 0.31.0 (05/05/2024)
 ### General
 - Custom skill update (bonus feature only if Arcane Lab is installed)

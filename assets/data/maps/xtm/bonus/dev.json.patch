@@ -836,7 +836,7 @@
   },
   {
     "type": "IF",
-    "cond": "!activeMods.find(e => e.name === 'arcane-labs')",
+    "cond": "!activeMods.find(e => e.name === 'arcane-labs') && !activeMods.find(e => e.name === 'arcane-lab')",
     "thenSteps": [
       {
         "type": "ADD_ARRAY_ELEMENT",
@@ -944,7 +944,7 @@
   },
   {
     "type": "IF",
-    "cond": "activeMods.find(e => e.name === 'arcane-labs')",
+    "cond": "activeMods.find(e => e.name === 'arcane-labs') || activeMods.find(e => e.name === 'arcane-lab')",
     "thenSteps": [
       {
         "type": "ADD_ARRAY_ELEMENT",
@@ -2301,7 +2301,7 @@
   },
   {
     "type": "IF",
-    "cond": "activeMods.find(e => e.name === 'arcane-labs') && activeMods.find(e => e.name === 'lqm-joern-mod') && activeMods.find(e => e.name === 'Qine')",
+    "cond": "(activeMods.find(e => e.name === 'arcane-labs') || activeMods.find(e => e.name === 'arcane-lab')) && activeMods.find(e => e.name === 'lqm-joern-mod') && activeMods.find(e => e.name === 'Qine')",
     "thenSteps": [
       {
         "type": "ADD_ARRAY_ELEMENT",
@@ -2330,7 +2330,7 @@
   },
   {
     "type": "IF",
-    "cond": "!activeMods.find(e => e.name === 'arcane-labs') || !activeMods.find(e => e.name === 'lqm-joern-mod') || !activeMods.find(e => e.name === 'Qine')",
+    "cond": "(!activeMods.find(e => e.name === 'arcane-labs') && !activeMods.find(e => e.name === 'arcane-lab')) || !activeMods.find(e => e.name === 'lqm-joern-mod') || !activeMods.find(e => e.name === 'Qine')",
     "thenSteps": [
       {
         "type": "ADD_ARRAY_ELEMENT",

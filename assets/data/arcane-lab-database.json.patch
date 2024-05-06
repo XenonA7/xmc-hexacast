@@ -1,7 +1,7 @@
 [
   {
     "type": "IF",
-    "cond": "activeMods.find(e => e.name === 'arcane-labs')",
+    "cond": "activeMods.find(e => e.name === 'arcane-labs') || activeMods.find(e => e.name === 'arcane-lab')",
     "thenSteps": [
       {
         "type": "ENTER",
