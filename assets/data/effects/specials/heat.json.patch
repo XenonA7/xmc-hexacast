@@ -4,6 +4,10 @@
     "src": "mod:patches/data/effects/specials/heat.json"
   },
   {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/heat-custom.json"
+  },
+  {
     "type": "ENTER",
     "index": [
       "ANIMS",

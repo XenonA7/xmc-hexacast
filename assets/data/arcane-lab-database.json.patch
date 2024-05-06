@@ -1,0 +1,19 @@
+[
+  {
+    "type": "IF",
+    "cond": "activeMods.find(e => e.name === 'arcane-labs')",
+    "thenSteps": [
+      {
+        "type": "ENTER",
+        "index": "customSkills"
+      },
+      {
+        "type": "INCLUDE",
+        "src": "patches/data/hexacast1-arcane-lab-database.json"
+      },
+      {
+        "type": "EXIT"
+      }
+    ]
+  }
+]

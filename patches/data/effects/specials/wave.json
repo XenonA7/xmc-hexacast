@@ -7497,6 +7497,13 @@
         "type": "LIGHT"
       },
       {
+        "fadeIn": 0,
+        "fadeOut": 0.5,
+        "duration": 2.5,
+        "intensity": 0.4,
+        "type": "DARKNESS"
+      },
+      {
         "color": "#001c15",
         "fadeIn": 0.1,
         "fadeOut": 0.5,
@@ -7655,6 +7662,13 @@
         "duration": -1,
         "glow": false,
         "type": "LIGHT"
+      },
+      {
+        "fadeIn": 0.6,
+        "fadeOut": 1,
+        "duration": -1,
+        "intensity": 0.4,
+        "type": "DARKNESS"
       },
       {
         "color": "#132b23",
@@ -8881,6 +8895,50 @@
       },
       {
         "type": "STOP_SOUNDS"
+      }
+    ],
+    "rayGroundArrows": [
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "numParticles": 1,
+        "duration": 0.2,
+        "centralAngle": 0,
+        "startAngle": 0,
+        "startDist": 24,
+        "particleRotate": true,
+        "moveDist": 300,
+        "keySpline": "LINEAR",
+        "moveRotate": 0,
+        "inverse": false,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.9,
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": "LINEAR"
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 2,
+            "y": 2.5
+          }
+        },
+        "cancelable": false,
+        "moveWithTarget": 0,
+        "particleDuration": 0.7,
+        "anim": "DUNGEON_ARROW_WAVE",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      },
+      {
+        "time": 0.2,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
       }
     ]
   }

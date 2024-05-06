@@ -4,6 +4,10 @@
     "src": "mod:patches/data/effects/specials/cold.json"
   },
   {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/cold-custom.json"
+  },
+  {
     "type": "ENTER",
     "index": [
       "ANIMS",

@@ -4,6 +4,10 @@
     "src": "mod:patches/data/effects/specials/shock.json"
   },
   {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/shock-custom.json"
+  },
+  {
     "type": "ENTER",
     "index": [
       "ANIMS",
@@ -580,6 +584,27 @@
         1,
         2,
         1
+      ]
+    }
+  },
+  {
+    "type": "ADD_ARRAY_ELEMENT",
+    "index": 0,
+    "content": {
+      "name": "CYBER_CIRCLE_SHOCK",
+      "sheet": {
+        "src": "media/entity/effects/hexa-misc.png",
+        "offX": 480,
+        "offY": 288,
+        "width": 96,
+        "height": 96
+      },
+      "guiSprites": true,
+      "renderMode": "lighter",
+      "time": 0.1,
+      "repeat": false,
+      "frames": [
+        0
       ]
     }
   }

@@ -18,6 +18,7 @@ https://discord.gg/CsfUk9vpFq
 
 ### **Special Thanks:**
 - **HeartLychee:** Huge help with sprites and animations
+- **eɪsus|𐤀기술자🇰🇷 (2hh8899):** Creator of Arcane Lab and the custom skill system
 - **Alyxia:** JS support
 - **Bakafish**: Author of Autumn's Genesis, provided code to support proxy HP conditions
 - **Lubkuluk**: JS support, patch for Hexacast key panel functionality
@@ -81,10 +82,10 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Heat Guard Lv.3b	**Shadowflame Sorcery**
 
 ![cold](https://user-images.githubusercontent.com/105614278/168505452-d0485b21-d090-482d-b493-d72090f12fa7.png)
-- Cold Melee Lv.1a	**Ice Blitz**
-- Cold Melee Lv.1b
-- Cold Melee Lv.2a	**Frigid Flurry**
-- Cold Melee Lv.2b
+- Cold Melee Lv.1a
+- Cold Melee Lv.1b	**Ice Blitz**
+- Cold Melee Lv.2a
+- Cold Melee Lv.2b	**Frigid Flurry**
 - Cold Melee Lv.3a
 - Cold Melee Lv.3b	**Blizzard Rush**
 - Cold Throw Lv.1a	**Hail Line**
@@ -118,7 +119,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Shock Dash Lv.1b	**Shock Surge**
 - Shock Dash Lv.2a	**Magnet Deck**
 - Shock Dash Lv.2b	**Storm Stride**
-- Shock Dash Lv.3a
+- Shock Dash Lv.3a	**Storm Chaser**
 - Shock Dash Lv.3b	**Zir'vitar Strike**
 - Shock Guard Lv.1	**Ampere Cloak**
 - Shock Guard Lv.2	**Thunder Jacket**

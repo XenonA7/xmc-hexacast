@@ -1,3 +1,53 @@
+## 0.31.0 (05/05/2024)
+### General
+- Custom skill update (bonus feature only if Arcane Lab is installed)
+- Now requires XTM 1.0.2 or higher
+### New Content
+- Unfinished combat art: Storm Chaser (Shock Throw Lv.3A)
+- Added **220** combat arts to Hexacast1 and Hexacast2 as custom skills
+- Added the following custom skills to Hexacast1 and Hexacast2:
+  * Spheromancer Ranged
+  * Spheromancer Melee
+  * Triblader Ranged
+  * Triblader Melee
+  * All Spheromancer arts (91 total)
+  * All Triblader arts (91 total)
+  * All ArcaneLab arts (28 total)
+  * Limited Pentafist arts (3 total)
+  * Custom Hexacast arts (2 total)
+  * Debug arts (1 total)
+- Added the following effect sheets to help with custom skill ports:
+  * /patches/data/effects/specials/heat-custom.json
+  * /patches/data/effects/specials/cold-custom.json
+  * /patches/data/effects/specials/shock-custom.json
+- Added props to facilitate custom skills to the XTM "art testing" map if AL is installed
+- Added placeholder entries for all unimplemented Hexacast arts without alternatives
+- Created sprites for landOnGround N/E directions
+- Created new triblader spritesheet and animations for Hexacast1 and Hexacast2
+- Added animation itemHoldRev to Hexacast1 and Hexacast2
+### Changes
+- Added eɪsus|𐤀기술자🇰🇷 to readme credits
+- Moved Animation Viewer combat art out of Hexacast character file and into Triblader custom skills
+- Extended spritesheet hexa-misc.png
+- Firebrand now tracks an attrib value called firebrandActive
+- Ice Blitz changed from cold melee 1A to 1B
+- Ray of G'oni: Added ground indicator arrows while charging
+- Ray of G'oni: Proxy shadow size now properly increases/decreases throughout the combat art
+- Ray of G'oni: Added subtle darkness effect
+- Ray of G'oni: Reduced distance card travels forward before charging
+- Removed old backup file hexacast1_oldCrystalCarnage.json
+- Added looping screen rumble to effect zirvitarFinalStrike
+- Adjusted particle rotation for effect detonationFlyActivate
+- Added pLight property to particles in effect detonationFlyActivate
+- Improved effect zirvitarFinalStrike with new particles
+### Fixes
+- Fixed Frigid Flurry marked as wrong ID in readme
+- Fixed effect scale70 scaling factor
+- Typo fix in autumn/guild/left.json.patch
+### Balance
+- Throttle Hex damage slightly increased
+- Static Discharge damage decreased
+
 ## 0.30.0 (04/08/2024)
 ### New Content
 - New combat art: Ray of G'oni (Wave Throw Lv.3A)
@@ -20,7 +70,7 @@
 - Fixed Blaster Sentry death effect timing
 - Removed stray DETATCH_TIME_PARENT from Ampere Cloak steps
 ### Balance
-- Ethereal Stance: removed hit stability during startup lag
+- Ethereal Stance: Can now be interrupted at the start if you get hit
 - Ice Blitz damage increased
 - Meteor Storm chargeup time reduced by 0.1 seconds
 - Blaster Sentry automatic rate of fire greatly reduced
