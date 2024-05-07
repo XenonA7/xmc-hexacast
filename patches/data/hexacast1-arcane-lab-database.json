@@ -23,7 +23,9 @@
       "en_US": "The standard Spheromancer melee attacks."
     },
     "icon": {
-      "src": "media/gui/custom-skills/al-spheroknight.png"
+      "src": "media/gui/custom-skills/base-skills.png",
+      "offX": 24,
+      "offY": 0
     }
   },
   "csTribladerBaseMelee": {
@@ -50,7 +52,9 @@
       "en_US": "The standard Triblader melee attacks."
     },
     "icon": {
-      "src": "media/gui/custom-skills/al-spheroknight.png"
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 24,
+      "offY": 0
     }
   },
   "csSpheromancerBaseRanged": {
@@ -85,7 +89,9 @@
       "en_US": "The standard Spheromancer ranged attacks."
     },
     "icon": {
-      "src": "media/gui/custom-skills/al-spheroknight.png"
+      "src": "media/gui/custom-skills/base-skills.png",
+      "offX": 0,
+      "offY": 0
     }
   },
   "csTribladerBaseRanged": {
@@ -120,7 +126,9 @@
       "en_US": "The standard Triblader ranged attacks."
     },
     "icon": {
-      "src": "media/gui/custom-skills/al-spheroknight.png"
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 0,
+      "offY": 0
     }
   },
   "csSpheromancerNeutralThrow1A": {
@@ -5713,21 +5721,21 @@
     "element": "WAVE",
     "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
     "name": {
-      "en_US": "Guarding Gale",
-      "de_DE": "Guarding Gale",
-      "zh_CN": "守护光环",
-      "zh_TW": "守護光環",
-      "ja_JP": "ガード・ゲイル",
-      "ko_KR": "강풍 막기",
+      "en_US": "\\i[class-sphero] Guarding Gale",
+      "de_DE": "\\i[class-sphero] Guarding Gale",
+      "zh_CN": "\\i[class-sphero] 守护光环",
+      "zh_TW": "\\i[class-sphero] 守護光環",
+      "ja_JP": "\\i[class-sphero] ガード・ゲイル",
+      "ko_KR": "\\i[class-sphero] 강풍 막기",
       "langUid": 134
     },
     "description": {
-      "en_US": "\\i[class-sphero] Spawns aura that pushes away nearby enemies for several seconds.",
-      "de_DE": "\\i[class-sphero] Aktiviere eine Aura, die nahe Gegner für einige Sekunden wegstößt.",
-      "zh_CN": "\\i[class-sphero] 召唤一个光环，在数秒内阻挡周围敌人靠近。",
-      "zh_TW": "\\i[class-sphero] 召喚一個光環，在數秒內阻擋周圍敵人靠近。",
-      "ja_JP": "\\i[class-sphero] 近くの敵を押し返すオーラを、自身の周囲に数秒間発生させる。",
-      "ko_KR": "\\i[class-sphero] 근처의 적을 몇 초간 밀어내는 아우라를 생성합니다.",
+      "en_US": "Spawns aura that pushes away nearby enemies for several seconds.",
+      "de_DE": "Aktiviere eine Aura, die nahe Gegner für einige Sekunden wegstößt.",
+      "zh_CN": "召唤一个光环，在数秒内阻挡周围敌人靠近。",
+      "zh_TW": "召喚一個光環，在數秒內阻擋周圍敵人靠近。",
+      "ja_JP": "近くの敵を押し返すオーラを、自身の周囲に数秒間発生させる。",
+      "ko_KR": "근처의 적을 몇 초간 밀어내는 아우라를 생성합니다.",
       "langUid": 135
     },
     "icon": {

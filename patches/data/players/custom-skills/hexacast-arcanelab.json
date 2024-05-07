@@ -801,7 +801,7 @@
       "hp": 0,
       "stickToSource": "NONE",
       "stickFaceAlign": false,
-      "group": "wall",
+      "group": "al-wall",
       "size": {
         "x": 24,
         "y": 24,
@@ -2901,7 +2901,7 @@
       },
       "stickToSource": "NONE",
       "stickFaceAlign": false,
-      "group": "wall",
+      "group": "al-wall",
       "size": {
         "x": 32,
         "y": 32,
@@ -13092,15 +13092,14 @@
               },
               {
                 "sticking": false,
-                "group": "wall",
+                "group": "al-wall",
                 "type": "REMOVE_PROXIES"
               },
               {
                 "wait": false,
                 "viaWalkConfig": false,
                 "type": "SHOW_ANIMATION",
-                "anim": "specialShoot",
-                "followUp": "specialLoop"
+                "anim": "tri-throwSpecial"
               },
               {
                 "duration": -1,

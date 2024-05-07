@@ -1,3 +1,13 @@
+## 0.31.2 (05/06/2024)
+### New Content
+- Created icons for base Triblader throw/melee custom skills
+### Changes
+- Removed unused empty Joern2 custom skill files
+- Added prefix to ArcaneLab "wall" proxies in custom skills to differentiate from icicileSmall proxies
+- Changed Glacial Harpoon final animation to proper throwSpecial
+### Fixes
+- Fixed Guarding Gale text icon
+
 ## 0.31.1 (05/05/2024)
 ### Fixes
 - Added support for "arcane-lab" and "arcane-labs" mod IDs across new/old AL versions

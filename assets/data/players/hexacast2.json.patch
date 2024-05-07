@@ -9,10 +9,6 @@
       },
       {
         "type": "INCLUDE",
-        "src": "mod:patches/data/players/custom-skills/hexacast-joern2.json"
-      },
-      {
-        "type": "INCLUDE",
         "src": "mod:patches/data/players/custom-skills/hexacast-spheromancer.json"
       },
       {
