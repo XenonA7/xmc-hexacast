@@ -1,3 +1,7 @@
+## 0.31.3 (05/07/2024)
+### Fixes
+- Fixed Tri Turret not properly despawning
+
 ## 0.31.2 (05/06/2024)
 ### New Content
 - Created icons for base Triblader throw/melee custom skills

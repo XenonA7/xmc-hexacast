@@ -23727,7 +23727,7 @@
           "type": "STICKY_CIRCLE_AROUND"
         },
         {
-          "group": "waveTurretGroup",
+          "group": "tri-waveTurretGroup",
           "target": "SELF",
           "type": "REMOVE_PROXIES"
         },
