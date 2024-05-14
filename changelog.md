@@ -1,4 +1,4 @@
-## 0.32.0 (##/##/2024)
+## 0.32.0 (05/13/2024)
 ### General
 - Now requires XTM 1.0.3 or higher
 ### New Content
