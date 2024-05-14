@@ -40369,6 +40369,12 @@
           {
             "time": 0.5,
             "type": "WAIT"
+          },
+          {
+            "wait": true,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preIdle"
           }
         ]
       },
@@ -44104,6 +44110,12 @@
               {
                 "time": 0.5,
                 "type": "WAIT"
+              },
+              {
+                "wait": true,
+                "viaWalkConfig": false,
+                "type": "SHOW_ANIMATION",
+                "anim": "preIdle"
               }
             ]
           }
@@ -46878,12 +46890,14 @@
             }
           },
           {
-            "time": 0.1,
+            "time": 0.5,
             "type": "WAIT"
           },
           {
-            "time": 0.4,
-            "type": "WAIT"
+            "wait": true,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preIdle"
           }
         ]
       },
@@ -49926,6 +49940,12 @@
           {
             "time": 0.5,
             "type": "WAIT"
+          },
+          {
+            "wait": true,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preIdle"
           }
         ]
       },
@@ -54230,6 +54250,12 @@
           {
             "time": 0.5,
             "type": "WAIT"
+          },
+          {
+            "wait": true,
+            "viaWalkConfig": false,
+            "type": "SHOW_ANIMATION",
+            "anim": "preIdle"
           },
           {
             "name": "end",

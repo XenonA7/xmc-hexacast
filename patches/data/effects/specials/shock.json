@@ -16585,7 +16585,7 @@
         "type": "COPY_SPRITE"
       },
       {
-        "color": "da91ff",
+        "color": "#da91ff",
         "alpha": 1,
         "fadeIn": 0,
         "fadeOut": 0.8,

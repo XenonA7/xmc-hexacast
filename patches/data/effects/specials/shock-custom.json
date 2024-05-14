@@ -53,6 +53,17 @@
       {
         "type": "LOOP_END"
       }
+    ],
+    "boltAuraPlayerBlink": [
+      {
+        "color": "#da91ff",
+        "alpha": 1,
+        "fadeIn": 0,
+        "fadeOut": 0.5,
+        "duration": 0.25,
+        "noLighter": false,
+        "type": "FADE_COLOR"
+      }
     ]
   }
 }

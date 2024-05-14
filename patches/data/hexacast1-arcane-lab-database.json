@@ -3031,6 +3031,27 @@
       "offY": 120
     }
   },
+  "csLilyHexacastColdAttack2A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_ATTACK_SPECIAL2_A",
+        "actionCheckKey": "ATTACK_SPECIAL2"
+      }
+    ],
+    "element": "COLD",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Chilling Gale"
+    },
+    "description": {
+      "en_US": "Move forward while blasting enemies in front of you with freezing wind."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 48,
+      "offY": 360
+    }
+  },
   "csSpheromancerColdAttack3A": {
     "list": [
       {
@@ -3743,6 +3764,27 @@
       "offY": 168
     }
   },
+  "csLilyHexacastShockThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "SHOCK",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Diving Jolt"
+    },
+    "description": {
+      "en_US": "Throw a projectile that chases an enemy before striking with a lightning bolt."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 216,
+      "offY": 264
+    }
+  },
   "csSpheromancerShockThrow2A": {
     "list": [
       {
@@ -3899,6 +3941,27 @@
       "src": "media/gui/custom-skills/al-hexummoner.png",
       "offX": 24,
       "offY": 168
+    }
+  },
+  "csLilyHexacastShockThrow2A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_THROW_SPECIAL2_A",
+        "actionCheckKey": "THROW_SPECIAL2"
+      }
+    ],
+    "element": "SHOCK",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Lightning Orb"
+    },
+    "description": {
+      "en_US": "Throw a projectile that slowly seeks an enemy before moving in for a final strike."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 96,
+      "offY": 360
     }
   },
   "csSpheromancerShockThrow3A": {
@@ -4831,6 +4894,27 @@
       "offY": 264
     }
   },
+  "csLilyHexacastShockGuard2A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_GUARD_SPECIAL2_A",
+        "actionCheckKey": "GUARD_SPECIAL2"
+      }
+    ],
+    "element": "SHOCK",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Bolt Aura"
+    },
+    "description": {
+      "en_US": "Activate an aura that passively shoots lightning bolts at nearby enemies."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 96,
+      "offY": 360
+    }
+  },
   "csSpheromancerWaveThrow1A": {
     "list": [
       {
@@ -4994,6 +5078,27 @@
       "src": "media/gui/custom-skills/al-spheroknight.png",
       "offX": 0,
       "offY": 216
+    }
+  },
+  "csLilyHexacastWaveThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "WAVE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Bubble Pulse"
+    },
+    "description": {
+      "en_US": "Shoot a wide spread of bubbles that slow enemies on hit."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 216,
+      "offY": 312
     }
   },
   "csSpheromancerWaveThrow2A": {
@@ -5304,6 +5409,27 @@
       "offY": 216
     }
   },
+  "csLilyHexacastWaveThrow3A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_THROW_SPECIAL3_A",
+        "actionCheckKey": "THROW_SPECIAL3"
+      }
+    ],
+    "element": "WAVE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Spirit Tornado"
+    },
+    "description": {
+      "en_US": "Summon a powerful tornado that chases after enemies."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 168,
+      "offY": 360
+    }
+  },
   "csTribladerWaveAttack1A": {
     "list": [
       {
@@ -5406,6 +5532,27 @@
       "src": "media/gui/circuit-icons.png",
       "offX": 168,
       "offY": 288
+    }
+  },
+  "csLilyHexacastWaveAttack2A": {
+    "list": [
+      {
+        "replaceTo": "CS_LILY_HEXACAST_ATTACK_SPECIAL2_A",
+        "actionCheckKey": "ATTACK_SPECIAL2"
+      }
+    ],
+    "element": "WAVE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa]\\i[head-lily] Verdant Blast"
+    },
+    "description": {
+      "en_US": "Draw in enemies before triggering a large explosion."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 144,
+      "offY": 360
     }
   },
   "csSpheromancerWaveDash1A": {

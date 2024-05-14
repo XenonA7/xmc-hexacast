@@ -1,3 +1,23 @@
+## 0.32.0 (##/##/2024)
+### General
+- Now requires XTM 1.0.3 or higher
+### New Content
+- Added player versions of Lily combat arts as Hexacast custom skills
+  * Chilling Gale (Cold Melee Lv.2A)
+  * Diving Jolt (Shock Throw Lv.1A)
+  * Lightning Orb (Shock Throw Lv.2A)
+  * Bolt Aura (Shock Guard Lv.2A)
+  * Bubble Pulse (Wave Throw Lv.1A)
+  * Spirit Tornado (Wave Throw Lv.3A)
+  * Verdant Blast (Wave Melee Lv.2A)
+### Changes
+- Updated animation at the end of action for the following combat arts:
+  * Hex Barrier
+  * Brittle Barrier
+  * Firebrand
+  * Ampere Cloak
+  * Heal Card
+
 ## 0.31.3 (05/07/2024)
 ### Fixes
 - Fixed Tri Turret not properly despawning
