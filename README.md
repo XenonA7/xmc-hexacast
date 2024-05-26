@@ -44,7 +44,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 ![neutral](https://user-images.githubusercontent.com/105614278/168505340-e0a770c7-7a3b-4f6d-a173-bd1886e1e4cd.png)
 - Neutral Melee Lv.1a	**Hexing Blast**
 - Neutral Melee Lv.1b	**Withering Slash**
-- Neutral Melee Lv.2a	**Vortex Blast**
+- Neutral Melee Lv.2a	**Hex Vortex**
 - Neutral Melee Lv.2b	**Curse of Vanishing**
 - Neutral Throw Lv.1a	**Magic Missile**
 - Neutral Throw Lv.1b	**Mundane Volley**

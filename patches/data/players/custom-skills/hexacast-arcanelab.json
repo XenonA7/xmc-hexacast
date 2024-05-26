@@ -14601,7 +14601,7 @@
             "wait": false,
             "viaWalkConfig": false,
             "type": "SHOW_ANIMATION",
-            "anim": "runGrumpy"
+            "anim": "tri-battleRun"
           },
           {
             "value": false,

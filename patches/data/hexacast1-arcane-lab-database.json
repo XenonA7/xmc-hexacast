@@ -1,62 +1,4 @@
 {
-  "csSpheromancerBaseMelee": {
-    "list": [
-      {
-        "replaceTo": "CS_SPHEROMANCER_ATTACK",
-        "actionCheckKey": "ATTACK"
-      },
-      {
-        "replaceTo": "CS_SPHEROMANCER_ATTACK_REV",
-        "actionCheckKey": "ATTACK_REV"
-      },
-      {
-        "replaceTo": "CS_SPHEROMANCER_ATTACK_FINISHER",
-        "actionCheckKey": "ATTACK_FINISHER"
-      }
-    ],
-    "element": "BASE",
-    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
-    "name": {
-      "en_US": "\\i[class-sphero] Spheromancer Melee"
-    },
-    "description": {
-      "en_US": "The standard Spheromancer melee attacks."
-    },
-    "icon": {
-      "src": "media/gui/custom-skills/base-skills.png",
-      "offX": 24,
-      "offY": 0
-    }
-  },
-  "csTribladerBaseMelee": {
-    "list": [
-      {
-        "replaceTo": "CS_TRIBLADER_ATTACK",
-        "actionCheckKey": "ATTACK"
-      },
-      {
-        "replaceTo": "CS_TRIBLADER_ATTACK_REV",
-        "actionCheckKey": "ATTACK_REV"
-      },
-      {
-        "replaceTo": "CS_TRIBLADER_ATTACK_FINISHER",
-        "actionCheckKey": "ATTACK_FINISHER"
-      }
-    ],
-    "element": "BASE",
-    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
-    "name": {
-      "en_US": "\\i[class-tri] Triblader Melee"
-    },
-    "description": {
-      "en_US": "The standard Triblader melee attacks."
-    },
-    "icon": {
-      "src": "media/gui/custom-skills/base-icons.png",
-      "offX": 24,
-      "offY": 0
-    }
-  },
   "csSpheromancerBaseRanged": {
     "list": [
       {
@@ -127,7 +69,169 @@
     },
     "icon": {
       "src": "media/gui/custom-skills/base-icons.png",
-      "offX": 0,
+      "offX": 24,
+      "offY": 0
+    }
+  },
+  "csSpheromancerBaseMelee": {
+    "list": [
+      {
+        "replaceTo": "CS_SPHEROMANCER_ATTACK",
+        "actionCheckKey": "ATTACK"
+      },
+      {
+        "replaceTo": "CS_SPHEROMANCER_ATTACK_REV",
+        "actionCheckKey": "ATTACK_REV"
+      },
+      {
+        "replaceTo": "CS_SPHEROMANCER_ATTACK_FINISHER",
+        "actionCheckKey": "ATTACK_FINISHER"
+      }
+    ],
+    "element": "BASE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-sphero] Spheromancer Melee"
+    },
+    "description": {
+      "en_US": "The standard Spheromancer melee attacks."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/base-skills.png",
+      "offX": 24,
+      "offY": 0
+    }
+  },
+  "csTribladerBaseMelee": {
+    "list": [
+      {
+        "replaceTo": "CS_TRIBLADER_ATTACK",
+        "actionCheckKey": "ATTACK"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_ATTACK_REV",
+        "actionCheckKey": "ATTACK_REV"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_ATTACK_FINISHER",
+        "actionCheckKey": "ATTACK_FINISHER"
+      }
+    ],
+    "element": "BASE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-tri] Triblader Melee"
+    },
+    "description": {
+      "en_US": "The standard Triblader melee attacks."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 48,
+      "offY": 0
+    }
+  },
+  "csTribladerBaseMeleeFast": {
+    "list": [
+      {
+        "replaceTo": "CS_TRIBLADER_ATTACK_FAST",
+        "actionCheckKey": "ATTACK"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_ATTACK_REV_FAST",
+        "actionCheckKey": "ATTACK_REV"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_ATTACK_FINISHER_FAST",
+        "actionCheckKey": "ATTACK_FINISHER"
+      }
+    ],
+    "element": "BASE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-tri] Triblader Melee (Fast)"
+    },
+    "description": {
+      "en_US": "Triblader4's faster, weaker melee attacks."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 48,
+      "offY": 0
+    }
+  },
+  "csTribladerBaseDash": {
+    "list": [
+      {
+        "replaceTo": "CS_TRIBLADER_DASH",
+        "actionCheckKey": "DASH"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_DASH_SLOW",
+        "actionCheckKey": "DASH_SLOW"
+      }
+    ],
+    "element": "BASE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-tri] Triblader Dash"
+    },
+    "description": {
+      "en_US": "Uses the Triblader dashing animation."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 72,
+      "offY": 0
+    }
+  },
+  "csTribladerBaseDashSteer": {
+    "list": [
+      {
+        "replaceTo": "CS_TRIBLADER_DASH_STEER",
+        "actionCheckKey": "DASH"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_DASH_SLOW_STEER",
+        "actionCheckKey": "DASH_SLOW"
+      }
+    ],
+    "element": "BASE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-tri] Triblader Dash (Steerable)"
+    },
+    "description": {
+      "en_US": "Triblader5's steerable dash."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 72,
+      "offY": 0
+    }
+  },
+  "csTribladerBaseGuard": {
+    "list": [
+      {
+        "replaceTo": "CS_TRIBLADER_GUARD",
+        "actionCheckKey": "GUARD"
+      },
+      {
+        "replaceTo": "CS_TRIBLADER_PERFECT_GUARD",
+        "actionCheckKey": "PERFECT_GUARD"
+      }
+    ],
+    "element": "BASE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-tri] Triblader Guard"
+    },
+    "description": {
+      "en_US": "Uses the Triblader guarding animation."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/base-icons.png",
+      "offX": 96,
       "offY": 0
     }
   },

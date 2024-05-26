@@ -33394,7 +33394,7 @@
           "max": 4,
           "maxTime": 5,
           "forceTime": false,
-          "rotateSpeed": 0.3,
+          "rotateSpeed": 0.35,
           "missReactTime": 0,
           "collideCancel": 1,
           "type": "MOVE_TO_DISTANCE"
@@ -40794,7 +40794,7 @@
       },
       "ATTACK_SPECIAL2_A": {
         "name": {
-          "en_US": "Vortex Blast"
+          "en_US": "Hex Vortex"
         },
         "description": {
           "en_US": "Draw enemies inward towards a single point before blasting them with a powerful explosion."

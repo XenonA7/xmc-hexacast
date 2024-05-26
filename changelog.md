@@ -1,3 +1,18 @@
+## 0.33.0 (05/25/2024)
+### New Content
+- Added battleIdle sword animation sprites to Hexacast1 and Hexacast2
+- Added battleRun sword animation sprites to Hexacast1 and Hexacast2
+- Added custom skills:
+  * Triblader4 Fast Melee (base)
+  * Triblader Guard (base)
+  * Triblader Dash (base)
+  * Triblader5 Steerable Dash (base)
+### Changes
+- Renamed Vortex Blast to Hex Vortex due to name conflict
+- Changed most Triblader custom skills to use battleIdle instead of aim or guard animations
+- Changed all Triblader custom skills that used placeholder runGrumpy animation to use battleRun
+- Changed Cog Dash to use battleRun animation
+
 ## 0.32.0 (05/13/2024)
 ### General
 - Now requires XTM 1.0.3 or higher
