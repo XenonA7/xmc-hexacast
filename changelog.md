@@ -1,3 +1,8 @@
+## 0.34.1 (05/27/2024)
+### Fixes
+- Corrected (for real this time) order of all arts in Hexacast player file to follow: THROW, ATTACK, DASH, GUARD
+- Fixed 0.15s delay between Spell Tag card explosion effect and hitbox
+
 ## 0.34.0 (05/27/2024)
 ### New Content
 - New combat art: Spell Tag (Neutral Dash Lv.1A)
