@@ -4,6 +4,10 @@
     "src": "mod:patches/data/effects/specials/wave.json"
   },
   {
+    "type": "INCLUDE",
+    "src": "mod:patches/data/effects/specials/wave-custom.json"
+  },
+  {
     "type": "ENTER",
     "index": [
       "ANIMS",

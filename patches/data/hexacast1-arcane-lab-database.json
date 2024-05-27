@@ -5833,6 +5833,27 @@
       "offY": 312
     }
   },
+  "csAltTribladerWaveDash2A": {
+    "list": [
+      {
+        "replaceTo": "CS_ALT_TRIBLADER_DASH_SPECIAL2_A",
+        "actionCheckKey": "DASH_SPECIAL2"
+      }
+    ],
+    "element": "WAVE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] Soul Shatter"
+    },
+    "description": {
+      "en_US": "Soul Shatter except with hexagon effects, and no sword animations."
+    },
+    "icon": {
+      "src": "media/gui/circuit-icons.png",
+      "offX": 0,
+      "offY": 312
+    }
+  },
   "csTribladerWaveDash2B": {
     "list": [
       {

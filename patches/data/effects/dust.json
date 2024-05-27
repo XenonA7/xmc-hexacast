@@ -1,0 +1,31 @@
+{
+  "EFFECTS": {
+    "frontFlipped": [
+      {
+        "numParticles": 4,
+        "duration": 0,
+        "centralAngle": 0.3,
+        "startAngle": 0.35,
+        "startDist": 12,
+        "flipRightParticles": true,
+        "offset": {
+          "x": 0,
+          "y": -1,
+          "z": 0
+        },
+        "minSpeed": 80,
+        "maxSpeed": 160,
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "start": {
+            "value": 0.5,
+            "spline": ""
+          }
+        },
+        "anim": "DUST_UP",
+        "type": "PARTICLE_CIRCLE"
+      }
+    ]
+  }
+}

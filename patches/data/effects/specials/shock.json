@@ -7189,7 +7189,7 @@
         },
         "moveWithTarget": 0,
         "particleDuration": 0.4,
-        "anim": "CIRCLE_BIG",
+        "anim": "CIRCLE_BIG_BACK",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {

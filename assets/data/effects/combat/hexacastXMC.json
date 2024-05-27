@@ -10433,6 +10433,52 @@
         "anim": "HEXA_SHOCK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
+    ],
+    "spellTagDashHexagons": [
+      {
+        "numParticles": 18,
+        "duration": 0.4,
+        "centralAngle": 1,
+        "startDist": 24,
+        "useTargetAngle": true,
+        "moveDist": 0,
+        "keySpline": "EASE_IN_OUT",
+        "collision": false,
+        "pAlpha": {
+          "init": 1,
+          "end": {
+            "value": 0,
+            "time": 0.1,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.25,
+            "y": 0.25
+          },
+          "start": {
+            "value": {
+              "x": 0.75,
+              "y": 0.75
+            },
+            "time": 0.03,
+            "spline": "EASE_OUT"
+          },
+          "end": {
+            "value": {
+              "x": 0.25,
+              "y": 0.25
+            },
+            "time": 0.15,
+            "spline": "EASE_IN"
+          }
+        },
+        "moveWithTarget": 1,
+        "particleDuration": 0.25,
+        "anim": "HEXA_NEUTRAL",
+        "type": "OFFSET_PARTICLE_CIRCLE"
+      }
     ]
   }
 }

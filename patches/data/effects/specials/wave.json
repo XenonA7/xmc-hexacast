@@ -7726,7 +7726,7 @@
               "y": 1.5
             },
             "spline": "EASE_IN"
-          },
+          }
         },
         "moveWithTarget": 1,
         "particleDuration": 0.8,
@@ -7764,7 +7764,7 @@
               "y": 1.6
             },
             "spline": "EASE_IN"
-          },
+          }
         },
         "moveWithTarget": 1,
         "particleDuration": 0.4,

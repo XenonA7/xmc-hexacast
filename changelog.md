@@ -1,3 +1,14 @@
+## 0.34.0 (05/27/2024)
+### New Content
+- New combat art: Spell Tag (Neutral Dash Lv.1A)
+- Added a Hexagon-themed version of Soul Shatter as a custom skill
+- Added \patches\data\effects\specials\wave-custom.json
+- Added \patches\data\effects\dust.json
+### Changes
+- Re-ordered all arts in Hexacast player file to follow the standard order: THROW, ATTACK, DASH, GUARD
+- Changed Accelertaion Mine from DASH_SPECIAL 1A to 1B (will still be removed in the future)
+- Effect lightningHexCardJumpTrail now appears behind the proxy ligntningHexCard
+
 ## 0.33.0 (05/25/2024)
 ### New Content
 - Added battleIdle sword animation sprites to Hexacast1 and Hexacast2
