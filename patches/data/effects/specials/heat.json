@@ -11680,6 +11680,116 @@
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
+        "numParticles": 3,
+        "duration": 0.05,
+        "centralAngle": 1,
+        "startDist": 16,
+        "uniformRandom": 0.7,
+        "particleRotate": true,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minSpeed": 120,
+        "maxSpeed": 180,
+        "minZSpeed": 250,
+        "maxZSpeed": 350,
+        "zBounciness": 0.5,
+        "minZVel": 80,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 4,
+            "y": 4
+          },
+          "start": {
+            "value": {
+              "x": 3.25,
+              "y": 3.25
+            },
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": -0.5,
+          "start": {
+            "value": 0,
+            "time": 1,
+            "spline": ""
+          }
+        },
+        "particleDuration": 1.0,
+        "particleDurVariance": 0.3,
+        "angleVary": 1,
+        "cancelable": false,
+        "anim": "DEBRISHEAT1",
+        "type": "DEBRIS_CIRCLE"
+      },
+      {
+        "numParticles": 3,
+        "duration": 0.05,
+        "centralAngle": 1,
+        "startDist": 16,
+        "uniformRandom": 0.7,
+        "particleRotate": true,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minSpeed": 150,
+        "maxSpeed": 200,
+        "minZSpeed": 250,
+        "maxZSpeed": 350,
+        "zBounciness": 0.5,
+        "minZVel": 80,
+        "collision": false,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.2,
+            "spline": ""
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 4,
+            "y": 4
+          },
+          "start": {
+            "value": {
+              "x": 3.25,
+              "y": 3.25
+            },
+            "spline": ""
+          }
+        },
+        "pRotate": {
+          "init": -0.5,
+          "start": {
+            "value": 0,
+            "time": 1,
+            "spline": ""
+          }
+        },
+        "particleDuration": 1.0,
+        "particleDurVariance": 0.3,
+        "angleVary": 1,
+        "cancelable": false,
+        "anim": "DEBRISHEAT2",
+        "type": "DEBRIS_CIRCLE"
+      },
+      {
         "numParticles": 6,
         "duration": 0.05,
         "centralAngle": 1,

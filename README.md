@@ -52,7 +52,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Neutral Throw Lv.2b	**Arcane Volley**
 - Neutral Dash Lv.1a	**Spell Tag**
 - Neutral Dash Lv.1b
-- Neutral Dash Lv.2a
+- Neutral Dash Lv.2a	**Spell Volley**
 - Neutral Dash Lv.2b
 - Neutral Guard Lv.1a	**Shine**
 - Neutral Guard Lv.1b	**Hex Barrier**

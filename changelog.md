@@ -1,3 +1,22 @@
+## 0.35.0 (06/05/2024)
+### New Content
+- New combat art: Spell Volley (Neutral Dash Lv.2A)
+### Changes
+- Spell Tag card explosions changed to RANGED_DMG instead of MELEE_DMG
+- Spell Tag classification changed to MIXED damage types
+- Spell Tag explosion hitbox zHeight changed from 16 to 32
+- Added ground dust effects to Throttle Hex and Stasis Rune
+- Increased sound effect volume for effect spellTagCardAppear
+- Removed ground hexagon particle from effect spellTagDashTrail
+- Tweaked pScale of effect spellTagDashHexagons
+- Added additional DEBRISHEAT1 and DEBRISHEAT2 particles to effect meteorFinalExplode
+- Slightly increased the particle duration for the following effects:
+  * neutralCardDeathFarShort
+  * neutralCardAirDeathShort
+  * neutralCardWallDeathShort
+### Fixes
+- Fixed bug with Hive Missile bees ignoring a NO_DAMAGE limiter
+
 ## 0.34.1 (05/27/2024)
 ### Fixes
 - Corrected (for real this time) order of all arts in Hexacast player file to follow: THROW, ATTACK, DASH, GUARD

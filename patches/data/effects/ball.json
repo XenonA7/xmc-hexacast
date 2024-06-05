@@ -480,7 +480,7 @@
             "y": 0.8
           }
         },
-        "particleDuration": 1,
+        "particleDuration": 1.75,
         "type": "DEBRIS_CIRCLE",
         "anim": "HEXA_CARD_NEUTRAL"
       }
@@ -518,7 +518,7 @@
             "y": 0.8
           }
         },
-        "particleDuration": 1,
+        "particleDuration": 1.75,
         "type": "DEBRIS_CIRCLE",
         "anim": "HEXA_CARD_NEUTRAL"
       }
@@ -556,7 +556,7 @@
             "y": 0.8
           }
         },
-        "particleDuration": 1.25,
+        "particleDuration": 1.75,
         "type": "DEBRIS_CIRCLE",
         "anim": "HEXA_CARD_NEUTRAL"
       }
