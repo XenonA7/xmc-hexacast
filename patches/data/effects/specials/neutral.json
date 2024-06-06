@@ -6043,6 +6043,14 @@
         "volume": 0.6,
         "global": false,
         "loop": false,
+        "speed": 0.8,
+        "sound": "media/sound/battle/dash-strong-1.ogg",
+        "type": "PLAY_SOUND"
+      },
+      {
+        "volume": 0.6,
+        "global": false,
+        "loop": false,
         "speed": 0.9,
         "sound": "media/sound/battle/shiny-effect.ogg",
         "type": "PLAY_SOUND"
@@ -6103,7 +6111,7 @@
           "z": -12
         },
         "pAlpha": {
-          "init": 0.3,
+          "init": 0.4,
           "start": {
             "value": 0,
             "spline": ""
@@ -6131,7 +6139,7 @@
         },
         "angleVary": 1,
         "moveWithTarget": 0,
-        "particleDuration": 0.2,
+        "particleDuration": 0.25,
         "cancelable": false,
         "anim": "NEUTRAL_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
@@ -6352,8 +6360,8 @@
         "collision": false,
         "pScale": {
           "init": {
-            "x": 0.6,
-            "y": 0.6
+            "x": 0.45,
+            "y": 0.45
           },
           "end": {
             "value": {
@@ -6477,7 +6485,7 @@
         "type": "LOOP_END"
       }
     ],
-    "spellValleyCharge": [
+    "spellVolleyCharge": [
       {
         "size": "XL",
         "fadeIn": 0.1,
@@ -6499,7 +6507,7 @@
         "volume": 0.55,
         "global": false,
         "loop": false,
-        "speed": 1.4,
+        "speed": 1.5,
         "sound": "media/sound/battle/enemies/charge-1s.ogg",
         "type": "PLAY_SOUND"
       },

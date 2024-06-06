@@ -136,9 +136,9 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Wave Throw Lv.3a	**Ray of G'oni**
 - Wave Throw Lv.3b
 - Wave Dash Lv.1a	**Toxic Mire**
-- Wave Dash Lv.1b
+- Wave Dash Lv.1b	**Twin Spirit**
 - Wave Dash Lv.2a
-- Wave Dash Lv.2b
+- Wave Dash Lv.2b	**Phantom Strike**
 - Wave Dash Lv.3a
 - Wave Dash Lv.3b
 - Wave Guard Lv.1a	**Wave Recall**

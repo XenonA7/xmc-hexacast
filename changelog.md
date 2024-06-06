@@ -1,3 +1,25 @@
+## 0.36.0 (06/06/2024)
+### New Content
+- New combat art: Twin Spirit (Wave Dash Lv.1B)
+- WIP combat art, will be reworked: Phantom Strike (Wave Dash Lv.2B)
+### Changes
+- Spell Volley now grants weight -1 after initial impact
+- Player now travels further during Spell Volley final melee attack
+- Proxy spellTagCard now tracks to a target distance of 6 instead of 0
+- Added a dust effect to Spell Volley's final melee attack
+- Increased visibility of large hexagon particle in effect spellVolleyDashTrail
+- Relocated sound effect from effect spellVolleyDashHexagons to effect spellVolleyDashTrail
+- Effect spiritBlastSweep and spiritBlastSweepRev now move with target for longer
+### Fixes
+- Fixed redundant skillBonus code in Searing Touch and Scorching Swirl
+### Balance
+- TACKLE impact strength reduced from MASSIVE to MEDIUM:
+  * Spell Tag
+  * Flame Tackle
+- TACKLE impact strength reduced from MASSIVE to HEAVY:
+  * Spell Volley
+  * Fire Barrage
+
 ## 0.35.0 (06/05/2024)
 ### New Content
 - New combat art: Spell Volley (Neutral Dash Lv.2A)
