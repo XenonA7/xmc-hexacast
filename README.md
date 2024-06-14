@@ -138,7 +138,7 @@ Note that the mod author did not publish any actual releases, you need to downlo
 - Wave Dash Lv.1a	**Toxic Mire**
 - Wave Dash Lv.1b	**Twin Spirit**
 - Wave Dash Lv.2a
-- Wave Dash Lv.2b	**Phantom Strike**
+- Wave Dash Lv.2b	**Cosmic Recursion**
 - Wave Dash Lv.3a
 - Wave Dash Lv.3b
 - Wave Guard Lv.1a	**Wave Recall**

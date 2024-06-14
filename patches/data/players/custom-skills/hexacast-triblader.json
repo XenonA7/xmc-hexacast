@@ -7479,9 +7479,6 @@
           "type": "DETACH_TIME_PARENT"
         },
         {
-          "type": "SET_OWNER_REPLACE_TARGET"
-        },
-        {
           "duration": 0,
           "align": "BOTTOM",
           "rotateFace": 0,
@@ -18927,9 +18924,6 @@
           "type": "DETACH_TIME_PARENT"
         },
         {
-          "type": "SET_OWNER_REPLACE_TARGET"
-        },
-        {
           "duration": 0,
           "align": "BOTTOM",
           "rotateFace": 0,
@@ -23091,6 +23085,10 @@
         {
           "value": "MASSIVE",
           "type": "SET_HIT_STABLE"
+        },
+        {
+          "sp": -1,
+          "type": "CONSUME_SP"
         },
         {
           "element": "WAVE",

@@ -1,3 +1,26 @@
+## 0.37.0 (06/13/2024)
+### New Content
+- New combat art: Cosmic Recursion (Wave Dash Lv.2B)
+### Changes
+- Renamed effect phantomStrikeTrail to cosmicTrail
+- Deleted prior WIP combat art: Phantom Strike (Wave Dash Lv.2B)
+- Added light source to effect twinSpiritTrail
+### Fixes
+- Fixed Spectral Legion clones able to consume SP
+- Fixed twinSpiritDummy time partent being detatched
+- Removed SET_OWNER_REPLACE_TARGET from the following:
+  * stasisStormDummy
+  * twinSpiritDummy
+  * phantomStrikeDummy
+- Kept SET_OWNER_REPLACE_TARGET for the following:
+  * zirvitarDummy1
+  * zirvitarDummy2
+- Removed SET_OWNER_REPLACE_TARGET from the following Triblader custom skill proxies:
+  * tri-mirageDummy
+  * tri-waveDummy4
+### Balance
+- Twin Spirit damage slightly increased
+
 ## 0.36.0 (06/06/2024)
 ### New Content
 - New combat art: Twin Spirit (Wave Dash Lv.1B)
