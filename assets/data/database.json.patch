@@ -1,11 +1,37 @@
 [
   {
     "type": "ENTER",
+    "index": "enemies"
+  },
+  {
+    "type": "IMPORT",
+    "src": "mod:patches/data/database/enemies.json"
+  },
+  {
+    "type": "EXIT"
+  },
+  {
+    "type": "ENTER",
+    "index": "quests"
+  },
+  {
+    "type": "IMPORT",
+    "src": "mod:patches/data/database/quests.json"
+  },
+  {
+    "type": "EXIT"
+  },
+  {
+    "type": "ENTER",
     "index": "commonEvents"
   },
   {
     "type": "INCLUDE",
-    "src": "patches/data/hexacast1-events.json"
+    "src": "patches/data/database/hexacast1-events.json"
+  },
+  {
+    "type": "INCLUDE",
+    "src": "patches/data/database/hexacast3-events.json"
   },
   {
     "type": "EXIT"

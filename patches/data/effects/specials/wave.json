@@ -9816,7 +9816,7 @@
         "pRotate": {
           "init": -0.065
         },
-        "moveWithTarget": 0.25,
+        "moveWithTarget": 0.2,
         "anim": "SWEEP_WAVE",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
@@ -10041,7 +10041,7 @@
         "pRotate": {
           "init": -0.075
         },
-        "moveWithTarget": 0.25,
+        "moveWithTarget": 0.2,
         "anim": "SWEEP_WAVE_INV",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },

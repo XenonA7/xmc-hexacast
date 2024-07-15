@@ -6753,6 +6753,7 @@
           "actionDetached": false,
           "group": "line",
           "target2": "PROXY_OWNER",
+          "target2Align": "CENTER",
           "fixPos": false,
           "type": "SHOW_EFFECT",
           "effect": {

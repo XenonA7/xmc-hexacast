@@ -1,3 +1,43 @@
+## 0.38.0 (07/14/2024)
+### General
+- Now requires XTM 1.2.3 or higher
+- Note: My mods are in the process of a major overhaul to replace the dev room. This update
+        is unfinished, the connecting rooms don't exist yet. Full functionality will come
+        soon in upcoming updates. But the first few maps of the new area are added now and
+        you can go check it out. The abandoned house in southwest Bergen Village is the entrance.
+### New Content
+- Added Hexacast3
+  * Party member only
+  * Not officially playable
+  * Copy of Hexacast1
+  * No custom skill support
+- Added some new maps originating from the unused house in Bergen Village
+- Map files added:
+  * \maps\xtm\bonus\enemy-testing.json
+  * \maps\xtm\bonus\elevator-hub.json
+  * \maps\bergen\bergen.json.patch
+  * \maps\bergen\spooky-house.json
+  * \maps\bergen\dark-passage-1.json
+  * \maps\bergen\dark-passage-2.json
+  * \maps\bergen\hideout-outside.json
+- Imported the following maps from Triblader Mod:
+  * \maps\xtm\bonus\art-testing.json
+  * \maps\xtm\bonus\art-testing.-ALjson
+  * \maps\xtm\bonus\art-testing-unused.json
+  * \maps\xtm\bonus\green-screen-room.json
+- Added a new Lv.17 quest to Bergen Village's quest hub
+- Added Flamepeng enemy
+- Added forest-dng map style
+- Added custom-map-sounds.js
+- Added \assets\data\effects\xmc-utility.json
+- Added \assets\data\scale-props\xmc-scale-props.json
+### Changes
+- Disabled common event hexacast1-party-add
+- Moved hexacast1-events.json from \patches\data to \patches\data\database
+- Updated custom skill Triblader charged ball light settings to Hexacast standard
+- Eternal Blizzard effect hugeSnowflakeLine centered alignment
+- Slightly reduced moveWithTarget time for effects cosmicSweep and cosmicSweepRev
+
 ## 0.37.0 (06/13/2024)
 ### New Content
 - New combat art: Cosmic Recursion (Wave Dash Lv.2B)

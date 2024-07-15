@@ -1,7 +1,7 @@
 {
   "DOCTYPE": "PLAYER",
-  "character": "hexacast.hexacast2",
-  "sheet": "npc.hexacast2",
+  "character": "hexacast.hexacast3",
+  "sheet": "npc.hexacast3",
   "class": "HEXACAST",
   "stats": {
     "hp": {
@@ -39745,7 +39745,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedNeutralHoming",
+                    "proxy": "chargedNeutral",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -39775,7 +39775,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedHeatHoming",
+                    "proxy": "chargedHeat",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -39805,7 +39805,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedColdHoming",
+                    "proxy": "chargedCold",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -39835,7 +39835,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedShockHoming",
+                    "proxy": "chargedShock",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -39865,7 +39865,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedWaveHoming",
+                    "proxy": "chargedWave",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -40083,7 +40083,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedNeutralHoming",
+                    "proxy": "chargedNeutral",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -40113,7 +40113,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedHeatHoming",
+                    "proxy": "chargedHeat",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -40143,7 +40143,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedColdHoming",
+                    "proxy": "chargedCold",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -40173,7 +40173,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedShockHoming",
+                    "proxy": "chargedShock",
                     "offset": {
                       "x": 0,
                       "y": 0,
@@ -40203,7 +40203,7 @@
                     "delay": 0,
                     "repeat": false,
                     "duration": 0,
-                    "proxy": "chargedWaveHoming",
+                    "proxy": "chargedWave",
                     "offset": {
                       "x": 0,
                       "y": 0,

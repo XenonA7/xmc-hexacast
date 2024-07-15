@@ -1,0 +1,99 @@
+{
+  "xmc-heat-penguins": {
+    "hubSettings": {
+      "character": "hexacast.hexacast3",
+      "location": {
+        "en_US": "What monstrosities have I created?! Please help, I'm in the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+        "de_DE": "What monstrosities have I created?! Please help, I'm in the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+        "zh_CN": "What monstrosities have I created?! Please help, I'm in the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+        "zh_TW": "What monstrosities have I created?! Please help, I'm in the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+        "ja_JP": "What monstrosities have I created?! Please help, I'm in the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+        "ko_KR": "What monstrosities have I created?! Please help, I'm in the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+        "langUid": 13050
+      }
+    },
+    "name": {
+      "en_US": "Fire Breathing Penguins",
+      "de_DE": "Fire Breathing Penguins",
+      "zh_CN": "Fire Breathing Penguins",
+      "zh_TW": "Fire Breathing Penguins",
+      "ja_JP": "Fire Breathing Penguins",
+      "ko_KR": "Fire Breathing Penguins",
+      "langUid": 188
+    },
+    "person": {
+      "en_US": "Hexacast3",
+      "de_DE": "Hexacast3",
+      "zh_CN": "Hexacast3",
+      "zh_TW": "Hexacast3",
+      "ja_JP": "Hexacast3",
+      "ko_KR": "Hexacast3",
+      "langUid": 189
+    },
+    "level": 17,
+    "order": 101,
+    "description": {
+      "en_US": "A rookie modder has created some deadly penguins and has asked for help clearing them out. Help lead the player though the cave under the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+      "de_DE": "A rookie modder has created some deadly penguins and has asked for help clearing them out. Help lead the player though the cave under the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+      "zh_CN": "A rookie modder has created some deadly penguins and has asked for help clearing them out. Help lead the player though the cave under the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+      "zh_TW": "A rookie modder has created some deadly penguins and has asked for help clearing them out. Help lead the player though the cave under the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+      "ja_JP": "A rookie modder has created some deadly penguins and has asked for help clearing them out. Help lead the player though the cave under the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+      "ko_KR": "A rookie modder has created some deadly penguins and has asked for help clearing them out. Help lead the player though the cave under the \\c[3]Abandoned House\\c[0] in \\c[3]Bergen Village\\c[0].",
+      "langUid": 191
+    },
+    "briefing": {
+      "en_US": "The penguins have been dealt with and the player led you to a hidden \\c[3]hideout for modders\\c[0]. There are certainly a lot of exciting possibilities within those walls.",
+      "de_DE": "The penguins have been dealt with and the player led you to a hidden \\c[3]hideout for modders\\c[0]. There are certainly a lot of exciting possibilities within those walls.",
+      "zh_CN": "The penguins have been dealt with and the player led you to a hidden \\c[3]hideout for modders\\c[0]. There are certainly a lot of exciting possibilities within those walls.",
+      "zh_TW": "The penguins have been dealt with and the player led you to a hidden \\c[3]hideout for modders\\c[0]. There are certainly a lot of exciting possibilities within those walls.",
+      "ja_JP": "The penguins have been dealt with and the player led you to a hidden \\c[3]hideout for modders\\c[0]. There are certainly a lot of exciting possibilities within those walls.",
+      "ko_KR": "The penguins have been dealt with and the player led you to a hidden \\c[3]hideout for modders\\c[0]. There are certainly a lot of exciting possibilities within those walls.",
+      "langUid": 192
+    },
+    "hideRewards": false,
+    "tasks": [
+      {
+        "task": {
+          "en_US": "Clear out the modded \\c[3]\\v[combat.name.penguin-heat]s\\c[0] from the cave beneath \\c[3]Bergen Village\\c[0].",
+          "de_DE": "Clear out the modded \\c[3]\\v[combat.name.penguin-heat]s\\c[0] from the cave beneath \\c[3]Bergen Village\\c[0].",
+          "zh_CN": "Clear out the modded \\c[3]\\v[combat.name.penguin-heat]s\\c[0] from the cave beneath \\c[3]Bergen Village\\c[0].",
+          "zh_TW": "Clear out the modded \\c[3]\\v[combat.name.penguin-heat]s\\c[0] from the cave beneath \\c[3]Bergen Village\\c[0].",
+          "ja_JP": "Clear out the modded \\c[3]\\v[combat.name.penguin-heat]s\\c[0] from the cave beneath \\c[3]Bergen Village\\c[0].",
+          "ko_KR": "Clear out the modded \\c[3]\\v[combat.name.penguin-heat]s\\c[0] from the cave beneath \\c[3]Bergen Village\\c[0].",
+          "langUid": 212
+        },
+        "subtasks": [
+          {
+            "label": "task1",
+            "type": "CONDITION"
+          }
+        ]
+      },
+      {
+        "task": {
+          "en_US": "Learn about the \\c[3]Modding community\\c[0] located north of the cave.",
+          "de_DE": "Learn about the \\c[3]Modding community\\c[0] located north of the cave.",
+          "zh_CN": "Learn about the \\c[3]Modding community\\c[0] located north of the cave.",
+          "zh_TW": "Learn about the \\c[3]Modding community\\c[0] located north of the cave.",
+          "ja_JP": "Learn about the \\c[3]Modding community\\c[0] located north of the cave.",
+          "ko_KR": "Learn about the \\c[3]Modding community\\c[0] located north of the cave.",
+          "langUid": 212
+        },
+        "subtasks": [
+          {
+            "label": "task2",
+            "type": "CONDITION"
+          }
+        ]
+      }
+    ],
+    "rewards": {
+      "exp": {
+        "exp": 50,
+        "bonus": 0
+      },
+      "money": 200
+    },
+    "area": "bergen"
+  }
+}
