@@ -1,3 +1,17 @@
+## 0.39.0 (07/21/2024)
+### New Content
+- Added maps:
+  * \maps\bergen\hideout-northwest.json
+  * \maps\bergen\hideout-southwest.json
+- Added roaming NPC to hideout-lobby
+### Changes
+- Updated weather setting in hideout-lobby
+- Deleted reference props in hideout-lobby
+- Decolored NPC csTalk2 portrait in hideout-lobby
+### Fixes
+- Fixed a gravity bug in dark-passage-1 with door blockEvent
+- Fixed elevator rendering issue in hideout-lobby
+
 ## 0.38.0 (07/14/2024)
 ### General
 - Now requires XTM 1.2.3 or higher

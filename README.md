@@ -18,6 +18,7 @@ https://discord.gg/CsfUk9vpFq
 
 ### **Special Thanks:**
 - **HeartLychee:** Huge help with sprites and animations
+- **Laz:** Gameplay testing, created music used for XMC lobby area
 - **eɪsus|𐤀기술자🇰🇷 (2hh8899):** Creator of Arcane Lab and the custom skill system
 - **Alyxia:** JS support
 - **Bakafish**: Author of Autumn's Genesis, provided code to support proxy HP conditions
