@@ -1,3 +1,17 @@
+## 0.40.0 (07/25/2024)
+### New Content
+- Added maps:
+  * \maps\bergen\hideout-east.json (custom skill area)
+- Added effect shieldTrailNPC
+### Changes
+- Renamed hideout-northwest to hideout-west
+- Added background clouds to hideout-outside
+- Moved Custom C. Preset item to hideout-east, deleted chest in art-testing
+- Updated custom skill sign text in art-testing
+### Fixes
+- Fixed map tile error in hideout-southwest
+- Added additional steps to end combat in hideout-west
+
 ## 0.39.0 (07/21/2024)
 ### New Content
 - Added maps:

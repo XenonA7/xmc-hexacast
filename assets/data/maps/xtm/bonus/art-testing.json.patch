@@ -67,7 +67,7 @@
                     },
                     {
                       "text": {
-                        "en_US": "You can enable/disable custom skills using the \\c[3]Custom C. Preset\\c[0] item under the toggleables tab in your inventory screen. Grab it from the chest in the top-right corner of this room."
+                        "en_US": "You can enable/disable custom skills using the \\c[3]Custom C. Preset\\c[0] item under the toggleables tab in your inventory screen. Grab it from the chest in the eastern room upstairs."
                       },
                       "center": true,
                       "autoContinue": false,
@@ -102,26 +102,6 @@
             "propAnim": "map",
             "condAnims": [],
             "spawnCondition": ""
-          }
-        }
-      },
-      {
-        "type": "ADD_ARRAY_ELEMENT",
-        "content": {
-          "type": "Chest",
-          "x": 544,
-          "y": 160,
-          "level": 1,
-          "settings": {
-            "size": {
-              "x": 16,
-              "y": 16
-            },
-            "mapId": 588,
-            "name": "AL-Chest-Skill",
-            "chestType": "Gold",
-            "amount": 1,
-            "item": "toggle-arcanelab-skill"
           }
         }
       }

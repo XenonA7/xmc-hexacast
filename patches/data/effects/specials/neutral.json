@@ -6798,6 +6798,186 @@
         "time": 0.12,
         "type": "WAIT"
       }
+    ],
+    "shieldTrailNPC": [
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 0,
+            "y": 0
+          },
+          "start": {
+            "value": {
+              "x": 1,
+              "y": 1
+            }
+          }
+        },
+        "moveWithTarget": true,
+        "particleDuration": -1,
+        "anim": "SHIELD_SPHERE",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 1.1,
+              "y": 1.1
+            }
+          }
+        },
+        "moveWithTarget": true,
+        "anim": "SHIELD_SHOW",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 1.4,
+              "y": 1.4
+            }
+          }
+        },
+        "moveWithTarget": true,
+        "anim": "SHIELD_SHOW",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 1.7,
+              "y": 1.7
+            }
+          }
+        },
+        "moveWithTarget": true,
+        "anim": "SHIELD_SHOW",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 2,
+              "y": 2
+            }
+          }
+        },
+        "moveWithTarget": true,
+        "anim": "SHIELD_SHOW",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "type": "LOOP_START"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0.5,
+              "y": 0.5
+            }
+          }
+        },
+        "anim": "DASH_SPHERE_FADE",
+        "type": "PLAY_ANIM"
+      },
+      {
+        "time": 0.06,
+        "type": "WAIT"
+      },
+      {
+        "type": "LOOP_END"
+      },
+      {
+        "useTargetAngle": false,
+        "keepAngleSync": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 15
+        },
+        "pScale": {
+          "init": {
+            "x": 1,
+            "y": 1
+          },
+          "start": {
+            "value": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        "moveWithTarget": true,
+        "anim": "SHIELD_SPHERE",
+        "type": "PLAY_ANIM"
+      }
     ]
   }
 }
