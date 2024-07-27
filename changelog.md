@@ -1,3 +1,10 @@
+## 0.40.1 (07/26/2024)
+### Changes
+- Added additional information to the custom skill sign in hideout-east
+- Swapped sign positions in hideout-east
+- Dialogue tweaks for npcDisguise in hideout-lobby
+- Added small light sources to big hologram signs in hideout maps
+
 ## 0.40.0 (07/25/2024)
 ### New Content
 - Added maps:
