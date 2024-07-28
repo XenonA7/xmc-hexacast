@@ -1,3 +1,11 @@
+## 0.41.0 (07/28/2024)
+### New Content
+- Added map:
+  * \maps\bergen\hideout-north.json
+### Changes
+- Added delay to custom skill sign in hideout-east
+- Minor tweaks to tipsSphero dialogue in hideout-lobby
+
 ## 0.40.1 (07/26/2024)
 ### Changes
 - Added additional information to the custom skill sign in hideout-east
@@ -7,7 +15,7 @@
 
 ## 0.40.0 (07/25/2024)
 ### New Content
-- Added maps:
+- Added map:
   * \maps\bergen\hideout-east.json (custom skill area)
 - Added effect shieldTrailNPC
 ### Changes

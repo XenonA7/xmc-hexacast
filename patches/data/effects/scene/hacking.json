@@ -82,7 +82,7 @@
         "moveOffset": {
           "y": 8
         },
-        "moveWithTarget": 0,
+        "moveWithTarget": 1,
         "anim": "RHOMBUS_DOT_RED",
         "type": "WIPE_PARTICLES"
       },
