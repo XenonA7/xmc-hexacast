@@ -1,3 +1,20 @@
+## 0.42.0 (07/31/2024)
+### General
+- Now requires XTM 1.2.4 or higher
+### New Content
+- Added map:
+  * \maps\bergen\hideout-northwest.json
+- Imported the following maps from Triblader Mod:
+  * \maps\xtm\bonus\training-island.json
+  * \maps\xtm\bonus\training-1v1.json
+  * \maps\xtm\bonus\training-2v2.json
+### Changes
+- Graphical conversion to forest-dng aesthetic for training-1v1 and training-2v2
+- Added vertical light offset to effect classLogosAura
+- Minor dialogue tweak in hideout-north
+- Added missing info to Triblader4 description in hideout-north
+- Added some props in hideout-north
+
 ## 0.41.0 (07/28/2024)
 ### New Content
 - Added map:

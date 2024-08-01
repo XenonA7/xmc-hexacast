@@ -173,6 +173,11 @@
         "fadeOut": 0.5,
         "duration": -1,
         "glow": false,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 16
+        },
         "type": "LIGHT"
       },
       {
