@@ -38614,10 +38614,17 @@
                 "type": "SHOW_ANIMATION"
               },
               {
-                "searchType": "IN_VIEW",
-                "ignoreCurrentTarget": false,
-                "prevHitBehavior": "NONE",
-                "type": "SET_CLOSE_TEMP_TARGET"
+                "withElse": false,
+                "type": "IF",
+                "condition": "combat.activeCnt.arid/element-turret < 1",
+                "thenStep": [
+                  {
+                    "searchType": "IN_VIEW",
+                    "ignoreCurrentTarget": false,
+                    "prevHitBehavior": "NONE",
+                    "type": "SET_CLOSE_TEMP_TARGET"
+                  }
+                ]
               },
               {
                 "charged": false,
@@ -39146,10 +39153,17 @@
                 "type": "SHOW_ANIMATION"
               },
               {
-                "searchType": "IN_VIEW",
-                "ignoreCurrentTarget": false,
-                "prevHitBehavior": "NONE",
-                "type": "SET_CLOSE_TEMP_TARGET"
+                "withElse": false,
+                "type": "IF",
+                "condition": "combat.activeCnt.arid/element-turret < 1",
+                "thenStep": [
+                  {
+                    "searchType": "IN_VIEW",
+                    "ignoreCurrentTarget": false,
+                    "prevHitBehavior": "NONE",
+                    "type": "SET_CLOSE_TEMP_TARGET"
+                  }
+                ]
               },
               {
                 "charged": false,

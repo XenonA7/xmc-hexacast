@@ -1,3 +1,29 @@
+## 0.43.0 (08/04/2024)
+### General
+- Now requires XTM 1.2.5 or higher
+### New Content
+- Added map:
+  * \maps\xtm\bonus\unused-content.json
+- Added minimap support to modded maps in Bergen Village
+- Added landmark functionality to hideout-outside
+- Added weather event to hideout-northwest
+- Imported the following maps from Triblader Mod:
+  * \maps\xtm\bonus\guild-war.json
+  * \maps\xtm\bonus\statue-cutscene.json
+### Changes
+- Repositioned water props in hideout-northwest
+- Changed map area from "meta" to "bergen" for the following maps:
+  * \maps\xtm\bonus\elevator-hub.json
+  * \maps\xtm\bonus\enemy-testing.json
+  * \maps\xtm\bonus\green-screen-room.json
+- Added nonfunctional check for element-turret enemies in Hexacast1 THROW_NORMAL
+- Hexacast early access cutscene map moved to unused content
+### Fixes
+- Fixed maps by removing "\dev\" in internal map name:
+  * \maps\xtm\bonus\art-testing.json
+  * \maps\xtm\bonus\art-testing-AL.json
+  * \maps\xtm\bonus\green-screen-room.json
+
 ## 0.42.0 (07/31/2024)
 ### General
 - Now requires XTM 1.2.4 or higher

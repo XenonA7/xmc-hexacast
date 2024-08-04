@@ -35,5 +35,16 @@
   },
   {
     "type": "EXIT"
+  },
+  {
+    "type": "ENTER",
+    "index": ["areas", "bergen", "landmarks"]
+  },
+  {
+    "type": "INCLUDE",
+    "src": "patches/data/database/bergen-landmarks.json"
+  },
+  {
+    "type": "EXIT"
   }
 ]
