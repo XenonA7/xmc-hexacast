@@ -3674,7 +3674,7 @@
           "ty": 23,
           "dir": "HORIZONTAL",
           "size": 1,
-          "map1": 3,
+          "map1": 4,
           "map2": 0
         },
         {
@@ -3682,7 +3682,7 @@
           "ty": 19,
           "dir": "VERTICAL",
           "size": 1,
-          "map1": 4,
+          "map1": 3,
           "map2": 0
         }
       ],

@@ -1,3 +1,9 @@
+## 0.43.1 (08/04/2024)
+### Changes
+- Removed development versions of area file
+### Fixes
+- Fixed visual bug on area map (thanks to 2767mr for helping to debug this)
+
 ## 0.43.0 (08/04/2024)
 ### General
 - Now requires XTM 1.2.5 or higher
