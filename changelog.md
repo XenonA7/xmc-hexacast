@@ -1,3 +1,12 @@
+## 0.44.0 (08/05/2024)
+### General
+- Now requires XTM 1.3.0 or higher
+  * New dependency mod: https://github.com/elluminance/crosscode-extension-asset-preloader
+### Changes
+- Synced dependencies with XTM
+- Moved \assets\media\gui\custom-skills to triblader mod
+- Updated custom skill info in maps to say Lea is a supported character
+
 ## 0.43.1 (08/04/2024)
 ### Changes
 - Removed development versions of area file
