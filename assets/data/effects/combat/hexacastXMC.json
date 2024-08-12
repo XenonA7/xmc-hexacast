@@ -3759,7 +3759,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.5,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -3804,7 +3804,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.5,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -3907,7 +3907,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.5,
-        "anim": "HEXA_SHOCK",
+        "anim": "HEXA_SHOCK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -3952,7 +3952,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.5,
-        "anim": "HEXA_SHOCK",
+        "anim": "HEXA_SHOCK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -4117,7 +4117,7 @@
         },
         "moveWithTarget": 0,
         "particleDuration": 0.25,
-        "anim": "HEXA_COLD",
+        "anim": "HEXA_COLD_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -4163,7 +4163,7 @@
         },
         "moveWithTarget": 0,
         "particleDuration": 0.25,
-        "anim": "HEXA_COLD",
+        "anim": "HEXA_COLD_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -4470,7 +4470,7 @@
         "moveWithTarget": 1,
         "particleDuration": 8.5,
         "cancelable": true,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
@@ -4548,7 +4548,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.7,
         "cancelable": true,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5433,7 +5433,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5479,7 +5479,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5574,7 +5574,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5620,7 +5620,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5680,7 +5680,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.15,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5737,7 +5737,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.15,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -5794,7 +5794,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.15,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -6426,7 +6426,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -6472,7 +6472,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -6527,7 +6527,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.1,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -6573,7 +6573,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.1,
-        "anim": "HEXA_WAVE",
+        "anim": "HEXA_WAVE_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
@@ -6892,7 +6892,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.35,
-        "anim": "HEXA_BLACK",
+        "anim": "HEXA_BLACK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -6937,7 +6937,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.35,
-        "anim": "HEXA_BLACK",
+        "anim": "HEXA_BLACK_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
@@ -7987,7 +7987,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.25,
         "cancelable": true,
-        "anim": "HEXA_HEAT",
+        "anim": "HEXA_HEAT_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -8034,7 +8034,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.25,
         "cancelable": true,
-        "anim": "HEXA_HEAT",
+        "anim": "HEXA_HEAT_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -8985,7 +8985,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.275,
         "cancelable": false,
-        "anim": "HEXA_HEAT",
+        "anim": "HEXA_HEAT_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -9032,7 +9032,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.275,
         "cancelable": false,
-        "anim": "HEXA_HEAT",
+        "anim": "HEXA_HEAT_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -10476,7 +10476,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.25,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],
@@ -10531,7 +10531,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.5,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -10576,7 +10576,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.5,
-        "anim": "HEXA_NEUTRAL",
+        "anim": "HEXA_NEUTRAL_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       }
     ],

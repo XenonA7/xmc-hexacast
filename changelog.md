@@ -1,7 +1,40 @@
+## 0.45.0 (08/11/2024)
+### General
+- Now requires AlyBox 1.1.0 or higher
+- Now requires menu-ui-replacer 1.0.5 or higher
+- Litter mod now updated to 1.0.9: https://github.com/XenonA7/xmc-hexacast-litter/releases
+### New Content
+- Added new bonus combat arts (they only exist as Hexacast custom skills)
+ * Magic Mortar (Neutral Throw Lv.1)
+ * Flame Mortar (Heat Throw Lv.1)
+ * Ice Mortar (Cold Throw Lv.1)
+ * Jolt Mortar (Shock Throw Lv.1)
+ * Toxic Mortar (Wave Throw Lv.1)
+ * Heal Mortar (Wave Throw Lv.1)
+ * Venom Infusion (Neutral Guard Lv.1)
+- Added \assets\data\effects\specials\poison.json
+### Changes
+- Renamed Hexacast attrib shortCircuitThrowType to polarityThrowType
+- Removed height offset from all "base" ground indicator effects
+- Unified all mentions of "spellcards" to be "spell cards" in text descriptions
+- Renamed all "vortexBlast" effect and proxy names to "hexVortex" names
+- Blizzard Rush card knockback reduced
+- Renamed effect explodeCardDeath to explodeCardDeathNeutral and explodeCardDeathHeat
+- Renamed effect iceCardSmallDeath to explodeCardDeathCold
+### Fixes
+- Fixed Hexacast default ranged attack from homing on element turrets (in Vermillion Tower)
+ * Homing is now completely disabled if the current map contains any element turrets
+- Vortex Hex no longer able to be used through walls
+- Blizzard Rush and Frigid Flurry explosion timing fixed
+- Fixed largest explosion of Hex Vortex damage type (is now MELEE_DMG)
+- Fixed all non-GUI versions of BIG_HEXAGON particles to not actually be guiSprites
+- Fixed all BIG_HEXAGON effects in all sheets to properly use guiSprites or not
+- Audited all effects in combat.hexacastXMC to fix guiSprites HEXA particle usage
+
 ## 0.44.0 (08/05/2024)
 ### General
 - Now requires XTM 1.3.0 or higher
-  * New dependency mod: https://github.com/elluminance/crosscode-extension-asset-preloader
+ * New dependency mod: https://github.com/elluminance/crosscode-extension-asset-preloader
 ### Changes
 - Synced dependencies with XTM
 - Moved \assets\media\gui\custom-skills to triblader mod
@@ -18,37 +51,37 @@
 - Now requires XTM 1.2.5 or higher
 ### New Content
 - Added map:
-  * \maps\xtm\bonus\unused-content.json
+ * \maps\xtm\bonus\unused-content.json
 - Added minimap support to modded maps in Bergen Village
 - Added landmark functionality to hideout-outside
 - Added weather event to hideout-northwest
 - Imported the following maps from Triblader Mod:
-  * \maps\xtm\bonus\guild-war.json
-  * \maps\xtm\bonus\statue-cutscene.json
+ * \maps\xtm\bonus\guild-war.json
+ * \maps\xtm\bonus\statue-cutscene.json
 ### Changes
 - Repositioned water props in hideout-northwest
 - Changed map area from "meta" to "bergen" for the following maps:
-  * \maps\xtm\bonus\elevator-hub.json
-  * \maps\xtm\bonus\enemy-testing.json
-  * \maps\xtm\bonus\green-screen-room.json
+ * \maps\xtm\bonus\elevator-hub.json
+ * \maps\xtm\bonus\enemy-testing.json
+ * \maps\xtm\bonus\green-screen-room.json
 - Added nonfunctional check for element-turret enemies in Hexacast1 THROW_NORMAL
 - Hexacast early access cutscene map moved to unused content
 ### Fixes
 - Fixed maps by removing "\dev\" in internal map name:
-  * \maps\xtm\bonus\art-testing.json
-  * \maps\xtm\bonus\art-testing-AL.json
-  * \maps\xtm\bonus\green-screen-room.json
+ * \maps\xtm\bonus\art-testing.json
+ * \maps\xtm\bonus\art-testing-AL.json
+ * \maps\xtm\bonus\green-screen-room.json
 
 ## 0.42.0 (07/31/2024)
 ### General
 - Now requires XTM 1.2.4 or higher
 ### New Content
 - Added map:
-  * \maps\bergen\hideout-northwest.json
+ * \maps\bergen\hideout-northwest.json
 - Imported the following maps from Triblader Mod:
-  * \maps\xtm\bonus\training-island.json
-  * \maps\xtm\bonus\training-1v1.json
-  * \maps\xtm\bonus\training-2v2.json
+ * \maps\xtm\bonus\training-island.json
+ * \maps\xtm\bonus\training-1v1.json
+ * \maps\xtm\bonus\training-2v2.json
 ### Changes
 - Graphical conversion to forest-dng aesthetic for training-1v1 and training-2v2
 - Added vertical light offset to effect classLogosAura
@@ -59,7 +92,7 @@
 ## 0.41.0 (07/28/2024)
 ### New Content
 - Added map:
-  * \maps\bergen\hideout-north.json
+ * \maps\bergen\hideout-north.json
 ### Changes
 - Added delay to custom skill sign in hideout-east
 - Minor tweaks to tipsSphero dialogue in hideout-lobby
@@ -74,7 +107,7 @@
 ## 0.40.0 (07/25/2024)
 ### New Content
 - Added map:
-  * \maps\bergen\hideout-east.json (custom skill area)
+ * \maps\bergen\hideout-east.json (custom skill area)
 - Added effect shieldTrailNPC
 ### Changes
 - Renamed hideout-northwest to hideout-west
@@ -88,8 +121,8 @@
 ## 0.39.0 (07/21/2024)
 ### New Content
 - Added maps:
-  * \maps\bergen\hideout-northwest.json
-  * \maps\bergen\hideout-southwest.json
+ * \maps\bergen\hideout-northwest.json
+ * \maps\bergen\hideout-southwest.json
 - Added roaming NPC to hideout-lobby
 ### Changes
 - Updated weather setting in hideout-lobby
@@ -108,24 +141,24 @@
         you can go check it out. The abandoned house in southwest Bergen Village is the entrance.
 ### New Content
 - Added Hexacast3
-  * Party member only
-  * Not officially playable
-  * Copy of Hexacast1
-  * No custom skill support
+ * Party member only
+ * Not officially playable
+ * Copy of Hexacast1
+ * No custom skill support
 - Added some new maps originating from the unused house in Bergen Village
 - Map files added:
-  * \maps\xtm\bonus\enemy-testing.json
-  * \maps\xtm\bonus\elevator-hub.json
-  * \maps\bergen\bergen.json.patch
-  * \maps\bergen\spooky-house.json
-  * \maps\bergen\dark-passage-1.json
-  * \maps\bergen\dark-passage-2.json
-  * \maps\bergen\hideout-outside.json
+ * \maps\xtm\bonus\enemy-testing.json
+ * \maps\xtm\bonus\elevator-hub.json
+ * \maps\bergen\bergen.json.patch
+ * \maps\bergen\spooky-house.json
+ * \maps\bergen\dark-passage-1.json
+ * \maps\bergen\dark-passage-2.json
+ * \maps\bergen\hideout-outside.json
 - Imported the following maps from Triblader Mod:
-  * \maps\xtm\bonus\art-testing.json
-  * \maps\xtm\bonus\art-testing.-ALjson
-  * \maps\xtm\bonus\art-testing-unused.json
-  * \maps\xtm\bonus\green-screen-room.json
+ * \maps\xtm\bonus\art-testing.json
+ * \maps\xtm\bonus\art-testing.-ALjson
+ * \maps\xtm\bonus\art-testing-unused.json
+ * \maps\xtm\bonus\green-screen-room.json
 - Added a new Lv.17 quest to Bergen Village's quest hub
 - Added Flamepeng enemy
 - Added forest-dng map style
@@ -150,15 +183,15 @@
 - Fixed Spectral Legion clones able to consume SP
 - Fixed twinSpiritDummy time partent being detatched
 - Removed SET_OWNER_REPLACE_TARGET from the following:
-  * stasisStormDummy
-  * twinSpiritDummy
-  * phantomStrikeDummy
+ * stasisStormDummy
+ * twinSpiritDummy
+ * phantomStrikeDummy
 - Kept SET_OWNER_REPLACE_TARGET for the following:
-  * zirvitarDummy1
-  * zirvitarDummy2
+ * zirvitarDummy1
+ * zirvitarDummy2
 - Removed SET_OWNER_REPLACE_TARGET from the following Triblader custom skill proxies:
-  * tri-mirageDummy
-  * tri-waveDummy4
+ * tri-mirageDummy
+ * tri-waveDummy4
 ### Balance
 - Twin Spirit damage slightly increased
 
@@ -178,11 +211,11 @@
 - Fixed redundant skillBonus code in Searing Touch and Scorching Swirl
 ### Balance
 - TACKLE impact strength reduced from MASSIVE to MEDIUM:
-  * Spell Tag
-  * Flame Tackle
+ * Spell Tag
+ * Flame Tackle
 - TACKLE impact strength reduced from MASSIVE to HEAVY:
-  * Spell Volley
-  * Fire Barrage
+ * Spell Volley
+ * Fire Barrage
 
 ## 0.35.0 (06/05/2024)
 ### New Content
@@ -197,9 +230,9 @@
 - Tweaked pScale of effect spellTagDashHexagons
 - Added additional DEBRISHEAT1 and DEBRISHEAT2 particles to effect meteorFinalExplode
 - Slightly increased the particle duration for the following effects:
-  * neutralCardDeathFarShort
-  * neutralCardAirDeathShort
-  * neutralCardWallDeathShort
+ * neutralCardDeathFarShort
+ * neutralCardAirDeathShort
+ * neutralCardWallDeathShort
 ### Fixes
 - Fixed bug with Hive Missile bees ignoring a NO_DAMAGE limiter
 
@@ -224,10 +257,10 @@
 - Added battleIdle sword animation sprites to Hexacast1 and Hexacast2
 - Added battleRun sword animation sprites to Hexacast1 and Hexacast2
 - Added custom skills:
-  * Triblader4 Fast Melee (base)
-  * Triblader Guard (base)
-  * Triblader Dash (base)
-  * Triblader5 Steerable Dash (base)
+ * Triblader4 Fast Melee (base)
+ * Triblader Guard (base)
+ * Triblader Dash (base)
+ * Triblader5 Steerable Dash (base)
 ### Changes
 - Renamed Vortex Blast to Hex Vortex due to name conflict
 - Changed most Triblader custom skills to use battleIdle instead of aim or guard animations
@@ -239,20 +272,20 @@
 - Now requires XTM 1.0.3 or higher
 ### New Content
 - Added player versions of Lily combat arts as Hexacast custom skills
-  * Chilling Gale (Cold Melee Lv.2A)
-  * Diving Jolt (Shock Throw Lv.1A)
-  * Lightning Orb (Shock Throw Lv.2A)
-  * Bolt Aura (Shock Guard Lv.2A)
-  * Bubble Pulse (Wave Throw Lv.1A)
-  * Spirit Tornado (Wave Throw Lv.3A)
-  * Verdant Blast (Wave Melee Lv.2A)
+ * Chilling Gale (Cold Melee Lv.2A)
+ * Diving Jolt (Shock Throw Lv.1A)
+ * Lightning Orb (Shock Throw Lv.2A)
+ * Bolt Aura (Shock Guard Lv.2A)
+ * Bubble Pulse (Wave Throw Lv.1A)
+ * Spirit Tornado (Wave Throw Lv.3A)
+ * Verdant Blast (Wave Melee Lv.2A)
 ### Changes
 - Updated animation at the end of action for the following combat arts:
-  * Hex Barrier
-  * Brittle Barrier
-  * Firebrand
-  * Ampere Cloak
-  * Heal Card
+ * Hex Barrier
+ * Brittle Barrier
+ * Firebrand
+ * Ampere Cloak
+ * Heal Card
 
 ## 0.31.3 (05/07/2024)
 ### Fixes
@@ -280,20 +313,20 @@
 - Unfinished combat art: Storm Chaser (Shock Throw Lv.3A)
 - Added **220** combat arts to Hexacast1 and Hexacast2 as custom skills
 - Added the following custom skills to Hexacast1 and Hexacast2:
-  * Spheromancer Ranged
-  * Spheromancer Melee
-  * Triblader Ranged
-  * Triblader Melee
-  * All Spheromancer arts (91 total)
-  * All Triblader arts (91 total)
-  * All ArcaneLab arts (28 total)
-  * Limited Pentafist arts (3 total)
-  * Custom Hexacast arts (2 total)
-  * Debug arts (1 total)
+ * Spheromancer Ranged
+ * Spheromancer Melee
+ * Triblader Ranged
+ * Triblader Melee
+ * All Spheromancer arts (91 total)
+ * All Triblader arts (91 total)
+ * All ArcaneLab arts (28 total)
+ * Limited Pentafist arts (3 total)
+ * Custom Hexacast arts (2 total)
+ * Debug arts (1 total)
 - Added the following effect sheets to help with custom skill ports:
-  * /patches/data/effects/specials/heat-custom.json
-  * /patches/data/effects/specials/cold-custom.json
-  * /patches/data/effects/specials/shock-custom.json
+ * /patches/data/effects/specials/heat-custom.json
+ * /patches/data/effects/specials/cold-custom.json
+ * /patches/data/effects/specials/shock-custom.json
 - Added props to facilitate custom skills to the XTM "art testing" map if AL is installed
 - Added placeholder entries for all unimplemented Hexacast arts without alternatives
 - Created sprites for landOnGround N/E directions
@@ -356,9 +389,9 @@
 - New combat art: Crystal Carnage (Cold Throw Lv.3A)
 - Added KeyPanel code patch by **Lubkuluk**
 - Added files for WIP concepts, might delete later:
-  * \assets\data\animations\enemies\spellcard-neutral.json
-  * \assets\data\enemies\shield-generator.json
-  * \assets\data\players\hexacast1_oldCrystalCarnage.json
+ * \assets\data\animations\enemies\spellcard-neutral.json
+ * \assets\data\enemies\shield-generator.json
+ * \assets\data\players\hexacast1_oldCrystalCarnage.json
 ### Changes
 - Spark Stream: Reworked to use GENERIC proxies instead of BALL proxies
 - Spark Stream: Less excessive player movement during combat art
@@ -382,9 +415,9 @@
 ### New Content
 - Added new NPC encounter in path-04 of Azure Archipelago (Rough Lagoon)
 - Added Hexacast animations from **HeartLychee**:
-  * exhale
-  * fanPre
-  * fanLoop
+ * exhale
+ * fanPre
+ * fanLoop
 ### Changes
  - Removed redundant floatEyesClosed sprites from hexacast2.png
 
@@ -393,7 +426,7 @@
 - Now requires XTM version 1.0.0 or later
 ### New Content
 - Added copy of basement.json map to override XTM with Hexacast character options available (mod intro map)
-  * Despite being functional, this will not be implemented until mods are re-organized into XMC later
+ * Despite being functional, this will not be implemented until mods are re-organized into XMC later
 - Added new NPC encounter in autumn.guild.left, different depending on Arcane Lab being installed
 - Added new combat conditions TARGET_HAS_BLOCKED_DAMAGE and TARGET_HAS_BLOCKED_HITS in new file custom-combat-conditions.js
 - Added new action step RESET_GUARD_COMBO
@@ -424,15 +457,15 @@
 - Fixed an issue with Meteor Flare sometimes despawning for some users
 - Fixed Heal Card and Ether Singularity sometimes despawning when cast on allies
 - Standardized WAIT times at the end of proxy actions from 0.01 to 0.05.
-  * meteorSmallController1
-  * zirvitarDummy2
-  * etherSingularityBuffParty
-  * etherSingularityBuffOwner
-  * healCardBuffParty
-  * healCardBuffOwner
-  * amberCard2
-  * thunderJacketAura
-  * ampereBall
+ * meteorSmallController1
+ * zirvitarDummy2
+ * etherSingularityBuffParty
+ * etherSingularityBuffOwner
+ * healCardBuffParty
+ * healCardBuffOwner
+ * amberCard2
+ * thunderJacketAura
+ * ampereBall
 
 ## 0.27.2 (02/12/2024)
 ### Changes

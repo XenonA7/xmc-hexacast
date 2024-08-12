@@ -217,7 +217,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.35,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       }
     ],
@@ -537,7 +537,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.3,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       }
     ],
@@ -770,7 +770,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.3,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -909,7 +909,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.25,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -2275,7 +2275,7 @@
         },
         "particleDuration": 0.6,
         "moveWithTarget": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -2673,7 +2673,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.4,
         "cancelable": true,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -3290,7 +3290,7 @@
         "particleDuration": 1,
         "angleVary": 1,
         "cancelable": true,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -4881,7 +4881,7 @@
         "particleDuration": 0.3,
         "angleVary": 0,
         "moveWithTarget": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -5021,7 +5021,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.25,
         "cancelable": true,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -5215,7 +5215,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.25,
         "cancelable": true,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -5478,7 +5478,7 @@
         },
         "particleDuration": 0.5,
         "moveWithTarget": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -5973,7 +5973,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.3,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       }
     ],
@@ -6132,7 +6132,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.3,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -7068,7 +7068,7 @@
         },
         "particleDuration": 0.5,
         "moveWithTarget": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -7206,8 +7206,8 @@
         "keepAngleSync": false,
         "offset": {
           "x": 0,
-          "y": 128,
-          "z": 128
+          "y": 0,
+          "z": 0
         },
         "pAlpha": {
           "init": 0.1,
@@ -7254,8 +7254,8 @@
         "keepAngleSync": false,
         "offset": {
           "x": 0,
-          "y": 128,
-          "z": 128
+          "y": 0,
+          "z": 0
         },
         "pAlpha": {
           "init": 0.4
@@ -7514,7 +7514,7 @@
         },
         "moveWithTarget": 1,
         "particleDuration": 0.3,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -7745,7 +7745,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.225,
         "cancelable": true,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -8636,7 +8636,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.25,
         "cancelable": true,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -9591,7 +9591,7 @@
         },
         "particleDuration": 0.5,
         "moveWithTarget": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -11377,7 +11377,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.3,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -13322,7 +13322,7 @@
         },
         "moveWithTarget": 0,
         "particleDuration": 0.4,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "OFFSET_PARTICLE_CIRCLE"
       },
       {
@@ -15675,7 +15675,7 @@
         "moveWithTarget": 1,
         "particleDuration": 0.2,
         "angleVary": 1,
-        "anim": "SHOCK_BIG_HEXAGON",
+        "anim": "SHOCK_BIG_HEXAGON_GUI",
         "type": "PLAY_ANIM"
       },
       {
@@ -17056,6 +17056,44 @@
       {
         "time": 0.25,
         "type": "WAIT"
+      }
+    ],
+    "explodeCardDeathShock": [
+      {
+        "numParticles": 1,
+        "duration": 0,
+        "centralAngle": 1,
+        "startDist": 0,
+        "random": true,
+        "zBounciness": 0,
+        "collision": true,
+        "angleVary": 1,
+        "offset": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        },
+        "minSpeed": 40,
+        "maxSpeed": 60,
+        "minZSpeed": 160,
+        "maxZSpeed": 200,
+        "minZVel": 40,
+        "pAlpha": {
+          "init": 0.8,
+          "end": {
+            "value": 0,
+            "time": 0.5
+          }
+        },
+        "pScale": {
+          "init": {
+            "x": 0.8,
+            "y": 0.8
+          }
+        },
+        "particleDuration": 2.0,
+        "type": "DEBRIS_CIRCLE",
+        "anim": "HEXA_CARD_SHOCK"
       }
     ]
   }

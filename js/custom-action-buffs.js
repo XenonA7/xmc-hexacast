@@ -15,3 +15,16 @@ sc.STAT_CHANGE_SETTINGS["DEFENSE-PLUS-STASIS"] = {
   icon: "stat-defense",
   grade: "stat-rank-up-1"
 };
+
+sc.STAT_PARAM_TYPE.TOXIC_HAZARD = {
+  key: "TOXIC_HAZARD"
+};
+
+sc.STAT_CHANGE_SETTINGS["POISON_INFLICT-1"] = {
+  change: sc.STAT_CHANGE_TYPE.MODIFIER,
+  type: sc.STAT_PARAM_TYPE.TOXIC_HAZARD,
+  value: 1.5,
+  negative: false,
+  icon: "stat-hack",
+  grade: "stat-rank-1"
+};

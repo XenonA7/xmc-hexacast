@@ -2537,7 +2537,7 @@
               "type": "SHOW_EFFECT",
               "effect": {
                 "sheet": "specials.cold",
-                "name": "iceCardSmallDeath"
+                "name": "explodeCardDeathCold"
               },
               "offset": {
                 "x": 0,
@@ -8240,7 +8240,7 @@
               "NO_PUZZLE"
             ],
             "guardable": "",
-            "skillBonus": "RANGED_DMG"
+            "skillBonus": "MELEE_DMG"
           },
           "offset": {
             "x": 0,
@@ -13909,7 +13909,7 @@
           "yScale": 0,
           "zHeight": 0,
           "centralAngle": 1,
-          "duration": 0.2,
+          "duration": 0,
           "expandRadius": 0,
           "alwaysFull": false,
           "clockwise": false,
@@ -17962,7 +17962,7 @@
           "yScale": 0,
           "zHeight": 0,
           "centralAngle": 0,
-          "duration": 0.3,
+          "duration": 0,
           "expandRadius": 0,
           "alwaysFull": false,
           "clockwise": false,
@@ -17977,7 +17977,7 @@
             "type": "HEAVY",
             "element": "COLD",
             "damageFactor": 1.8,
-            "fly": "MASSIVE",
+            "fly": "HEAVY",
             "reverse": false,
             "guardable": "",
             "skillBonus": "RANGED_DMG",
@@ -20612,7 +20612,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.heat",
-            "name": "explodeCardDeath"
+            "name": "explodeCardDeathHeat"
           },
           "offset": {
             "x": 0,
@@ -21361,7 +21361,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.cold",
-            "name": "iceCardSmallDeath"
+            "name": "explodeCardDeathCold"
           },
           "offset": {
             "x": 0,
@@ -21927,7 +21927,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.heat",
-            "name": "explodeCardDeath"
+            "name": "explodeCardDeathHeat"
           },
           "offset": {
             "x": 0,
@@ -24082,7 +24082,7 @@
               "type": "SHOW_EFFECT",
               "effect": {
                 "sheet": "specials.neutral",
-                "name": "explodeCardDeath"
+                "name": "explodeCardDeathNeutral"
               },
               "offset": {
                 "x": 0,
@@ -24705,7 +24705,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.heat",
-            "name": "explodeCardDeath"
+            "name": "explodeCardDeathHeat"
           },
           "offset": {
             "x": 0,
@@ -25482,7 +25482,7 @@
       "config": {},
       "type": "GENERIC"
     },
-    "vortexBlastCard": {
+    "hexVortexCard": {
       "copyOwnerAnims": false,
       "breakType": "ACTION",
       "animation": {
@@ -25674,7 +25674,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.neutral",
-            "name": "vortexBlastChargeMain"
+            "name": "hexVortexChargeMain"
           },
           "offset": {
             "x": 0,
@@ -25694,7 +25694,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.neutral",
-            "name": "vortexBlastChargeDust"
+            "name": "hexVortexChargeDust"
           },
           "offset": {
             "x": 0,
@@ -25876,7 +25876,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.neutral",
-            "name": "explodeCardDeath"
+            "name": "explodeCardDeathNeutral"
           },
           "offset": {
             "x": 0,
@@ -26931,7 +26931,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.heat",
-            "name": "explodeCardDeath"
+            "name": "explodeCardDeathHeat"
           },
           "offset": {
             "x": 0,
@@ -28166,7 +28166,7 @@
           "type": "SHOW_EFFECT",
           "effect": {
             "sheet": "specials.heat",
-            "name": "explodeCardDeath"
+            "name": "explodeCardDeathHeat"
           },
           "offset": {
             "x": 0,
@@ -38614,10 +38614,17 @@
                 "type": "SHOW_ANIMATION"
               },
               {
-                "searchType": "IN_VIEW",
-                "ignoreCurrentTarget": false,
-                "prevHitBehavior": "NONE",
-                "type": "SET_CLOSE_TEMP_TARGET"
+                "withElse": false,
+                "type": "IF",
+                "condition": "combat.cnt.arid/element-turret < 1",
+                "thenStep": [
+                  {
+                    "searchType": "IN_VIEW",
+                    "ignoreCurrentTarget": false,
+                    "prevHitBehavior": "NONE",
+                    "type": "SET_CLOSE_TEMP_TARGET"
+                  }
+                ]
               },
               {
                 "charged": false,
@@ -39146,10 +39153,17 @@
                 "type": "SHOW_ANIMATION"
               },
               {
-                "searchType": "IN_VIEW",
-                "ignoreCurrentTarget": false,
-                "prevHitBehavior": "NONE",
-                "type": "SET_CLOSE_TEMP_TARGET"
+                "withElse": false,
+                "type": "IF",
+                "condition": "combat.cnt.arid/element-turret < 1",
+                "thenStep": [
+                  {
+                    "searchType": "IN_VIEW",
+                    "ignoreCurrentTarget": false,
+                    "prevHitBehavior": "NONE",
+                    "type": "SET_CLOSE_TEMP_TARGET"
+                  }
+                ]
               },
               {
                 "charged": false,
@@ -39701,10 +39715,17 @@
             ],
             "elseStep": [
               {
-                "searchType": "IN_VIEW",
-                "ignoreCurrentTarget": false,
-                "prevHitBehavior": "NONE",
-                "type": "SET_CLOSE_TEMP_TARGET"
+                "withElse": false,
+                "type": "IF",
+                "condition": "combat.cnt.arid/element-turret < 1",
+                "thenStep": [
+                  {
+                    "searchType": "IN_VIEW",
+                    "ignoreCurrentTarget": false,
+                    "prevHitBehavior": "NONE",
+                    "type": "SET_CLOSE_TEMP_TARGET"
+                  }
+                ]
               },
               {
                 "duration": 0,
@@ -40059,10 +40080,17 @@
                 }
               },
               {
-                "searchType": "IN_VIEW",
-                "ignoreCurrentTarget": false,
-                "prevHitBehavior": "NONE",
-                "type": "SET_CLOSE_TEMP_TARGET"
+                "withElse": false,
+                "type": "IF",
+                "condition": "combat.cnt.arid/element-turret < 1",
+                "thenStep": [
+                  {
+                    "searchType": "IN_VIEW",
+                    "ignoreCurrentTarget": false,
+                    "prevHitBehavior": "NONE",
+                    "type": "SET_CLOSE_TEMP_TARGET"
+                  }
+                ]
               },
               {
                 "withElse": false,
@@ -40693,7 +40721,7 @@
           "en_US": "Mundane Volley"
         },
         "description": {
-          "en_US": "Throw two volleys of unenchanted spellcards."
+          "en_US": "Throw two volleys of unenchanted spell cards."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -41124,7 +41152,7 @@
           "en_US": "Arcane Volley"
         },
         "description": {
-          "en_US": "Throw spellcards which pierce enemies before homing in on nearby targets."
+          "en_US": "Throw spell cards which pierce enemies before homing in on nearby targets."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -41752,7 +41780,7 @@
             "centralAngle": 0,
             "angleVary": 0,
             "startDist": 64,
-            "startDistCollide": "NONE",
+            "startDistCollide": "CLOSER",
             "random": false,
             "count": 1,
             "duration": 0,
@@ -41763,7 +41791,7 @@
             "delay": 0,
             "repeat": false,
             "type": "SHOOT_PROXY_RANGE",
-            "proxy": "vortexBlastCard",
+            "proxy": "hexVortexCard",
             "offset": {
               "z": 0
             }
@@ -44935,7 +44963,7 @@
           "en_US": "Ashen Hex"
         },
         "description": {
-          "en_US": "Dash and leave behind a spellcard which will explode shortly after."
+          "en_US": "Dash and leave behind a spell card which will explode shortly after."
         },
         "dmgType": "MELEE",
         "stunType": "",
@@ -46871,7 +46899,7 @@
           "en_US": "Lingering Cold"
         },
         "description": {
-          "en_US": "Shoot a slow-moving spellcard that pierces enemies and bounces off walls."
+          "en_US": "Shoot a slow-moving spell card that pierces enemies and bounces off walls."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -48899,7 +48927,7 @@
           "en_US": "Icicle Deck"
         },
         "description": {
-          "en_US": "Deal out a cluster of lingering icicle spellcards that impale any enemy that comes in contact with them."
+          "en_US": "Deal out a cluster of lingering icicle spell cards that impale any enemy that comes in contact with them."
         },
         "dmgType": "MELEE",
         "stunType": "",
@@ -49671,7 +49699,7 @@
           "en_US": "Polarity Spark"
         },
         "description": {
-          "en_US": "Hit multiple enemies in front of you with a fast spellcard that returns after being thrown."
+          "en_US": "Hit multiple enemies in front of you with a fast spell card that returns after being thrown."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -49689,11 +49717,11 @@
           {
             "withElse": true,
             "type": "IF",
-            "condition": "entity.attrib.shortCircuitThrowType",
+            "condition": "entity.attrib.polarityThrowType",
             "thenStep": [
               {
                 "type": "SET_ATTRIB_BOOL",
-                "name": "shortCircuitThrowType",
+                "name": "polarityThrowType",
                 "value": false
               },
               {
@@ -49727,7 +49755,7 @@
             "elseStep": [
               {
                 "type": "SET_ATTRIB_BOOL",
-                "name": "shortCircuitThrowType",
+                "name": "polarityThrowType",
                 "value": true
               },
               {
@@ -49791,7 +49819,7 @@
           "en_US": "Amber Hex"
         },
         "description": {
-          "en_US": "Shoot an electrified spellcard which does heavy damage to a single enemy on hit."
+          "en_US": "Shoot an electrified spell card which does heavy damage to a single enemy on hit."
         },
         "dmgType": "RANGED",
         "stunType": "LOCK",
@@ -50009,7 +50037,7 @@
           "en_US": "Spark Stream"
         },
         "description": {
-          "en_US": "Aim and throw barrages of piercing spellcards."
+          "en_US": "Aim and throw barrages of piercing spell cards."
         },
         "dmgType": "RANGED",
         "stunType": "",
@@ -51907,7 +51935,7 @@
           "en_US": "Magnet Card"
         },
         "description": {
-          "en_US": "Dash and leave behind a spellcard which will return to you after a delay, damaging enemies as it travels."
+          "en_US": "Dash and leave behind a spell card which will return to you after a delay, damaging enemies as it travels."
         },
         "dmgType": "MIXED",
         "stunType": "",

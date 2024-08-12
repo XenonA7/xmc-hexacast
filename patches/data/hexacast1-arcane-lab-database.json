@@ -343,6 +343,27 @@
       "offY": 96
     }
   },
+  "csHexacastCustom1NeutralThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM1_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "NEUTRAL",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] Magic Mortar"
+    },
+    "description": {
+      "en_US": "Toss an explosive spell card aimed at your cursor position."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 0,
+      "offY": 0
+    }
+  },
   "csSpheromancerNeutralThrow2A": {
     "list": [
       {
@@ -1003,6 +1024,27 @@
       "offY": 120
     }
   },
+  "csHexacastCustom1NeutralGuard1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM1_HEXACAST_GUARD_SPECIAL1_A",
+        "actionCheckKey": "GUARD_SPECIAL1"
+      }
+    ],
+    "element": "NEUTRAL",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] \\c[1]Venom Infusion\\c[0]"
+    },
+    "description": {
+      "en_US": "Sacrifice \\c[1]25%\\c[0] of your HP to make your attacks inflict \\c[3]poison\\c[0] for a short time."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 24,
+      "offY": 24
+    }
+  },
   "csSpheromancerNeutralGuard2A": {
     "list": [
       {
@@ -1163,6 +1205,27 @@
       "src": "media/gui/circuit-icons.png",
       "offX": 0,
       "offY": 144
+    }
+  },
+  "csHexacastCustom1HeatThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM1_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "HEAT",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] Flame Mortar"
+    },
+    "description": {
+      "en_US": "Toss a fire-spewing spell card aimed at your cursor position."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 24,
+      "offY": 0
     }
   },
   "csSpheromancerHeatThrow2A": {
@@ -2532,6 +2595,27 @@
       "offY": 192
     }
   },
+  "csHexacastCustom1ColdThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM1_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "COLD",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] Ice Mortar"
+    },
+    "description": {
+      "en_US": "Toss an icicle spell card aimed at your cursor position."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 48,
+      "offY": 0
+    }
+  },
   "csAlSpheroknightColdThrow1A": {
     "list": [
       {
@@ -3837,6 +3921,27 @@
       "src": "media/gui/circuit-icons.png",
       "offX": 24,
       "offY": 240
+    }
+  },
+  "csHexacastCustom1ShockThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM1_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "SHOCK",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] Jolt Mortar"
+    },
+    "description": {
+      "en_US": "Toss a Jolt Hex spell card aimed at your cursor position."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 72,
+      "offY": 0
     }
   },
   "csAlHexummonerShockThrow1A": {
@@ -5153,6 +5258,48 @@
       "src": "media/gui/circuit-icons.png",
       "offX": 0,
       "offY": 288
+    }
+  },
+  "csHexacastCustom1WaveThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM1_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "WAVE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] Toxic Mortar"
+    },
+    "description": {
+      "en_US": "Toss a toxic mire spell card aimed at your cursor position."
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 96,
+      "offY": 0
+    }
+  },
+  "csHexacastCustom2WaveThrow1A": {
+    "list": [
+      {
+        "replaceTo": "CS_CUSTOM2_HEXACAST_THROW_SPECIAL1_A",
+        "actionCheckKey": "THROW_SPECIAL1"
+      }
+    ],
+    "element": "WAVE",
+    "activeCondition": "player.entity.name == 'Hexacast1' || player.entity.name == 'Hexacast2'",
+    "name": {
+      "en_US": "\\i[class-hexa] \\c[2]Heal Mortar\\c[0]"
+    },
+    "description": {
+      "en_US": "Toss a healing spell card aimed at your cursor position. \\c[3]Heals both yourself and allies.\\c[0]"
+    },
+    "icon": {
+      "src": "media/gui/custom-skills/hexacast-bonus-skills.png",
+      "offX": 0,
+      "offY": 24
     }
   },
   "csAlSpheroknightWaveThrow1A": {

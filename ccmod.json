@@ -1,6 +1,6 @@
 {
 	"id": "xmc-hexacast",
-	"version": "0.44.0",
+	"version": "0.45.0",
 	"title": {
 		"en_US": "XMC - \\c[2]Hexacast\\c[0] \\c[1](WIP)\\c[0]"
 	},
@@ -18,8 +18,8 @@
 	"dependencies": {
 		"Simplify": ">=2.12.1",
 		"extendable-severed-heads": ">=1.1.0",
-		"cc-alybox": ">=1.0.0",
-		"menu-ui-replacer": ">=1.0.4",
+		"cc-alybox": ">=1.1.0",
+		"menu-ui-replacer": ">=1.0.5",
 		"extension-asset-preloader": ">=1.0.0",
 		"crosscode": ">=1.4.0",
 		"post-game": ">=1.4.0",

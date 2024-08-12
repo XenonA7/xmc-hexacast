@@ -103,6 +103,7 @@
         "width": 96,
         "height": 96
       },
+      "guiSprites": false,
       "renderMode": "lighter",
       "time": 0.4,
       "frames": [
