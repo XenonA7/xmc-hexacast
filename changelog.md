@@ -1,3 +1,18 @@
+## 0.46.0 (08/15/2024)
+### New Content
+- Added decoration to elevator-hub
+- Added navmap to elevator-hub
+### Changes
+- Adjusted color composition of poison skill icons to be lighter
+- Added map ground details to hideout-north
+- Added vine decorations to hideout-northwest
+### Fixes
+- Heal Mortar name color fixed
+- Fixed a lightmap tile placement in hideout-northwest
+### Balance
+- Heal Mortar radius increased
+- Heal Mortar health recovery slightly decreased
+
 ## 0.45.0 (08/11/2024)
 ### General
 - Now requires AlyBox 1.1.0 or higher

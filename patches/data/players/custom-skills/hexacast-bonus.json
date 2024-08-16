@@ -4974,7 +4974,7 @@
         },
         {
           "align": "CENTER",
-          "radius": 40,
+          "radius": 56,
           "yScale": 0,
           "zHeight": 0,
           "centralAngle": 1,
@@ -5047,7 +5047,7 @@
           "type": "DETACH_TIME_PARENT"
         },
         {
-          "value": 0.075,
+          "value": 0.065,
           "target": "TARGET",
           "hideNumbers": false,
           "type": "REGEN_HP"
@@ -6117,7 +6117,7 @@
       },
       "CS_CUSTOM2_HEXACAST_THROW_SPECIAL1_A": {
         "name": {
-          "en_US": "Heal Mortar"
+          "en_US": "\\c[2]Heal Mortar\\c[0]"
         },
         "description": {
           "en_US": "Toss a healing spell card aimed at your cursor position. \\c[3]Only heals allies.\\c[0]"

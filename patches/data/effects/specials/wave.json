@@ -10911,7 +10911,7 @@
     ],
     "healMortarImpact": [
       {
-        "size": "XL",
+        "size": "XXL",
         "fadeIn": 0,
         "fadeOut": 0.5,
         "duration": 0.1,
@@ -10940,7 +10940,7 @@
         "global": false,
         "loop": false,
         "speed": 1.1,
-        "variance": 0.05,
+        "variance": 0,
         "sound": "media/sound/move/heal.ogg",
         "type": "PLAY_SOUND"
       },
@@ -10973,8 +10973,8 @@
           },
           "start": {
             "value": {
-              "x": 1.2,
-              "y": 1.2
+              "x": 1.4,
+              "y": 1.4
             },
             "spline": "EASE_OUT_STRING"
           }
@@ -10988,9 +10988,9 @@
         "duration": 0,
         "clockwise": false,
         "centralAngle": 1,
-        "startDist": 4,
+        "startDist": 12,
         "random": true,
-        "moveDist": 32,
+        "moveDist": 48,
         "moveVariance": 12,
         "normalMoveDist": 32,
         "keySpline": "EASE_OUT",
@@ -11031,9 +11031,9 @@
         "duration": 0,
         "clockwise": false,
         "centralAngle": 1,
-        "startDist": 4,
+        "startDist": 8,
         "random": true,
-        "moveDist": 32,
+        "moveDist": 48,
         "moveVariance": 12,
         "normalMoveDist": 32,
         "keySpline": "EASE_OUT",
@@ -11075,7 +11075,7 @@
         "clockwise": false,
         "centralAngle": -0.7,
         "startAngle": 0,
-        "startDist": 40,
+        "startDist": 56,
         "random": false,
         "moveDist": 0,
         "moveVariance": 0,
@@ -11094,8 +11094,8 @@
         },
         "pScale": {
           "init": {
-            "x": 1.5,
-            "y": 1.5
+            "x": 1.6,
+            "y": 1.6
           },
           "end": {
             "value": {
@@ -11119,7 +11119,7 @@
         "clockwise": false,
         "centralAngle": -0.7,
         "startAngle": 0.5,
-        "startDist": 40,
+        "startDist": 56,
         "random": false,
         "moveDist": 0,
         "moveVariance": 0,
@@ -11138,8 +11138,8 @@
         },
         "pScale": {
           "init": {
-            "x": 1.5,
-            "y": 1.5
+            "x": 1.6,
+            "y": 1.6
           },
           "end": {
             "value": {
@@ -11175,8 +11175,8 @@
         },
         "pScale": {
           "init": {
-            "x": 0.8,
-            "y": 0.8
+            "x": 1.0,
+            "y": 1.0
           }
         },
         "pRotate": {
