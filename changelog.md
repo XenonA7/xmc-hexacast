@@ -1,4 +1,4 @@
-## 0.46.0 (08/15/2024)
+## 0.46.0 (08/16/2024)
 ### New Content
 - Added decoration to elevator-hub
 - Added navmap to elevator-hub
