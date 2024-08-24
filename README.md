@@ -1,3 +1,13 @@
+# This mod is discontinued. Hexacast is now an included part of Xenon's Playable Classes. This repository only serves as a record of legacy versions now.
+## https://github.com/XenonA7/xenons-playable-classes
+
+
+
+
+
+
+
+
 # [XMC] Playable Hexacast
 ![hexacast-preview](https://user-images.githubusercontent.com/105614278/217141772-92383016-1b93-4b2f-9270-49d426d3026b.gif)
 
